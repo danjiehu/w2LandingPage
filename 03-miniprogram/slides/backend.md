@@ -4,15 +4,15 @@ API WITH DATA FOR WECHAT MPS
 
 ## OUR FRONTEND SO FAR
 
-![image-20191004002033273](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191004002033273.png)
+![image-20191004002033273](backend/image-20191004002033273.png)
 
 ## OUR FRONTEND WITH API TODAY
 
-![image-20191004002045936](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191004002045936.png)
+![image-20191004002045936](backend/image-20191004002045936.png)
 
 ------
 
-## APIs ALLOWS YOU TO:
+## APIs ALLOWS YOU TO
 
 - Provide data for client (e.g. an app: web, native, Wechat Mini Program)
 - Provide service to customers (e.g. sms, payment): later course
@@ -65,17 +65,35 @@ delete story  DELETE    /stories/:id                 stories#destroy
 
 For showing all the stories
 
-### 1. Use API key
-From API provider (when creating account):
+### 1. Use API token (or key)
+From API provider (when creating account)
+Something like:
 
 ```
-API_KEY
+API_KEY: xxxxxxxxxxxxxxxxxxxxxxxx
+TOKEN: xxxxxxxxxxxxxxxxxxxxxxxx
 ```
+
+Use like:
+
+```json
+header: {'Authorization':'Bearer xxxxxxxxxxxxxxxxxxxxxxxx'}
+```
+
+or as params or form data
+
+```json
+data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
+```
+
 
 
 ### 2. Specify endpoint 
 
 Verb and address
+
+https://fml.shanghaiwogeng.com
+
 ```
 GET /api/v1/stories
 ```
@@ -123,6 +141,16 @@ Page({
   //...
 ```
 
+------
+
+Not Working? -> Need WeChat permission
+
+Wechat IDE Menu: Settings -> Project Settings:
+
+![image-20191004182608872](backend/image-20191004182608872.png)
+
+
+
 ### 5. Receive data from response
 
 
@@ -150,7 +178,7 @@ Page({
     wx.request({
       url: "http://localhost:3000/api/v1/stories",
       method: 'GET',
-      success: getRequestData
+      success: page.getRequestData
     });
   }
   //...
@@ -163,6 +191,9 @@ Page({
   //...
   setStories: function (data) {
     const stories = data.stories;
+  
+    // Save reference to page
+    let page = this;
 
     // Update local stories data
     page.setData({
@@ -398,29 +429,54 @@ Read more about how Mini Programs can work with APIs
 
 What APIs can I use? Where to find them? 
 
-Global
-Rapid API
-Programmable Web
+### Global
+rapidapi.com
+programmableweb.com
+apihound.com
+apiforthat.com
 
-In China
+------
+
+### China
+apistore.baidu.com
+shenjian.io
+juhe.cn
 
 ------
 
 ## B2D - API Economy
 
-Companies with revenue from APIs:
+Revenue through api’s
+
+50% => Salesforce.com
+60% => eBay.com
+90% => Expedia.com
+
+------
+
+### There are 17,000 APIs
+
+9 million private api developers
+
+------
 
 Explosion of APIs growth
+![image-20191004180349425](backend/image-20191004180349425.png)
 
 ------
 
 ## API Strategy
 
-APIs are key to prototype
 
-Digital transformation
+APIs are key to prototyping - great for entrepreneurs
 
-Use infrastructure, don't build from scratch, reinvent the whell...
+focus on unique functionalities for business
+delivering initial product quickly & less expensively
+
+
+APIs are vital to digital transformation
+
+Use infrastructure so you don't build from scratch or reinvent the wheel
 
 ------
 
