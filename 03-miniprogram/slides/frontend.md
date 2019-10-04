@@ -16,7 +16,7 @@
 
 ### Agenda
 
-You will build 1 WeChat app today
+We will build 1 WeChat app in this course
 
 #### ["F*** My Code"](https://www.fmylife.com/)
 
@@ -71,11 +71,11 @@ Tip: You can customize the startup page with a new compilation mode.
 
 [See all options here](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html)
 
-### Challenge 1: Landing page 💪
+### Live code 1: Landing page 💪
 
 We'll use the [Banner Component from Le Wagon UI](https://uikit.lewagon.com/documentation#banner).
 
-### Challenge 2: Stories page 💪
+### Live code 2: Stories page 💪
 
 Save time using [Le Wagon's card component](https://uikit.lewagon.com/documentation#card_product) (but no need of a product image).
 
@@ -307,7 +307,7 @@ Page({
 <view wx:if="{{falseStatement}}">Fuck My Code 2</view>
 ```
 
-### Challenge 3: Improve the view (add multiple cards) 💪
+### Live code 3: Improve the view (add multiple cards) 💪
 
 We want to show more than one story in the **stories page** without repeating the same WXML markup.
 
@@ -345,17 +345,8 @@ Page({
 - Data used everywhere in the app (ex: userId) 👉 **global Data**
 - Data relevant only to the page 👉 **local Data page.js**
 
-### Challenge 4: Create a Post Page 💪
+### Live code 4: Create a Post Page 💪
 
 We'll use a form to add new FMC stories in a global data storage.
 
-------
-
-### Optional challenges 🚀
-
-- Optional 1: Use cache storage to persist stories
-- Optional 2: Get the WeChat user info!
-
-------
-
-#### Congratulations, you've made it through the extra day 1!
+#### Congratulations, you're a mini program developer!
