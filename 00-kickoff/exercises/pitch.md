@@ -1,6 +1,6 @@
-## Upload your pitch this weekend
+## Your pitch for projects week
 
-**Important Reminder** - you have homework this weekend! On Monday at 5pm, it's Pitch Night, which means you need to [upload your pitch on kitt](https://kitt.lewagon.com/camps/<user.batch_slug>/products) on Sunday!
+It's Pitch day, which means you need to rehearse!
 
 Remember the key points:
 
@@ -8,6 +8,7 @@ Remember the key points:
 - What's the **pain** your product tackles?
 - What's the **solution**?
 
-For all the information you need about what makes a good pitch, there's a small brief after tonight's livecode.
+For all the information you need about what makes a good pitch, follow the lecture given on this.
 
-Feel free to gather questions now and ask them then ;)
+Feel free to gather questions now and ask ;)
+

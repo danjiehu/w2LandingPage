@@ -10,18 +10,11 @@ A text editor. Your new companion, day & night.
 
 ------
 
-## Terminal
+## Terminal (Bash)
 
 Don't fear the command line.
 
 ![img](https://github.com/dounan1/china-product/raw/master/00-kickoff/slides/images/logo_terminal-27cf949ea4803d4f0e67824f126f76d954ac2e2a6ecdc4987b870fd45f78be81.png)
-
-------
-
-## Package manager
-
-You can't imagine how easy it is to install new software with just one
-command. **Homebrew** on OSX, **Aptitude** on Ubuntu
 
 ------
 
@@ -33,14 +26,6 @@ Version Control. Collaboration.
 
 ------
 
-## Ruby
-
-Ruby is the programming language. Rails will be the framework to build
-awesome web app in no time.
-
-![img](https://github.com/dounan1/china-product/raw/master/00-kickoff/slides/images/logo_ruby-eb8a0058fbd2357814e5750b4cd0804394871eee1815a495304393312bddb8a3.png)
-
-------
 
 ## Your turn!
 
@@ -325,15 +310,23 @@ git push <remote> <branch>
 git push origin master
 ```
 
-### Live-code: forking and cloning a remote
+### Live-code: creating an new repo
 
-1. Let's fork [Le Wagon's git 101 boilerplate](https://github.com/lewagon/git-101-boilerplate)
-2. Then let's clone it with:
+1. Let's make a new repo called git-101-practice
+2. Then let's put stuff into it
 
 ```
 cd ~/code/$GITHUB_USERNAME
-git clone git@github.com:$GITHUB_USERNAME/git-101-boilerplate.git
+mkdir git-101-practice
+cd git-101-practice
+git init
 git status # it's already tracked by git
+```
+
+3. Then make it sync remotely, by adding the github as a remote repo called  `origin`
+
+```
+git remote add origin git@github.com:dounan1/git-101-practice.git
 ```
 
 ### Live-code: commit and push
@@ -362,10 +355,13 @@ In the next few weeks, we'll see how git can help us with
 
 ------
 
-## Learn.lewagon.com Demo
+## Kitt Demo
 
 - Navigation
 - Lectures
+- Videos
 - Classmates
 - Buddies
-- Challenges
+- Tickets
+- Flashcards: **let's test it on "Terminal and git"**
+- Challenges: **let's solve and push 00-Setup/00-Demo**

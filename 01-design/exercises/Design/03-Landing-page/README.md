@@ -3,6 +3,8 @@
 Now that we have had some practice building some basic components, let's see how we can use them and combine them to make a real landing page! Any website has to have a **beautiful landing page**. They are important as they're the first page visitors will see and it needs to be good enough to convert them into clients 💰.
 In this challenge you will reproduce a classic landing page design like [this one](https://arthur-littm.github.io/startup-landing/)!
 
+Again for ALL exercises today, start with the template that you can download from the first exercise!
+
 Your landing page should **at least** include:
 
 - A **Hero / Banner** section presenting your product with a call to action.

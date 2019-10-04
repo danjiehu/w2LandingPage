@@ -4,27 +4,21 @@ A simple challenge to manipulate basic HTML tags and create a profile card with 
 
 ## Setup
 
+For ALL exercises for today, use the [template](https://github.com/dounan1/china-product/blob/master/CSS.zip) to get started!
+
 Jump into your `profile` and create an `images` directory to store all your pictures:
 
 
 ```bash
-cd profile
+cd CSS/01-Profile-content/profile
 mkdir images
 stt
 ```
 
 ## Local server
 
-You can start a local webserver by typing the following command in your terminal (just make sure you are in the exercise's folder):
-
-```bash
-serve
-```
-
-(it has been defined in an [alias](https://github.com/lewagon/dotfiles/blob/f894306fd81502f1fe513dd253e3129f4b56874d/aliases#L7))
-
-- You can now visit your files on [http://localhost:8000](http://localhost:8000)
-- ⚠️ Modern browsers cache the **file** returned by a given **url**. It keeps in memory a version of your HTML (`http://localhost:8000`), of your CSS (`http://localhost:8000/style.css`) and even of your images (`http://localhost:8000/images/logo.png`)! Sometimes, the older version remains and your newest code is not taken into consideration. To fix this, use `cmd + shift + r` to **hard refresh** your page (this clears the cache in the process) 👌
+- Your file system can function as a server! Just open up the file in your web browser.
+- ⚠️ Modern browsers cache the **file** returned by a given **url**. It keeps in memory a version of your HTML , CSS and even of your images! Sometimes, the older version remains and your newest code is not taken into consideration. To fix this, use `cmd(or ctrl) + shift + r` to **hard refresh** your page (this clears the cache in the process) . You can also hold down `shift` and click the refresh button.👌
 
 ## Specs
 

@@ -1,6 +1,12 @@
 ## Background & Objectives
 
-Work on three different button designs (two given by us, one of your choice). Here is [your objective](http://lewagon.github.io/html-css-challenges/08-button-sprint/). We have already put the HTML code in `index.html`
+Work on three different button designs (two given by us, one of your choice). Here is [your objective](http://lewagon.github.io/html-css-challenges/08-button-sprint/). 
+
+For ALL exercises for today, use the [template](https://github.com/dounan1/china-product/blob/master/CSS.zip) to get started!
+
+> Tip: Remember you can open up a folder in Sublime! Open up the template above after downloading and unzipping.
+
+We have already put the HTML code in `index.html`
 
 ```html
 <a href="#" class="btn-medium">Write a story</a>

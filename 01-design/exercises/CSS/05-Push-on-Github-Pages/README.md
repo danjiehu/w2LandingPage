@@ -1,20 +1,17 @@
 ## Setup
 
-We don't want to keep your profile within `fullstack-challenges` because we want to version it with `git` as a separate project. So let's copy your profile as an independent folder and jump into it:
+Let copy our profile to its own location and version it with `git` as a separate project.
 
 ```bash
-cd ~/code/<user.github_nickname>/fullstack-challenges/04-Front-End/01-HTML-and-CSS/04-Responsive-profile
 cp -r profile ~/code/<user.github_nickname>
 cd ~/code/<user.github_nickname>/profile
 ```
 
 ## Create the Github repo
 
-Let's install the `hub` gem to create a Github repo from your terminal without opening your browser (very useful when you are lazy 😉)
+Let's install the `hub` to create a Github repo from your terminal without opening your browser (very useful when you are lazy 😉)
 
-```bash
-gem install hub
-```
+You can find and install from its [repo](https://github.com/github/hub/releases)
 
 Now you can **init**(ialize) a git repository, commit your changes, and create the associated Github repo:
 

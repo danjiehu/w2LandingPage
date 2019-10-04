@@ -4,6 +4,8 @@ Build a [responsive signup form](https://lewagon.github.io/bootstrap-challenges/
 
 **⚠️ Before starting, read all the instructions carefully.⚠️**. Forms are among the most important components in a website, so you need to know how to design them!
 
+For ALL exercises today, start with the template that you can download from the first exercise!
+
 ## Grid offset technique
 
 The best trick to make a form responsive is to inject it in a Bootstrap grid into a row that has the `justify-content-center` alignment class. **Remember** each `.row` is a flexbox, and we can use the same alignment tricks we have used when working with flexbox to make our form responsive.

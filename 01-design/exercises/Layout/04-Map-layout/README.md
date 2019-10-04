@@ -4,6 +4,8 @@ Build a [results page with a sticky map](https://lewagon.github.io/layouts-demo/
 
 ![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/map-example.png)
 
+For ALL exercises today, start with the template that you can download from the first exercise!
+
 ## Starting the challenge
 
 1. Make sure you understand the code in `index.html`, and the design we give you for navbar and cards in `components/navbar.css` and `components/card.css`. If you don't understand it fully, raise a ticket and someone will explain it!

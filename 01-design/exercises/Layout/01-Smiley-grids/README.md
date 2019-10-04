@@ -2,6 +2,8 @@
 
 Practice the Bootstrap grid. Learn how to build various grids with different responsive behaviors.
 
+For ALL exercises today, start with the template that you can [download](https://github.com/dounan1/china-product/blob/master/layout.zip)!
+
 ## Specs
 
 Here are [the smiley grids](http://lewagon.github.io/bootstrap-challenges/01-New-Bootstrap-grid/) that you must reproduce in this challenge. Each of these 3 grids has the same starting point:
