@@ -200,10 +200,6 @@ How do you code a **product card**?
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/css-components/page-with-components-b0394dd137267b31833c26e17fd3780d6a8e5a54290b843117afe72dfe24f60b.png)
 
-## Tomorrow's lecture
-
-Wait for advanced layout techniques tomorrow 📐
-
 ------
 
 ## Let's build awesome components 🚀
