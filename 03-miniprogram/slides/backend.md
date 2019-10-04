@@ -86,39 +86,71 @@ or as params or form data
 data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
 ```
 
-
+For today's exercise - no API token needed
 
 ### 2. Specify endpoint 
 
-Verb and address
-
-https://fml.shanghaiwogeng.com
+Restful:  Verb and Path
 
 ```
 GET /api/v1/stories
 ```
 
+Combine with host: `https://fml.shanghaiwogeng.com`
+
+Get endpoint: `https://fml.shanghaiwogeng.com/api/v1/stories`
+
+```js
+// /pages/index/index.js
+
+Page({
+  //...
+  onLoad: function (options) {
+    // Save reference to page
+    let page = this;
+    ...
+
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'GET' // If no method, default is GET
+  	}
+  }
+  //...
+```
 
 
 ### 3. Attach request data
 
+Data can be sent with request as a json object
+
+No need for our index page (we want everything).
+
+Possible for filtering in the future:
+
+```js
+// /pages/index/index.js
+// in onLoad 
+   ...
+    let filter = {
+      include: 'My name',
+    }
+
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'GET', 
+      data: filter // Not today, but later in course
+  	}
 ```
-# app/controllers/api/v1/stories_controller.rb
-class Api::V1::StoriesController < Api::V1::BaseController
-  def index
-    @stories = Story.all
-    render json: @stories #Just for testing
-  end
-end
-```
+
+For index, we don't have any data
 
 ### 4. Send request and **wait** for response
 
-![image-20190605133710289](https://kitt.lewagon.com/karr/assets/china/wx-mp/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
+![image-20190605133710289](backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
 
 Tools: You can use [Postman](https://www.getpostman.com/downloads/) or [Insomnia](https://insomnia.rest/download/)
 
-In browser: http://localhost:3000/api/v1/stories
+In browser: `https://fml.shanghaiwogeng.com/api/v1/stories`
 
 In WeChat MP:
 
@@ -131,12 +163,14 @@ Page({
     // Save reference to page
     let page = this;
     ...
-
+    
+	const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'GET', // If no method, default is GET
+  	}
     // Get api data
-    wx.request({
-      url: "http://localhost:3000/api/v1/stories",
-      method: 'GET'
-    });
+    wx.request(request); // Then wait for response!
+    // Rest of code will KEEP RUNNING while request waits!
   }
   //...
 ```
@@ -153,47 +187,76 @@ Wechat IDE Menu: Settings -> Project Settings:
 
 ### 5. Receive data from response
 
+Add a new function in your index page called `getRequestData`
 
 ```js
 // /pages/index/index.js
+
 Page({
   //...
   getRequestData: function (res) {
-    const data = res.data;
-
-    page.setStories(data);
-  }
+	console.log(res)
+  },
+  onLoad: function (options) {
+  //...
 
 ```
 
+Call the function when request responds `success`
+
 ```js
+// /pages/index/index.js
+
 Page({
   //...
   onLoad: function (options) {
     // Save reference to page
     let page = this;
     ...
-
-    // Get api data
-    wx.request({
-      url: "http://localhost:3000/api/v1/stories",
-      method: 'GET',
+    
+	const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'GET', // If no method, default is GET
       success: page.getRequestData
-    });
+
+  	}
+    // Get api data
+    wx.request(request);
   }
   //...
 ```
 
 ### 6. Handle the data
 
+Pass the data is in the response to the handler
+
+```js
+// /pages/index/index.js
+
+Page({
+  //...
+  getRequestData: function (res) {
+	console.log(res)
+	
+	const data = res.data;
+    page.setStories(data);
+  },
+  onLoad: function (options) {
+  //...
+
+```
+
+Add a new function in your index page called `setStories` to handle data
+
 ```js
 Page({
   //...
-  setStories: function (data) {
-    const stories = data.stories;
-  
+  setStories: function (data) {  
     // Save reference to page
     let page = this;
+
+	// Take the stories from data passed in
+    const stories = data.stories;
 
     // Update local stories data
     page.setData({
@@ -204,168 +267,142 @@ Page({
 
 ```
 
-------
-
-## 2ND ENDPOINT: `SHOW`
-
-```
-GET /api/v1/stories/:id
-```
 
 
+## 2TH ENDPOINT: `CREATE`
 
+### 1. Use API token (or key)
+Not needed for open API  (e.g. anyone can create, no login)
 
+### 2. Specify endpoint 
 
-### MINI PROGRAM: Show Story
-
-```
-// /pages/show/show.js
-Page({
-  //...
-
-  onLoad: function (options) {
-
-    let page = this;
-
-    // Get api data
-    wx.request({
-      url: `http://localhost:3000/api/v1/stories/${options.id}`,
-      method: 'GET',
-      success(res) {
-        const story = res.data;
-
-        // Update local data
-        that.setData(
-          story
-        );
-
-        wx.hideToast();
-      }
-    });
-  }
-  //...
-```
-
-------
-
-## 3RD ENDPOINT: `UPDATE`
-
-```
-PUT /api/v1/stories/:id 
-```
-
-
-
-### MINI PROGRAM: Edit Story Form
-
-```
-// pages/edit/edit.js
-
-Page({
-  //...
-
-  // Retrieve user info
-  onLoad: function (options) {
-    let page = this;
-
-    wx.showToast({
-      title: 'Loading...',
-      icon: 'loading',
-      duration: 1500
-    });
-
-
-    // Get story data from server (to show in form)
-    wx.request({
-      url: `http://localhost:3000/api/v1/stories/${options.id}`,
-      method: 'GET',
-      success(res) {
-        var story = res.data;
-
-        // Update local data
-        page.setData(
-          story
-        );
-
-        wx.hideToast();
-      }
-    });
-  }
-  //...
-```
-
-### MINI PROGRAM: Submit Edit
-
-```
-// pages/edit/edit.js
-
-Page({
-  //...
-
-  // Retrieving data from the view
-  bindSubmit: function (e) {
-
-    //...
-
-    let name = e.detail.value.name;
-    let text = e.detail.value.text;
-    let id = this.data.id;
-
-    let story = {
-      name: name,
-      text: text
-    }
-
-    // Update api data
-    wx.request({
-      url: `http://localhost:3000/api/v1/stories/${id}`,
-      method: 'PUT',
-      data: story,
-      success() {
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
-      }
-    });
-  }
-  //...
-```
-
-------
-
-## 4TH ENDPOINT: `CREATE`
+Restful:  Verb and Path
 
 ```
 POST /api/v1/stories 
 ```
 
+Combine with host => Same endpoint, but POST verb:
 
+`https://fml.shanghaiwogeng.com/api/v1/stories`
 
-### MINI PROGRAM: New Story
+```js
+// /pages/index/index.js
 
+Page({
+  //...
+  onLoad: function (options) {
+    // Save reference to page
+    let page = this;
+    ...
+
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'POST'
+  	}
+  }
+  //...
 ```
-// pages/new/new.js
+
+### 3. Attach request data
+
+As in a GET shown above, data is sent as a json object
+For create,  data comes from form submission on `post` page:
+
+```js
+// pages/post/post.js
 
 Page({
   //...
 
   // New Story Submission
-  bindSubmit: function (e) {
-    //...
+  bindSubmit: function (event) {
+    console.log(event.detail.value.name)
+    console.log(event.detail.value.content)
 
-    let name = e.detail.value.name;
-    let text = e.detail.value.text;
+    let name = event.detail.value.name
+    let text = event.detail.value.text
+  }
+  //...
+```
 
+Then make form story data into request data
+
+```js
+// /pages/post/post.js
+// in bindSubmit 
+
+   ...
     let story = {
       name: name,
       text: text
     }
 
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'POST', 
+      data: story
+  	}
+```
+
+### 4. Send request and **wait** for response
+
+### MINI PROGRAM: New Story
+
+```js
+// pages/post/post.js
+
+Page({
+  //...
+
+  // New Story Submission
+  bindSubmit: function (event) {
+    console.log(event.detail.value.name)
+    console.log(event.detail.value.content)
+
+    let name = event.detail.value.name
+    let text = event.detail.value.text
+
+    let story = {
+      name: name,
+      text: text
+    }
+    
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'POST', 
+      data: story
+  	}
+
     // Post data to API
-    wx.request({
-      url: `http://localhost:3000/api/v1/stories`,
-      method: 'POST',
+    wx.request(request); // Then wait for response!
+  }
+  //...
+```
+
+As before, allow WeChat permission for this api or skip the permission check.
+
+### 5. Receive data from response
+
+No response data is needed, instead we'll redirect back to index
+
+
+### 6. Handle the data
+
+Redirect is called in a function called `success` in the request. 
+We don't need a separate page function as in `index.js`
+
+TIP: JSON allows you to define functions inside to save you time
+
+```js
+// /pages/post/post.js
+// in bindSubmit 
+
+    //...
+
+    const request = {
+      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
+      method: 'POST', 
       data: story,
       success() {
         // redirect to index page when done
@@ -373,46 +410,9 @@ Page({
           url: '/pages/index/index'
         });
       }
-    });
-  }
-  //...
-```
-
-------
-
-## 5TH ENDPOINT: `DESTROY`
-
-```
-DELETE /api/v1/stories/:id 
-```
-
-
-
-### MINI PROGRAM: Delete Button
-
-```
-// pages/show/show.js
-
-Page({
-  //...
-
-  // binded to delete button
-  deleteStory(e) {
-    const data = e.currentTarget.dataset;
-
-    // make a DELETE request
-    wx.request({
-      url: `http://localhost:3000/api/v1/stories/${data.id}`,
-      method: 'DELETE',
-      success() {
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
-      }
-    });
-  }
-  //...
+    }
+  	
+  	//...
 ```
 
 ------
