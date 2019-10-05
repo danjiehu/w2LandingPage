@@ -93,16 +93,6 @@ const index_endpoint = YOUR_ANSWER
 
 Then put into a json
 
-``` json
-{
-  url: index_endpoint,
-  method: 'GET'
-  header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'} // API key from Above
-}
-```
-
-`onLoad`
-
 
 ``` json
 {
@@ -124,7 +114,7 @@ Page({
     // Save reference to page
     let page = this;
 
-    // Your code from above
+    // Your code from above defining the request JSON
     wx.request(request);
     }
     // Get api data
@@ -139,13 +129,27 @@ Tip: Not Working? Check your WeChat permission in Settings -> Project Settings:
 
 Two ways to get response
 
-define a page function to be included in the request json
+Define a page function to be included in the request json
 
 ```js
 const request = {
   //... request json from above
   success: page.getRequestData
 }
+```
+
+```js
+// /pages/index/index.js
+
+Page({
+  //...
+  getRequestData: function (res) {
+    console.log(res)
+  },
+  onLoad: function (options) {
+    //...
+  },
+  //...
 ```
 
 or
@@ -160,7 +164,7 @@ const request = {
 Either way, after you console log the response, find and extract the stories data from the successful response
 
 ```js
-const stories = res.SOMETHING_YOU_FIND
+const stories = res.FIND_YOUR_DATA
 ```
 
 Then you can pass the stories data to the next step
@@ -173,8 +177,8 @@ We can now set the data of the index page to the stories
 ```js
 // /pages/index/index.js
 
-  // after successful response:
-  const stories = res.SOMETHING_YOU_FIND
+  // after successful response, find stories from res:
+  const stories = res.FIND_YOUR_DATA
 
   // Update local stories data
   page.setData({
@@ -219,7 +223,7 @@ This requires the navigation to include the `id` as a `param` in the `url`
 Page({
   //...
 
-  // binded to delete button
+  // binded to clicking on a story 
   showStory(event) {
     const data = event.currentTarget.dataset;
     const id = data.id;
@@ -250,7 +254,19 @@ You can follow the same steps as getting the data for the stories index page. On
 
 But how do we make sure that the comments belong to the story being shown?
 
-Hint, use the query functions above to filter!
+We can use functions below to filter by comment's story! Use the code below as is. Filtering will be explained in detail in a future lecture!
+
+```js
+const request = {
+  //... request json from above
+  qs: {     
+    where: JSON.stringify({   
+      "story_id": {"$eq": id} // id of story
+    })
+  }
+}
+
+```
 
 
 ### Comments Delete

@@ -25,7 +25,7 @@ Mini Program makes **API Requests**...
 
 
 
-### NOW Mini Program => BaaS 
+### NOW Mini Program => BaaS
 
 ... through **SDK**, even **easier** than API requests
 
@@ -77,19 +77,19 @@ An inhabitant **belongs to** one city (or has one city)
 ## Let's create the backend!
 
 1. Setup BaaS
-2. Install SDK 
-3. Create Tables 
-4. Add Data 
+2. Install SDK
+3. Create Tables
+4. Add Data
 
 
-## Setup BaaS 
+## Setup BaaS
 
 BaaS = Backend as a Service, has:
 - server
-- database 
-- api 
+- database
+- api
 
-Baas + Frontend = SaaS, aka App 
+Baas + Frontend = SaaS, aka App
 
 [Minapp.com](https://cloud.minapp.com)
 
@@ -110,7 +110,7 @@ Baas + Frontend = SaaS, aka App
       "provider": "wxc6b86e382a1e3294"
      }
  }
-    
+
 ```
 
 
@@ -167,7 +167,7 @@ Click "Add row" on the menu above the stories table
 
 ![image-20191003201101991](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191003201101991.png)
 
-Then fill out this form 
+Then fill out this form
 
 ![image-20191003201208914](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191003201208914.png)
 
@@ -175,7 +175,7 @@ Then fill out this form
 
 Add a story or two, and then some comments to the stories:
 
-Don't forget to copy the `id` of the story for the comment's `story_id` 
+Don't forget to copy the `id` of the story for the comment's `story_id`
 
 ![image-20191005064757458](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191005064757458.png)
 
@@ -199,75 +199,107 @@ Connect the backend to your Toutiao Mini Program through using SDK!
 
 
 
-### One Record
+### One Story
 
 [Documentation](https://doc.minapp.com/js-sdk/schema/get-record-detail.html)
 
 ```js
 let tableName = 'stories'
-let recordID = '59897882ff650c0477f00485'
 
 let Story = new wx.BaaS.TableObject(tableName)
 
-Story.get(recordID).then(res => {
-  // success
-}, err => {
-  // err
-})
+
+let recordID = '59897882ff650c0477f00485'
+
+Story.get(recordID).then(dosomething)
 ```
 
+What should `dosomething` be? It's the function that handles the request response. Remember `page.getRequestData` from Toutiao challenge? You can use that here too:
 
-
-### Query multiple
-
-[Documentation](https://doc.minapp.com/js-sdk/schema/query.html)
-
-```json
-queries: [{
-  	action: "contains",
-  	columnName: "city",
-	value: city
-}]
+```js
+Page({
+  //...
+  getRequestData: function (res) {
+    console.log(res)
+    // more functions to handle the data
+    // or navigate to another page!
+  },
+  onLoad: function (options) {
+    //...
+  },
+  //...
 ```
 
+Then
 
-```json
-queries: [{
-    action: "compare",
-    columnName: "id",
-    operator: "=",
-    value: eventId
-}]
+```js
+Story.get(recordID).then(page.getRequestData)
 ```
+
+Requests are processed by another service and is not always up to you, so waiting is normal! It's called asynchronous code.
+
+The `.then(dosomething)` is called a **promise**. It's A lot cleaner to look at! You just have to know that `dosomething` will wait for `get(recordID)` to respond, just like in the Toutiao exercise with the api requests.
+
+
+Note the records now have extra data. That's ok - we're using a whole new backend system. Focus on the data from columns you created and don't have to worry about the system data.
+
+
+
+### Multiple stories
 
 ```js
 let tableName = 'stories'
 
+let Story = new wx.BaaS.TableObject(tableName)
+
+Story.find().then(dosomething)
+```
+
+How often do we really want to display everything all at once? That brings us to queries:
+
+
+### Querying multiple stories
+
+What is a query? Think of it as a search function in your table
+
+You can search text, numbers, booleans... any type with exact matching or operations like >, <=, != ...
+
+Chances are you've been using that without knowing. Anytime you use a search bar! You are querying ;-)
+
+[Documentation](https://doc.minapp.com/js-sdk/schema/query.html)
+
+So first define a query
+
+```js
+//... Define Story as above
+
+// 实例化查询对象
+let query = new wx.BaaS.Query()
+
+// 应用查询对象
+Story.setQuery(query).find().then(page.getRequestData)
+
+```
+
+Now we can run a bunch of searches and chain them together!
+
+
+```js
+//...
 // 实例化查询对象
 let query = new wx.BaaS.Query()
 
 // 设置查询条件（比较、字符串包含、组合等）
-//...
+query.compare('votes', '>=', 1)
+query.contains('name', 'jack')
 
-// 应用查询对象
-let Story = new wx.BaaS.TableObject(tableName)
-Story.setQuery(query).find().then(res => {
-  // success
-}, err => {
-  // err
-})
-
-// 不设置查询条件
-Product.find().then(res => {
-  // success
-}, err => {
-  // err
-})
 ```
+
+Lots more search functions in the query [documentation](https://doc.minapp.com/js-sdk/schema/query.html)!
 
 Add the search bar to filter the stories. These queries from the SDK should be helpful!
 
-
+Also use a filter to find comments for a story, like we did in the weekend Toutiao challenge!
 
 ## Creating Data
 
@@ -284,12 +316,7 @@ let data = {
   content: 'You can learn to code in 9 weeks',
 }
 
-story.set(data).save().then(res => {
-  // success
-  console.log(res)
-}, err => {
-  //err 为 Error 对象
-})
+story.set(data).save().then(page.getRequestData)
 ```
 
 
@@ -307,11 +334,7 @@ let Comment = new wx.BaaS.TableObject(tableName)
 let comment = Comment.getWithoutData(recordID)
 
 comment.set('votes', 11)
-comment.update().then(res => {
-  // success
-}, err => {
-  // err
-})
+comment.update().then(page.getRequestData)
 ```
 
 ## Deleting Data
@@ -326,10 +349,6 @@ let tableName = 'comments'
 let recordID = '59897882ff650c0477f00485'
 
 let Comment = new wx.BaaS.TableObject(tableName)
-Comment.delete(recordID).then(res => {
-  // success
-}, err => {
-  // err
-})
+Comment.delete(recordID).then(page.getRequestData)
 ```
 
