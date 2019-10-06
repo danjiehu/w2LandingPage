@@ -170,7 +170,11 @@ Either way, after you console log the response, find and extract the stories dat
 const stories = res.FIND_YOUR_DATA
 ```
 
-Then you can pass the stories data to the next step
+Then you can pass the stories data to the next step.
+
+
+
+Note:  Records now have extra data. That's ok - we're using a whole new backend system. You'll learn more about that soon. Focus on the data from columns you created and do not worry about the system data.
 
 
 ### 6. Handle the data
@@ -460,7 +464,7 @@ success(res) {
 
 ```
 
-Pro Tip: Just on this [particular api](https://doc.minapp.com/open-api/data/record.html#数据原子性更新), you can also tell it to subtract or add for you. That works for numbers and letters!
+Pro Tip: Just on this particular api [from Minapp (more info)](https://doc.minapp.com/open-api/data/record.html#数据原子性更新), you can also tell it to subtract or add for you. That works for numbers and letters!
 
 For numbers, you can do this for example to de-vote!
 

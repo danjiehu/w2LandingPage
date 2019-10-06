@@ -104,18 +104,21 @@ Baas + Frontend = SaaS, aka App
 ## Install SDK
 
 ```json
+// app.json
+//... other configurations
 "plugins": {
-    "sdkPlugin": {
-      "version": "2.3.0",
-      "provider": "wxc6b86e382a1e3294"
-     }
- }
+  "sdkPlugin": {
+    "version": "2.3.0",
+    "provider": "wxc6b86e382a1e3294"
+  }
+}
 
 ```
 
-
+Configure the SDK
 
 ```js
+// app.js
 App({
   onLaunch: function() {
     wx.BaaS = requirePlugin('sdkPlugin')
@@ -125,11 +128,18 @@ App({
      wx.requestPayment)
 
     wx.BaaS.init('c1e7a280f6d8c8646756')
+
+    // Login as anonymous user
+    wx.BaaS.auth.anonymousLogin().then(user => {
+      console.log(user)
+    }).catch(err => {
+      // HError
+    })
   },
 })
 ```
 
-
+Note the ability to have users!  We'll explore more in later classes.
 
 ## Creating Table
 
@@ -197,21 +207,20 @@ Connect the backend to your Toutiao Mini Program through using SDK!
 
 ## Reading Data
 
+### Multiple stories
 
 
-### One Story
 
-[Documentation](https://doc.minapp.com/js-sdk/schema/get-record-detail.html)
+With the `find` function in the [SDK](https://doc.minapp.com/js-sdk/schema/query.html), getting data is just these few lines
 
 ```js
+// index.js, in onLoad function
+
 let tableName = 'stories'
 
 let Story = new wx.BaaS.TableObject(tableName)
 
-
-let recordID = '59897882ff650c0477f00485'
-
-Story.get(recordID).then(dosomething)
+Story.find().then(dosomething)
 ```
 
 What should `dosomething` be? It's the function that handles the request response. Remember `page.getRequestData` from Toutiao challenge? You can use that here too:
@@ -224,39 +233,60 @@ Page({
     // more functions to handle the data
     // or navigate to another page!
   },
-  onLoad: function (options) {
-    //...
-  },
   //...
 ```
 
-Then
+Then our call in `onLoad`  becomes:
 
 ```js
-Story.get(recordID).then(page.getRequestData)
+Story.find().then(page.getRequestData)
 ```
 
 Requests are processed by another service and is not always up to you, so waiting is normal! It's called asynchronous code.
 
-The `.then(dosomething)` is called a **promise**. It's A lot cleaner to look at! You just have to know that `dosomething` will wait for `get(recordID)` to respond, just like in the Toutiao exercise with the api requests.
+Deeper explanation: The `.then(dosomething)` is called a **promise**. You just have to know that `dosomething` will wait for `get(recordID)` to respond, just like in the Toutiao exercise with the api requests. So the promise takes care of the waiting. Plus it's A LOT cleaner to look at!
+
+### Your turn!
+
+Now let's implement your stories index using the [SDK](https://doc.minapp.com/js-sdk/schema/query.html)!
 
 
-Note the records now have extra data. That's ok - we're using a whole new backend system. Focus on the data from columns you created and don't have to worry about the system data.
 
-
-
-### Multiple stories
+### Show One Story
 
 ```js
+// show.js, in onLoad function
+
 let tableName = 'stories'
 
 let Story = new wx.BaaS.TableObject(tableName)
 
-Story.find().then(dosomething)
+let recordID = id // e.g. '59897882ff650c0477f00485'
+
+Story.get(recordID).then(dosomething)
 ```
 
-How often do we really want to display everything all at once? That brings us to queries:
 
+
+### Your turn!
+
+Now let's implement your show pages using the `get` function from the [SDK](https://doc.minapp.com/js-sdk/schema/get-record-detail.html)!  (Hint: click on the SDK for more lookup features). Remember to set the `id` from the `options` param, and  replace the `dosomething` with your show page data handling code. You can even inline the handler function like so:
+
+
+
+```js
+// index.js, in onLoad function
+Story.get(recordID).then(res => {
+  page.setData({
+    story: res.data
+  })
+})
+```
+
+
+
+
+How often do we really want to display everything all at once? That brings us to queries:
 
 ### Querying multiple stories
 
@@ -266,12 +296,12 @@ You can search text, numbers, booleans... any type with exact matching or operat
 
 Chances are you've been using that without knowing. Anytime you use a search bar! You are querying ;-)
 
-[Documentation](https://doc.minapp.com/js-sdk/schema/query.html)
+
 
 So first define a query
 
 ```js
-//... Define Story as above
+//... Define Story in onLoad function as above
 
 // 实例化查询对象
 let query = new wx.BaaS.Query()
@@ -285,26 +315,41 @@ Now we can run queries by using conditions like below!
 
 
 ```js
-//...
+//... in onLoad
 // 实例化查询对象
 let query = new wx.BaaS.Query()
 
 // 设置查询条件（比较、字符串包含、组合等）
 query.contains('name', 'jack')
 
+//... 应用查询对象
 ```
 
-Find more search conditions, including chaining them in the [documentation](https://doc.minapp.com/js-sdk/schema/query.html)!
 
-Add the search bar to filter the stories. These queries from the SDK should be helpful!
+Lots of queries are possible, including  [chaining](https://doc.minapp.com/js-sdk/schema/query.html) them!
 
-Also use a filter to find comments for a story, like we did in the weekend Toutiao challenge!
+### Your turn!
+
+Now let's implement your story creation index using the [SDK](https://doc.minapp.com/js-sdk/schema/query.html)!
+
+Also use a filter to find comments for just one story, like we did in the weekend Toutiao challenge!
+
+What is the query for comparing story_id?
+
+```js
+ query.compare('story_id', '=', id)
+```
+
+
 
 ## Creating Data
 
-[Documentation](https://doc.minapp.com/js-sdk/schema/create-record.html)
+We're ready to post new stories
+
 
 ```js
+// new.js, in bindSubmit function
+
 // 向 tableName 为 'product' 的数据表插入一条记录
 let tableName = 'stories'
 let Story = new wx.BaaS.TableObject(tableName)
@@ -320,14 +365,73 @@ story.set(data).save().then(page.getRequestData)
 
 
 
-## Updating Data
+### Your turn
 
-[Documentation](https://doc.minapp.com/js-sdk/schema/update-record.html)
+Now let's implement your new story code using the [SDK](https://doc.minapp.com/js-sdk/schema/create-record.html)
+
+Of course, adapt any hardcoded data with code from your previous Toutiao app.
+
+
+
+Now apply this to creating a comment as well. First add a form for new comments for a story, and then adapt the story creation code above to create the comment!
+
+
+
+Add a form at the bottom of the story show page, just like in the Toutiao app screenshot above.
+
+Specify the comment's story by referring back to the page story data you stored on loading. `_id` was given along with other story fields by the SDK request.
 
 ```js
-// 更新 tableName 为 'comments' 的数据表中 id 为 59897882ff650c0477f00485 的数据行的 votes 字段
+// in bindSubmit function
+//...
+const story_id = page.data.story._id
+
+let data = {
+	name: name,
+	content: content,
+	story_id: story_id
+}
+
+//... Create the comment with SDK
+```
+
+Now we can proceed to create the comment with the SDK just as with creating a story from above.
+
+
+
+```js
 let tableName = 'comments'
-let recordID = '59897882ff650c0477f00485' // 数据行 id
+let Comment = new wx.BaaS.TableObject(tableName)
+let comment = Comment.create()
+
+comment.set(data).save().then(res => {
+  console.log(res)
+
+  const comment = res.data
+
+  let comments = page.data.comments
+  comments.push(comment)
+
+  page.setData({comments: comments})
+})
+```
+
+When handle the response data, we added the new comment back to the page comments data. You'll recognize this from the comment update code in the Toutiao challenge .
+
+You should now see comments appear on the page when submitted!
+
+
+
+Lastly, we want to use the SDK for voting on and deleting the comment. 
+
+## Updating Data
+
+
+
+```js
+// 更新 tableName 为 'comments' 的数据表中 id 的数据行的 votes 字段
+let tableName = 'comments'
+let recordID = id // 数据行 id
 
 let Comment = new wx.BaaS.TableObject(tableName)
 let comment = Comment.getWithoutData(recordID)
@@ -336,18 +440,30 @@ comment.set('votes', 11)
 comment.update().then(page.getRequestData)
 ```
 
-## Deleting Data
 
-[Documentation](https://doc.minapp.com/js-sdk/schema/delete-record.html)
+
+### Your turn
+
+Now let's implement voting code using the [SDK](https://doc.minapp.com/js-sdk/schema/update-record.html)
+
+Remember to replace any hardcoded data with the right code from your weekend challenge's Toutiao app.
+
+
+
+## Deleting Data
 
 
 
 ```js
-// 删除 tableName 为 'comments' 的数据表中 recordID 为 59897882ff650c0477f00485 的数据项
+// 删除 tableName 为 'comments' 的数据表中 recordID 的数据项
 let tableName = 'comments'
-let recordID = '59897882ff650c0477f00485'
+let recordID = id
 
 let Comment = new wx.BaaS.TableObject(tableName)
 Comment.delete(recordID).then(page.getRequestData)
 ```
+
+### Your turn
+
+Now let's implement deletion code using the [SDK](https://doc.minapp.com/js-sdk/schema/delete-record.html)
 
