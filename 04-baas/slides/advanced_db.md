@@ -1,12 +1,13 @@
 # Advanced Backend as a Service (BaaS)
 
 
+Today  we will try building Dianping (or Meituan - both are review apps). 
 
 Consider reviews:
 
 ![7121570232716_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7121570232716_.pic.jpg)
 
-Each user 
+Users can post reviews on restaurants. So relationship-wise, each restaurant can be reviewed by many users, and each user can review many restaurants: a many-to-many relationship.
 
 
 
@@ -119,6 +120,8 @@ Schema:
 
 ![image-20191005084833734](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191005084833734.png)
 
+ 
+
 
 
 ## I Go, then Your Turn
@@ -129,9 +132,21 @@ As with Toutiao, you can connect the backend to your Mini Program through using 
 
 Tip: Use your Toutiao frontend as starting point to save time. It is also similar! 
 
+### User login
 
+For us to know who the user is, we need 
 
 ### Restaurant Index
+
+Request
+
+
+
+Average Restaurant Rating:
+
+= sum of ratings / number of reviews
+
+
 
 
 

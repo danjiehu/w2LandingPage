@@ -281,7 +281,7 @@ Story.setQuery(query).find().then(page.getRequestData)
 
 ```
 
-Now we can run a bunch of searches and chain them together!
+Now we can run queries by using conditions like below!
 
 
 ```js
@@ -290,12 +290,11 @@ Now we can run a bunch of searches and chain them together!
 let query = new wx.BaaS.Query()
 
 // 设置查询条件（比较、字符串包含、组合等）
-query.compare('votes', '>=', 1)
 query.contains('name', 'jack')
 
 ```
 
-Lots more search functions in the query [documentation](https://doc.minapp.com/js-sdk/schema/query.html)!
+Find more search conditions, including chaining them in the [documentation](https://doc.minapp.com/js-sdk/schema/query.html)!
 
 Add the search bar to filter the stories. These queries from the SDK should be helpful!
 

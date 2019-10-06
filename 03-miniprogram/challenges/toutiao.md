@@ -160,8 +160,11 @@ const request = {
   success(res) { console.log(res) }
 }
 ```
+A successful request show show in the console:
 
-Either way, after you console log the response, find and extract the stories data from the successful response
+![image-20191006191759359](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006191759359.png)
+
+Either way, after you console log the response, find and extract the stories data from the successful response. It could be one or two layers deep! E.g. `res.key1.key2`
 
 ```js
 const stories = res.FIND_YOUR_DATA
@@ -223,7 +226,7 @@ This requires the navigation to include the `id` as a `param` in the `url`
 Page({
   //...
 
-  // binded to clicking on a story 
+  // binded to clicking on a story
   showStory(event) {
     const data = event.currentTarget.dataset;
     const id = data.id;
@@ -239,12 +242,15 @@ But how do we know which story to show?
 
 We take the `id` of the click event from `data-id` attribute of the story that was clicked in `index.xml`
 
-
+For example:
 ```xml
-<view data-id=3 bindtap="showStory" > Story 3</view>
+<view data-id=3 bindtap="showStory" > Story 3 </view>
 ```
+Remember to In your actual `index.xml` to use mustache syntax to replace what was hard coded e.g.  `{{story.id}}` and `{{story.content}}`. You'll be looping over all the stories as well!
 
-Remember we have comments to show too. And we want to delete any comments we don't like ;-)
+
+
+Now that we can show the story,  its comments should follow. We want also be able to delete any comments we don't like ;-)
 
 ### Comments Index
 
@@ -259,14 +265,17 @@ We can use functions below to filter by comment's story! Use the code below as i
 ```js
 const request = {
   //... request json from above
-  qs: {     
-    where: JSON.stringify({   
-      "story_id": {"$eq": id} // id of story
+  qs: {
+    where: JSON.stringify({
+      "story_id": {"$eq": id} // story id
     })
   }
 }
 
 ```
+
+Now we need the story `id` before we can request comments for it. We get that from the page in `onload` as before, both requests can go in there.
+
 
 
 ### Comments Delete
@@ -274,7 +283,7 @@ const request = {
 Restful API again gives us the endpoint address
 
 ```
-DELETE /oserve/v1/table/84988/record/:id
+DELETE /oserve/v1/table/85188/record/:id
 ```
 
 Now we need the id of the comment to be used in the address above.
@@ -282,7 +291,7 @@ Now we need the id of the comment to be used in the address above.
 We add a `deleteComment` function to listen for the comment delete action.
 
 
-```
+```js
 // pages/show/show.js
 
 Page({
@@ -294,16 +303,19 @@ Page({
 
     // make a DELETE request
     wx.request({
-      url: `https://cloud.minapp.com/oserve/v1/table/84988/record/${data.id}`,
+      url: `https://cloud.minapp.com/oserve/v1/table/85188/record/${data.id}`,
       method: 'DELETE',
+      header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'}, // API key from Above
+
       success() {
+        // no need for response data
         // redirect to index page when done
         wx.redirectTo({
           url: '/pages/index/index'
         });
       }
     });
-  }
+  },
   //...
 ```
 
@@ -312,6 +324,109 @@ Where do we bind the id of comment to the event?
 Hint: what DOM element is sending the event when delete is clicked?
 
 Make sure you include the `data-id` attribute in each of the comments when you show them on the page!
+
+```xml
+<!-- pages/show/show.xml -->
+<!-- in a loop over your comments -->
+<view> {{comment.content}}
+  <view data-id="{{comment.id}}" bindtap="deleteComment" > x </view>
+</view>
+```
+
+
+### Comments Update
+
+When the user clicks vote on a comment, its voting number should increase. Notice we have a `votes` field in the comments data:
+
+![image-20191006192021558](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006192021558.png)
+
+
+
+When you set the page data, the comments data also is stored into your page data.
+
+Tip: `AppData` tab in the console is a good way to see and play with the data on your page!
+
+
+
+![image-20191006192344973](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006192344973.png)
+
+
+So now we can get the votes if we add a `data-votes` attribute to our view
+
+```xml
+<!-- pages/show/show.xml -->
+<!-- in a loop over your comments -->
+<view> {{comment.content}}
+  <!-- other comment fields -->
+  <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" > votes: {{comment.votes}} </view>
+</view>
+```
+
+
+```js
+// pages/show/show.js
+
+Page({
+  //...
+
+  // binded to vote button
+  voteComment(event) {
+    page = this
+
+    const data = event.currentTarget.dataset;
+    votes = data.votes;
+
+    // make a PUT request
+    wx.request({
+      url: `https://cloud.minapp.com/oserve/v1/table/85188/record/${data.id}`,
+      method: 'PUT',
+      header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'}, // API key from Above
+
+      success(res) {
+        // set comment data
+        console.log(res)
+
+      }
+    });
+  }
+  //...
+```
+
+You see that a successful request returns the edited comment back in the response data. Now we can update this comment in our page.
+
+Unfortunately, to update one comment, we need to update all the comments in the page data together. So 4 steps:
+
+1. make a new comment from the response
+2. get all the page comments
+3. find the comment to be updated from 2.
+4. update that comment with the new comment
+5. get the page comments again
+
+
+```
+// in success function above
+
+success(res) {
+
+  // new comment from response
+  const new_comment = res.data
+
+  // all the page comments
+  let comments = page.data.comments
+
+  // find the comment from page comments to update based on unique id
+  let comment = comments.find(comment => comment._id == new_comment.id)
+
+  // update comment
+  comment.votes = new_comment.votes
+
+  // update the page comments
+  page.setData({comments: comments})
+
+}
+
+```
+
 
 ## Create Story
 
@@ -327,6 +442,7 @@ Find the endpoint
 ```js
 const create_endpoint = YOUR_ENDPOINT_ADDRESS
 ```
+  header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'} // API key from Above
 
 
 Now we need to send data in the request like this
@@ -335,6 +451,7 @@ Now we need to send data in the request like this
 wx.request({
   url: create_endpoint,
   method: 'POST',
+  header: AUTHENTICATE_API_BEAR_TOKEN,
   data: story
   //...
 })
@@ -364,8 +481,11 @@ Page({
     wx.request({
       url: create_endpoint,
       method: 'POST',
+      header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'}, // API key from Above
+
       data: story,
       success() {
+        // no need for response data
         // redirect to index page when done
         wx.redirectTo({
           url: '/pages/index/index'
@@ -380,3 +500,7 @@ We don't need to handle the response, but instead redirect back to the stories i
 
 That should be all for today! Congratulations on making a complete Wechat Mini Program all in one day!
 
+
+```
+
+```
