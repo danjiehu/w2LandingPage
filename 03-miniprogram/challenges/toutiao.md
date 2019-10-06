@@ -201,8 +201,19 @@ Getting data to show one story is very similar to getting all the stories for th
 GET /oserve/v1/table/84988/record/:id/
 ```
 
+This means your request will need a constant called id that is the same id as your story. With it you can make a request json at this endpoint
 
-`id` can be found in the `options` of `onLoad`
+```json
+{
+  url: `https://cloud.minapp.com/oserve/v1/table/84988/record/${id}`,
+  method: 'GET',
+  header: { 'Authorization': 'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'
+}
+```
+
+But where do we get the `id` in the first place?
+
+`id` can be found in the `options` of `onLoad` function:
 
 
 ```js
@@ -217,7 +228,7 @@ Page({
 //...
 ```
 
-This requires the navigation to include the `id` as a `param` in the `url`
+This requires the navigation to include the `id` as a `param` in the `url` like below:
 
 
 ```js
@@ -244,17 +255,31 @@ We take the `id` of the click event from `data-id` attribute of the story that w
 
 For example:
 ```xml
+<!-- /pages/index/index.wxml -->
 <view data-id=3 bindtap="showStory" > Story 3 </view>
 ```
-Remember to In your actual `index.xml` to use mustache syntax to replace what was hard coded e.g.  `{{story.id}}` and `{{story.content}}`. You'll be looping over all the stories as well!
+Remember in your actual `index.xml` to use mustache syntax to replace what was hard coded e.g.  `{{story.id}}` and `{{story.content}}`. You'll be looping over all the stories as well!
+
+With this, you should be able to make a request to the show story endpoint!
+Don't forget to set the data with the response:
+
+```js
+// in the request
+success(res) {
+  page.setData({
+    story: res.data.objects
+  })
+}
+```
+
+Try to see if you can show the story when clicked from the story `index` page.
 
 
-
-Now that we can show the story,  its comments should follow. We want also be able to delete any comments we don't like ;-)
+Now that we can show the story, its comments should follow. We want also be able to delete any comments we don't like ;-)
 
 ### Comments Index
 
-You can follow the same steps as getting the data for the stories index page. Only difference is that the `comments` table path is:
+You can **follow the same steps** for getting the all stories data to show all the comments. Only difference is that the `comments` Restful path is:
 
 `/oserve/v1/table/85188/record/`
 
@@ -263,13 +288,18 @@ But how do we make sure that the comments belong to the story being shown?
 We can use functions below to filter by comment's story! Use the code below as is. Filtering will be explained in detail in a future lecture!
 
 ```js
+//in request json for all the comments
 const request = {
-  //... request json from above
-  qs: {
-    where: JSON.stringify({
-      "story_id": {"$eq": id} // story id
-    })
-  }
+  url: 'https://cloud.minapp.com/oserve/v1/table/85188/record/',
+  method: 'GET',
+  header: { 'Authorization': 'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e' },
+
+  data: {
+    where: { // filtering comments for a specific story
+      "story_id": { "$eq": id } // story id
+    }
+  },
+  //... Don't forget to set the page data to comments from the response
 }
 
 ```
@@ -375,12 +405,15 @@ Page({
 
     const data = event.currentTarget.dataset;
     votes = data.votes;
+    const new_votes = { votes: votes + 1 }
+
 
     // make a PUT request
     wx.request({
       url: `https://cloud.minapp.com/oserve/v1/table/85188/record/${data.id}`,
       method: 'PUT',
       header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'}, // API key from Above
+      data: new_votes,
 
       success(res) {
         // set comment data
@@ -403,7 +436,7 @@ Unfortunately, to update one comment, we need to update all the comments in the 
 5. get the page comments again
 
 
-```
+```js
 // in success function above
 
 success(res) {
@@ -427,8 +460,20 @@ success(res) {
 
 ```
 
+Pro Tip: Just on this [particular api](https://doc.minapp.com/open-api/data/record.html#数据原子性更新), you can also tell it to subtract or add for you. That works for numbers and letters!
+
+For numbers, you can do this for example to de-vote!
+
+```json
+  data: {
+    "votes": {
+      "$incr_by": -1
+  }},
+```
+
 
 ## Create Story
+Now we're ready to create a new story
 
 Using Restful API again
 
@@ -470,11 +515,11 @@ Page({
     //...
 
     let name = event.detail.value.name;
-    let text = event.detail.value.text;
+    let content = event.detail.value.content;
 
     let story = {
       name: name,
-      text: text
+      content: content
     }
 
     // Post data to API
@@ -486,21 +531,16 @@ Page({
       data: story,
       success() {
         // no need for response data
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
+        // reload index page when done
+        wx.reLaunch({
+          url: '/pages/index/index',
+        })
       }
     });
   }
   //...
 ```
 
-We don't need to handle the response, but instead redirect back to the stories index page.
+We don't need to handle the response, but instead redirect back to the stories index page. Test it to see if works!
 
 That should be all for today! Congratulations on making a complete Wechat Mini Program all in one day!
-
-
-```
-
-```
