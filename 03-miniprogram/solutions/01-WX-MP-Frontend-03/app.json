@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/landing/landing",
+    "pages/logs/logs",
+    "pages/stories/stories"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "FMC",
+    "navigationBarTextStyle":"white"
+  }
+}

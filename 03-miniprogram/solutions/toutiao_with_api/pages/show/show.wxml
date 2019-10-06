@@ -1,0 +1,22 @@
+<view class="card-product">
+  <view class="card-product-infos" data-id="{{story.id}}" bindtap="showStory">
+    <view class="h2">{{story.content}}</view>
+    <view class="p">{{story.name}}</view>
+  </view>
+</view>
+
+
+<view>Comments: </view>
+<block wx:for="{{comments}}" wx:for-item="comment">
+  <view class="card-product">
+    <view class="card-product-infos">
+      <view class="h2">{{comment.content}}</view>
+      <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" class="p">{{comment.name}} Votes: {{comment.votes}}
+      </view>
+      <block data-id="{{comment.id}}" bindtap="deleteComment" class="p"> x </block>
+
+
+    </view>
+
+  </view>
+</block>
