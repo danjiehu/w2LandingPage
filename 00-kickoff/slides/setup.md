@@ -355,13 +355,11 @@ In the next few weeks, we'll see how git can help us with
 
 ------
 
-## Kitt Demo
+## Learn.lewagon.com Demo
 
 - Navigation
 - Lectures
 - Videos
 - Classmates
 - Buddies
-- Tickets
-- Flashcards: **let's test it on "Terminal and git"**
-- Challenges: **let's solve and push 00-Setup/00-Demo**
+- Challenges
