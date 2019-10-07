@@ -1,12 +1,4 @@
-## Your take away
-
-By completing all three challenges you should be able to ship your first WeChat Mini Program: *"F*** My Code".*
-
-Have you heard of [Fmylife.com](https://fmylife.com/)? Visitors share personal stories of some funny sh*t they have been through. Every message ends with "FML". We're going to make a copy cat, but about your new life as programmers 😆
-
-------
-
-### Challenge 1: Create a Landing Page to greet users
+## Challenge 1: Create a Landing Page to greet users
 
 ## Background & objectives
 
