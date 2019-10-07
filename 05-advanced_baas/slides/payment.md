@@ -50,6 +50,10 @@ Needed for refunds - (required by Minapp Baas)
 
 
 
+
+
+
+
 ## Payment
 
 Add payment to eCommerce Frontend built last weekend challenge (Waimai app)
@@ -61,6 +65,34 @@ Add payment to eCommerce Frontend built last weekend challenge (Waimai app)
 [Setup Documentation](https://pay.weixin.qq.com/static/pay_setting/appid_protocol.shtml)
 
 [SKD Documentation](https://doc.minapp.com/js-sdk/payment/wechat-pay.html)
+
+
+
+Setup needs these merchant info, in addition to your current WeChat AppID
+
+1. WeChat Merchant number
+
+2. WeChat Merchant key
+
+3. WeChat Merchant API certificate
+
+
+
+To get the API certificate:
+
+使用超级管理员账号登录[微信支付商户平台](https://pay.weixin.qq.com/index.php/apply/applyment_home/guide_normal)，进入「账户中心」->「 API 安全」，获取商户密钥及 API 证书(不是 APIv3)。
+
+
+
+Then you're ready to enable payment on the Minapp.com platform. Go to Dev -> Pay on the side menu, and then "Certificate" on the top tab. On the top right, click on Add an account.
+
+![image-20191007193443651](images/image-20191007193443651.png)
+
+
+
+Then fill out the form with merchant info you gathered above:
+
+![image-20191007193525891](images/image-20191007193525891.png)
 
 
 
@@ -105,3 +137,21 @@ wx.BaaS.pay(params).then(res => {
 Build a new eCommerce app but adapt existing code to save time
 
 
+
+# Dior Gift Cards
+
+
+
+![image-20190327204251870](images/image-20190327204251870.jpg)
+
+
+
+
+
+
+
+
+
+
+
+![7491570472103_.pic](images/7491570472103_.png)

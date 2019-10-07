@@ -2,9 +2,17 @@
 
 You'll deliver two products by end of the week! Then demo it at end of the weekend day.
 
-A Landing Page hosted on your own domain: e.g. www.myperfectlife.com
+A Landing Page hosted on your own domain
 
-WeChat Mini Program (MP) similar to Xiaohongshu ,using social and ecommerce functions
+WeChat Mini Program (MP) similar to Xiaohongshu, using social and ecommerce functions
+
+
+
+
+
+
+
+
 
 When classes are not going on, you are welcome to work together, and bring your questions in with you to class or ask on group chat.
 

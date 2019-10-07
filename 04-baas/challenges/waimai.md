@@ -4,21 +4,37 @@
 
 ### Restaurant Index
 
-## ![7051570232703_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7051570232703_.pic.jpg)
+## ![7051570232703_.pic](images/7051570232703_.png)
 
 ### Meals Index
 
-![7041570232703_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7041570232703_.pic.jpg)
+![7041570232703_.pic](images/7041570232703_.png)
 
 ### Orders
 
-![7061570232704_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7061570232704_.pic.jpg)
+![7061570232704_.pic](images/7061570232704_.png)
 
-### Delivery
+### 
 
 
 
-For our challenge, we'll skip the restaurant index and go straight to the meals index as the landing page. You can add the restaurant index later on anytime by following the previous Dianping exercise.
+For our challenge, we'll skip restaurants and use meals index as the landing page. You can add the restaurant index later on anytime by following the previous Dianping exercise.
+
+
+
+### Delivery Management
+
+
+
+![delivery management platform](images/tasks.jpg)
+
+
+
+Deliverer and Manager share the order index view. The manager can **assign** an order **opened** by the customer to a deliverer, who can mark it **delivered**. So the order states are "Opened," "Assigned," and "Delivered." 
+
+Other states like "Cancelled," "Started" can be added too this way but for our exercise, we'll keep it simple to just three states mentioned above.
+
+
 
 
 
@@ -122,9 +138,42 @@ Then, make sure that the following **user stories** are implemented in your prog
 - As a delivery guy, I can view my undelivered orders
 - As a delivery guy, I can mark an order as delivered
 
+
+
+When an order is created, we need to give it an address. We ask for the user's address:
+
+
+
+```js
+wx.chooseAddress({
+  success (res) {
+    console.log(res.userName)
+    console.log(res.postalCode)
+    console.log(res.provinceName)
+    console.log(res.cityName)
+    console.log(res.countyName)
+    console.log(res.detailInfo)
+    console.log(res.nationalCode)
+    console.log(res.telNumber)
+  }
+})
+```
+
+
+
+What if they want to chose another address? There's a WeChat function for that too you can use - to be covered in a later course.
+
+
+
 ## 7 - (Optional) - `Destroy` actions
 
 We haven't done any **deleting** yet. How would you implement these additional user stories?
 
-- As a manager, I can delete a meal
+- As a manager, I can delete a meal 
 - As a manager, I can delete a customer
+
+
+
+Can't delete for real - data is precious, also relationships demands on them. What happens to old orders for example? How do you do accounting if order is lost?
+
+So instead, we hide them! There's a flag you set to true for delete - let's call it `hidden` . Now you have a bit more insight into the world of big data and its complexities!  

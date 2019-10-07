@@ -111,6 +111,18 @@ Page({
 })
 ```
 
+
+
+## Login with phone number
+
+```html
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>
+```
+
+[Documentation](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html)
+
+
+
 ## Step 5 - Test test test
 
 **1. Reload the MP**
@@ -128,3 +140,29 @@ Page({
 **2. For the new users, the first page is loaded before you have their user ID stored**
 
 > **Solution**: Do not show user specific info on the homepage, or make a landing page to give you time to retrieve the info!
+
+
+
+# Dior Membership - User Journey
+
+
+
+![7431570471627_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7431570471627_.pic.jpg)
+
+
+
+![7441570471627_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7441570471627_.pic.jpg)
+
+
+
+![7461570471629_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7461570471629_.pic.jpg)
+
+
+
+![7471570471629_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7471570471629_.pic.jpg)
+
+![7481570471630_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7481570471630_.pic.jpg)
+
+
+
+Select gifts for services to exchange points for! Can add these to a basket as well for redeeming later.

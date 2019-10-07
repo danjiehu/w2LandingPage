@@ -1,7 +1,7 @@
 # Advanced Backend as a Service (BaaS)
 
 
-Today  we will try building Dianping (or Meituan - both are review apps). 
+Today  we will try building Dianping (or Meituan - both are review apps).
 
 Consider reviews:
 
@@ -120,7 +120,7 @@ Schema:
 
 ![image-20191005084833734](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191005084833734.png)
 
- 
+
 
 
 
@@ -130,11 +130,130 @@ For your **Exercise**, you will be making Dianping.
 
 As with Toutiao, you can connect the backend to your Mini Program through using SDK!
 
-Tip: Use your Toutiao frontend as starting point to save time. It is also similar! 
+Tip: Use your Toutiao frontend as starting point to save time. It is also similar!
 
 ### User login
 
-For us to know who the user is, we need 
+Remember that the SDK allows user login. We'll use that now to store the user and allow login and logouts. No more entering the name every time for new posts!
+
+Instead of using an anonymous user, replace that line with registering by username and password:
+
+```js
+// app.js
+//... other configurations
+wx.BaaS.init('c1e7a280f6d8c8646756')
+
+wx.BaaS.auth.register({ username: 'ifanrx', password: 'ifanrx123' }).then(user => {
+  console.log(user)
+})
+```
+
+You'll see new user data in the BaaS:
+
+
+
+![image-20191007044757322](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007044757322.png)
+
+
+
+The user tables has fields for phone, email, WeChat info, as well as demographics, profile photo.
+
+We don't have to use all of them, but the most common user info is ready to be stored once we get the info.
+
+
+
+![image-20191007045715816](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007045715816.png)
+
+
+
+The user data is returned when the user is created. But if you try to register again by reloading, you'll see the same name can't be used again to register. We need to log in!
+
+
+
+```js
+wx.BaaS.auth.login({username: 'ifanrx', password: 'ifanrx123'}).then(user => {
+  console.log(user)
+}).catch(err=>{
+  // HError
+})
+```
+
+
+
+You'll see that we'll only get a successful response and the user data if the password is correct!
+
+
+
+To get the user currently logged in:
+
+```js
+ wx.BaaS.auth.getCurrentUser().then(user => {
+      console.log(user)
+      // user 为 currentUser 对象
+    }).catch(err => {
+      // HError
+      if (err.code === 604) {
+        console.log('用户未登录')
+      }
+    })
+```
+
+
+
+Now remove the login code and reload our app. We see that we still get the current user who is logged in! So once we're logged in, we don't need to log in again - that's how it works.
+
+When you do want to log out, simply do this:
+
+```
+wx.BaaS.auth.logout().then(res => {
+  // success
+}, err => {
+  // err
+})
+```
+
+
+
+We can use these with a form for our user to register, log in and out.
+
+
+
+Now let's make our tables for restaurants and reviews , and then request them in our pages!
+
+### Data Tables
+
+![image-20191007052230196](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052230196.png)
+
+![image-20191007052311097](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052311097.png)
+
+
+
+![image-20191007052408795](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052408795.png)
+
+![image-20191007052503239](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052503239.png)
+
+
+
+We'll learn to upload images in an upcoming class. Now we'll just use urls of an existing image.
+
+![image-20191007052533479](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052533479.png)
+
+![image-20191007052630942](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052630942.png)
+
+![image-20191007052728225](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052728225.png)
+
+Why an integer and not a number? Hint: Is it countable?
+
+
+
+![image-20191007052816003](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052816003.png)
+
+
+
+![image-20191007052901923](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191007052901923.png)
+
+
+Now we'll starting making the pages work with the data. Starting with the frontend from an existing app (Toutiao for example) is a good idea to save time!
 
 ### Restaurant Index
 
@@ -148,11 +267,27 @@ Average Restaurant Rating:
 
 
 
+### Restaurant Post 
+
+Ask user to log in! Redirect to User Profile page. Why log in here and not at beginning of app? It's good practice to always give some value to the user before you ask for something! 
 
 
-### Restaurant Page
+
+### Restaurant Show
 
 
 
 ### Reviews
+
+User login required (as explained in Restraurant Post section). Check if logged in to show form, or link to User Profile for registration.
+
+
+
+
+
+### User Profile
+
+Sign in or register, give a avatar! Log out when you're done. That's it!
+
+
 
