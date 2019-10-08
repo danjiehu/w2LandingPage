@@ -133,7 +133,7 @@ Schema:
 
 
 
-![image-20191008235014597](/Users/dounanhu/Code/wg/china-product/04-baas/slides/images/image-20191008235014597.png)
+![image-20191008235014597](images/image-20191008235014597.png)
 
 ## I Go, then Your Turn
 
