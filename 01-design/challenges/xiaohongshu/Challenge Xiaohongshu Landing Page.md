@@ -26,7 +26,9 @@ Take your inspiration from the pages below. Note the social elements in the card
 
 ### Xiaohongshu Web Landing
 
-![2351567793533_.pic_hd](images/2351567793533_.pic.jpg)
+
+
+![image-20191008050935114](/Users/dounanhu/Code/wg/china-product/01-design/challenges/xiaohongshu/images/image-20191008050935114.png)
 
 ### Xiaohongshu Mobile Landing
 

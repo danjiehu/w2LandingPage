@@ -109,13 +109,13 @@ Baas + Frontend = SaaS, aka App
 "plugins": {
   "sdkPlugin": {
     "version": "2.3.0",
-    "provider": "wxc6b86e382a1e3294"
+    "provider": "wxc6b86e382a1e3294" //This BaaS id doesn't change
   }
 }
 
 ```
 
-Configure the SDK
+Configure the [SDK](https://doc.minapp.com/js-sdk/wechat/)
 
 ```js
 // app.js
@@ -127,7 +127,9 @@ App({
      wx.getUserInfo,
      wx.requestPayment)
 
-    wx.BaaS.init('c1e7a280f6d8c8646756')
+    const clientID = 'c1e7a280f6d8c8646756' // 知晓云管理后台获取到的 ClientID
+    wx.BaaS.init(clientID)
+
 
     // Login as anonymous user
     wx.BaaS.auth.anonymousLogin().then(user => {
@@ -422,7 +424,7 @@ You should now see comments appear on the page when submitted!
 
 
 
-Lastly, we want to use the SDK for voting on and deleting the comment. 
+Lastly, we want to use the SDK for voting on and deleting the comment.
 
 ## Updating Data
 

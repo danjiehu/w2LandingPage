@@ -13,7 +13,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 **Luckin  Coffee** users can  **register  directly**  via their Mini Program,  which offers a near frictionless  experience.  
 
-![7631570472246_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7631570472246_.pic.jpg)
+![7631570472246_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7631570472246_.png)
 
 
 
@@ -21,7 +21,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 
 
-![image-20191008042053194](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191008042053194.png)
+![image-20191008042053194](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/image-20191008042053194.png)
 
 
 
@@ -37,7 +37,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 
 
-![7501570472105_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7501570472105_.pic.jpg)
+![7501570472105_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7501570472105_.png)
 
 
 
@@ -45,7 +45,7 @@ Coffee Store! New products to catch your eye, awards, deals to make a simple cof
 
 
 
-![7511570472106_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7511570472106_.pic.jpg)
+![7511570472106_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7511570472106_.png)
 
 Shopping cart to keep track of your order, (and chance to recommend more products you!)
 
@@ -53,20 +53,20 @@ Coupon can be applied.
 
 
 
-![7521570472107_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7521570472107_.pic.jpg)
+![7521570472107_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7521570472107_.png)
 
 Address and order confirmation (and take the chance to upsell you!)
 
 
 
 
-![7541570472109_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7541570472109_.pic.jpg)
+![7541570472109_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7541570472109_.png)
 
 
 
 Order made! Showing status with inventived sharing for free coffee, and getting coupons after order.
 
-![7551570472109_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7551570472109_.pic.jpg)
+![7551570472109_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7551570472109_.png)
 
 
 
@@ -74,13 +74,13 @@ Order has started! Gives estimated time to pickup.
 
 
 
-![7561570472110_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7561570472110_.pic.jpg)
+![7561570472110_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7561570472110_.png)
 
 QR code to pickup your coffee (and make sure you're actually getting the coffee!)
 
 
 
-![7571570472111_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7571570472111_.pic.jpg)
+![7571570472111_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7571570472111_.png)
 
 
 
@@ -88,51 +88,51 @@ Checking orders. Conspicuous coffee cup to inventive sharing and giving free cof
 
 
 
-![7581570472241_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7581570472241_.pic.jpg)
+![7581570472241_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7581570472241_.png)
 
 Checking membership center - incentived give one, get one free banner!
 
-![7591570472242_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7591570472242_.pic.jpg)
+![7591570472242_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7591570472242_.png)
 
 Sharing card invites a friend to sign up and get free drink, while you get a free one
 
-![7601570472243_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7601570472243_.pic.jpg)
+![7601570472243_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7601570472243_.png)
 
 Scan and pickup! And get the coupon you just earned.
 
 
 
-![7611570472244_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7611570472244_.pic.jpg)
+![7611570472244_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7611570472244_.png)
 
 Order status shown after scanning QR! Now you can claim your coupon, and give your friend a free coffee.
 
 
 
-![7621570472245_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7621570472245_.pic.jpg)
+![7621570472245_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7621570472245_.png)
 
 Enjoying the fruits of your labor.
 
 
 
-![7681570472390_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7681570472390_.pic.jpg)
+![7681570472390_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7681570472390_.png)
 
 If you ever want to check your order history - also encourages you to give free coffee!
 
 
 
-![7701570472391_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7701570472391_.pic.jpg)
+![7701570472391_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7701570472391_.png)
 
 Gift cards store. Sharing is caring - gifting to friends is quick and easy, and classier than just coffee.
 
 
-![7711570472392_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7711570472392_.pic.jpg)
+![7711570472392_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7711570472392_.png)
 
 Gift cards wallet.
 
 
 
 
-![7721570472392_.pic](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/Image/7721570472392_.pic.jpg)
+![7721570472392_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7721570472392_.png)
 
 Coupons come from purchases, or just visiting the app!
 

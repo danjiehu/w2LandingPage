@@ -4,19 +4,23 @@
 
 ### Restaurant Index
 
-## ![7051570232703_.pic](images/7051570232703_.png)
+
+
+![7271570232709_.pic](images/7271570232709_.png)
+
+
 
 ### Meals Index
 
-![7041570232703_.pic](images/7041570232703_.png)
+
+
+ ![7261570232707_.pic](images/7261570232707_.png)
+
+
 
 ### Orders
 
 ![7061570232704_.pic](images/7061570232704_.png)
-
-### 
-
-
 
 For our challenge, we'll skip restaurants and use meals index as the landing page. You can add the restaurant index later on anytime by following the previous Dianping exercise.
 

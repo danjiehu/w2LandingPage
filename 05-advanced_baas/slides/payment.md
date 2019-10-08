@@ -54,6 +54,22 @@ Needed for refunds - (required by Minapp Baas)
 
 
 
+![image-20191008151611379](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191008151611379.png)
+
+
+
+![7461570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7461570518242_.pic_hd.jpg)
+
+
+
+![7471570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7471570518242_.pic_hd.jpg)
+
+
+
+![7481570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7481570518242_.pic_hd.jpg)
+
+
+
 ## Payment
 
 Add payment to eCommerce Frontend built last weekend challenge (Waimai app)
