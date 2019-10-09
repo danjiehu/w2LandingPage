@@ -21,9 +21,9 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.2",
-	"appid": "wx6e1e01322fd9850e",
-	"projectname": "fml",
+	"libVersion": "2.8.3",
+	"appid": "wxb8154b03c5b569ab",
+	"projectname": "toutiao_with_api",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
