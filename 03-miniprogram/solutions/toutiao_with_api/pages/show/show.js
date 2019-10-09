@@ -10,8 +10,9 @@ Page({
 
   // binded to delete button
   deleteComment(event) {
+    
     const data = event.currentTarget.dataset;
-
+    console.log(data.id)
     // make a DELETE request
     wx.request({
       url: `https://cloud.minapp.com/oserve/v1/table/85188/record/${data.id}`,

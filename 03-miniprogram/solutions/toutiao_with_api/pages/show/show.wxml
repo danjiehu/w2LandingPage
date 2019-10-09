@@ -6,17 +6,15 @@
 </view>
 
 
-<view>Comments: </view>
+<view class="header-comments" wx:if="{{comments.length>0}}">Comments: </view>
+
 <block wx:for="{{comments}}" wx:for-item="comment">
-  <view class="card-product">
-    <view class="card-product-infos">
-      <view class="h2">{{comment.content}}</view>
-      <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" class="p">{{comment.name}} Votes: {{comment.votes}}
+  <view class="card-comment">
+      <view class="h3">{{comment.content}}</view>
+      <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" class="p">
+      <span>{{comment.name}}</span> 
+      <span>Votes: {{comment.votes}}</span>
       </view>
-      <block data-id="{{comment.id}}" bindtap="deleteComment" class="p"> x </block>
-
-
-    </view>
-
+      <view data-id="{{comment.id}}" bindtap="deleteComment" class="del"> x </view>
   </view>
 </block>

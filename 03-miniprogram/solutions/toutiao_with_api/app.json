@@ -8,23 +8,24 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "今日头条",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "backgroundColor": "#FFF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Stories",
-        "iconPath": "/images/stories.png",
-        "selectedIconPath": "/images/stories.png"
+        "text": "home",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home.png"
       },
       {
         "pagePath": "pages/new/new",
-        "text": "Post",
-        "iconPath": "/images/post.png",
-        "selectedIconPath": "/images/post.png"
+        "text": "Write",
+        "iconPath": "/images/write.png",
+        "selectedIconPath": "/images/write.png"
       }
     ]
   }
