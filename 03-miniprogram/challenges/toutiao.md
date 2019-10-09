@@ -1,52 +1,40 @@
 # Toutiao
 
-
-![image-20191003202532319](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191003202532319.png)
-
 Today we'll make the mobile version of this popular app!
-
 
 
 ## Core User Journey Pages
 
 ### Landing Page (Story Index)
 
-Stories have name and content, some have photos or videos (optional)
+Stories have name and content, some have photos or videos (optional).
 
-![image-20191005060348073](images/image-20191005060348073.png)
+![](images/image-20191005060348073.png)
 
 ### Story Page (Story Show)
 
+![](images/image-20191005060601357.png)
 
+Stories have comments.
 
-![image-20191005060601357](/Users/dounanhu/Code/wg/china-product/03-miniprogram/challenges/images/image-20191005060601357.png)
+![](images/image-20191005060723295.png)
 
-Stories have comments
-
-![image-20191005060723295](/Users/dounanhu/Code/wg/china-product/03-miniprogram/challenges/images/image-20191005060723295.png)
-
-Comments have name, content, votes
+Comments have name, content, votes.
 
 
 
 ### Click create icon -> Create Pages
 
-![image-20191005061013131](/Users/dounanhu/Code/wg/china-product/03-miniprogram/challenges/images/image-20191005061013131.png)
-
+![](images/image-20191005061013131.png)
 
 
 Users can create a tweet type Story with Photo and Location:
 
-![image-20191005061159237](/Users/dounanhu/Code/wg/china-product/03-miniprogram/challenges/images/image-20191005061159237.png)
+![](images/image-20191005061159237.png)
 
-We'll use these functions in later course
+We'll use these functions in later course... For now, our story is like the question type - just text.
 
-
-
-For now, our story is like the question type - just text.
-
-![image-20191005061114431](/Users/dounanhu/Code/wg/china-product/03-miniprogram/challenges/images/image-20191005061114431.png)
-
+![](images/image-20191005061114431.png)
 
 Refer to this handy guide if you need:
 
@@ -61,13 +49,14 @@ For the landing page, we have the `index` page again, with data from the `index`
 Tip: Use your FML frontend as starting point to save time. They are very similar!
 
 ### 1. Use API token (or key)
-[Documentation](https://doc.minapp.com/open-api/authentication.html): Where to find and how to use
 
+Where to find and how to use a token? Refer to this [documentation](https://doc.minapp.com/open-api/authentication.html).
 
 ```
 Token: 7a82a2b76c38e309ae34ff3c83c87f8409748b0e
 ```
-Inside the header in the form of a "Bearer Token"
+
+Inside the header, in the form of a "Bearer Token":
 
 ```json
 header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'},
@@ -91,7 +80,7 @@ const index_endpoint = YOUR_ANSWER
 ```
 
 
-Then put into a json
+Then put into a json:
 
 
 ``` json
@@ -101,9 +90,9 @@ Then put into a json
   header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'} // API key from Above
 }
 ```
-We don't need to send data, so can send off the request!
+We don't need to send data, so we can send off this request!
 
-### 4. Send request and **wait** for response
+### 4. Send a request and **wait** for response
 
 ```js
 // /pages/index/index.js
@@ -122,14 +111,14 @@ Page({
   //...
 ```
 
-Tip: Not Working? Check your WeChat permission in Settings -> Project Settings:
+Tip: Not Working? Check your WeChat permission in Settings -> Project Settings.
 
 
 ### 5. Receive data from response
 
-Two ways to get response
+Two ways to get response...
 
-Define a page function to be included in the request json
+- Define a page function to be included in the request json:
 
 ```js
 const request = {
@@ -152,7 +141,7 @@ Page({
   //...
 ```
 
-or
+- or
 
 ```js
 const request = {
@@ -160,9 +149,9 @@ const request = {
   success(res) { console.log(res) }
 }
 ```
-A successful request show show in the console:
+A successful request show in the console.
 
-![image-20191006191759359](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006191759359.png)
+![](images/image-20191006191759359.png)
 
 Either way, after you console log the response, find and extract the stories data from the successful response. It could be one or two layers deep! E.g. `res.key1.key2`
 
@@ -171,7 +160,6 @@ const stories = res.FIND_YOUR_DATA
 ```
 
 Then you can pass the stories data to the next step.
-
 
 
 Note:  Records now have extra data. That's ok - we're using a whole new backend system. You'll learn more about that soon. Focus on the data from columns you created and do not worry about the system data.
@@ -372,7 +360,7 @@ Make sure you include the `data-id` attribute in each of the comments when you s
 
 When the user clicks vote on a comment, its voting number should increase. Notice we have a `votes` field in the comments data:
 
-![image-20191006192021558](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006192021558.png)
+![](images/image-20191006192021558.png)
 
 
 
@@ -382,7 +370,7 @@ Tip: `AppData` tab in the console is a good way to see and play with the data on
 
 
 
-![image-20191006192344973](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191006192344973.png)
+![](images/image-20191006192344973.png)
 
 
 So now we can get the votes if we add a `data-votes` attribute to our view
