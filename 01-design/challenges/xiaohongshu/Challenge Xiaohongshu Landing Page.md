@@ -20,7 +20,7 @@ Think of Xiaohongshu as **a combination of Instagram and Pinterest**. Just like 
 
 Today's exercise will be to create **your own** social ecommerce landing page based on Xiaohongshu. 
 
-It will be responsible and mobile friendly! So use [mobile design packs](https://kitt.lewagon.com/knowledge/tutorials/wechat_mini_program_UI) if you can. They are like Bootstrap, but for mobile apps!
+It will be responsive and mobile friendly! So use [mobile design packs](https://medium.com/le-wagon/4-ui-libraries-to-use-in-your-wechat-mini-programs-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-3d13b749c5db) if you can. They are like Bootstrap, but for mobile apps!
 
 Take your inspiration from the pages below. Note the social elements in the cards, namely the likes and the author (KOL or key opinion leader are the bread and butter of social apps).
 
@@ -28,7 +28,7 @@ Take your inspiration from the pages below. Note the social elements in the card
 
 
 
-![image-20191008050935114](/Users/dounanhu/Code/wg/china-product/01-design/challenges/xiaohongshu/images/image-20191008050935114.png)
+![image-20191008050935114](images/image-20191008050935114.png)
 
 ### Xiaohongshu Mobile Landing
 
@@ -50,12 +50,7 @@ Start with designing one card. It should have:
 But don't stop there! Have an idea that's better than Xiaohongshu? Now's your chance to make it. Try your own elements with your frontend skills.
 
 
-
-### Layout
-
-
-
-#### Masonary has gone digital too
+### Masonary has gone digital too 🏗️
 
 The layout of the cards are done in **masonary** style.
 
@@ -65,11 +60,11 @@ This module allows us to present blocks as part of virtual columns. Multi-column
 
 After that, we will also be adding gutter to our masonry with  `column-gap`, its another property.
 
-Hint: Gutter is the space between the masonry items.
+*Hint: Gutter is the space between the masonry items.*
 
 
 
-#### The column-count property
+### The column-count property 🔢
 
 CSS `column-count` allows you to add a specific number of adjacent columns to any block element. The child elements inside the block get aligned as per the specified number of columns.
 
@@ -83,7 +78,7 @@ What about spacing between the grid items? The `column-gap` property solved the 
 
 
 
-#### HTML
+### 1. HTML
 
 Let’s start with the markup. 
 
@@ -101,7 +96,7 @@ As you can see above, the `.masonry` division acts as the masonry container and 
 
 
 
-#### CSS
+### 2. CSS
 
 Now comes the most fun and important part, the CSS.
 
@@ -128,7 +123,7 @@ That’s the basic idea. We end up getting [something like this demo](https://w3
 
 
 
-#### Responsive CSS masonry
+### 3. Responsive CSS Masonry
 
 Responsiveness means a sensible layout across different device sizes. To achieve this, modify the column-count for different screen breakpoints with the help media queries.
 
@@ -198,22 +193,11 @@ A very simple menu is just categories for different cards. The menu and the logo
 
 ### Advanced
 
-Animate the cards so that they turn or move when you hover over them! 
+- Animate the cards so that they turn or move when you hover over them! 
+- Follow the tutorials from [Animate.css](https://daneden.github.io/animate.css/)
+- Find inspirations from [codepen](http://codepen.com) and [freefrontend](http://freefrontend.com) (search for "cards"), eg:
 
-Follow the tutorials from [Animate.css](https://daneden.github.io/animate.css/)
+  - [Cards with hover effects](https://freefrontend.com/css-card-hover-effects/)
+  - [Flip cards](https://freefrontend.com/css-flip-cards/)
 
-Find inspirations from [codepen](http://codepen.com) and [freefrontend](http://freefrontend.com) (search for "cards"), eg:
-
-
-
-<https://freefrontend.com/css-card-hover-effects/>
-
-<https://freefrontend.com/css-flip-cards/>
-
-![img](https://freefrontend.com/assets/img/css-flip-cards/Pure-CSS-Flip-Card.gif)
-
-
-
-<https://codepen.io/search/pens?q=hover%20cards&page=1&order=popularity&depth=everything>
-
-![image-20190914024150805](/Users/dounanhu/Library/Application Support/typora-user-images/image-20190914024150805.png)
+![](images/image-20190914024150805.png)
