@@ -12,6 +12,6 @@
   </view>
 
   <view class="btn-area">
-    <button formType="submit">Submit</button>
+    <button formType="submit">Send</button>
   </view>
 </form>
