@@ -384,13 +384,13 @@ Make your shopping on [Google fonts](http://www.google.com/fonts).
 
 Use the inspector, then copy the `css` in Sublime.
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
+![img](html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
 
 ## Live-code
 
 Let's design our fonts and colors using [Google fonts](https://fonts.google.com/).
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
+![img](html-css/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
 
 ------
 
