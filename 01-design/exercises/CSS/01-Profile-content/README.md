@@ -4,7 +4,7 @@ A simple challenge to manipulate basic HTML tags and create a profile card with 
 
 ## Setup
 
-For ALL exercises for today, download this [boilerplate](https://github.com/dounan1/china-product/blob/master/01-design/exercises/CSS.zip) to get started!
+For ALL exercises for today, download this [boilerplate](https://github.com/dounan1/china-product/raw/master/01-design/exercises/CSS.zip) to get started!
 
 Jump into your `profile` and create an `images` directory to store all your pictures:
 
@@ -15,7 +15,7 @@ mkdir images
 stt
 ```
 
-Create a new repo on Github
+Create a new repo on Github:
 
 
 ```bash
