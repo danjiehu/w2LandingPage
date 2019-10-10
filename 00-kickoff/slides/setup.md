@@ -312,7 +312,7 @@ git push origin master
 
 ### Live-code: creating an new repo
 
-1. Let's make a new repo called git-101-practice
+1. Let's make a new repo called git-101-practice (like you can for every exercise)
 2. Then let's put stuff into it
 
 ```

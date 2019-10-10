@@ -28,11 +28,11 @@ stt
 
 The languages **your browser speaks**
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/front-languages-24d3a355bfc2e8758518763bff78bab685d96644f56b94155c4e42a014270203.png)
+![img](html-css/front-languages-24d3a355bfc2e8758518763bff78bab685d96644f56b94155c4e42a014270203.png)
 
 ------
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
+![img](html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
 
 It's a **markup** language (== structure)
 
@@ -42,25 +42,25 @@ It's a **markup** language (== structure)
 
 Your page has different contents
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-68d2a1782391be808a207de804572c3f2a559d0331ce7e61681b082e07f50ab9.png)
+![img](html-css/content-68d2a1782391be808a207de804572c3f2a559d0331ce7e61681b082e07f50ab9.png)
 
 ## HTML
 
 HTML tags help you **identify** content
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-414c7ab318d111663bf5454c60737d240488c7dc8f25276f736da6fe504e56b7.png)
+![img](html-css/content-with-tags-414c7ab318d111663bf5454c60737d240488c7dc8f25276f736da6fe504e56b7.png)
 
 ## HTML
 
 Hence, **browser default styles** will apply
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-html-4e57417cc0d56394fb4b3ad1c77d7239da5f9bf5b5c592b3718c5da2a3ca6c77.png)
+![img](html-css/content-with-tags-html-4e57417cc0d56394fb4b3ad1c77d7239da5f9bf5b5c592b3718c5da2a3ca6c77.png)
 
 ## HTML
 
 And you will also be able to apply **your own style rules** if you want
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-tags-css-6971d60a88bf6fb3290482393b3b31675a5eadea7c27bbdd0d16354c1ad7c651.png)
+![img](html-css/content-tags-css-6971d60a88bf6fb3290482393b3b31675a5eadea7c27bbdd0d16354c1ad7c651.png)
 
 ## HTML Skeleton
 
@@ -142,7 +142,7 @@ And you will also be able to apply **your own style rules** if you want
 </head>
 ```
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/google-card-a361304b30e0875e1e06a6ee20b7f3f8acc14e9c3b2cf74f1044802c5a737310.png)
+![img](html-css/google-card-a361304b30e0875e1e06a6ee20b7f3f8acc14e9c3b2cf74f1044802c5a737310.png)
 
 ## HTML Skeleton - head & Facebook
 
@@ -155,7 +155,7 @@ And you will also be able to apply **your own style rules** if you want
 </head>
 ```
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/fb-card-f68955dc612031b453e44657ce1a225d26d8b9cfad60bfde829d7b6ee568c295.png)
+![img](html-css/fb-card-f68955dc612031b453e44657ce1a225d26d8b9cfad60bfde829d7b6ee568c295.png)
 
 ## HTML Skeleton - head & Twitter
 
@@ -188,7 +188,7 @@ And you will also be able to apply **your own style rules** if you want
 
 ## Basic syntax
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/element-syntax-0a692d495a6c0df2d59fe46662c2855a0b704a8d30ed8378910e15e0e4506c72.png)
+![img](html-css/element-syntax-0a692d495a6c0df2d59fe46662c2855a0b704a8d30ed8378910e15e0e4506c72.png)
 
 ## Example
 
@@ -285,7 +285,7 @@ Let's add some HTML content to our profile page!
 
 ------
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css3-logo-195ecfeee1639c0cd00bcc4cfc85a548d6a7fa900eeed2707a75548798f89733.png)
+![img](html-css/css3-logo-195ecfeee1639c0cd00bcc4cfc85a548d6a7fa900eeed2707a75548798f89733.png)
 
 ## Web without CSS ?
 
@@ -294,25 +294,25 @@ Let's add some HTML content to our profile page!
 
 ## Linking stylesheet to HTML page
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/linking-css-93a0e35c150df4ec377c3b2b8045c22fcfb74e47c166758e92dfac4949907682.png)
+![img](html-css/linking-css-93a0e35c150df4ec377c3b2b8045c22fcfb74e47c166758e92dfac4949907682.png)
 
 \--
 
 ## CSS syntax
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-3633232082c8f9b84ebde51ead6472ccfe80c1af4bf1cdb4140b94f79dcf0400.png)
+![img](html-css/css-syntax-3633232082c8f9b84ebde51ead6472ccfe80c1af4bf1cdb4140b94f79dcf0400.png)
 
 \--
 
 ## CSS vocabulary
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-vocabulary-54709fcfe49b81165cc66c5cda5d78cc0c5b5eec7d8bbcf879b3b263fedf1145.png)
+![img](html-css/css-vocabulary-54709fcfe49b81165cc66c5cda5d78cc0c5b5eec7d8bbcf879b3b263fedf1145.png)
 
 \--
 
 ## Example
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-example-19d14b8f80d0d2d7af3a579fab48716f0da8a148f9eee5dd2b3c45ac38085f09.png)
+![img](html-css/css-syntax-example-19d14b8f80d0d2d7af3a579fab48716f0da8a148f9eee5dd2b3c45ac38085f09.png)
 
 ## Colors
 
@@ -336,39 +336,39 @@ body {
 - each value is between 0 and 255
 - for same values of R, G and B, you are on the grey scale
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/grey-scale-efaa01b8c08d4a90505ef417a86fdffe7bed8e670e3fab84ae8f5dce203e0931.png)
+![img](html-css/grey-scale-efaa01b8c08d4a90505ef417a86fdffe7bed8e670e3fab84ae8f5dce203e0931.png)
 
 \--
 
 ## Text vs Background
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-vs-bg-5f4f366955757d5bf06d93b83402c842a3abbff025950aa96670442da1d1ad98.png)
+## ![img](html-css/text-vs-bg-5f4f366955757d5bf06d93b83402c842a3abbff025950aa96670442da1d1ad98.png)
 
 ## Background image
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/bg-image-c2a76d897059d5224827ef1f1941aab90e4c1b1fc405ef893e4b7bd693ed751d.png)
+![img](html-css/bg-image-c2a76d897059d5224827ef1f1941aab90e4c1b1fc405ef893e4b7bd693ed751d.png)
 
 \--
 
 ## Font - family
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/font-family-ca0758530f7c9d5a357b16e7402ce0511bbcf1f3a81d894f1d9e73334a5b0fdc.png)
+## ![img](html-css/font-family-ca0758530f7c9d5a357b16e7402ce0511bbcf1f3a81d894f1d9e73334a5b0fdc.png)
 
 ## Fonts - size and spacing
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-spaces-ad13823a0e1ec70a2c6a4cfc6093f5c143842ba642ee06c013262a62fcf57ed9.png)
+## ![img](html-css/text-spaces-ad13823a0e1ec70a2c6a4cfc6093f5c143842ba642ee06c013262a62fcf57ed9.png)
 
 ## Fonts - decoration
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-decoration-71fb6097fb8f9b1c821a15dd246e082163bfbef13010c03dd5277439cec07a21.png)
+## ![img](html-css/text-decoration-71fb6097fb8f9b1c821a15dd246e082163bfbef13010c03dd5277439cec07a21.png)
 
 ## Fonts - alignment
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-align-5902740aa2f71de097abf94ec553f207ef7bef817c5ddd605b30ba6e0e2f6e28.png)
+## ![img](html-css/text-align-5902740aa2f71de097abf94ec553f207ef7bef817c5ddd605b30ba6e0e2f6e28.png)
 
 ## Fonts - weight
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/font-weight-ccef280d6ce99b985f3dd585fb09dd5f9bc5afa2d9f25196df93685225be691a.png)
+## ![img](html-css/font-weight-ccef280d6ce99b985f3dd585fb09dd5f9bc5afa2d9f25196df93685225be691a.png)
 
 ## Fonts - Google fonts
 
@@ -404,11 +404,11 @@ Let's design our fonts and colors using [Google fonts](https://fonts.google.com/
 
 ## Real life...
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
+![img](html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
 
 ## ... is made of `<div>`
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-with-div-20b4ad563c8066f7035bd1bf408960003a7937d8842f3a00f093450d29336a84.png)
+![img](html-css/airbnb-with-div-20b4ad563c8066f7035bd1bf408960003a7937d8842f3a00f093450d29336a84.png)
 
 ## Box model
 
@@ -416,7 +416,7 @@ Let's design our fonts and colors using [Google fonts](https://fonts.google.com/
 
 ## Box model - border
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box-model-3-c489c1980f18303347fe3a385eeac670814f7bd060c0f606a2e7235a1c5192a5.png)
+![img](html-css/box-model-3-c489c1980f18303347fe3a385eeac670814f7bd060c0f606a2e7235a1c5192a5.png)
 
 ## Borders
 
@@ -433,23 +433,23 @@ div {
 }
 ```
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/borders-aa6243ac7d9e4d4d902ee669c6b360d29349677f4f6cc33b8f6c7b305d8a2052.png)
+![img](html-css/borders-aa6243ac7d9e4d4d902ee669c6b360d29349677f4f6cc33b8f6c7b305d8a2052.png)
 
 ## Border radius
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/radius-1-30d42e5cc809b05bd644edc133d49984aa1ee5c47eecbd5e8e3bde356a2734c1.png)
+![img](html-css/radius-1-30d42e5cc809b05bd644edc133d49984aa1ee5c47eecbd5e8e3bde356a2734c1.png)
 
 \--
 
 ## Border radius
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/radius-2-c631c1e6c6ce3abdd8f925e819b18625f70df7fd2b8eab52decb28ee0b034993.png)
+![img](html-css/radius-2-c631c1e6c6ce3abdd8f925e819b18625f70df7fd2b8eab52decb28ee0b034993.png)
 
 \--
 
 ## Box shadow
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box-shadow-92839ef882b5e4bf0299dc7e5194c0c3c968af4d0053a9588ef56def4ec75195.png)
+![img](html-css/box-shadow-92839ef882b5e4bf0299dc7e5194c0c3c968af4d0053a9588ef56def4ec75195.png)
 
 ## Units
 
@@ -506,39 +506,39 @@ Let's **add some div** in our HTML and play with the box model with Chrome Dev t
 
 ## How do you style only the logo?
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/id-dilemma-498dc8980d3e0dd3e9f40dbc53eb9bc718e937f0aedce7a88dce6ad65adf7946.png)
+![img](html-css/id-dilemma-498dc8980d3e0dd3e9f40dbc53eb9bc718e937f0aedce7a88dce6ad65adf7946.png)
 
 \--
 
 ## Name your tag with `id`
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/id-solution-ecc142b3ca1161f17f9078effb3710bbbdb638b09a3de9625c6da65826d74da1.png)
+![img](html-css/id-solution-ecc142b3ca1161f17f9078effb3710bbbdb638b09a3de9625c6da65826d74da1.png)
 
 \--
 
 ## How do you style your staff pictures?
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-dilemma-6a3a8a6997df006eb99d5f034d86bec91360c41e563677f0148fef3b90f218b2.png)
+## ![img](html-css/class-dilemma-6a3a8a6997df006eb99d5f034d86bec91360c41e563677f0148fef3b90f218b2.png)
 
 ## Name your tags with `class`
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-solution-93d33d4c380330298ebfaa781365427efc3169359b4e07778b578af370d042fa.png)
+## ![img](html-css/class-solution-93d33d4c380330298ebfaa781365427efc3169359b4e07778b578af370d042fa.png)
 
 ## id or class?
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-or-id-dc3998e0ee573a38daa186715b28934ff0560215e07262118a46c18343d05c6f.png)
+## ![img](html-css/class-or-id-dc3998e0ee573a38daa186715b28934ff0560215e07262118a46c18343d05c6f.png)
 
 ## Combine (1)
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-1-52b0cca31494d55f136d68e47aa09060478005031abd233f8ec333857b4f1300.png)
+## ![img](html-css/combine-class-1-52b0cca31494d55f136d68e47aa09060478005031abd233f8ec333857b4f1300.png)
 
 ## Combine (2)
 
-## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-2-9b99d83da19cbf7e494192f3b1bda849dd125142cb68a80fede694b705603015.png)
+## ![img](html-css/combine-class-2-9b99d83da19cbf7e494192f3b1bda849dd125142cb68a80fede694b705603015.png)
 
 ## Combine (3)
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-3-a1e379c6e97826d412bbd52a41a9ede8d185b1d5c35d9c73220cdd8b724a6c89.png)
+![img](html-css/combine-class-3-a1e379c6e97826d412bbd52a41a9ede8d185b1d5c35d9c73220cdd8b724a6c89.png)
 
 \--
 

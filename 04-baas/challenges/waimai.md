@@ -22,7 +22,11 @@
 
 ![7061570232704_.pic](images/7061570232704_.png)
 
-For our challenge, we'll skip restaurants and use meals index as the landing page. You can add the restaurant index later on anytime by following the previous Dianping exercise.
+Time to build a Food Delivery program for a restaurant.
+
+The software is designed for **one restaurant only**, so no need to cater (no pun intended 😉) for a multi-restaurant one (e.g. you don't need a `restaurant` table).
+
+So just for this challenge, we'll skip restaurants and use meals as the landing page. You can add restaurants anytime by following the previous Dianping exercise.
 
 
 
@@ -34,17 +38,11 @@ For our challenge, we'll skip restaurants and use meals index as the landing pag
 
 
 
-Deliverer and Manager share the order index view. The manager can **assign** an order **opened** by the customer to a deliverer, who can mark it **delivered**. So the order states are "Opened," "Assigned," and "Delivered." 
+Deliverer and Manager share the order index view. The manager can **assign** an order **opened** by the customer to a deliverer, who can mark it **delivered**. So the order states are "Opened," "Assigned," and "Delivered."
 
 Other states like "Cancelled," "Started" can be added too this way but for our exercise, we'll keep it simple to just three states mentioned above.
 
 
-
-
-
-Time to build a Food Delivery program for a restaurant.
-
-The software is designed for **one restaurant only**, so no need to cater (no pun intended 😉) for a multi-restaurant one (e.g. you don't need a `restaurants` table).
 
 The main components are:
 
@@ -67,9 +65,9 @@ Based on the user journey above, we design the schema to model the data and the 
 
 
 
-The key to the design is that a `user` can have many `meals` through `orders`, and that a `meal` can be ordered by many `users`. This many-to-many relationship is like the `review` joint table from the previous exercise (Dianping). 
+The key to the design is that a `user` can have many `meals` through `orders`, and that a `meal` can be ordered by many `users`. This many-to-many relationship is like the `review` joint table from the previous exercise (Dianping).
 
-In this case `order` is our joint table and the central part of the app that ties all the other data (and functions) together. 
+In this case `order` is our joint table and the central part of the app that ties all the other data (and functions) together.
 
 
 
@@ -87,12 +85,12 @@ Once your tables are implemented, test them with the BaaS SDK! Make sure your 4 
 
 5. handle interactions with JS - either or all of:
 
-   - get user input 
+   - get user input
    - send data to BaaS
    - change page data to update view or show new interactions
    - navigate to another pace
 
-   
+
 
 Remember when at a good spot, always `commit` and `push`!
 
@@ -102,7 +100,19 @@ Your restaurant sells food, so you need a way to store the meals that can be ord
 
 
 
-Let's add a table called `meal` in the BaaS. Then add `name`, `price`, and `photo` columns. Consult instructions on BaaS operations at beginning of previous exercises if you need a refresher.
+Let's add a table called `meal` in the BaaS. Then add `name` (string), `price` (integer), and `photo` (string) columns. Consult instructions on BaaS operations at beginning of previous exercises if you need a refresher.
+
+
+
+Why is `price` an integer? Remember integers are countable things. Money is countable (in cents for example). Using regular numbers could cause rounding errors when stored!
+
+Rule of thumb - **store money always as an integer**.
+
+
+
+Now some meal data. Any meal for your waimai business. Match input to the field types you defined.
+
+
 
 
 
@@ -113,52 +123,59 @@ Then let's move to the app. Here are the **user actions** we want to implement:
 
 
 
+### List all meals
+
+Starting with the index page in the previous exercise app (Dianping), substitute meals in place of restaurants.
+
+When displaying price, remember to divide number cents by 100:
+```xml
+<view class="p">{{meal.price / 100}} Kuai</view>
+```
+
+Tweak the styling to make it look like a store!
+
+Done? Good! Time to `commit` and `push` to your repo at every finished stage (e.g. code has to be fully working, though features are not fully completed). Good to get in the habit.
 
 
 
+### Adding a new meal
 
 
 
+Keeping on the strategy of following the template of the previous exercise, we use the new page to create a meal. Using the `meal` table for the data, modify the view, and js file correspondingly.
 
 
-Done? Good! Time to `commit` and `push`.
+
+Forms take every input as string. So how do we get a number for the price? Use `parseInt` like so:
+
+```js
+// making meal data from form input in new.js
+let data = {
+  name: name,
+  price: Number.parseInt(price),
+  photo: photo,
+}
+```
+
+
 
 
 
 ## 3 - (`Customer`)
 
-We need to keep a list of all our customers. When a new customer calls to order, the first thing we need to do is add them to our list. Each customer has a name and an address. 
+We need to keep a list of all our customers. Each customer has a name and an address.
 
-We already have a `user` table in the BaaS ( stored as `_userprofile` and accessed with `User` object from the SDK). We can add an `address` column. 
+We already have a `user` table in the BaaS ( stored as `_userprofile` and accessed with `User` object from the SDK). When a new customer signs up, the BaaS will create a user record for him.
 
-
-
-
-
-After finishing work on the tables,  move onto the app to implement the following user actions:
-
-- `List` all customers available in the restaurant
-- `Add` a new customer
+We can add an `address` (string) column. Should it be required? (Hint: Does the customer have to add the address on signup, or only when he wants to order? What about other types of users, e.g. employees?)
 
 
-
-
-
-
-
-
-
-
-
-
-
-Done? Boom! Don't forget to `commit` and `push`.
 
 ## 4 - (`Employee`)
 
-The restaurant has two types of employees, **managers** and **delivery guys**. We don't need to create them in the app. The BaaS SDK can add these directly. Then we can manage them in the built in CRM in the BaaS dashboard.
+The restaurant has two types of employees, **managers** and **delivery guys**. They're both still `User` objects. We don't need to create them using the app either. The BaaS can add these directly with SDK or on its dashboard. Then we can manage them in the built in CRM in the BaaS dashboard.
 
-Remember how you registered a user with JS? 
+Remember how you registered a user with JS?
 
 ```js
 // in the WeChat IDE JS console
@@ -170,37 +187,201 @@ Manually add some employees:
 ```bash
 id,username,password,role
 1,paul,secret,manager
-2,john,secret,delivery_guy
+2,john,secret,deliverer
 ```
 
 
 
-The role column is to be added to the `_userprofile` table. Then the roles can be set on the BaaS dashboard or through the SDK - remember how we set user's photo previous exercise? 
+The `role` (string) column is to be added to the `_userprofile` table. Then the roles can be set on the BaaS dashboard or through the SDK - remember how we set user's photo in the previous exercise? Later this `role` will be used to customize the app for each type of user!
+
+For now, check that we can sign up, log in, and log out of the app using the `user` page from the previous app!
 
 
-
-With that information, we can implement a **login** logic in our app to have two dashboards depending on the user role: one dashboard for the manager, and another dashboard for the delivery guy (with fewer user actions available).
-
-To handle that, we'll have different login **sessions** for different users. You've already seen that used when loggin and and out of the previous exericse app. We'll need those login forms still. 
-
-Now when you run the food delivery app, you can see all the meals. But to order a meal, or see your dashboard (`orders index`), you need to **sign in**. The dashboard that you then see should be **dependent on your role**:
-
-
-
-Finished? Great work :) Remember to `commit` and `push`.
 
 ## 6 - (`Order`) Time to link all the tables!
 
 An order is taken for a **customer**, containing a **meal** (to simplify things, let's say that an order can only contain **one meal**) and is then assigned to a given **delivery guy**. Finally, the `order` table needs to record whether or not the meal has been delivered.
 
-Here's where our tables link up. First, write the `order` table on the BaaS.
+Here's where our tables link up. First, create the `order` table on the BaaS.
 
-Make sure that the following **user stories** for customers are implemented in your app:
+According to the schema order has `address` (string), `state` (string), `customer` (pointer), `deliverer` (pointer), and `meal` (pointer).
 
-- As a customer, I can log in
-- As a customer, I can view all the meals
-- As a manager, I can order a meal
-- As a manager, I can view all my orders (opened or delivered)
+`state` should have a `default value` of  `opened` - the initial state when an order is created.
+
+The two pointers are foreign keys to the `_userprofile` table, and the second pointer to the `meal` table. You can see that it's ok to have two pointers to the same table because a user can have many roles.
+
+
+
+Then make sure that the following **user stories** for customers are implemented in your app:
+
+- As a customer, I can log in - Done in previous app
+
+- As a customer, I can view all the meals - Done above
+
+- As a customer, I can order a meal
+
+- As a customer, I can view all my orders (opened or delivered)
+
+
+
+### Creating an order
+
+We can put a customized order button on the meal cards on the `index` page:
+
+```xml
+<!-- index.wxml -->
+<view data-id="{{meal.id}}" class="order" bindtap="orderMeal">Order</view>
+```
+
+```css
+<!-- index.wxss -->
+.order {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+  margin-top: 30px;
+  width: 62px;
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+Then following steps similar to creating a meal in the section above:
+
+```js
+//index.js in Page
+orderMeal: function (event) {
+  const data = event.currentTarget.dataset;
+  let id = data.id
+
+  let newOrder = {
+    // To be figured out in the next step
+  }
+
+  let Order = new wx.BaaS.TableObject('order')
+  let order = Order.create()
+  order.set(newOrder).save().then(res => {
+   // to be figured out in following steps
+  })
+}
+```
+
+Don't forget to remove `bindtap` on the `card-product` element from previous exercise if still there.
+
+The customer is the currently logged in user.
+
+In `onLoad` of `index.js`, check for `currentUser` with `wx.BaaS.auth.getCurrentUser()` like in previous exercise. Then `page.setData({ currentUser: user })` where user is either the returned logged in `user`, or `null`.
+
+We can then check if `user` is `null` and redirect to the `user` page to log in.
+
+```js
+//index.js in orderMeal function
+const data = event.currentTarget.dataset;
+let meal_id = data.id
+let currentUser = this.data.currentUser
+
+if (!currentUser) {
+  wx.switchTab({
+    url: '/pages/user/user' // logged in
+  });
+} else {
+  // create order
+}
+
+
+```
+
+Do we need the `state`? Its `default value` configured in the BaaS will be set on creation, so we skip it!
+
+For the address, we check for the user's address.
+
+So we add this into the "create order step" above inside the `else` block
+
+```js
+//index.js in orderMeal function
+wx.chooseAddress({
+  success(res) {
+    let address =
+    res.userName + " " +
+    res.postalCode + " " +
+    res.provinceName + " " +
+    res.cityName + " " +
+    res.countyName + " " +
+    res.detailInfo + " " +
+    res.nationalCode + " " +
+    res.telNumber
+
+    let newOrder = {
+      meal: meal_id,
+      customer: currentUser.id.toString(),
+      address: address
+    }
+
+    let Order = new wx.BaaS.TableObject('order')
+    let order = Order.create()
+    order.set(newOrder).save().then(res => {
+      // to be figured out in the next step
+    })
+  }
+})
+```
+There's a subtle but important part of this code in that we save the `order` in the response handling for getting the address.
+
+This is again because async processes like requesting for addresses needs waiting, and we only want to create the order if the request comes back successfully.
+
+What does the user want to see after an order? Probably the order status so he can check the order! So we go to the orders page.  `reLaunch` is used here so they cannot go back in history after ordering - a standard practice.
+
+```js
+order.set(newOrder).save().then(res => {
+  wx.reLaunch({
+    url: '/pages/user/user' // show list of orders
+  });
+})
+```
+
+
+
+Now we show all the orders in the user dashboard.
+
+### List all orders (user dashboard)
+
+
+
+Now when you run the food delivery app, you can see all the meals. But to order a meal, or see your dashboard (`orders index`), you need to **sign in**.
+
+
+
+The dashboard that you then see should be **dependent on your role**.
+
+
+
+We can implement a **login** logic in our app to have **three dashboards** depending on the user role: one dashboard for the **manager**, another dashboard for the **delivery guy** (with fewer user actions available), and lastly for the **customer**.
+
+To handle that, we'll have different login **sessions** for different users. You've already seen that used when loggin and and out of the previous exericse app. We'll need those login forms still.
+
+
+
+Screenshots of three types of dashboards
+
+
+
+We start with the customer dashboard that shows all his address, and his orders.
+
+
+
+
+
+
+
+Finished? Great work :) Remember to `commit` and `push`.
+
+
+
+
+
+
 
 Then, make sure that the following **user stories** for employees are implemented in your app:
 
@@ -214,28 +395,31 @@ Then, make sure that the following **user stories** for employees are implemente
 
 
 
-When an order is created, we need to give it an address. We ask for the user's address:
+When the manager assigns a deliverer to an order, we need to show the list of deliverers!
+
+### List all deliverers
+
+Very similar to list the meals! We can copy the whole page and apply to users.
 
 
 
-```js
-wx.chooseAddress({
-  success (res) {
-    console.log(res.userName)
-    console.log(res.postalCode)
-    console.log(res.provinceName)
-    console.log(res.cityName)
-    console.log(res.countyName)
-    console.log(res.detailInfo)
-    console.log(res.nationalCode)
-    console.log(res.telNumber)
-  }
-})
-```
+Remember to only show users who have a role of deliverer
 
 
 
-What if they want to chose another address? There's a WeChat function for that too you can use - to be covered in a later course.
+Done? Boom! Don't forget to `commit` and `push`.
+
+
+
+Also only managers can add a meal, so disable that for the other users.
+
+
+
+### Update order
+
+#### Set deliverer
+
+#### Set status delivered
 
 
 
@@ -243,11 +427,11 @@ What if they want to chose another address? There's a WeChat function for that t
 
 We haven't done any **deleting** yet. How would you implement these additional user stories?
 
-- As a manager, I can delete a meal 
+- As a manager, I can delete a meal
 - As a manager, I can delete a customer
 
 
 
 Can't delete for real - data is precious, also relationships demands on them. What happens to old orders for example? How do you do accounting if order is lost?
 
-So instead, we hide them! There's a flag you set to true for delete - let's call it `hidden` . Now you have a bit more insight into the world of big data and its complexities!  
+So instead, we hide them! There's a flag you set to true for delete - let's call it `hidden` . Now you have a bit more insight into the world of big data and its complexities!
