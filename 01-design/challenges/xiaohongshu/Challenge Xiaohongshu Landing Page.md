@@ -149,7 +149,8 @@ html {
 .masonry {
   margin: 1.5em auto;
   max-width: 768px;
-  column-gap: 1.5em;
+  column-gap: 1em;
+  column-count: 2;
 }
 
 /* The Masonry Brick */
