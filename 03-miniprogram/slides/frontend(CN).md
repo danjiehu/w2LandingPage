@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-10 20:46:24
+ * @LastEditTime: 2019-10-10 20:46:24
+ * @LastEditors: your name
+ -->
 ### 资产（Assets）
 
 ------
@@ -49,18 +56,18 @@
 
 ------
 
-Quick tour
+快速预览
 
 ------
 
 ### 微信小程序代码结构🤔
 
-小程序4种代码文件类型:
+小程序的4种代码文件类型:
 
 - `.wxml` = HTML文件
 - `.wxss` = CSS文件
 - `.js` 逻辑文件
-- `.json` 设置（configuration）
+- `.json` 配置文件（configuration）
 
 
 ### 小程序由以下文件运行：
@@ -73,7 +80,7 @@ Quick tour
 
 ### 如何创建微信小程序页面
 
-直接在app.json的pages配置中添加pages注册即可，将生成page的四个文件（`.wxml`, `.wxss`, `.js`, and `.json`），都有初始化的代码中
+直接在app.json的pages配置中添加新路由注册即可，将生成page的四个文件（`.wxml`, `.wxss`, `.js`, and `.json`）
 
 ------
 
@@ -85,7 +92,7 @@ Quick tour
 
 ------
 
-### WXML语法（same same but different）
+### WXML语法（大同小异）
 
 ------
 
@@ -96,22 +103,22 @@ Quick tour
 ### JSON文件进行配置
 
 - 定制小程序（Eg: app/page title, navigation bar color）
-- Setup tab
-- Setup 组件（components）
+- 设置标签页
+- 设置组件（components）
 
 [查看所有选项](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html)
 
 ------
 
-### Live code 1: Landing page 💪
+### 现场编程 1：落地页 💪
 
 使用[Le Wagon设定的banner组件](https://uikit.lewagon.com/documentation#banner).
 
 ------
 
-### Live code 2: Stories页面💪
+### 现场编程 2: 故事页面 💪
 
-为了节省时间，使用[Le Wagon设定的卡片组件](https://uikit.lewagon.com/documentation#card_product)（不需要产品图片）
+为了节省时间，使用[Le Wagon 预设的卡片组件](https://uikit.lewagon.com/documentation#card_product)（不需要产品图片）
 
 ------
 
@@ -120,7 +127,7 @@ Quick tour
 
 ------
 
-## Let's make our pages alive!
+## 让我们开始编程
 
 框架概念：
 
@@ -175,8 +182,8 @@ Page({
 
 ### 在哪里存储数据?
 
-1. **本地数据（local data）**: 页面的初始数据
-2. **全局数据（global data）**: 小程序所有页面中的数据
+1. **本地数据（local data）**: 页面的内部数据
+2. **全局数据（global data）**: 小程序所有页面中的共享数据
 3. **缓存（cache）**: 用户手机本地
 4. **服务器（server）**: 通过API！
 
