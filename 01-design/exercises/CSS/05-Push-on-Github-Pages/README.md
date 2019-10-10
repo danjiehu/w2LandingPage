@@ -3,13 +3,13 @@
 Let copy our profile to its own location and version it with `git` as a separate project.
 
 ```bash
-cp -r profile ~/code/<user.github_nickname>
-cd ~/code/<user.github_nickname>/profile
+cp -r profile ~/code/$GITHUB_USERNAME
+cd ~/code/$GITHUB_USERNAME/profile
 ```
 
 ## Create the Github repo
 
-Let's install the `hub` to create a Github repo from your terminal without opening your browser (very useful when you are lazy 😉)
+If not done yet, let's install the `hub` to create a Github repo from your terminal without opening your browser (very useful when you are lazy 😉)
 
 You can find and install from its [repo](https://github.com/github/hub/releases)
 
@@ -45,18 +45,4 @@ From now and until the end of the day, you can keep working in your `~/code/<use
 git add .
 git commit -m "make my profile prettier"
 git push origin gh-pages
-```
-
-## Submit your code to Kitt
-
-As you weren't in `fullstack-challenges` your work won't be submitted on Kitt, if you want to mark this challenge as complete you can do the following:
-
-```bash
-cd ~/code/<user.github_nickname>/fullstack-challenges/04-Front-End/01-HTML-and-CSS/05-Push-on-Github-Pages
-cp -r ~/code/<user.github_nickname>/profile .
-rm -rf profile/.git
-git add .
-git commit -m "Submitting my work to Kitt"
-git push origin master
-
 ```
