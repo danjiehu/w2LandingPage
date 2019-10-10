@@ -3,7 +3,7 @@
 Let's set up your workstation:
 
 1. **10:15am**: Go through a 15 min first lecture with your teacher about the tools you need to install as a developer.
-2. **10:30am-12pm**: Follow [Le Wagon's setup carefully](https://github.com/lewagon/setup) and ask for help whenever you are stuck. It should take you all morning, and might overlap a bit into your lunch break for non-Mac users 😉.
+2. **10:30am-12pm**: Follow Le Wagon's setup guide and ask for help whenever you are stuck. It should take you all morning, and might overlap a bit into your lunch break for non-Mac users 😉.
 3. **1pm-1:15pm**: Second 15 min lecture on command line basics (navigating through the filesystem, creating directories & files, launching Sublime Text from terminal, etc.)
 4. **1:15pm-2pm**: Third 45 min lecture on git commands (`git add`/`git commit`/`git push`).
 5. **2pm-2:15pm**: At the end of the git lecture, your teacher will show you the learning platform (lectures, exercises, challenges) 
@@ -21,7 +21,7 @@ Glad you are here! Let's rock it 🚀🚀🚀!
 
 
 
-## New Setup
+## Setup
 
 Please choose your operating system (OS):
 
@@ -46,13 +46,13 @@ Please choose your operating system (OS):
 ## Log on [github.com](http://github.com) 
 
 
-Give us your **github name** so you can be added to [repo](www.github.com/dounan1/china-product) for exercises. Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
+Give to the teacher your **github name** so you can be added to [repository for exercises](www.github.com/dounan1/china-product). Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
 
 
 
 ## WeChat Mini Program Account
 
-If you have time, get your <a href="wechat.md"> WeChat Mini Program and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
+If you have time, get your <a href="wechat.md">WeChat Mini Program and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
 
 You're encouraged to use a business license for most types of social or eCommerce Mini Programs, especially one that takes payment.  If you have a business license, also setup a [WeChat Merchant (Pay) Account](https://pay.weixin.qq.com/index.php/public/wechatpay_en).
 
@@ -63,18 +63,12 @@ You're encouraged to use a business license for most types of social or eCommerc
 
 As you watch afternoon of the learning platform, remember:
 
-Left menu tell what to expect every day
-- days are divided up by sections, starting with slides
-- exercises for the day follow slides 
-- challenges for weekends mark end of a week
+Left menu tells what to expect every day! 
+- Week days will have lectures + exercises
+- Weekend days 1 challenge to achieve 💪
 
-
-
-For each exercise:
-
-1. use downloaded template zip from exercise repo, or create new folder
-
-2. complete the exercise 
-
-3. upload your solution in a zip file 
+For each exercise or challenge:
+1. Get the ZIP file boilerplate, if any
+1. Complete the exercise following instructions
+2. Upload your solution in a ZIP file 
 
