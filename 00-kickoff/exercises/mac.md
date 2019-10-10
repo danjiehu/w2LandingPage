@@ -8,6 +8,12 @@ The following instructions will help you to get ready for the camp:
 
 - Setup git and GitHub
 
+
+
+Take your time to read the instructions **carefully**. Copy and paste just one line at a time
+
+
+
 You can get started by installing both a command line and git at the same time!
 
 
@@ -71,15 +77,9 @@ Be careful, at the end of this script, it will prompt for your laptop password a
 / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
 \____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
                         /____/                       ....is now installed!
-​````
+```
 
 Now quit the Terminal (`⌘` + `Q`), and restart it.
-
-You should see something like this:
-
-![](images/on-my-zsh.png)
-
-If not, **stop right away** and call a teacher.
 
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
@@ -99,7 +99,7 @@ Open a terminal and type this, replacing the email with **yours** (the
 same one you used to create your GitHub account). It will prompt
 for information. Just press enter until it asks for a **passphrase**.
 
-​```bash
+```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
