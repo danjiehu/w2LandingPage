@@ -562,12 +562,6 @@ box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* 淡色阴影 */
 ```
 -----
 
-#### 结果:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
-
------
-
 ## Div剧中技巧
 
 ```
@@ -576,12 +570,6 @@ margin: 0 auto;      /* Set automatic margins on right/left
 设置左边/右边的自动页边距
  */
 ```
-
------
-
-#### 结果:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
 
 -----
 
