@@ -902,7 +902,7 @@ p {                 /* least specific */
 
 接下来，我们将**完成live-code**，并获得以下[最终结果](https://papillard.github.io/my-profile/)!
 
-![img](html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
 -----
 
