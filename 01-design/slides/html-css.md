@@ -1,9 +1,3 @@
-## Frontend module
-
-- **Day #1 (today)** 👉 Simple HTML / CSS (fonts, colors, box model)
-- **Day #2** 👉 Building components (buttons, forms, tabs, etc...)
-- **Day #3** 👉 Bootstrap & building layouts
-
 ## Today's objectives
 
 - Learn HTML / CSS basics
@@ -796,10 +790,4 @@ Let's **finish our live-code** and get this [final result](https://papillard.git
 
 ![img](https://kitt.lewagon.com/karr/assets/front_new/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
-Tonight, we will put our profile **online** using [Github Pages](https://pages.github.com/).
-
 ## Let's build your profile!
-
-## Slides
-
-- [Download PDF](https://github.com/tgenaitay/wagon-china-front-end/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%20101%20Le%20Wagon%20crash%20course.pdf)
