@@ -1,3 +1,9 @@
+## Log on [github.com](http://github.com) 
+
+Give us your **github name** so you can be added to [repo](www.github.com/dounan1/china-product) for exercises. Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
+
+
+
 ## Setup
 
 Let's set up your workstation:
@@ -41,12 +47,6 @@ Please choose your operating system (OS):
 </table>
 
 
-
-
-## Log on [github.com](http://github.com) 
-
-
-Give us your **github name** so you can be added to [repo](www.github.com/dounan1/china-product) for exercises. Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
 
 
 
