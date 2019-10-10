@@ -473,20 +473,12 @@ border-radius: 4px;                        /* Small radius */
 box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
 ```
 
-#### Result:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
-
 ## Div centering technique
 
 ```
 width: 300px;        /* Set the width */
 margin: 0 auto;      /* Set automatic margins on right/left */
 ```
-
-#### Result:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
 
 ## Live-code
 
