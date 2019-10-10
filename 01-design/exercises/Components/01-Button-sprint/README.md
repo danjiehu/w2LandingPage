@@ -2,7 +2,9 @@
 
 Work on three different button designs (two given by us, one of your choice). Here is [your objective](http://lewagon.github.io/html-css-challenges/08-button-sprint/). 
 
-For ALL exercises for today, use the [template](https://github.com/dounan1/china-product/blob/master/CSS.zip) to get started!
+## Setup
+
+For ALL exercises for today, use the [boilerplate](https://github.com/dounan1/china-product/blob/master/01-design/exercises/Components.zip?raw=true) to get started!
 
 > Tip: Remember you can open up a folder in Sublime! Open up the template above after downloading and unzipping.
 
