@@ -275,7 +275,7 @@ Result: [Le Wagon](https://www.lewagon.com/)
 
 Let's add some HTML content to our profile page!
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
+![img](html-css/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
 
 ------
 
@@ -406,7 +406,7 @@ Let's design our fonts and colors using [Google fonts](https://fonts.google.com/
 
 ## Box model
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
+![img](html-css/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
 
 ## Box model - border
 
@@ -788,6 +788,6 @@ Check out the [specificity calculator](http://specificity.keegan.st/)
 
 Let's **finish our live-code** and get this [final result](https://papillard.github.io/my-profile/)!
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
+![img](html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
 ## Let's build your profile!
