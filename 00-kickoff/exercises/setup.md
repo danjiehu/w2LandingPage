@@ -61,7 +61,7 @@ Make sure you're using [Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)
 
 ## WeChat Mini Program Account
 
-If you have time, get your <a href="wechat.md">WeChat Mini Program Developer Account and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
+If you have time, get your <a href="https://github.com/dounan1/china-product/blob/master/00-kickoff/exercises/wechat.md">WeChat Mini Program Developer Account and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
 
 You're encouraged to use a business license for most types of social or eCommerce Mini Programs, especially one that takes payment.  If you have a business license, also setup a [WeChat Merchant (Pay) Account](https://pay.weixin.qq.com/index.php/public/wechatpay_en).
 
