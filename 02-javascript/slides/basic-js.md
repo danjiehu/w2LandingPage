@@ -586,7 +586,7 @@ capitalize("wagon");
 
 ### Attaching to Chrome (1)
 
-We can leverage the Chrome DevTools to debug our Node.js code.
+Open up a webpage in chrome 
 
 ```
 node --inspect-brk lib/capitalize.js
