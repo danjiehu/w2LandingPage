@@ -1,5 +1,3 @@
-## Lecture Setup
-
 ## Let's open up the browser
 
 ### Your browser is not just a browser, it's an **IDE**

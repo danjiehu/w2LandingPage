@@ -4,7 +4,7 @@ Today is your first day of JavaScript. The goal of this first day is for you to 
 
 ## Specs
 
-Let's start with a very simple algorithm. Open the `lib/even_or_odd.js` file. Implement the `evenOrOdd` function which takes one parameter `number` (of type `Number`) and returns a `String`:
+Let's start with a very simple algorithm. Download the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/basic-js.zip). Open the `lib/even_or_odd.js` file. Implement the `evenOrOdd` function which takes one parameter `number` (of type `Number`) and returns a `String`:
 
 - `"even"` if the number is even (0, 2, 4, etc.)
 - `"odd"` if the number is odd (1, 3, 5, etc.)

@@ -9,15 +9,15 @@ Today we'll make the mobile version of this popular app!
 
 Stories have name and content, some have photos or videos (optional).
 
-![](images/image-20191005060348073.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005060348073.png)
 
 ### Story Page (Story Show)
 
-![](images/image-20191005060601357.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005060601357.png)
 
 Stories have comments.
 
-![](images/image-20191005060723295.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005060723295.png)
 
 Comments have name, content, votes.
 
@@ -25,16 +25,16 @@ Comments have name, content, votes.
 
 ### Click create icon -> Create Pages
 
-![](images/image-20191005061013131.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005061013131.png)
 
 
 Users can create a tweet type Story with Photo and Location:
 
-![](images/image-20191005061159237.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005061159237.png)
 
 We'll use these functions in later course... For now, our story is like the question type - just text.
 
-![](images/image-20191005061114431.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191005061114431.png)
 
 Refer to this handy guide if you need:
 
@@ -52,13 +52,13 @@ Tip: Use your FML frontend as starting point to save time. They are very similar
 
 Where to find and how to use a token? Refer to this [documentation](https://doc.minapp.com/open-api/authentication.html).
 
-```
+```js
 Token: 7a82a2b76c38e309ae34ff3c83c87f8409748b0e
 ```
 
 Inside the header, in the form of a "Bearer Token":
 
-```json
+```js
 header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'},
 ```
 
@@ -83,7 +83,7 @@ const index_endpoint = YOUR_ANSWER
 Then put into a json:
 
 
-``` json
+``` js
 {
   url: index_endpoint,
   method: 'GET'
@@ -151,7 +151,7 @@ const request = {
 ```
 A successful request show in the console.
 
-![](images/image-20191006191759359.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191006191759359.png)
 
 Either way, after you console log the response, find and extract the stories data from the successful response. It could be one or two layers deep! E.g. `res.key1.key2`
 
@@ -195,7 +195,7 @@ GET /oserve/v1/table/84988/record/:id/
 
 This means your request will need a constant called id that is the same id as your story. With it you can make a request json at this endpoint
 
-```json
+```js
 {
   url: `https://cloud.minapp.com/oserve/v1/table/84988/record/${id}`,
   method: 'GET',
@@ -360,7 +360,7 @@ Make sure you include the `data-id` attribute in each of the comments when you s
 
 When the user clicks vote on a comment, its voting number should increase. Notice we have a `votes` field in the comments data:
 
-![](images/image-20191006192021558.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191006192021558.png)
 
 
 
@@ -370,7 +370,7 @@ Tip: `AppData` tab in the console is a good way to see and play with the data on
 
 
 
-![](images/image-20191006192344973.png)
+![](https://github.com/dounan1/china-product/raw/master/03-miniprogram/challenges/images/image-20191006192344973.png)
 
 
 So now we can get the votes if we add a `data-votes` attribute to our view
@@ -456,7 +456,7 @@ Pro Tip: Just on this particular api [from Minapp (more info)](https://doc.minap
 
 For numbers, you can do this for example to de-vote!
 
-```json
+```js
   data: {
     "votes": {
       "$incr_by": -1

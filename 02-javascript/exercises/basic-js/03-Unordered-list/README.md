@@ -2,6 +2,8 @@
 
 In this challenge, we want you to generate the HTML of an **unordered list** from raw data.
 
+Use the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/basic-js.zip) downloaded in previous exercise.
+
 ## Specs
 
 ### List item generator
