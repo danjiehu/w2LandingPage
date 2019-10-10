@@ -12,9 +12,13 @@ The following instructions will help you to get ready for the camp:
 
 Take your time to read the instructions **carefully**. Copy and paste just one line at a time
 
+Wait for the command to finish and read the results of each output **in detail**. Any `errors`, `fatal`, `fail` keywords? That means something is wrong if it says "success" at the end. 
+
+If failures happen, read the reason why in the output. Perhaps it's a mistake in username or password. Tell the teacher and stop - **don't skip over it**!
 
 
-You can get started by installing both a command line and git at the same time!
+
+Let's get started by installing both a command line and git at the same time!
 
 
 
@@ -68,6 +72,8 @@ We will use the shell named `zsh` instead of `bash`, the default one.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+Type "Y" when asked if you want to change your default shell. 
+
 Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
 
 ```bash
@@ -81,23 +87,16 @@ Be careful, at the end of this script, it will prompt for your laptop password a
 
 Now quit the Terminal (`⌘` + `Q`), and restart it.
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles`
+You should see something like this:
 
-![](images/terminal-pro.png)
-
-Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
+![img](/Users/dounanhu/Code/wg/china-product/00-kickoff/exercises/images/on-my-zsh.png)
 
 
 ## GitHub
 
-We need to generate SSH keys which are going to be used by GitHub and Heroku
-to authenticate you. Think of it as a way to log in, but different from the
-well known username/password couple. If you already generated keys
-that you already use with other services, you can skip this step.
+We need to generate SSH keys which are going to be used by GitHub and Heroku to authenticate you. Think of it as a way to log in, but different from the well known username/password couple. If you already generated keys that you already use with other services, you can skip this step.
 
-Open a terminal and type this, replacing the email with **yours** (the
-same one you used to create your GitHub account). It will prompt
-for information. Just press enter until it asks for a **passphrase**. 
+Open a terminal and type this, replacing the email with **yours** (the same one you used to create your GitHub account). It will prompt for information. Just press enter until it asks for a **passphrase**. 
 
 ```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
@@ -111,13 +110,9 @@ Then you need to give your **public** key to GitHub. Run:
 cat ~/.ssh/id_ed25519.pub
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
-Finish by clicking on the **Add key** green button.
+It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text, then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on **Add SSH key**, fill in the Title with your computer name, and paste the **Key**. Finish by clicking on the **Add key** green button.
 
-To check that this step is completed, in the terminal run this. You will be
-prompted a warning, type `yes` then `Enter`.
+To check that this step is completed, in the terminal run this. You will be prompted a warning, type `yes` then `Enter`.
 
 ```bash
 ssh -T git@github.com
@@ -144,8 +139,7 @@ Hackers love to refine and polish their shell and tools. We'll start with a grea
 
 :arrow_right: [Click here to **fork**](https://github.com/dounan1/dotfiles/fork) the `dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your* own github usernickname.
 
 ```bash
 export GITHUB_USERNAME=replace_this_with_your_github_username
@@ -178,7 +172,7 @@ zsh git_setup.sh
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
-Please now **quit** all your opened terminal windows.
+Please now **quit** all your opened terminal windows. Use (`⌘` + `Q`).
 
 ### Sublime Text auto-configuration
 
@@ -198,9 +192,7 @@ stt
 
 **Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
 
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
+To check if plugins are installed, open the Command Palette (`⌘` + `shift` + `P` on OSX, `Ctrl` + `shift` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
-If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
-
-When it's done, you can close Sublime Text.
+If you don't, it's not a big deal! They are just small helpers that might take a while to install. You can close Sublime Text and move on.
 

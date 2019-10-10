@@ -6,7 +6,15 @@ The following instructions will help you to get ready for the camp:
 - Pimp your Terminal
 - Setup git and GitHub
 
-You can get started by installing both a command line and git at the same time!
+Take your time to read the instructions **carefully**. Copy and paste just one line at a time
+
+Wait for the command to finish and read the results of each output **in detail**. Any `errors`, `fatal`, `fail` keywords? That means something is wrong if it says "success" at the end. 
+
+If failures happen, read the reason why in the output. Perhaps it's a mistake in username or password. Tell the teacher and stop - **don't skip over it**!
+
+
+
+Let's get started by installing both a command line and git at the same time!
 
 
 
@@ -71,21 +79,124 @@ The installer should put the Sublime Text file `.exe` in `Program Files` (not th
 It can be tricky because you have to put single quotes around the code that comes after `alias st=`, but in this case you also have to put double quotes around that file path. So take note of that: double quotes inside of single quotes.
 
 
-
 ### Step 4
 
-TODO: Make this script work on windows or copy setting files manually
+We can also add some helper tools to sublime.
+
+Run these lines in your terminal:
 
 ```bash
-if [[ ! `uname` =~ "darwin" ]]; then
-  SUBL_PATH=~/.config/sublime-text-3
-else
-  SUBL_PATH=~/Library/Application\ Support/Sublime\ Text\ 3
-fi
+SUBL_PATH=/c/Program Files/Sublime Text 3
 mkdir -p $SUBL_PATH/Packages/User $SUBL_PATH/Installed\ Packages
 backup "$SUBL_PATH/Packages/User/Preferences.sublime-settings"
 curl -k https://sublime.wbond.net/Package%20Control.sublime-package > $SUBL_PATH/Installed\ Packages/Package\ Control.sublime-package
 ln -s $PWD/Preferences.sublime-settings $SUBL_PATH/Packages/User/Preferences.sublime-settings
 ln -s $PWD/Package\ Control.sublime-settings $SUBL_PATH/Packages/User/Package\ Control.sublime-settings
 ln -s $PWD/SublimeLinter.sublime-settings $SUBL_PATH/Packages/User/SublimeLinter.sublime-settings
+```
+
+
+
+And that's it! Sublime is ready to go. 
+
+
+
+## GitHub
+
+We need to generate SSH keys which are going to be used by GitHub and Heroku to authenticate you. Think of it as a way to log in, but different from the well known username/password couple. If you already generated keys that you already use with other services, you can skip this step.
+
+Open a terminal and type this, replacing the email with **yours** (the same one you used to create your GitHub account). It will prompt for information. Just press enter until it asks for a **passphrase**. 
+
+```bash
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
+```
+
+**NB:** when asked for a passphrase, just press `Enter`. We don't need to set one. Press enter again to confirm. 
+
+Then you need to give your **public** key to GitHub. Run:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text, then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on **Add SSH key**, fill in the Title with your computer name, and paste the **Key**. Finish by clicking on the **Add key** green button.
+
+To check that this step is completed, in the terminal run this. You will be prompted a warning, type `yes` then `Enter`.
+
+```bash
+ssh -T git@github.com
+```
+
+If you see something like this, you're done!
+
+```bash
+# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
+```
+
+If it does not work, try running this before trying again the `ssh -T` command:
+
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+### Git Configurations
+
+
+With Sublime, open `.gitconfig` by typing at the terminal:
+
+``` bash
+stt ~/.gitconfig
+```
+
+Then paste the following into the file and save.
+
+```
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+
+[color "branch"]
+  current = green
+  remote = yellow
+
+[core]
+  pager = less -FRSX
+	editor = '/c/Program Files/Sublime Text 3/sublime_text.exe' -n -w
+
+[alias]
+  co = checkout
+  st = status -sb
+  br = branch
+  ci = commit
+  fo = fetch origin
+  d = !git --no-pager diff
+  dt  = difftool
+  stat = !git --no-pager diff --stat
+
+  # Clean merged branches
+  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+
+  # http://www.jukie.net/bart/blog/pimping-out-git-log
+  lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
+
+  # Serve local repo. http://coderwall.com/p/eybtga
+  # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
+  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+
+  m = checkout master
+
+  # Removes a file from the index
+  unstage = reset HEAD --
+
+[help]
+  autocorrect = 1
+
+[push]
+	default = simple
+
+[branch "master"]
+  mergeoptions = --no-edit
 ```
