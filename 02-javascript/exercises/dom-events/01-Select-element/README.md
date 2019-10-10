@@ -2,7 +2,7 @@
 
 In this first challenge, we are going to select an element from the DOM!
 
-Then, open [`localhost:8080`](http://localhost:8080) in your favorite web browser.
+Then, open `index.html` in your favorite web browser. You can right click the file in Sublime editor and select "open in browser"
 
 You should see the countries that won the most FIFA World Cups in an ordered list.
 
@@ -15,4 +15,4 @@ The easiest and most straightforward way to select an element from the DOM is **
 
 Happy selecting 🎣
 
-**N.B:** In this challenge, the tests output is displayed directly in the browser! When you see `Congratulations!` you can `add`, `commit`, `push` and move on to the next challenge! You can also `rake` to check your style.
+**N.B:** In this challenge, the tests output is displayed directly in the browser! When you see `Congratulations!` you can `add`, `commit`, `push` and move on to the next challenge! You can also submit your code for this exercise on the learning platform.

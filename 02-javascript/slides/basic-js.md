@@ -12,24 +12,9 @@ JavaScript != Java
 - Practise the **basics** in JavaScript
 
 
+Today we'll work in the **browser**
 
-Back to the browser tomorrow, today we'll work in the **terminal**
 
-### Setup
-
-To install [Node.js](https://nodejs.org/en/) on OSX:
-
-```
-brew update
-brew install node
-```
-
-On Ubuntu:
-
-```
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
 
 ### JavaScript Version
 
@@ -41,41 +26,8 @@ We are going to use **ES6**:
 
 ------
 
-## Lecture Setup
+## Run code on your browser
 
-We are using [lewagon/webpack-boilerplate](https://github.com/lewagon/webpack-boilerplate/tree/master#usage)
-
-------
-
-## Run code on your computer
-
-### REPL
-
-Ruby
-
-```
-➜ ~ irb
-[1] pry(main)>
-```
-
-JavaScript
-
-```
-➜ ~ node
->
-# Ctrl-C twice to exit
-```
-
-### From a file
-
-Ruby
-
-```
-# hello.rb
-puts "Hello Le Wagon"
-➜ ~ ruby hello.rb
-Hello Le Wagon
-```
 
 JavaScript
 
@@ -90,17 +42,6 @@ Hello Le Wagon
 
 ## Basic Types
 
-Ruby
-
-```
-"Hello Le Wagon"            # String
-
-42                          # Integer
-3.14                        # Float
-
-true                        # TrueClass
-```
-
 JavaScript
 
 ```
@@ -114,16 +55,6 @@ true                        // boolean
 
 ### Checking types
 
-Ruby
-
-```
-"Boris".class
-# => String
-
-42.class
-# => Integer
-```
-
 JavaScript
 
 ```
@@ -136,16 +67,6 @@ typeof(42);
 
 ### Casting types
 
-Ruby
-
-```
-"42".to_i
-# => 42
-
-42.to_s
-# => "42"
-```
-
 JavaScript
 
 ```
@@ -157,15 +78,6 @@ Number.parseInt('42', 10);
 ```
 
 ### Data structures
-
-Ruby
-
-```
-[ "Hello", "Le", "Wagon", 42 ]    # Array
-
-{ name: "bob", age: 42 }          # Hash with symbol as keys
-{ "name" => "bob", "age" => 42 }  # Hash with string as keys
-```
 
 JavaScript
 
@@ -186,13 +98,6 @@ let name = null;
 ------
 
 ## Variables
-
-### Ruby
-
-```
-count = 12          # Assignment
-count = count + 1   # Re-assignment
-```
 
 ### JavaScript
 
@@ -226,13 +131,6 @@ firstName = "Paul"; // TypeError: Assignment to constant variable.
 ```
 
 ### Naming convention
-
-Ruby
-
-```
-first_name = "Ringo"
-# lower_snake_case
-```
 
 JavaScript
 
@@ -292,15 +190,6 @@ months.length;
 
 ### Interpolation
 
-Ruby
-
-```
-first_name = "Ringo"
-last_name = "Starr"
-
-message = "#{first_name} #{last_name} is a drummer"
-# => "Ringo Starr is a drummer";
-```
 
 JavaScript
 
@@ -322,16 +211,6 @@ Reference: [Array on MDN web docs](https://developer.mozilla.org/en-US/docs/Web/
 
 ### CRUD
 
-Ruby - How do you CRUD an Array?
-
-```
-fruits = []
-fruits << "Apple"     # Create (fruits.push("Apple") works as well)
-fruits[0]             # Read
-fruits[0] = "Banana"  # Update
-fruits.delete_at(0)   # Delete
-```
-
 JavaScript
 
 ```
@@ -343,15 +222,6 @@ fruits.splice(0, 1);  // Delete (1 item at index 0)
 ```
 
 ### `forEach`
-
-Ruby
-
-```
-beatles = ["paul", "john", "ringo", "george"]
-beatles.each do |beatle|
-  puts beatle.upcase
-end
-```
 
 JavaScript
 
@@ -370,18 +240,6 @@ beatles.forEach((beatle) => {
 
 ### `if` / `else`
 
-Ruby
-
-```
-age = 14
-
-if age >= 18
-  puts "You can vote"
-else
-  puts "You can't vote"
-end
-```
-
 JavaScript
 
 ```
@@ -396,14 +254,6 @@ if (age >= 18) {
 
 ### Falsy values
 
-Ruby
-
-```
-# Ruby is **truthy**, only 2 "falsy" values:
-nil
-false
-```
-
 JavaScript
 
 ```
@@ -417,32 +267,12 @@ NaN
 
 ### Ternary Operator
 
-Ruby
-
-```
-raining = true
-accessory = (raining ? "umbrella" : "sunglasses")
-# => "umbrella"
-```
-
 JavaScript
 
 ```
 const raining = true;
 const accessory = (raining ? "umbrella" : "sunglasses");
 // => "umbrella"
-```
-
-Ruby
-
-```
-if digit == 0
-  puts "Zero"
-elsif digit == 1
-  puts "One"
-else
-  puts "I don't know this digit, sorry!"
-end
 ```
 
 JavaScript
@@ -501,14 +331,6 @@ Read the [Function Guide on MDN web docs](https://developer.mozilla.org/en-US/do
 
 ### Defining
 
-Ruby
-
-```
-def square(x)
-  x * x
-end
-```
-
 JavaScript (**old way**)
 
 ```
@@ -520,13 +342,6 @@ function square(x) {
 Note the **explicit `return`**
 
 ### Calling
-
-Ruby
-
-```
-square(10)
-# => 100
-```
 
 JavaScript
 
@@ -571,8 +386,6 @@ const capitalize = (word) => {
 
 ### Poor man's debugger: `console.log()`
 
-The equivalent of `puts` in Ruby:
-
 ```
 const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
@@ -586,17 +399,9 @@ capitalize("wagon");
 
 ### Attaching to Chrome (1)
 
-Open up a webpage in chrome 
+Open up a webpage in chrome
 
-```
-node --inspect-brk lib/capitalize.js
-```
-
-It will start the code and **break** before your code starts.
-
-### Attaching to Chrome (2)
-
-- Open a new tab and go to [`chrome://inspect`](chrome://inspect/)
+Go to [`chrome://inspect`](chrome://inspect/)
 - Click on "Inspect" for the file you are debugging
 
 ![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png)
