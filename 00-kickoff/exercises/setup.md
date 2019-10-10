@@ -50,6 +50,15 @@ Give us your **github name** so you can be added to [repo](www.github.com/dounan
 
 
 
+## WeChat Mini Program Account
+
+If you have time, get your <a href="wechat.md"> WeChat Mini Program and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
+
+You're encouraged to use a business license for most types of social or eCommerce Mini Programs, especially one that takes payment.  If you have a business license, also setup a [WeChat Merchant (Pay) Account](https://pay.weixin.qq.com/index.php/public/wechatpay_en).
+
+
+
+
 ## Go to lunch and prepare for afternoon!
 
 As you watch afternoon of the learning platform, remember:
