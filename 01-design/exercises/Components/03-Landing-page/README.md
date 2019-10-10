@@ -44,13 +44,13 @@ Build a landing page with the following elements:
 
 ## Finished?
 
-Once you've finished you can push your page to [Github pages](https://pages.github.com) once again and share it on your batch channel:
+Once you've finished you can push your page to [Github pages](https://pages.github.com) once again:
 
-First, copy the project out of `fullstack-challenges` so we can track it as a seperate `git` project:
+First, copy the project out of `CSS/` so we can track it as a separate `git` project:
 
 ```bash
-cp -r ../03-Landing-page/landing ~/code/<user.github_nickname>
-cd ~/code/<user.github_nickname>/landing
+cp -r ../03-Landing-page/landing ~/code/$GITHUB_USERNAME
+cd ~/code/$GITHUB_USERNAME/landing
 ```
 
 Then, start tracking the project with `git` and push to a `gh-pages` branch:

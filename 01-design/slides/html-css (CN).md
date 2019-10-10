@@ -562,12 +562,6 @@ box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* 淡色阴影 */
 ```
 -----
 
-#### 结果:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
-
------
-
 ## Div剧中技巧
 
 ```
@@ -576,12 +570,6 @@ margin: 0 auto;      /* Set automatic margins on right/left
 设置左边/右边的自动页边距
  */
 ```
-
------
-
-#### 结果:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus, quis iure vel aliquam veritatis architecto fugiat necessitatibus? Quidem error explicabo nemo maiores voluptatem odio delectus ad, esse reprehenderit animi.
 
 -----
 
@@ -914,7 +902,7 @@ p {                 /* least specific */
 
 接下来，我们将**完成live-code**，并获得以下[最终结果](https://papillard.github.io/my-profile/)!
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
+![img](html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
 -----
 

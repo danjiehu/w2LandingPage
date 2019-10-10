@@ -8,19 +8,19 @@
 
 Xiaohongshu (小红书) also known as “Little Red Book” or “RED” is one of the **largest and fastest growing** social e- commerce apps in China. 
 
-Xiaohongshu describes itself as “a sharing platform for **young people's lifestyles** through deep-rooted UGC shopping sharing community  
+Xiaohongshu describes itself as *“a sharing platform for **young people's lifestyles** through deep-rooted UGC shopping sharing community*.
 
 The platform is designed to help users **discover and purchase products**, share recommendations, and provide helpful tips. 
 
 Users often go on Xiaohongshu to investigate products and look for in-depth reviews and tutorials created by other users. 
 
-Think of Xiaohongshu as **a combination of Instagram and Pinterest**. Just like both platforms, you can save posts you like, interact with content and other users, create your own content, connect with brand pages etc. But with Xiaohongshu, you get the **added bonus of in-app purchasing**, a stronger sense of community, and more lengthy, detailed blog-post type content. 
+Xiaohongshu is a social media. You can save posts you like, interact with content and other users, create your own content, connect with brand pages etc. But with Xiaohongshu, you get the **added bonus of in-app purchasing**, a stronger sense of community, and more lengthy, detailed blog-post type content. 
 
 ## Your Task
 
-Today's exercise will be to create **your own** social ecommerce landing page based on Xiaohongshu. 
+Today's exercise will be to create **your own** social ecommerce landing page based on Xiaohongshu 😉 
 
-It will be responsive and mobile friendly! So use [mobile design packs](https://medium.com/le-wagon/4-ui-libraries-to-use-in-your-wechat-mini-programs-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-3d13b749c5db) if you can. They are like Bootstrap, but for mobile apps!
+It will be responsive and mobile friendly!
 
 Take your inspiration from the pages below. Note the social elements in the cards, namely the likes and the author (KOL or key opinion leader are the bread and butter of social apps).
 
@@ -149,7 +149,8 @@ html {
 .masonry {
   margin: 1.5em auto;
   max-width: 768px;
-  column-gap: 1.5em;
+  column-gap: 1em;
+  column-count: 2;
 }
 
 /* The Masonry Brick */

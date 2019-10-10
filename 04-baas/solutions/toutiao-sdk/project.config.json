@@ -23,7 +23,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.2",
 	"appid": "wx6e1e01322fd9850e",
-	"projectname": "fml",
+	"projectname": "toutiao",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
