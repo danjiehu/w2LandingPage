@@ -37,4 +37,4 @@ git co -b gh-pages
 git push origin gh-pages # we push the gh-pages branch, not master!
 ```
 
-Now you can build the URL `http://<user.github_nickname>.github.io/profile/` (this is the URL built automatically by Github) and have a look at your masterpiece online!
+Now you can build the URL `http://YOURUSERNAME.github.io/profile/` (this is the URL built automatically by Github) and have a look at your masterpiece online!
