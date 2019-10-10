@@ -81,7 +81,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
 
 Now quit the Terminal (`⌘` + `Q`), and restart it.
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles`
 
 ![](images/terminal-pro.png)
 
@@ -97,13 +97,13 @@ that you already use with other services, you can skip this step.
 
 Open a terminal and type this, replacing the email with **yours** (the
 same one you used to create your GitHub account). It will prompt
-for information. Just press enter until it asks for a **passphrase**.
+for information. Just press enter until it asks for a **passphrase**. 
 
 ```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
-**NB:** when asked for a passphrase, just press `Enter`. We don't need to set one.
+**NB:** when asked for a passphrase, just press `Enter`. We don't need to set one. Press enter again to confirm. 
 
 Then you need to give your **public** key to GitHub. Run:
 
