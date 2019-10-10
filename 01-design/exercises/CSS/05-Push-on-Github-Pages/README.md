@@ -37,12 +37,4 @@ git co -b gh-pages
 git push origin gh-pages # we push the gh-pages branch, not master!
 ```
 
-Now you can build the URL `http://<user.github_nickname>.github.io/profile/` (this is the URL built automatically by Github) and have a look at your masterpiece online! Share the link on Slack with your buddies.
-
-From now and until the end of the day, you can keep working in your `~/code/<user.github_nickname>/profile` directory AND on the `gh-pages` branch. This means any updates of your profile can be pushed on `http://<user.github_nickname>.github.io/profile/` through usual git commands:
-
-```bash
-git add .
-git commit -m "make my profile prettier"
-git push origin gh-pages
-```
+Now you can build the URL `http://<user.github_nickname>.github.io/profile/` (this is the URL built automatically by Github) and have a look at your masterpiece online!
