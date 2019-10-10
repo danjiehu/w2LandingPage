@@ -53,6 +53,11 @@ Please choose your operating system (OS):
 
 
 
+## Browser
+
+Make sure you're using [Google Chrome](https://www.google.cn/intl/zh-CN/chrome/) for learning and doing the exercises. Yep, it works in China.
+
+
 
 ## WeChat Mini Program Account
 
