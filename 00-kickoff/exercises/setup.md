@@ -23,7 +23,7 @@ Glad you are here! Let's rock it 🚀🚀🚀!
 ## Log on [github.com](http://github.com) 
 
 
-Give to the teacher your **github name** so you can be added to [repository for exercises](www.github.com/dounan1/china-product). Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
+Give to the teacher your **github name** so you can be added to [repository for exercises](https://www.github.com/dounan1/china-product). Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
 
 
 ## Setup
@@ -50,7 +50,7 @@ Please choose your operating system (OS):
 
 ## WeChat Mini Program Account
 
-If you have time, get your <a href="wechat.md">gWeChat Mini Program Developer Account and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
+If you have time, get your <a href="wechat.md">WeChat Mini Program Developer Account and App Id.</a> It's your license to make apps on the WeChat platform. You can also work on getting this during the coming weeks, until WeChat Mini Program week.
 
 You're encouraged to use a business license for most types of social or eCommerce Mini Programs, especially one that takes payment.  If you have a business license, also setup a [WeChat Merchant (Pay) Account](https://pay.weixin.qq.com/index.php/public/wechatpay_en).
 
