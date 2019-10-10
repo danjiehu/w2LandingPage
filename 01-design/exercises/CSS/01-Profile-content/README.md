@@ -4,7 +4,7 @@ A simple challenge to manipulate basic HTML tags and create a profile card with 
 
 ## Setup
 
-For ALL exercises for today, use the [template](https://github.com/dounan1/china-product/blob/master/CSS.zip) to get started!
+For ALL exercises for today, download this [boilerplate](https://github.com/dounan1/china-product/blob/master/01-design/exercises/CSS.zip) to get started!
 
 Jump into your `profile` and create an `images` directory to store all your pictures:
 
@@ -13,6 +13,13 @@ Jump into your `profile` and create an `images` directory to store all your pict
 cd CSS/01-Profile-content/profile
 mkdir images
 stt
+```
+
+Create a new repo on Github
+
+
+```bash
+hub create # this creates the associated repo on Github!
 ```
 
 ## Local server
@@ -104,13 +111,10 @@ Indent your HTML! Your code should look like a [V formation of ducks](https://up
 Once you've finished you can push this exercise and copy the content to the next exercise folder with this command:
 
 ```bash
-# Push to gihtub
+# Push to your github
 git add .
 git commit -m "Added content to my profile page"
 git push origin master
-
-# Copy folder into next exercise folder
-cp -r ../profile ../../02-Fonts-and-colors
 ```
 
 
