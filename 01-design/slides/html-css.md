@@ -1,9 +1,3 @@
-## Frontend module
-
-- **Day #1 (today)** 👉 Simple HTML / CSS (fonts, colors, box model)
-- **Day #2** 👉 Building components (buttons, forms, tabs, etc...)
-- **Day #3** 👉 Bootstrap & building layouts
-
 ## Today's objectives
 
 - Learn HTML / CSS basics
@@ -281,7 +275,7 @@ Result: [Le Wagon](https://www.lewagon.com/)
 
 Let's add some HTML content to our profile page!
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
+![img](html-css/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
 
 ------
 
@@ -390,13 +384,13 @@ Make your shopping on [Google fonts](http://www.google.com/fonts).
 
 Use the inspector, then copy the `css` in Sublime.
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
+![img](html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
 
 ## Live-code
 
 Let's design our fonts and colors using [Google fonts](https://fonts.google.com/).
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
+![img](html-css/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
 
 ------
 
@@ -412,7 +406,7 @@ Let's design our fonts and colors using [Google fonts](https://fonts.google.com/
 
 ## Box model
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
+![img](html-css/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
 
 ## Box model - border
 
@@ -794,12 +788,6 @@ Check out the [specificity calculator](http://specificity.keegan.st/)
 
 Let's **finish our live-code** and get this [final result](https://papillard.github.io/my-profile/)!
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
-
-Tonight, we will put our profile **online** using [Github Pages](https://pages.github.com/).
+![img](html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
 ## Let's build your profile!
-
-## Slides
-
-- [Download PDF](https://github.com/tgenaitay/wagon-china-front-end/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%20101%20Le%20Wagon%20crash%20course.pdf)

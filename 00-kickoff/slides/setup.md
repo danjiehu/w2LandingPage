@@ -362,4 +362,4 @@ In the next few weeks, we'll see how git can help us with
 - Videos
 - Classmates
 - Buddies
-- Challenges
+- Exercises
