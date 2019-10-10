@@ -1,10 +1,10 @@
 ## Background & Objectives
 
-## Background & Objectives
-
 Now let's move on to building a slightly more complex component. Work on building the three different card designs that we saw during the lecture. Here is [your objective](http://lewagon.github.io/html-css-challenges/14-card-sprint/). 
 
-Again for ALL exercises today, start with the template that you can [download](https://github.com/dounan1/china-product/blob/master/CSS.zip) from the first exercise!
+## Setup
+
+For ALL exercises for today, use the [boilerplate](https://github.com/dounan1/china-product/blob/master/01-design/exercises/Components.zip?raw=true) to get started!
 
 We have already put the starting HTML code in `index.html`
 
