@@ -6,7 +6,7 @@ Think about the Gmail inbox interface. Do you need to refresh the page for new m
 
 ## Specs
 
-We haven't seen APIs yet, so we'll simulate email fetching for now. We have given you a skeleton in `lib/inbox.js` to get you started.
+We haven't seen APIs yet, so we'll simulate email fetching for now. We have given you a skeleton in `lib/inbox.js` to get you started. Download the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/challenges/05-Fake-Inbox.zip) and open this file in Sublime.
 
 - Implement the method `hasNewMessage()` that has a 20% probability of returning `true` (the rest of the time, it returns `false`).
 - Implement the method `newMessage()` which should return a random object (i.e. a new email) with `subject` and `sender` keys. For instance:
@@ -56,7 +56,7 @@ How does this work? Open this address in your browser: `fml.shanghaiwogeng.com/a
 
 
 
-![image-20191011021144672](images/image-20191011021144672.png)
+![image-20191011021144672](https://github.com/dounan1/china-product/tree/master/02-javascript/challenges/05-Fake-Inbox/images/image-20191011021144672.png)
 
 Can you see the data? It looks just like a Javascript object that you've been using to store data like the dummy messages. The object is called a  **JSON**. It's meant for machines to read. That's why it's not like a web page with style and UI. Turns out your browser can access these **"web pages" for machines** too!
 
@@ -116,7 +116,7 @@ Before you run this, you might want to allow local files to call APIs. The brows
 On Windows 10:
 ```bash
  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files --allow-file-access --allow-cross-origin-auth-prompt
- ```
+```
 
 On Mac OSX:
 
