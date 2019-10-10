@@ -6,6 +6,13 @@ A simple challenge to manipulate basic HTML tags and create a profile card with 
 
 For ALL exercises for today, download this [boilerplate](https://github.com/dounan1/china-product/raw/master/01-design/exercises/CSS.zip) to get started!
 
+Navigate inside `CSS/` and create a new repo on Github:
+
+
+```bash
+hub create # this creates the associated repo on Github!
+```
+
 Jump into your `profile` and create an `images` directory to store all your pictures:
 
 
@@ -13,13 +20,6 @@ Jump into your `profile` and create an `images` directory to store all your pict
 cd CSS/01-Profile-content/profile
 mkdir images
 stt
-```
-
-Create a new repo on Github:
-
-
-```bash
-hub create # this creates the associated repo on Github!
 ```
 
 ## Local server
