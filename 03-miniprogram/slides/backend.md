@@ -4,11 +4,11 @@ API WITH DATA FOR WECHAT MPS
 
 ## OUR FRONTEND SO FAR
 
-![image-20191004002033273](backend/image-20191004002033273.png)
+![image-20191004002033273](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002033273.png)
 
 ## OUR FRONTEND WITH API TODAY
 
-![image-20191004002045936](backend/image-20191004002045936.png)
+![image-20191004002045936](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002045936.png)
 
 ------
 
@@ -146,7 +146,7 @@ For index, we don't have any data
 
 ### 4. Send request and **wait** for response
 
-![image-20190605133710289](backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
+![image-20190605133710289](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
 
 Tools: You can use [Postman](https://www.getpostman.com/downloads/) or [Insomnia](https://insomnia.rest/download/)
 
@@ -181,7 +181,7 @@ Not Working? -> Need WeChat permission
 
 Wechat IDE Menu: Settings -> Project Settings:
 
-![image-20191004182608872](backend/image-20191004182608872.png)
+![image-20191004182608872](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004182608872.png)
 
 
 
@@ -461,7 +461,7 @@ Revenue through api’s
 ------
 
 Explosion of APIs growth
-![image-20191004180349425](backend/image-20191004180349425.png)
+![image-20191004180349425](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004180349425.png)
 
 ------
 

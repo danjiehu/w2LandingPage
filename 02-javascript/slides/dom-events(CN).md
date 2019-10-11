@@ -1,10 +1,12 @@
-## Let's open up the browser
+## 课程Setup
 
-### Your browser is not just a browser, it's an **IDE**
+## 打开浏览器
+
+### 你的浏览器不仅仅是一个浏览器，它还是一个**集成开发环境**（IDE）
 
 ![img](https://kitt.lewagon.com/karr/assets/front/chrome_ide-f99e86a66147330bb4c3295725c3653b43ae11ee7a68c9d84945c972ed0f1270.png)
 
-### Using JavaScript with HTML
+### 使用JavaScript和HTML
 
 ```
 <!DOCTYPE html>
@@ -22,13 +24,13 @@
 </html>
 ```
 
-Loading a JS file is **blocking** the page rendering => Put it at the end.
+加载JS文件将阻塞渲染 => 把JS放在最后
 
 ------
 
 ## DOM
 
-Document Object Model
+文档对象模型（Document Object Model）
 
 [wikipedia.org/Tree*(data*structure)](https://en.wikipedia.org/wiki/Tree_%28data_structure%29)
 
@@ -40,81 +42,80 @@ Document Object Model
 
 ![img](https://kitt.lewagon.com/karr/assets/jquery/request_1-0d275df3528992ab362d1c17f63ba682e0566f217c89c2963f897bc726f977b2.png)
 
-The browser **parses** the HTML response and **creates** the DOM from it.
+浏览器将**解析（parse）**HTML文档**生成（creates）**DOM树
 
-You can visualize the DOM in the Chrome Inspector, in **Elements** tab.
+通过Chrome检查器的**Elements**选项卡可查看DOM树
 
 ![img](https://kitt.lewagon.com/karr/assets/jquery/inspect-ab4ecf094a00098dd06106681aad08df267b7350004636de1f35b86c670d4461.png)
 
-### Reference
+### 参考
 
 Please keep a tab open with the [DOM Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 ------
 
-## Interacting with the DOM
+## 与DOM树交互
 
-### The most important [method](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+### 最重要的[方法](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 
 ```
 document.querySelector(CSS_SELECTOR);
 ```
 
-### Selecting an element with an `id`
-
+### 返回匹配指定选择器的元素
 ```
 <ul id="players"></ul>
-const list = document.querySelector("#players"); // CSS id selector
+const list = document.querySelector("#players"); // CSS id选择器
 // or
 const list = document.getElementById("players");
 ```
 
-🤔 What about elements with no `id`?
+🤔 无`id`的元素如何获取？
 
-### Basic CSS selectors
+### 基本CSS选择器
 
-Reminder
-
-```
-p               /* Type selector  */
-.red            /* Class selector */
-#players        /* ID selector    */
-```
-
-### Advanced CSS selectors
-
-Reminder
+提示
 
 ```
-ul .active     /* Descending combinator */
-ul > .active   /* Child combinator */
+p               /* Type选择器  */
+.red            /* Class选择器 */
+#players        /* ID选择器    */
 ```
 
-Combine them to get **specific** CSS selectors:
+### 高级CSS选择器
+
+提示
+
+```
+ul .active     /* 后代组合选择器（descendant selectors) */
+ul > .active   /* 子元素组合选择器（child selectors） */
+```
+
+结合以上选择器将获取**特定**的CSS选择器
 `jsdocument.querySelector('ul#players > .active a.btn');`
 
-We've just selected an element! 💪
+我们成功地选择了一个元素! 💪
 
 
 
 
 
-What can we do now? 🤔
+下一步我们能做些什么呢？🤔
 
-### Append content
+### 附加内容
 
-We are using the [Element#insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) method.
+我们将使用[Element#insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)方法
 
 ```
 list.insertAdjacentHTML("beforeend", "<li>Luke</li>");
 list.insertAdjacentHTML("beforeend", "<li>Anakin</li>");
 ```
 
-You can also have a look at [ParentNode#append](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append).
+可以阅读[ParentNode#append](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append).
 
-### Selecting from a subset of the DOM
+### 如何选择从DOM树的子集中进行选择
 
-🎩 You can call `querySelector` on any element!
+🎩 通过`querySelector`可以调用任何元素！
 
 ```
 <p class="red">A red paragraph</p>
@@ -130,9 +131,9 @@ console.log(element.innerText);
 Anakin
 ```
 
-### Selecting several elements
+### 如何选择多个元素
 
-We want to select **all** winners
+我们想选择所有的winners
 
 ```
 <ol id="fifa-wins">
@@ -144,7 +145,7 @@ We want to select **all** winners
 </ol>
 ```
 
-We can with [`Element.querySelectorAll`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll)!
+使用[`Element.querySelectorAll`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll)!
 
 
 
@@ -155,25 +156,25 @@ countries.forEach((item) => {
 });
 ```
 
-`countries` is a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) variable.
+`countries` is a [节点的集合（`NodeList`）](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) variable.
 
-### Use the right method
+### 实施正确的方法
 
 ```
 const countries = document.querySelector("#fifa-wins li");
 // => <li>Brazil (5 wins)</li>
 ```
 
-`querySelector` returns **the first** element it finds!
+`querySelector`返回文档中匹配指定CSS选择器的**一个**元素！
 
 ```
 const countries = document.querySelectorAll("#fifa-wins li");
 // => NodeList(5) [li, li, li, li, li]
 ```
 
-`querySelectorAll` returns them all in a list!
+`querySelectorAll`返回文档中匹配指定CSS选择器的**所有**元素！
 
-Your turn! How would you append `"France (2 wins)"` to the list? 🤔
+Your turn! 如何附加`"France (2 wins)"`到表单中？ 🤔
 
 ```
 const list = document.querySelector('#fifa-wins');
@@ -182,25 +183,25 @@ list.insertAdjacentHTML('beforeend', '<li>France (2 wins)</li>');
 
 ------
 
-## Advanced DOM Manipulations
+## 高级DOM数操作
 
 ### Show / Hide
 
-Use [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+使用[HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
 
 ```
 const element = document.querySelector(CSS_SELECTOR);
 
-// Hide
+// 隐藏对象（Hide）
 element.style.display = "none";
 
-// Show
+// 显示对象（Show）
 element.style.display = "";
 ```
 
-### Add / Remove a class
+### 添加或移除元素
 
-Use [`classList`](https://developer.mozilla.org/en/docs/Web/API/Element/classList)
+使用[`classList`](https://developer.mozilla.org/en/docs/Web/API/Element/classList)
 
 
 
@@ -210,21 +211,21 @@ element.classList.remove("red");
 element.classList.toggle("red");
 ```
 
-### Read / Write inputs
+### 读写输入
 
 ```
 <!-- Some HTML -->
 <input name="email" id="email" value="paul@gmail.com" />
 const emailInput = document.getElementById("email");
 
-// Read
+// 读取模式
 console.log(emailInput.value);
 
-// Write
+// 写入模式
 emailInput.value = "john@gmail.com";
 ```
 
-### Extract text / HTML
+### 提取文本或HTML
 
 ```
 <a href="https://www.lewagon.com" id="home">Le Wagon <em>rocks</em></a>
@@ -233,12 +234,12 @@ console.log(home.innerText);
 console.log(home.innerHTML);
 console.log(home.attributes.href.value);
 
-home.innerHTML = "Le Wagon <strong>rocks</strong>!"; // Update HTML
+home.innerHTML = "Le Wagon <strong>rocks</strong>!"; // 更改HTML
 ```
 
 ### Dataset
 
-Use [HTMLElement.dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+使用[HTMLElement.dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
 
 ```
 <div id="user" data-uid="2471555" data-github-nickname="Papillard">
@@ -251,11 +252,11 @@ console.log(boris.dataset.githubNickname);
 
 ------
 
-## Events
+## 事件对象（Events）
 
-[Full Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+[参考](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-### HTML DOM Events
+### HTML DOM事件对象
 
 ```
 DOMContentLoaded
@@ -271,37 +272,36 @@ submit
 touchstart
 ```
 
-### Events occur on specific objects
+### 事件将在特定的对
 
 ```
-DOMContentLoaded  # document
-blur              # input / textarea
-click             # any visible element
-change            # select
-focus             # any visible element
-keyup             # window / any focused element
-mouseover         # any visible element
-resize            # window
-scroll            # window / any scrollable element
-submit            # form
-touchstart        # for mobile devices
+DOMContentLoaded  # 用于document
+blur              # 当输入时或用于文本框
+click             # 用于任何元素
+change            # 仅适用于文本域（text field），以及textarea和 select元素
+focus             # 当任何元素获得焦点时
+keyup             # 用于window对象或任意元素
+mouseover         # 当鼠标指针位于元素上方时时
+resize            # 用于window对象
+scroll            # 用于所有可滚动的元素和window对象
+submit            # 用于表单
+touchstart        # 用于手指触摸屏幕
 ```
 
-### Event Listener
+### 事件监听器（Event Listener）
 
-Use [`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to react to an event.
-
+使用[`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) 将侦听事件并处理相应的函数
 ```
 element.addEventListener(eventType, (event) => {
-  // Do something (callback)
+  // Do something（回调 callback）
 });
 ```
 
-### What's a callback?
+### 什么是回调（callback）？
 
 ![img](https://kitt.lewagon.com/karr/assets/jquery/hollywood_principle-b1f66847502a940420e4a275691f811652a60ea31a87f5fa4eb5cfaf96e22ce8.png)
 
-### Listening to a click
+### Click事件
 
 ```
 <img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard"
@@ -315,13 +315,13 @@ romain.addEventListener("click", (event) => {
 
 
 
-You can read more about [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
+深度阅读[Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
 
-UX tip: change the default cursor if the image is clickable.
+UX提示：改变默认的光标（cursor），如果图像是可点击的
 
 ### Live-code
 
-Toggle the `img-circle` CSS class when clicking on these images.
+点击图片时绑定`img-circle` CSS class
 
 ```
 .img-circle {
@@ -329,7 +329,7 @@ Toggle the `img-circle` CSS class when clicking on these images.
 }
 ```
 
-### What if we have several elements?
+### 如果有多个元素？
 
 ```
 <img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard"
@@ -350,9 +350,9 @@ document.querySelectorAll("img").forEach((img) => {
 
 ------
 
-## Debugging
+## 调试（Debugging）
 
-Add this to your JavaScript file and open your browser's **inspector**. Enjoy
+添加debugger到JS文件中并打开浏览器的**检查器**。 Enjoy
 
 ```
 debugger

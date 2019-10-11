@@ -7,7 +7,7 @@ The goal here is to learn more about JavaScript, the DOM, and asynchronous event
 ![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/wagon_race.gif)
 
 ## Specs
-Launch your app by opening `index.html` in your browser
+In the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/dom-events.zip) downloaded in previous exercise. Launch your app by opening `index.html` in your browser
 
 #### HTML
 
