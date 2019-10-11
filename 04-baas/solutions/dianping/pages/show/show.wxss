@@ -1,7 +1,19 @@
 /* pages/show/show.wxss */
 
+page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;  
+}
+
+.restaurant {
+  padding: 0px 6vw;
+  width:88vw;
+}
+
 .content {
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .card-product {
@@ -14,20 +26,26 @@
 }
 
 .h2 {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.h4 {
+  font-size: 15px;
   font-weight: bold;
   margin: 0;
 }
 
 .p {
-  font-size: 20px;
+  font-size: 13px;
   line-height: 1.4;
   opacity: 0.7;
   margin-bottom: 0;
   margin-top: 8px;
 }
 
-.card-product-infos {
+.card-product-info {
   margin-bottom: 20px;
   width: 100%;
   display: flex;
@@ -40,18 +58,20 @@
 }
 
 .card-review-user {
-  flex: 0 0 100px;
+  flex: 0 0 40px;
 }
 
 .card-review-user .avatar {
-  width:100px;
-  height:100px;
+  width:30px;
+  height:30px;
   border-radius:50%;
 }
 
-.card-review-infos {
-  padding: 15px;
+.card-review-info {
   flex: 1;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  padding-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .section {
@@ -61,9 +81,13 @@
   border-radius: 4px;
 }
 
-.ratings, .review-content, .review-info {
+.review-content{
   display: flex;
   justify-content: space-between;
+}
+
+.ratings {
+  display:flex;
 }
 
 .rating {
@@ -85,22 +109,20 @@
   font-size: 17px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 10rpx;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 70%;
-  height: 30px;
+form {
+  background-color: #fafafa;
+  padding: 16px;
 }
 
-.footer-btn {
-  position: absolute;
-  bottom: 10rpx;
-  right: 20px;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: -1px;
-  height: 33px;
-  margin: 0px;
+input, button {
+  padding: 5px 16px;
+  background-color: white;
+  border-radius: 0px;
+}
+
+button, .button {
+ margin: 10px 0px;
+ color: white;
+ background-color: #EC7B37;
+ border-radius: 50px;
 }

@@ -18,7 +18,7 @@
   </form>
 
   <view class="btn-area" id="logout">
-    <button bindtap="bindLogout">Log Out</button>
+    <button bindtap="bindLogout" type="default">Log Out</button>
   </view>
 </block>
 
@@ -31,11 +31,11 @@
 
     <view class="section">
       <view class="section__title">Password</view>
-      <input name="password" placeholder="please use yours or create one"></input>
+      <input type="password" name="password" placeholder="please use yours or create one"></input>
     </view>
 
     <view class="btn-area">
-      <button formType="submit">Submit</button>
+      <button formType="submit" type="primary">Submit</button>
     </view>
   </form>
 </block>

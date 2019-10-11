@@ -9,7 +9,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "大众点评",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
@@ -23,15 +23,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Stories",
-        "iconPath": "/images/stories.png",
-        "selectedIconPath": "/images/stories.png"
+        "text": "Places",
+        "iconPath": "/images/list.png",
+        "selectedIconPath": "/images/list.png"
       },
       {
         "pagePath": "pages/new/new",
         "text": "Post",
-        "iconPath": "/images/post.png",
-        "selectedIconPath": "/images/post.png"
+        "iconPath": "/images/add.png",
+        "selectedIconPath": "/images/add.png"
       },
       {
         "pagePath": "pages/user/user",

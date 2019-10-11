@@ -12,7 +12,7 @@ App({
       wx.getUserInfo,
       wx.requestPayment)
 
-    wx.BaaS.init('8c74e1e1356bd2fd1769')
+    wx.BaaS.init('8c74e1e1356bd2fd1769') // replace with your own!
 
     // wx.BaaS.auth.register({ username: 'ifanrx', password: 'ifanrx123' }).then(user => {
     //   console.log(user)

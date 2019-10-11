@@ -1,11 +1,14 @@
-## How to use Toutiao-SDK app (solution)
+## How to use the solutions
 
-- [Navigate to this folder](solutions/toutiao-sdk/) on your computer. It contains our solution.
-- Before your import it on the WeChat IDE, some quick set up to do:
+Toutiao-SDK:[Navigate to this folder](solutions/toutiao-sdk/)
+
+Dianping:[Navigate to this folder](solutions/dianping/)
+
+Before your import it on the WeChat IDE, here's some quick set up to do:
 
 ### 1. Add your WeChat app ID
 
-Only authorized developers can open and edit an app! 
+Only authorized developers can open and edit an app!
 Start by adding your own WeChat App ID, since for sure you are authorized there 😉
 
 - Locate `project.config.json`
