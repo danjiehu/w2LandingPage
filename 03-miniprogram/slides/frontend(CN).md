@@ -1,28 +1,17 @@
-<!--
- * @Description: In User Settings Edit
- * @Author: your name
- * @Date: 2019-10-10 20:46:24
- * @LastEditTime: 2019-10-10 20:46:24
- * @LastEditors: your name
- -->
-### 资产（Assets）
-
-------
-
 ### 微信小程序开发文档
 
 [你的新陪伴，收藏起来！](https://developers.weixin.qq.com/miniprogram/dev/index.html)
 
 ------
 
-![img](frontend/docs-268f3341797ca0c95f1faea30be512ccb9ff3701d2e2bf2c11e0bdba894f2cf4.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/docs-268f3341797ca0c95f1faea30be512ccb9ff3701d2e2bf2c11e0bdba894f2cf4.png)
 
 ------
 
 ### 微信小程序UI库（WeUI）
 
 [微信扫描二维码](https://github.com/Tencent/weui-wxss)
-![img](frontend/weui-fd6e8ff2b8517881bb63911e21d306c07208d20528ed32fb38063c874b37d180.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/weui-fd6e8ff2b8517881bb63911e21d306c07208d20528ed32fb38063c874b37d180.png)
 
 ------
 
@@ -44,7 +33,7 @@
 
 ------
 
-![img](frontend/IDE-9f544b5e5eae1d228975827ab15eb33645a9116b83781c77b785ce92ed59e4fc.png) 
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/IDE-9f544b5e5eae1d228975827ab15eb33645a9116b83781c77b785ce92ed59e4fc.png) 
 
 ------
 
@@ -52,7 +41,7 @@
 
 ------
 
-![img](frontend/IDE2-be29b12163e268b876fd90935e8d46572e5cbeae523b8c4df53a0958d429d548.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/IDE2-be29b12163e268b876fd90935e8d46572e5cbeae523b8c4df53a0958d429d548.png)
 
 ------
 
@@ -84,7 +73,7 @@
 
 ------
 
-![img](frontend/Newpage-9c46482c1609685fcbdacff878b879cb572c435cd6ec28051ff5099d5f6fc90e.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/Newpage-9c46482c1609685fcbdacff878b879cb572c435cd6ec28051ff5099d5f6fc90e.png)
 
 ------
 
@@ -96,7 +85,7 @@
 
 ------
 
-![img](frontend/wxml-html-db645e9281417073b999b276c6dd2a49f629abeebbb928f01e7719a9e0445349.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/wxml-html-db645e9281417073b999b276c6dd2a49f629abeebbb928f01e7719a9e0445349.png)
 
 ------
 
@@ -156,7 +145,7 @@
 
 生命周期函数是指一个小程序从创建到销毁的一系列过程
 
-![img](frontend/lifecycle-eda1c2a96b8b80d90e62ce2fa530e7bba9e73b91dab8119b40e8250730ee98b4.png)
+![img](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/frontend/lifecycle-eda1c2a96b8b80d90e62ce2fa530e7bba9e73b91dab8119b40e8250730ee98b4.png)
 
 ------
 

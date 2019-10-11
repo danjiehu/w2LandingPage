@@ -4,11 +4,11 @@
 
 ## 之前的前端
 
-![image-20191004002033273](backend/image-20191004002033273.png)
+![image-20191004002033273](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002033273.png)
 
 ## 今天，前端与API
 
-![image-20191004002045936](backend/image-20191004002045936.png)
+![image-20191004002045936](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002045936.png)
 
 ------
 
@@ -142,7 +142,7 @@ index中没有任何数据
 
 ### 4. 发送请求并等待响应
 
-![image-20190605133710289](backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
+![image-20190605133710289](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
 
 工具：使用[Postman](https://www.getpostman.com/downloads/) 或者 [Insomnia](https://insomnia.rest/download/)
 
@@ -177,7 +177,7 @@ Not Working? -> 需要获微信许可
 
 Wechat IDE Menu: Settings -> Project Settings:
 
-![image-20191004182608872](backend/image-20191004182608872.png)
+![image-20191004182608872](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004182608872.png)
 
 
 
@@ -386,7 +386,7 @@ Page({
 ### 6. 处理数据
 
 重定向在`success`的函数中调用，不需要像`index.js`那样单独的页面函数 
- 
+
 
 提示：JSON allows you to define functions inside to save you time
 
@@ -457,7 +457,7 @@ Revenue through api’s
 ------
 
 Explosion of APIs growth
-![image-20191004180349425](backend/image-20191004180349425.png)
+![image-20191004180349425](https://github.com/dounan1/china-product/raw/master/03-miniprogram/slides/backend/image-20191004180349425.png)
 
 ------
 

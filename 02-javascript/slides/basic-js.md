@@ -418,13 +418,7 @@ You are **ready**! You can now **click in the gutter** to add **breakpoints** to
 
 ![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png)
 
-------
 
-## One more thing
-
-[![img](https://kitt.lewagon.com/karr/assets/javascript/codetogo-44c75768b4063c14ee576566e8e468fea57fe74612043e5872ea87c90e0f37dc.png)](https://codetogo.io/)
-
-By [Jad](https://kitt.lewagon.com/alumni/jadjoubran) & [Nicole](https://kitt.lewagon.com/alumni/nicolesaidy) 💪
 
 ------
 
