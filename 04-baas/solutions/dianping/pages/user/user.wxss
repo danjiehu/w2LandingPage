@@ -41,6 +41,17 @@ textarea {
   padding: 10px 0px;
 }
 
+button, .button {
+ margin: 10px 0px;
+ color: white;
+ background-color: #EC7B37;
+ border-radius: 50px;
+}
+
+button::after {
+  display:none;
+}
+
 #logout {
   margin-top: 30px;
 }

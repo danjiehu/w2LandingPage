@@ -1,7 +1,9 @@
+<view class="restaurant">
+
 <view class="card-product" style="background-image: url('{{restaurant.photo}}'); background-size: cover;" />
 
 <view class="content">
-  <view class="card-product-infos">
+  <view class="card-product-info">
     <view class="restaurant-info">
       <view class="h2">{{restaurant.name}}</view>
       <view class="p">{{restaurant.description}}</view>
@@ -15,30 +17,31 @@
   <block wx:for="{{reviews}}" wx:for-item="review">
     <view class="card-review">
       <view class="card-review-user">
-        <image class="avatar" src="{{review.user.photo}}" />
+        <image class="avatar" src="{{review.user.photo}}" style="background-color: gray;" />
       </view>
-      <view class="card-review-infos">
+      <view class="card-review-info">
         <view class="review-content">
-          <view class="h2">{{review.content}}</view>
+          <view class="h4">{{review.user._username}}</view>
           <view class="x" data-id="{{review.id}}" bindtap="deleteReview"> x </view>
         </view>
         <view class="review-info">
-          <view class="p"> {{review.user._username}} </view>
           <view class="ratings">
             <view class="rating" data-id="{{review.id}}" data-rating="{{rating + 1}}" bindtap="rateReview" wx:for="{{review.rating}}" wx:for-item="rating"> ❤️ </view>
             <view class="rating" data-id="{{review.id}}" data-rating="{{review.rating + rating + 1}}" bindtap="rateReview" wx:for="{{5 - review.rating}}" wx:for-item="rating"> 🖤 </view>
           </view>
+          <view class="p"> {{review.content}} </view>
         </view>
+
       </view>
     </view>
   </block>
 </view>
 
+</view>
+
 <form bindsubmit="createReview" wx:if="{{currentUser}}">
-  <view class="section">
-    <input name="content" placeholder=" put down your thoughts" class="footer" />
-  </view>
-  <button formType="submit" class="footer-btn">Submit</button>
+  <input name="content" placeholder="What is your review?" />
+  <button formType="submit" class="footer-btn">Send</button>
 </form>
 
 <button bindtap="showUserPage" class="section" wx:else>
