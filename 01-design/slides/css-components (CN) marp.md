@@ -8,7 +8,7 @@
 
 ---
 
-## 课程样板
+## 课程模板
 
 https://github.com/lewagon/components-demo
 
