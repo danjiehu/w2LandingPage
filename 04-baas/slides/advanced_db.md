@@ -9,7 +9,7 @@ Consider reviews:
 
 
 
-![7311570232716_.pic](images/7311570232716_.png)Users can post reviews on restaurants. So relationship-wise, each restaurant can be reviewed by many users, and each user can review many restaurants: a many-to-many relationship.
+![7311570232716_.pic](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/7311570232716_.png)Users can post reviews on restaurants. So relationship-wise, each restaurant can be reviewed by many users, and each user can review many restaurants: a many-to-many relationship.
 
 
 
@@ -19,52 +19,56 @@ Consider reviews:
 
 Let's go further
 
-![img](https://kitt.lewagon.com/karr/assets/db/01-excel-patients-c4e1fb0b83e8969be3df02feef1ad117b5adcaac032d0bd05105dd81720e2ad2.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/01-excel-patients-c4e1fb0b83e8969be3df02feef1ad117b5adcaac032d0bd05105dd81720e2ad2.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/02-excel-doctors-f1a80607fedc28798277a87517bd549c79e9404ce03372d25cec62259f9fbc20.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/02-excel-doctors-f1a80607fedc28798277a87517bd549c79e9404ce03372d25cec62259f9fbc20.png)
 
 ## Consultations ?
 
 - **One** doctor can have **many** patients
 - **One** patient can see **many** doctors
 
-![img](https://kitt.lewagon.com/karr/assets/db/03-excel-consultations-01-e5bb821b109b36128c9730674f760a4c4120e56d451bd77df9213eb53c214f3d.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/03-excel-consultations-01-e5bb821b109b36128c9730674f760a4c4120e56d451bd77df9213eb53c214f3d.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/03-excel-consultations-02-4c795baa7ae137674c441e0171142c96ae04b78112c330d1fba140c9c9929ff0.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/03-excel-consultations-02-4c795baa7ae137674c441e0171142c96ae04b78112c330d1fba140c9c9929ff0.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/04-excel-patients-with-id-01-45eaacad823344bab38b9c2cd52a9689a32de5242ff091c728ae3c7a4604944f.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/04-excel-patients-with-id-01-45eaacad823344bab38b9c2cd52a9689a32de5242ff091c728ae3c7a4604944f.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/04-excel-patients-with-id-02-57560b06f2932beda21e7240b13a1911941388842b97be41a787f31edaff0d8a.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/04-excel-patients-with-id-02-57560b06f2932beda21e7240b13a1911941388842b97be41a787f31edaff0d8a.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/05-excel-doctors-380a8bf386286ee409f854ab4015ad30a41cbb5ed45121629d297b5efee831ef.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/05-excel-doctors-380a8bf386286ee409f854ab4015ad30a41cbb5ed45121629d297b5efee831ef.png)
 
-![img](https://kitt.lewagon.com/karr/assets/db/03-excel-consultations-02-4c795baa7ae137674c441e0171142c96ae04b78112c330d1fba140c9c9929ff0.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/03-excel-consultations-02-4c795baa7ae137674c441e0171142c96ae04b78112c330d1fba140c9c9929ff0.png)
 
 George Abitbol (**id = 1**) has seen Doctor John Doe (**id = 3**)
 
-![img](https://kitt.lewagon.com/karr/assets/db/06-excel-first-scenario-5319df9f04608e950c494ae8b413c9e3662563c4486d380c7208a87347bf8e2d.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/06-excel-first-scenario-5319df9f04608e950c494ae8b413c9e3662563c4486d380c7208a87347bf8e2d.png)
 
 ## n:n relation (many to many)
 
 A patient **has many** doctors and a doctor **has many** patients.
 
-You can download this example: [consultations.xslx](https://kitt.lewagon.com/karr/assets/patients-doctors-56eaccffe9a741fbebec5b9c09922abdfd39055dcd1880eb5e0bbdc547e558b6.xlsx)
+![image-20191013001445616](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191013001445616.png)
 
 ------
+
+![image-20191013001602851](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191013001602851.png)
+
+![image-20191013001629745](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191013001629745.png)
 
 ## Relational Database
 
 ### 1:n
 
-![img](https://kitt.lewagon.com/karr/assets/db/cities-inhabitants-bc284f89232fc38d4fae055a64be4fdb18aeeca7e2c127c073ff516bb837d8db.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/cities-inhabitants-bc284f89232fc38d4fae055a64be4fdb18aeeca7e2c127c073ff516bb837d8db.png)
 
 ### n:n ?
 
-![img](https://kitt.lewagon.com/karr/assets/db/01-db-consultations-5cde6e3d404cce34134d0d4b97f476fc7bb99e70c9e247e1e5fd56a218bde9ed.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/01-db-consultations-5cde6e3d404cce34134d0d4b97f476fc7bb99e70c9e247e1e5fd56a218bde9ed.png)
 
 ### n:n
 
-![img](https://kitt.lewagon.com/karr/assets/db/02-db-consultations-full-6bb7c262be8c6cbc3e55fd0cdb0334c60d7dd4241f244df932efef69a88fa44a.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/02-db-consultations-full-6bb7c262be8c6cbc3e55fd0cdb0334c60d7dd4241f244df932efef69a88fa44a.png)
 
 ## Vocabulary
 
@@ -87,7 +91,7 @@ You can save/load schemas. Try with
 
 
 
-![7301570232715_.pic](images/7301570232715_.png)
+![7301570232715_.pic](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/7301570232715_.png)
 
 A restaurant has name, photo, overall rating, number of reviews, and description.
 
@@ -95,7 +99,7 @@ A restaurant has name, photo, overall rating, number of reviews, and description
 
 
 
-![7291570232714_.pic](images/7291570232714_.png)
+![7291570232714_.pic](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/7291570232714_.png)
 
 
 
@@ -103,7 +107,7 @@ Restaurant page shows individual reviews:
 
 
 
-![7281570232711_.pic](images/7281570232711_.png)
+![7281570232711_.pic](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/7281570232711_.png)
 
 
 
@@ -117,7 +121,7 @@ Review relationship is many-to-many
 
 
 
-![image-20191005084037398](images/image-20191005084037398.png)
+![image-20191005084037398](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005084037398.png)
 
 
 
@@ -125,7 +129,7 @@ So review's relationship is its own (joint) table:
 
 
 
-![image-20191005084145536](images/image-20191005084145536.png)
+![image-20191005084145536](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005084145536.png)
 
 
 
@@ -133,7 +137,7 @@ Schema:
 
 
 
-![image-20191008235014597](images/image-20191008235014597.png)
+![image-20191008235014597](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191008235014597.png)
 
 ## I Go, then Your Turn
 
@@ -163,7 +167,7 @@ You'll see new user data in the BaaS:
 
 
 
-![image-20191007044757322](images/image-20191007044757322.png)
+![image-20191007044757322](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007044757322.png)
 
 
 
@@ -177,7 +181,7 @@ Note: not all of these fields are required, the table is ready to be store any c
 
 
 
-![image-20191007045715816](images/image-20191007045715816.png)
+![image-20191007045715816](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007045715816.png)
 
 
 
@@ -231,27 +235,27 @@ Now let's make our tables for restaurants and reviews , and then request them in
 
 ### Data Tables
 
-![image-20191007052230196](images/image-20191007052230196.png)
+![image-20191007052230196](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052230196.png)
 
-![image-20191007052311097](images/image-20191007052311097.png)
+![image-20191007052311097](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052311097.png)
 
 Add some columns for the Restaurant table
 
-![image-20191007052408795](images/image-20191007052408795.png)
+![image-20191007052408795](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052408795.png)
 
-![image-20191007052503239](images/image-20191007052503239.png)
+![image-20191007052503239](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052503239.png)
 
 
 
 We'll learn to upload images in an upcoming class. Now we'll just use urls of an existing image.
 
-![image-20191007052533479](images/image-20191007052533479.png)
+![image-20191007052533479](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052533479.png)
 
 And the columns for Review table
 
-![image-20191007052630942](images/image-20191007052630942.png)
+![image-20191007052630942](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052630942.png)
 
-![image-20191007052728225](images/image-20191007052728225.png)
+![image-20191007052728225](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052728225.png)
 
 Why an integer and not a number? Hint: Is it countable?
 
@@ -263,13 +267,13 @@ Review has to have two foreign keys - pointers as they're called on this BaaS
 
 They associate with the table these keys belong to (user and restaurant) as the schema shows, so we name them as such.
 
-![image-20191008171258429](images/image-20191008171258429.png)
+![image-20191008171258429](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191008171258429.png)
 
-![image-20191007052901923](images/image-20191007052901923.png)
+![image-20191007052901923](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191007052901923.png)
 
 Let's add some data to our Restaurant table.
 
-![image-20191008061013277](images/image-20191008061013277.png)
+![image-20191008061013277](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191008061013277.png)
 
 
 Add a few more like this will be all we need to get going.

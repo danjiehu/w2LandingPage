@@ -1,11 +1,19 @@
 
 # Luckin Coffee
 
-Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its best!
+Meteoric Rise? The Starbucks Killer? Either way - it's **Social eCommerce** at its best!
 
-![image-20191008041023722](images/image-20191008041023722.png)
 
-![image-20191008040900287](images/image-20191008040900287.png)
+
+## The Business
+
+Luckin Coffee, founded in 2017, in less than **two years**, has become the **second-largest** café chain in China, with 3,300 outlets—after Starbucks, which has nearly 4,000 stores.
+
+It’s now gunning for the number one spot, pushing aggressively with offers like delivering coffee in under 30 minutes, deep-discounting and an **order-online-pick-up-at-store** service.
+
+![image-20191008041023722](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/image-20191008041023722.png)
+
+![image-20191008040900287](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/image-20191008040900287.png)
 
 
 
@@ -13,7 +21,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 **Luckin  Coffee** users can  **register  directly**  via their Mini Program,  which offers a near frictionless  experience.  
 
-![7631570472246_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7631570472246_.png)
+![7631570472246_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7631570472246.png)
 
 
 
@@ -21,7 +29,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 
 
-![image-20191008042053194](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/image-20191008042053194.png)
+![image-20191008042053194](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/image-20191008042053194.png)
 
 
 
@@ -37,7 +45,7 @@ Meteoric Rise? The Starbucks Killer? No matter - it's Social Ecommerce at its be
 
 
 
-![7501570472105_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7501570472105_.png)
+![7501570472105_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7501570472105.png)
 
 
 
@@ -45,7 +53,7 @@ Coffee Store! New products to catch your eye, awards, deals to make a simple cof
 
 
 
-![7511570472106_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7511570472106_.png)
+![7511570472106_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7511570472106.png)
 
 Shopping cart to keep track of your order, (and chance to recommend more products you!)
 
@@ -53,20 +61,20 @@ Coupon can be applied.
 
 
 
-![7521570472107_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7521570472107_.png)
+![7521570472107_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7521570472107.png)
 
 Address and order confirmation (and take the chance to upsell you!)
 
 
 
 
-![7541570472109_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7541570472109_.png)
+![7541570472109_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7541570472109.png)
 
 
 
 Order made! Showing status with inventived sharing for free coffee, and getting coupons after order.
 
-![7551570472109_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7551570472109_.png)
+![7551570472109_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7551570472109.png)
 
 
 
@@ -74,13 +82,13 @@ Order has started! Gives estimated time to pickup.
 
 
 
-![7561570472110_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7561570472110_.png)
+![7561570472110_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7561570472110.png)
 
 QR code to pickup your coffee (and make sure you're actually getting the coffee!)
 
 
 
-![7571570472111_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7571570472111_.png)
+![7571570472111_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7571570472111.png)
 
 
 
@@ -88,51 +96,51 @@ Checking orders. Conspicuous coffee cup to inventive sharing and giving free cof
 
 
 
-![7581570472241_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7581570472241_.png)
+![7581570472241_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7581570472241.png)
 
 Checking membership center - incentived give one, get one free banner!
 
-![7591570472242_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7591570472242_.png)
+![7591570472242_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7591570472242.png)
 
 Sharing card invites a friend to sign up and get free drink, while you get a free one
 
-![7601570472243_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7601570472243_.png)
+![7601570472243_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7601570472243.png)
 
 Scan and pickup! And get the coupon you just earned.
 
 
 
-![7611570472244_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7611570472244_.png)
+![7611570472244_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7611570472244.png)
 
 Order status shown after scanning QR! Now you can claim your coupon, and give your friend a free coffee.
 
 
 
-![7621570472245_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7621570472245_.png)
+![7621570472245_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7621570472245.png)
 
 Enjoying the fruits of your labor.
 
 
 
-![7681570472390_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7681570472390_.png)
+![7681570472390_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7681570472390.png)
 
 If you ever want to check your order history - also encourages you to give free coffee!
 
 
 
-![7701570472391_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7701570472391_.png)
+![7701570472391_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7701570472391.png)
 
 Gift cards store. Sharing is caring - gifting to friends is quick and easy, and classier than just coffee.
 
 
-![7711570472392_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7711570472392_.png)
+![7711570472392_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7711570472392.png)
 
 Gift cards wallet.
 
 
 
 
-![7721570472392_.pic](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/challenges/images/7721570472392_.png)
+![7721570472392_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/challenges/images/7721570472392.png)
 
 Coupons come from purchases, or just visiting the app!
 

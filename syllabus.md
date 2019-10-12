@@ -119,7 +119,6 @@ The goal for this unit is to understand core programming thinking and apply the 
 
 - Even or Odd?
 - Looping
-- Valid Email
 - List Generator
 
 
@@ -131,8 +130,8 @@ The goal for this unit is to understand core programming thinking and apply the 
 **Exercise:** 
 
 - Select an element!
-- DOM Manipulation
 - My first event listener
+- Wagon race
 
 
 

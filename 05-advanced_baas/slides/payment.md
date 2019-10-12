@@ -1,3 +1,7 @@
+
+
+
+
 ## WeChat Merchant Account
 
 https://pay.weixin.qq.com/
@@ -12,7 +16,7 @@ https://pay.weixin.qq.com/
 
 Allow payment at root URL.
 
-![payment_setting](https://kitt.lewagon.com/karr/assets/china/wechat_env_setup/payment_setting-63ccd06644ad01f637d219f6c27ef74d5886a7deda29cbb4278be42b42b8532b.png)
+![payment_setting](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/payment_setting-63ccd06644ad01f637d219f6c27ef74d5886a7deda29cbb4278be42b42b8532b.png)
 
 ### Payment Merchants
 
@@ -20,25 +24,25 @@ Certification file must be installed on your computer before any further importa
 
 Needed for moving money out of account (Not for development)
 
-![payment_certificate](https://kitt.lewagon.com/karr/assets/china/wechat_env_setup/payment_certificate-bfb5855758a7f0f2a0ba9121cdd5d4b0cc189354fb719b9c6e2c827f01477ab6.png)
+![payment_certificate](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/payment_certificate-bfb5855758a7f0f2a0ba9121cdd5d4b0cc189354fb719b9c6e2c827f01477ab6.png)
 
 ### Merchants ID and Key
 
 API secret (`wechat_pay_api_key`)  (required by Minapp Baas)
 
-![merchants_api](https://kitt.lewagon.com/karr/assets/china/wechat_env_setup/merchants_api-9d74a6c47e0c4018b2b0502e637ab5039b85b306f0a83667da6c6b53be806bf7.png)
+![merchants_api](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/merchants_api-9d74a6c47e0c4018b2b0502e637ab5039b85b306f0a83667da6c6b53be806bf7.png)
 
 ### Merchants API certificate
 
 Needed for refunds - (required by Minapp Baas)
 
-![download_api_certificate](https://kitt.lewagon.com/karr/assets/china/wechat_env_setup/download_api_certificate-d66eb70b34a8b257e4fd31f76d80d202d7590a4d7b5f46618f68247bb38ffcf8.png)
+![download_api_certificate](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/download_api_certificate-d66eb70b34a8b257e4fd31f76d80d202d7590a4d7b5f46618f68247bb38ffcf8.png)
 
 ### Merchants ID
 
 `wechat_pay_mch_id` is the last thing you need.
 
-![merchants_info](https://kitt.lewagon.com/karr/assets/china/wechat_env_setup/merchants_info-1828b571a922ee64b9a2271f9c9ed2322426a718a7a9099006a29f4aa68216f0.png)
+![merchants_info](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/merchants_info-1828b571a922ee64b9a2271f9c9ed2322426a718a7a9099006a29f4aa68216f0.png)
 
 ### Payment Flow Diagram
 
@@ -46,33 +50,13 @@ Needed for refunds - (required by Minapp Baas)
 
 
 
-![小程序支付模式图-来自微信官方](https://pay.weixin.qq.com/wiki/doc/api/img/wxa-7-2.jpg)
+![小程序支付模式图-来自微信官方](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/wxa-7-2.png)
 
 
 
+## Implementing WeChat Payment
 
-
-
-
-![image-20191008151611379](/Users/dounanhu/Library/Application Support/typora-user-images/image-20191008151611379.png)
-
-
-
-![7461570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7461570518242_.pic_hd.jpg)
-
-
-
-![7471570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7471570518242_.pic_hd.jpg)
-
-
-
-![7481570518242_.pic_hd](/Users/dounanhu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6a4b5887054cf04461590f2613ad3df3/Message/MessageTemp/688edd47114a6ea8690ae9091acece9f/Image/7481570518242_.pic_hd.jpg)
-
-
-
-## Payment
-
-Add payment to eCommerce Frontend built last weekend challenge (Waimai app)
+Your goal is to add payment to eCommerce Frontend built last weekend challenge (Waimai app)
 
 
 
@@ -94,21 +78,38 @@ Setup needs these merchant info, in addition to your current WeChat AppID
 
 
 
+### Certificates
+
+
+
 To get the API certificate:
 
 使用超级管理员账号登录[微信支付商户平台](https://pay.weixin.qq.com/index.php/apply/applyment_home/guide_normal)，进入「账户中心」->「 API 安全」，获取商户密钥及 API 证书(不是 APIv3)。
 
 
 
+![image-20191013005853841](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191013005853841.png)
+
+
+
+![image-20191013005917501](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191013005917501.png)
+
+
+
+![image-20191013005931025](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191013005931025.png)
+
+
+
+
 Then you're ready to enable payment on the Minapp.com platform. Go to Dev -> Pay on the side menu, and then "Certificate" on the top tab. On the top right, click on Add an account.
 
-![image-20191007193443651](images/image-20191007193443651.png)
+![image-20191007193443651](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191007193443651.png)
 
 
 
 Then fill out the form with merchant info you gathered above:
 
-![image-20191007193525891](images/image-20191007193525891.png)
+![image-20191007193525891](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191007193525891.png)
 
 
 
@@ -148,6 +149,12 @@ wx.BaaS.pay(params).then(res => {
 ```
 
 
+
+Be careful to log in first, or you'll see an error:
+
+![image-20191008151611379](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20191008151611379.png)
+
+
 ## Your turn! Dior Gift Cards
 
 Build a new eCommerce app but adapt existing code to save time
@@ -158,7 +165,7 @@ Build a new eCommerce app but adapt existing code to save time
 
 
 
-![image-20190327204251870](images/image-20190327204251870.jpg)
+![image-20190327204251870](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/image-20190327204251870.jpg)
 
 
 
@@ -170,4 +177,5 @@ Build a new eCommerce app but adapt existing code to save time
 
 
 
-![7491570472103_.pic](images/7491570472103_.png)
+![7491570472103_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced-baas/slides/images/7491570472103.png)
+

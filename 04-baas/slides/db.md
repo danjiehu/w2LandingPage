@@ -45,13 +45,13 @@ Let's start with something we all know
 
 Let's store **cities** and their **inhabitants** using Excel. How would you do it?
 
-![img](images/02-excel-cities-inhabitants-23a616d71372edd3bef4ff30c077000b2c7f71c6a8026716afb013a959c0c8e7.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/02-excel-cities-inhabitants-23a616d71372edd3bef4ff30c077000b2c7f71c6a8026716afb013a959c0c8e7.png)
 
-![img](images/01-excel-cities-inhabitants-ec97772039adaef6ff12c322d526ffae40f15ed8bc0b0947dbfb958f3dc09500.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/01-excel-cities-inhabitants-ec97772039adaef6ff12c322d526ffae40f15ed8bc0b0947dbfb958f3dc09500.png)
 
-![img](images/03-excel-cities-inhabitants-aa0a85a4e73dc48eb9576ede6c05be76868c0467b1f7d9182fd98a880e322cdc.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/03-excel-cities-inhabitants-aa0a85a4e73dc48eb9576ede6c05be76868c0467b1f7d9182fd98a880e322cdc.png)
 
-![img](images/04-excel-cities-inhabitants-896e163a1038d16ef9c6c4333526c73d13377e962c4dd14ead58fbc7fd01d58f.png)
+![img](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/04-excel-cities-inhabitants-896e163a1038d16ef9c6c4333526c73d13377e962c4dd14ead58fbc7fd01d58f.png)
 
 ## 1:n relation (one to many)
 
@@ -63,16 +63,16 @@ An inhabitant **belongs to** one city (or has one city)
 
 
 
-![image-20191005071945284](images/image-20191005071945284.png)
+![image-20191005071945284](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005071945284.png)
 
 ## Relationships
 
-![image-20191005071957338](images/image-20191005071957338.png)
+![image-20191005071957338](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005071957338.png)
 
 
 ## IDs => Foreign Keys
 
-![image-20191005072007321](images/image-20191005072007321.png)
+![image-20191005072007321](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005072007321.png)
 
 ## Let's create the backend!
 
@@ -95,11 +95,11 @@ Baas + Frontend = SaaS, aka App
 
 
 
-![image-20190918005342925](images/image-20190918005342925.png)
+![image-20190918005342925](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190918005342925.png)
 
 
 
-![image-20190918005356038](images/image-20190918005356038.png)
+![image-20190918005356038](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190918005356038.png)
 
 ## Install SDK
 
@@ -145,13 +145,13 @@ Note the ability to have users!  We'll explore more in later classes.
 
 ## Creating Table
 
-![image-20190929001937147](images/image-20190929001937147.png)
+![image-20190929001937147](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190929001937147.png)
 
-![image-20190929011940227](images/image-20190929011940227.png)
+![image-20190929011940227](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190929011940227.png)
 
-![image-20190929012121745](images/image-20190929012121745.png)
+![image-20190929012121745](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190929012121745.png)
 
-![image-20190929012204563](images/image-20190929012204563.png)
+![image-20190929012204563](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20190929012204563.png)
 
 
 
@@ -165,7 +165,7 @@ Now add the foreign key:
 
 
 
-![image-20191005064402018](images/image-20191005064402018.png)
+![image-20191005064402018](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005064402018.png)
 
 
 
@@ -177,11 +177,11 @@ Why is the `required` field checked? Don't want comments on nothing!
 
 Click "Add row" on the menu above the stories table
 
-![image-20191003201101991](images/image-20191003201101991.png)
+![image-20191003201101991](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191003201101991.png)
 
 Then fill out this form
 
-![image-20191003201208914](images/image-20191003201208914.png)
+![image-20191003201208914](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191003201208914.png)
 
 
 
@@ -189,7 +189,7 @@ Add a story or two, and then some comments to the stories:
 
 Don't forget to copy the `id` of the story for the comment's `story_id`
 
-![image-20191005064757458](images/image-20191005064757458.png)
+![image-20191005064757458](https://github.com/dounan1/china-product/raw/master/04-baas/slides/images/image-20191005064757458.png)
 
 
 
