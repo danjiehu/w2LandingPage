@@ -24,7 +24,7 @@ When cloning a repository, you're by default on a branch, `master`.
 
 One rule: one feature == one branch.
 
-![img](images/git-branching-f3a62f547ce5426330e1c7905d0a3e7bbe249a0d19ceed4d89f9caaf187a85a2.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/git-branching-f3a62f547ce5426330e1c7905d0a3e7bbe249a0d19ceed4d89f9caaf187a85a2.png)
 
 ### Listing local branches
 
@@ -78,7 +78,7 @@ As soon as you push a new branch, a pull request button appears on your GitHub r
 
 Just click on this button, review the diff and add clear title and description.
 
-![img](images/compare-and-pull-request-button-easy-way-e631578b3fa9bd8d2d31be3f9c5f022b44675f7319e5306242e40107430854c1.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/compare-and-pull-request-button-easy-way-e631578b3fa9bd8d2d31be3f9c5f022b44675f7319e5306242e40107430854c1.png)
 
 ### Creating a Pull Request (2)
 
@@ -99,15 +99,15 @@ Just click on this button, review the diff and add clear title and description.
 
 Add a comment to a specific line
 
-![img](images/github_review_feature_1-81928bd04a1887ec7aa2bbdbe6cc2495a3090921aa0ca6445c17c1ca30038802.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_review_feature_1-81928bd04a1887ec7aa2bbdbe6cc2495a3090921aa0ca6445c17c1ca30038802.png)
 
 ### Using Github Review feature (2)
 
 Submit all your comments and add a summary
 
-![img](images/github_review_feature_2-106bb31f89d38fdb75976c7f2bad977ca9c2302e062c7e9bf57dc2f059d97f30.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_review_feature_2-106bb31f89d38fdb75976c7f2bad977ca9c2302e062c7e9bf57dc2f059d97f30.png)
 
-![img](images/github_pull_request-8f8efe4c1e3c0aea104f4fab4193176b46d730641f958e09bb079a1cbd32622b.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_pull_request-8f8efe4c1e3c0aea104f4fab4193176b46d730641f958e09bb079a1cbd32622b.png)
 
 ------
 
@@ -186,13 +186,13 @@ git push origin unmergeable-branch  # push our branch again
 
 You can also solve conflicts on Github. Click on `Resolve conflicts`.
 
-![img](images/github_resolve_conflict_1-85d1722f517cf0559131d4cd47ba8744ca67d0c0e02b9f06bdbd1642e8fb9370.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_resolve_conflict_1-85d1722f517cf0559131d4cd47ba8744ca67d0c0e02b9f06bdbd1642e8fb9370.png)
 
 Keep only the code you want to keep, and remove the special characters that highlighted the conflict
 
-![img](images/github_resolve_conflict_2-fd8707898e0c73b3cf515cd7bbc2fafe9d6968b26e6522fc420fa72b499d823e.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_resolve_conflict_2-fd8707898e0c73b3cf515cd7bbc2fafe9d6968b26e6522fc420fa72b499d823e.png)
 
-![img](images/github_resolve_conflict_3-83efe8279930db8a16a980d0308459140a3fa40df98b28a480a978d64fe1f4d9.png)
+![img](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/github_resolve_conflict_3-83efe8279930db8a16a980d0308459140a3fa40df98b28a480a978d64fe1f4d9.png)
 
 When it's done, click on `Mark as resolved` and `Commit merge`.
 

@@ -2,9 +2,11 @@
 
 ## Objectives
 
-A Landing Page hosted on your own domain
+Build these products over a week:
 
-WeChat Mini Program (MP) similar to Xiaohongshu, using social and ecommerce functions
+1) A Landing Page hosted on your own domain
+
+2) WeChat Mini Program (MP) similar to Xiaohongshu, using social and ecommerce functions
 
 When classes are not going on, you are welcome to work together, and bring your questions in with you to class or ask on group chat.
 
