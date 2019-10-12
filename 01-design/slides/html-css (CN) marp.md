@@ -1102,7 +1102,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 }
 ```
 
-`id="navigation"`的`li`**子元素**的`a`**子元素**将编程蓝色
+`id="navigation"`的`li`**子元素**的`a`**子元素**将变成蓝色
 
 <!-- footer: Le Wagon China Product -->
 ![bg](background.png)
