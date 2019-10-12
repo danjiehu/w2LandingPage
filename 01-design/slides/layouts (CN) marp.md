@@ -8,7 +8,7 @@
 
 ---
 
-## Lecture Boilerplate
+## 课程模板
 
 https://github.com/lewagon/layouts-demo
 
@@ -128,7 +128,7 @@ serve
 
 ---
 
-## Bootstrap唯一的challenge
+## Bootstrap唯一的挑战
 
 接下来，我们将编写一个类似于**airbnb的民宿页面**，不需要任何CSS😅
 
@@ -306,7 +306,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 ---
 
-## Example 1
+## 案例 1
 
 ![img](layouts/half-half-bootstrap-5553122913553152a9f96bdb95ae762e4c99eeff0d70292f138def1f774dd741.png)
 
@@ -345,7 +345,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 ---
 
-## Example 2
+## 案例 2
 
 ![img](layouts/columns-bootstrap-6de08c570a20db5fe49ef8c8dc9084c6050ac57ef71a6c4b28fad41e0d933ae2.png)
 
@@ -375,7 +375,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 ---
 
-## Example 3
+## 案例 3
 
 ![img](layouts/centered-bootstrap-96c207d2302448093d5eab431fb47e6927a5ce8ae11627d64921f0f335143a16.png)
 
@@ -692,4 +692,4 @@ https://www.mapbox.com/account/access-tokens/
 
 ---
 
-## Let's build cool layouts 😎
+## 让我们来创建布局吧！😎
