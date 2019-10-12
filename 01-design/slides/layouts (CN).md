@@ -5,7 +5,7 @@
 
 -----
 
-## Lecture Boilerplate
+## 课程模板
 
 https://github.com/lewagon/layouts-demo
 
@@ -32,7 +32,7 @@ serve
 
 -----
 
-## Semantic scheme
+## 配色方案
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/layouts/five-colors-78f6f03ba32ad45503dbdae28fdc56d5925a8bbf04a67fa139980aee7d15cf21.png)
 
@@ -92,7 +92,7 @@ serve
 
 -----
 
-## Bootstrap唯一的challenge
+## Bootstrap唯一的挑战
 
 接下来，我们将编写一个类似于**airbnb的民宿页面**，不需要任何CSS😅
 
@@ -128,7 +128,7 @@ serve
 
 ## 定义
 
-Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布局和对齐内容。Flexbox能够解决1、网页布局的问题 2、网页响应式的问题
+Bootstrap网格系统应用一系列的**容器**、**行**和**列**来布局和对齐内容。Flexbox能够解决1、网页布局的问题 2、网页响应式的问题
 
 -----
 
@@ -210,7 +210,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 -----
 
-## Example 1
+## 案例 1
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/layouts/half-half-bootstrap-5553122913553152a9f96bdb95ae762e4c99eeff0d70292f138def1f774dd741.png)
 
@@ -240,7 +240,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 -----
 
-## Example 2
+## 案例 2
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/layouts/columns-bootstrap-6de08c570a20db5fe49ef8c8dc9084c6050ac57ef71a6c4b28fad41e0d933ae2.png)
 
@@ -264,7 +264,7 @@ Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布�
 
 ------
 
-## Example 3
+## 案例 3
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/layouts/centered-bootstrap-96c207d2302448093d5eab431fb47e6927a5ce8ae11627d64921f0f335143a16.png)
 
@@ -482,4 +482,4 @@ https://www.mapbox.com/account/access-tokens/
 
 -------
 
-## Let's build cool layouts 😎
+## 让我们来创建布局吧！😎

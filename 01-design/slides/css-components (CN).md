@@ -5,7 +5,7 @@
 
 -----
 
-## Lecture Boilerplate
+## 课程模板
 
 https://github.com/lewagon/components-demo
 
@@ -129,7 +129,7 @@ stt
 
 -----
 
-## Flexbox - justify content (1)
+## Flexbox - 内容对齐 (1)
 
 ```
 .flexbox {
@@ -142,7 +142,7 @@ stt
 
 -----
 
-## Flexbox - justify content (2)
+## Flexbox - 内容对齐 (2)
 
 ```
 .flexbox {
@@ -155,7 +155,7 @@ stt
 
 -----
 
-## Flexbox - align items (1)
+## Flexbox - 元素对齐 (1)
 
 ```
 .flexbox {
@@ -169,7 +169,7 @@ stt
 
 -----
 
-## Flexbox - align items (2)
+## Flexbox - 元素对齐 (2)
 
 ```
 .flexbox {
@@ -183,7 +183,7 @@ stt
 
 -----
 
-## Flexbox - align items (3)
+## Flexbox - 元素对齐 (3)
 
 ```
 .flexbox {
@@ -197,7 +197,7 @@ stt
 
 -----
 
-## Flex item - flex grow
+## Flex item - 弹性增长
 
 ```
 .flexbox {
@@ -250,4 +250,4 @@ stt
 
 ------
 
-## Let's build awesome components 🚀
+## 让我们来创建一些组件吧！🚀
