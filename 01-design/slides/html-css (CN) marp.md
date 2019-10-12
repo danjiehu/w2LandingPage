@@ -607,7 +607,7 @@ body {
 
 ---
 
-## 字体厚度
+## 字体粗细
 
 ## ![img](html-css/font-weight-ccef280d6ce99b985f3dd585fb09dd5f9bc5afa2d9f25196df93685225be691a.png)
 
@@ -799,7 +799,7 @@ box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* 淡色阴影 */
 
 ---
 
-## Div剧中技巧
+## Div居中技巧
 
 ```
 width: 300px;        /* 设置宽度 */
