@@ -32,7 +32,7 @@ serve
 
 -----
 
-## Semantic scheme
+## 配色方案
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/layouts/five-colors-78f6f03ba32ad45503dbdae28fdc56d5925a8bbf04a67fa139980aee7d15cf21.png)
 
@@ -128,7 +128,7 @@ serve
 
 ## 定义
 
-Bootstrap网格系统应用一系列的**containers**、**行**和**列**来布局和对齐内容。Flexbox能够解决1、网页布局的问题 2、网页响应式的问题
+Bootstrap网格系统应用一系列的**容器**、**行**和**列**来布局和对齐内容。Flexbox能够解决1、网页布局的问题 2、网页响应式的问题
 
 -----
 
