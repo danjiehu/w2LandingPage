@@ -347,9 +347,7 @@ Now we show all the orders in the user dashboard.
 
 ### List all orders (user dashboard)
 
-
-
-Now when you run the food delivery app, you can see all the meals. But to order a meal, or see your dashboard (`orders index`), you need to **sign in**.
+When you run the food delivery app, you can see all the meals. But to order a meal, or see your dashboard (`orders index`), you need to **sign in**.
 
 
 
@@ -357,9 +355,11 @@ The dashboard that you then see should be **dependent on your role**.
 
 
 
-We can implement a **login** logic in our app to have **three dashboards** depending on the user role: one dashboard for the **manager**, another dashboard for the **delivery guy** (with fewer user actions available), and lastly for the **customer**.
+We can implement a **login** logic in our app to have three order ** dashboards** depending on the user role: one dashboard for the **manager**, another dashboard for the **delivery guy** (with fewer user actions available), and lastly for the **customer**.
 
-To handle that, we'll have different login **sessions** for different users. You've already seen that used when loggin and and out of the previous exericse app. We'll need those login forms still.
+This is possible because each login creates a different **session** for different users. 
+
+We'll use login forms created in the previous exercise.
 
 
 
@@ -367,10 +367,39 @@ Screenshots of three types of dashboards
 
 
 
-We start with the customer dashboard that shows all his address, and his orders.
+We start with the customer dashboard that shows all his orders.
+
+
+```
+  "pages": [
+    "pages/index/index",
+    "pages/new/new",
+    "pages/orders/orders",
+    "pages/user/user"
+  ]
+```
 
 
 
+```
+  {
+        "pagePath": "pages/orders/orders",
+        "text": "Orders",
+        "iconPath": "/images/orders.png",
+        "selectedIconPath": "/images/orders.png"
+      },
+```
+
+
+
+```
+    Order.expand(["meal"]).find().then(page.getRequestData)
+```
+
+```
+      <view class="h2">{{order.meal.name}}</view>
+      <view class="p">{{order.meal.price / 100.0}} Kuai</view>
+```
 
 
 
