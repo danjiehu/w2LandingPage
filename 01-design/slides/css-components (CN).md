@@ -197,7 +197,7 @@ stt
 
 -----
 
-## Flex item - flex grow
+## Flex item - 弹性增长
 
 ```
 .flexbox {
