@@ -2,7 +2,7 @@
 
 - 学习HTML / CSS基础
 - 创建个人profile page [例子](https://papillard.github.io/my-profile/)
-- 通过[Github Pages](https://pages.github.com/)把页面上传到网上 
+- 通过[Github Pages](https://pages.github.com/)把页面上传到网上
 
 -----
 
@@ -321,7 +321,7 @@ stt
 
 -----
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
 
 -----
 
@@ -454,7 +454,7 @@ body {
 
 使用检查器，然后在Sublime中复制`css`
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
 
 -----
 
@@ -464,7 +464,7 @@ body {
 
 -----
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
 
 ------
 
@@ -484,7 +484,7 @@ body {
 
 ## 盒子模型（box model）
 
-![img](https://kitt.lewagon.com/karr/assets/front_new/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
 
 -----
 
@@ -575,7 +575,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 ## Live-code
 
-接下来，我们将**添加一些div**到我们的HTML body区域里并使用Chrome开发者工具进行测试盒子模型 
+接下来，我们将**添加一些div**到我们的HTML body区域里并使用Chrome开发者工具进行测试盒子模型
 
 ------
 

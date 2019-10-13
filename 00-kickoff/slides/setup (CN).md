@@ -29,7 +29,7 @@
 
 ## Your turn!
 
-上[github.com/lewagon/setup](https://github.com/lewagon/setup)
+上[Setup](https://github.com/dounan1/china-product/blob/master/00-kickoff/slides/setup.md)
 
 ------
 
@@ -59,7 +59,6 @@ pwd
 ![img](https://github.com/dounan1/china-product/raw/master/00-kickoff/slides/images/terminal_pwd-7b37301040ac94fd939d73548186d32c9a45d7d7c7bf0b3d559a77874c53bc28.png)
 
 这就是你的`$HOME`目录
-
 
 ------
 
@@ -137,7 +136,7 @@ pwd
 
 ## 还有更多的命令行！
 
-[Learn Enough Command Line to be Dangerous](https://www.learnenough.com/command-line-tutorial)
+[Cheatsheet](https://github.com/dounan1/china-product/blob/master/00-kickoff/exercises/terminalcheat.md)
 
 ------
 
@@ -294,7 +293,8 @@ git lg
 接下来，我们将创建一个项目并追踪该项目
 
 ```
-mkdir -p ~/code/$GITHUB_USERNAME/git-101 && cd $_
+mkdir -p ~/code/$GITHUB_USERNAME/git-101
+cd ~/code/$GITHUB_USERNAME/git-101
 git init
 ls -a # 创建了一个.git隐藏文件夹
 ```
@@ -342,6 +342,17 @@ git status
 git commit -m "Adding logo to home page"
 git status
 git log # 查看commit历史
+```
+
+-----
+
+我们将使用push来推送
+
+```
+hub create
+hub browse # can you see your new repo on Github?
+git status # check again - anything to be pushed?
+git push origin master
 ```
 
 ------

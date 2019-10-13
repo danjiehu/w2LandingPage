@@ -29,7 +29,7 @@ Version Control. Collaboration.
 
 ## Your turn!
 
-Go to [github.com/lewagon/setup](https://github.com/lewagon/setup)
+Go to [Setup](https://github.com/dounan1/china-product/blob/master/00-kickoff/slides/setup.md)
 
 ## Different names
 
@@ -110,7 +110,7 @@ Open your current directory in Sublime with **stt**
 
 ## And many more!
 
-[Learn Enough Command Line to be Dangerous](https://www.learnenough.com/command-line-tutorial)
+[Cheatsheet](https://github.com/dounan1/china-product/blob/master/00-kickoff/exercises/terminalcheat.md)
 
 ## We are knowledge Workers
 
@@ -236,7 +236,8 @@ git lg
 Let's create a project and start tracking it
 
 ```
-mkdir -p ~/code/$GITHUB_USERNAME/git-101 && cd $_
+mkdir -p ~/code/$GITHUB_USERNAME/git-101
+cd ~/code/$GITHUB_USERNAME/git-101
 git init
 ls -a # it has created a .git hidden folder
 ```
@@ -280,6 +281,15 @@ git status
 git commit -m "Adding logo to home page"
 git status
 git log # check commits history
+```
+
+Now push it up
+
+```
+hub create
+hub browse # can you see your new repo on Github?
+git status # check again - anything to be pushed?
+git push origin master
 ```
 
 ------
@@ -359,7 +369,6 @@ In the next few weeks, we'll see how git can help us with
 
 - Navigation
 - Lectures
-- Videos
 - Classmates
 - Buddies
 - Exercises
