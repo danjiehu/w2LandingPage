@@ -2,11 +2,11 @@
 
 - 学习HTML / CSS基础
 - 创建个人profile page [例子](https://papillard.github.io/my-profile/)
-- 通过[Github Pages](https://pages.github.com/)把页面上传到网上
+- 通过[Github Pages](https://pages.github.com/)把页面上传到网上 
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Lecture Boilerplate
 
@@ -20,7 +20,7 @@ rm -rf .git
 stt
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -28,37 +28,37 @@ stt
 
 是针对**浏览器**而开发的
 
-![img](html-css/front-languages-24d3a355bfc2e8758518763bff78bab685d96644f56b94155c4e42a014270203.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/front-languages-24d3a355bfc2e8758518763bff78bab685d96644f56b94155c4e42a014270203.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
-![img](html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
+![center](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
 
 是一种标记语言（markup language）== 结构
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## HTML 超文本标记语言
 
 网页将显示不同的内容
 
-![img](html-css/content-68d2a1782391be808a207de804572c3f2a559d0331ce7e61681b082e07f50ab9.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-68d2a1782391be808a207de804572c3f2a559d0331ce7e61681b082e07f50ab9.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## HTML 超文本标记语言
 
 标签（tags）是用来**定义**内容的
 
-![img](html-css/content-with-tags-414c7ab318d111663bf5454c60737d240488c7dc8f25276f736da6fe504e56b7.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-414c7ab318d111663bf5454c60737d240488c7dc8f25276f736da6fe504e56b7.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -66,9 +66,9 @@ stt
 
 因此，将应用**浏览器默认的样式**
 
-![img](html-css/content-with-tags-html-4e57417cc0d56394fb4b3ad1c77d7239da5f9bf5b5c592b3718c5da2a3ca6c77.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-html-4e57417cc0d56394fb4b3ad1c77d7239da5f9bf5b5c592b3718c5da2a3ca6c77.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -76,9 +76,9 @@ stt
 
 也可以对标签的样式进行修改
 
-![img](html-css/content-tags-css-6971d60a88bf6fb3290482393b3b31675a5eadea7c27bbdd0d16354c1ad7c651.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-tags-css-6971d60a88bf6fb3290482393b3b31675a5eadea7c27bbdd0d16354c1ad7c651.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -94,12 +94,10 @@ stt
 
 
 
-
-
 <!-- end of file -->
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -114,12 +112,11 @@ stt
 
 
 
-
 </html>
 <!-- end of file -->
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -142,7 +139,7 @@ stt
 <!-- end of file -->
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -163,7 +160,7 @@ stt
 <!-- end of file -->
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -178,9 +175,9 @@ stt
 </head>
 ```
 
-![img](html-css/google-card-a361304b30e0875e1e06a6ee20b7f3f8acc14e9c3b2cf74f1044802c5a737310.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/google-card-a361304b30e0875e1e06a6ee20b7f3f8acc14e9c3b2cf74f1044802c5a737310.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -195,9 +192,9 @@ stt
 </head>
 ```
 
-![img](html-css/fb-card-f68955dc612031b453e44657ce1a225d26d8b9cfad60bfde829d7b6ee568c295.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/fb-card-f68955dc612031b453e44657ce1a225d26d8b9cfad60bfde829d7b6ee568c295.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -214,7 +211,7 @@ stt
 </head>
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -233,15 +230,16 @@ stt
 </html>
 <!-- end of file -->
 ```
-![bg](background.png)
+
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
 ## 基本语法
 
-![img](html-css/element-syntax-0a692d495a6c0df2d59fe46662c2855a0b704a8d30ed8378910e15e0e4506c72.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/element-syntax-0a692d495a6c0df2d59fe46662c2855a0b704a8d30ed8378910e15e0e4506c72.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -255,6 +253,9 @@ stt
 
 结果：[Le Wagon](https://www.lewagon.com/)
 
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
+
+------
 
 ### Quiz
 
@@ -263,7 +264,7 @@ stt
 - 内容（content）
 - 两个属性（attributes） 的名称（name）及值（value）
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
@@ -279,9 +280,9 @@ stt
 <h6>[...]</h6>
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 段落
 
@@ -293,9 +294,10 @@ stt
   nihil, sequi tempore impedit quae?
 </p>
 ```
-![bg](background.png)
 
-------
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
+
+-----
 
 ## 强调文本
 
@@ -306,9 +308,9 @@ stt
 </p>
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 列表
 
@@ -328,9 +330,9 @@ stt
 </ol>
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 图片
 
@@ -338,9 +340,9 @@ stt
 <img src="logo.png" alt="Le Wagon logo">
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 表单
 
@@ -352,79 +354,78 @@ stt
 </form>
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 还有更多
 
 - [codeguide.co](http://codeguide.co/)
 - [MDN文档](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
+
 
 ## Live-code
 
 接下来，我们将添加一些HTML内容到profile page中！
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
-![img](html-css/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_html-f5630480d2ba69e6707bdeef20fce4993c15b1bc44c69315a64217dfe37fbafe.png)
 
-![bg](background.png)
+-----
 
-------
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css3-logo-195ecfeee1639c0cd00bcc4cfc85a548d6a7fa900eeed2707a75548798f89733.png)
 
-![img](html-css/css3-logo-195ecfeee1639c0cd00bcc4cfc85a548d6a7fa900eeed2707a75548798f89733.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-![bg](background.png)
-
-------
+-----
 
 ## 还有CSS
 
 - 用Chrome的开发工具剪切[medium.com](https://medium.com/)的`<head>`区域
 - 你看到的是一个没有CSS样式的网站😬
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 如何引入CSS到HTML中
 
-![img](html-css/linking-css-93a0e35c150df4ec377c3b2b8045c22fcfb74e47c166758e92dfac4949907682.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/linking-css-93a0e35c150df4ec377c3b2b8045c22fcfb74e47c166758e92dfac4949907682.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## CSS语法
 
-![img](html-css/css-syntax-3633232082c8f9b84ebde51ead6472ccfe80c1af4bf1cdb4140b94f79dcf0400.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-3633232082c8f9b84ebde51ead6472ccfe80c1af4bf1cdb4140b94f79dcf0400.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## CSS词汇
 
-![img](html-css/css-vocabulary-54709fcfe49b81165cc66c5cda5d78cc0c5b5eec7d8bbcf879b3b263fedf1145.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-vocabulary-54709fcfe49b81165cc66c5cda5d78cc0c5b5eec7d8bbcf879b3b263fedf1145.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 例如
 
-![img](html-css/css-syntax-example-19d14b8f80d0d2d7af3a579fab48716f0da8a148f9eee5dd2b3c45ac38085f09.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-example-19d14b8f80d0d2d7af3a579fab48716f0da8a148f9eee5dd2b3c45ac38085f09.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 颜色
 
@@ -434,10 +435,9 @@ color: rgb(255, 83, 13);
 color: rgba(255, 83, 13, 1.0);
 ```
 
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-![bg](background.png)
-
-------
+-----
 
 ## 颜色 - 提示
 
@@ -451,68 +451,60 @@ body {
 - 强度值：0-255
 - 当三色灰度数值相同时，产生不同灰度值的灰色调
 
-![img](html-css/grey-scale-efaa01b8c08d4a90505ef417a86fdffe7bed8e670e3fab84ae8f5dce203e0931.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/grey-scale-efaa01b8c08d4a90505ef417a86fdffe7bed8e670e3fab84ae8f5dce203e0931.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 文本 vs 背景
 
-## ![img](html-css/text-vs-bg-5f4f366955757d5bf06d93b83402c842a3abbff025950aa96670442da1d1ad98.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-vs-bg-5f4f366955757d5bf06d93b83402c842a3abbff025950aa96670442da1d1ad98.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 背景图片
 
-![img](html-css/bg-image-c2a76d897059d5224827ef1f1941aab90e4c1b1fc405ef893e4b7bd693ed751d.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/bg-image-c2a76d897059d5224827ef1f1941aab90e4c1b1fc405ef893e4b7bd693ed751d.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 
 ## 通用字型
 
-## ![img](html-css/font-family-ca0758530f7c9d5a357b16e7402ce0511bbcf1f3a81d894f1d9e73334a5b0fdc.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/font-family-ca0758530f7c9d5a357b16e7402ce0511bbcf1f3a81d894f1d9e73334a5b0fdc.png)
 
-![bg](background.png)
 
-------
+-----
 
 ## 字体大小，字体字距
 
-## ![img](html-css/text-spaces-ad13823a0e1ec70a2c6a4cfc6093f5c143842ba642ee06c013262a62fcf57ed9.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-spaces-ad13823a0e1ec70a2c6a4cfc6093f5c143842ba642ee06c013262a62fcf57ed9.png)
 
-![bg](background.png)
 
-------
+-----
 
 ## 字体装饰
 
-## ![img](html-css/text-decoration-71fb6097fb8f9b1c821a15dd246e082163bfbef13010c03dd5277439cec07a21.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-decoration-71fb6097fb8f9b1c821a15dd246e082163bfbef13010c03dd5277439cec07a21.png)
 
-![bg](background.png)
 
-------
+
+-----
 
 ## 字体对齐
 
-## ![img](html-css/text-align-5902740aa2f71de097abf94ec553f207ef7bef817c5ddd605b30ba6e0e2f6e28.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-align-5902740aa2f71de097abf94ec553f207ef7bef817c5ddd605b30ba6e0e2f6e28.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 字体粗细
 
-## ![img](html-css/font-weight-ccef280d6ce99b985f3dd585fb09dd5f9bc5afa2d9f25196df93685225be691a.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/font-weight-ccef280d6ce99b985f3dd585fb09dd5f9bc5afa2d9f25196df93685225be691a.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## Google字体
 
@@ -521,9 +513,9 @@ body {
 - **Open-Sans** 👉 `<body>`
 - **Raleway, Montserrat, Varela Round, etc...** 👉 `<h1>`, `<h2>`, `<h3>`
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Font Awesome
 
@@ -534,67 +526,67 @@ body {
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 提示
 
 使用检查器，然后在Sublime中复制`css`
 
-![img](html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+
+-----
 
 ## Live-code
 
 接下来，我们将使用[Google字体](https://fonts.google.com/)来设计字体和颜色
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
 
-![img](html-css/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
+-----
 
-![bg](background.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_css-29dd6ce7fa3ce73796907f05d3af52425b251debbb7bb62aab64104ec8266091.png)
 
 ------
 
 ## Div及盒子模型（box model）
 
-## Real life...
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-![img](html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
+-----
 
-![bg](background.png)
+### Real life...
 
-------
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
 
-## ...是由`<div>`来组成的
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-![img](html-css/airbnb-with-div-20b4ad563c8066f7035bd1bf408960003a7937d8842f3a00f093450d29336a84.png)
+-----
 
-![bg](background.png)
+### ...是由`<div>`来组成的
 
-------
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-with-div-20b4ad563c8066f7035bd1bf408960003a7937d8842f3a00f093450d29336a84.png)
+
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
+
+-----
 
 ## 盒子模型（box model）
 
-![img](html-css/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box_spacing-bbfa0b27d2a85ce5238029e989360fac63a09c61c304addeb8ecaafc6f1d744a.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 盒子模型 - 边框（border）
 
-![img](html-css/box-model-3-c489c1980f18303347fe3a385eeac670814f7bd060c0f606a2e7235a1c5192a5.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box-model-3-c489c1980f18303347fe3a385eeac670814f7bd060c0f606a2e7235a1c5192a5.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 边框（border）
 
@@ -611,35 +603,27 @@ div {
 }
 ```
 
-![img](html-css/borders-aa6243ac7d9e4d4d902ee669c6b360d29349677f4f6cc33b8f6c7b305d8a2052.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/borders-aa6243ac7d9e4d4d902ee669c6b360d29349677f4f6cc33b8f6c7b305d8a2052.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 圆角边框（border-radius）
 
-![img](html-css/radius-1-30d42e5cc809b05bd644edc133d49984aa1ee5c47eecbd5e8e3bde356a2734c1.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/radius-1-30d42e5cc809b05bd644edc133d49984aa1ee5c47eecbd5e8e3bde356a2734c1.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 圆角边框（border-radius）
 
-![img](html-css/radius-2-c631c1e6c6ce3abdd8f925e819b18625f70df7fd2b8eab52decb28ee0b034993.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/radius-2-c631c1e6c6ce3abdd8f925e819b18625f70df7fd2b8eab52decb28ee0b034993.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 阴影（box shadow）
 
-![img](html-css/box-shadow-92839ef882b5e4bf0299dc7e5194c0c3c968af4d0053a9588ef56def4ec75195.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/box-shadow-92839ef882b5e4bf0299dc7e5194c0c3c968af4d0053a9588ef56def4ec75195.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 单位（units）
 
@@ -660,9 +644,9 @@ p {
 }
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Div设计技巧
 
@@ -672,9 +656,10 @@ padding: 30px;                             /* 内部空间 */
 border-radius: 4px;                        /* 小的圆角边框 */
 box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* 淡色阴影 */
 ```
-![bg](background.png)
 
-------
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
+
+-----
 
 ## Div居中技巧
 
@@ -685,87 +670,71 @@ margin: 0 auto;      /* Set automatic margins on right/left
  */
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Live-code
 
 接下来，我们将**添加一些div**到我们的HTML body区域里并使用Chrome开发者工具进行测试盒子模型
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
 ## id和class选择器
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 如何指定logo的特定样式？
 
-![img](html-css/id-dilemma-498dc8980d3e0dd3e9f40dbc53eb9bc718e937f0aedce7a88dce6ad65adf7946.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/id-dilemma-498dc8980d3e0dd3e9f40dbc53eb9bc718e937f0aedce7a88dce6ad65adf7946.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## id选择器可以为标有特定id的HTML元素指定特定的样式
 
-![img](html-css/id-solution-ecc142b3ca1161f17f9078effb3710bbbdb638b09a3de9625c6da65826d74da1.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/id-solution-ecc142b3ca1161f17f9078effb3710bbbdb638b09a3de9625c6da65826d74da1.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 如何制定staff照片的特定样式？
 
-## ![img](html-css/class-dilemma-6a3a8a6997df006eb99d5f034d86bec91360c41e563677f0148fef3b90f218b2.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-dilemma-6a3a8a6997df006eb99d5f034d86bec91360c41e563677f0148fef3b90f218b2.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## class选择器在HTML中以class属性表示
 
-## ![img](html-css/class-solution-93d33d4c380330298ebfaa781365427efc3169359b4e07778b578af370d042fa.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-solution-93d33d4c380330298ebfaa781365427efc3169359b4e07778b578af370d042fa.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## id或者class？
 
-## ![img](html-css/class-or-id-dc3998e0ee573a38daa186715b28934ff0560215e07262118a46c18343d05c6f.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/class-or-id-dc3998e0ee573a38daa186715b28934ff0560215e07262118a46c18343d05c6f.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 组合（1）
 
-## ![img](html-css/combine-class-1-52b0cca31494d55f136d68e47aa09060478005031abd233f8ec333857b4f1300.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-1-52b0cca31494d55f136d68e47aa09060478005031abd233f8ec333857b4f1300.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 组合（2）
 
-## ![img](html-css/combine-class-2-9b99d83da19cbf7e494192f3b1bda849dd125142cb68a80fede694b705603015.png)
+## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-2-9b99d83da19cbf7e494192f3b1bda849dd125142cb68a80fede694b705603015.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## 组合（3）
 
-![img](html-css/combine-class-3-a1e379c6e97826d412bbd52a41a9ede8d185b1d5c35d9c73220cdd8b724a6c89.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/combine-class-3-a1e379c6e97826d412bbd52a41a9ede8d185b1d5c35d9c73220cdd8b724a6c89.png)
 
-![bg](background.png)
-
-------
+-----
 
 ## Class命名 - quiz
 
@@ -776,12 +745,11 @@ margin: 0 auto;      /* Set automatic margins on right/left
 - `.img-user` 或者 `.img-circle`?
 
 
-
 改变你的思维 => **以图形方式思考**
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Class命名规则
 
@@ -799,15 +767,15 @@ margin: 0 auto;      /* Set automatic margins on right/left
 .img-circle
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
 ------
 
 ## CSS选择器总结
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 元素选择器
 
@@ -822,9 +790,9 @@ margin: 0 auto;      /* Set automatic margins on right/left
 加上`css/* style.css */h1 {color: red;font-weight: bold;}`
 使`h1`元素变成红色和粗体
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Class选择器
 
@@ -849,9 +817,8 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 只会使第二和第三段两端都对齐
 
-![bg](background.png)
 
-------
+-----
 
 
 ## Id选择器
@@ -878,9 +845,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 `id="banner"将向**unique** div添加一个背景图片
 
-![bg](background.png)
-
-------
+-----
 
 ## 子选择器
 
@@ -905,9 +870,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 `id="banner"`的`h1`**子元素**将变成白色
 
-![bg](background.png)
-
-------
+-----
 
 ## 直接子元素
 
@@ -933,9 +896,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 `id="navigation"`的`li`**子元素**的`a`**子元素**将变成蓝色
 
-![bg](background.png)
-
-------
+-----
 
 ## 组合
 
@@ -959,9 +920,7 @@ h2 {
 [...]
 ```
 
-![bg](background.png)
-
-------
+-----
 
 
 ## 伪类
@@ -982,9 +941,9 @@ a:hover {
 
 其它[伪类](https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Quiz #1
 
@@ -1009,9 +968,9 @@ p {
 }
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Quiz #2
 
@@ -1036,9 +995,9 @@ p {
 }
 ```
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## 选择器Specificity特性
 
@@ -1056,18 +1015,20 @@ p {                 /* least specific */
 
 试试该[specificity计算器](http://specificity.keegan.st/)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
 ## Live-code
 
 接下来，我们将**完成live-code**，并获得以下[最终结果](https://papillard.github.io/my-profile/)!
 
-![img](html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
-![bg](background.png)
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
 
-------
+-----
 
-## 开始建立你的profile吧！
+## 现在开始建立你的profile吧！
+
+![bg](https://github.com/dounan1/china-product/raw/master/01-design/slides/background16x9.jpg)
