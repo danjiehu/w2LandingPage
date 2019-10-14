@@ -4,6 +4,7 @@
 - 创建个人profile page [例子](https://papillard.github.io/my-profile/)
 - 通过[Github Pages](https://pages.github.com/)把页面上传到网上
 
+
 -----
 
 ## Lecture Boilerplate
@@ -18,6 +19,7 @@ rm -rf .git
 stt
 ```
 
+
 ------
 
 ## 前端
@@ -26,11 +28,13 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/front-languages-24d3a355bfc2e8758518763bff78bab685d96644f56b94155c4e42a014270203.png)
 
+
 ------
 
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
+![center](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/html5-logo-b1dcae04056e918ace39b2a6e15ee848b658f28d2a1bba6cb7c63731d521c785.png)
 
 是一种标记语言（markup language）== 结构
+
 
 -----
 
@@ -40,6 +44,7 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-68d2a1782391be808a207de804572c3f2a559d0331ce7e61681b082e07f50ab9.png)
 
+
 -----
 
 ## HTML 超文本标记语言
@@ -47,6 +52,7 @@ stt
 标签（tags）是用来**定义**内容的
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-414c7ab318d111663bf5454c60737d240488c7dc8f25276f736da6fe504e56b7.png)
+
 
 ------
 
@@ -56,6 +62,7 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-with-tags-html-4e57417cc0d56394fb4b3ad1c77d7239da5f9bf5b5c592b3718c5da2a3ca6c77.png)
 
+
 ------
 
 ## HTML 超文本标记语言
@@ -63,6 +70,7 @@ stt
 也可以对标签的样式进行修改
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/content-tags-css-6971d60a88bf6fb3290482393b3b31675a5eadea7c27bbdd0d16354c1ad7c651.png)
+
 
 ------
 
@@ -78,10 +86,9 @@ stt
 
 
 
-
-
 <!-- end of file -->
 ```
+
 
 ------
 
@@ -96,10 +103,10 @@ stt
 
 
 
-
 </html>
 <!-- end of file -->
 ```
+
 
 ------
 
@@ -122,6 +129,7 @@ stt
 <!-- end of file -->
 ```
 
+
 ------
 
 ## HTML结构 - head
@@ -141,6 +149,7 @@ stt
 <!-- end of file -->
 ```
 
+
 ------
 
 ## HTML结构 - head & Google
@@ -155,6 +164,7 @@ stt
 ```
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/google-card-a361304b30e0875e1e06a6ee20b7f3f8acc14e9c3b2cf74f1044802c5a737310.png)
+
 
 ------
 
@@ -171,6 +181,7 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/fb-card-f68955dc612031b453e44657ce1a225d26d8b9cfad60bfde829d7b6ee568c295.png)
 
+
 ------
 
 ## HTML结构 - head & Twitter
@@ -185,6 +196,7 @@ stt
   <meta name="twitter:image:src" content="http://twitter-card.jpg">
 </head>
 ```
+
 
 ------
 
@@ -203,11 +215,14 @@ stt
 </html>
 <!-- end of file -->
 ```
+
+
 ------
 
 ## 基本语法
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/element-syntax-0a692d495a6c0df2d59fe46662c2855a0b704a8d30ed8378910e15e0e4506c72.png)
+
 
 ------
 
@@ -222,12 +237,15 @@ stt
 结果：[Le Wagon](https://www.lewagon.com/)
 
 
+------
+
 ### Quiz
 
 请指出：
 - 标签的名称（tag's name）
 - 内容（content）
 - 两个属性（attributes） 的名称（name）及值（value）
+
 
 ------
 
@@ -243,6 +261,7 @@ stt
 <h6>[...]</h6>
 ```
 
+
 -----
 
 ## 段落
@@ -255,6 +274,8 @@ stt
   nihil, sequi tempore impedit quae?
 </p>
 ```
+
+
 -----
 
 ## 强调文本
@@ -265,6 +286,7 @@ stt
   and even <strong>more if needed</strong>
 </p>
 ```
+
 
 -----
 
@@ -286,6 +308,7 @@ stt
 </ol>
 ```
 
+
 -----
 
 ## 图片
@@ -293,6 +316,7 @@ stt
 ```
 <img src="logo.png" alt="Le Wagon logo">
 ```
+
 
 -----
 
@@ -306,6 +330,7 @@ stt
 </form>
 ```
 
+
 -----
 
 ## 还有更多
@@ -313,11 +338,14 @@ stt
 - [codeguide.co](http://codeguide.co/)
 - [MDN文档](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 
+
 -----
+
 
 ## Live-code
 
 接下来，我们将添加一些HTML内容到profile page中！
+
 
 -----
 
@@ -327,6 +355,7 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css3-logo-195ecfeee1639c0cd00bcc4cfc85a548d6a7fa900eeed2707a75548798f89733.png)
 
+
 -----
 
 ## 还有CSS
@@ -334,11 +363,13 @@ stt
 - 用Chrome的开发工具剪切[medium.com](https://medium.com/)的`<head>`区域
 - 你看到的是一个没有CSS样式的网站😬
 
+
 -----
 
 ## 如何引入CSS到HTML中
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/linking-css-93a0e35c150df4ec377c3b2b8045c22fcfb74e47c166758e92dfac4949907682.png)
+
 
 -----
 
@@ -346,17 +377,20 @@ stt
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-3633232082c8f9b84ebde51ead6472ccfe80c1af4bf1cdb4140b94f79dcf0400.png)
 
+
 -----
 
 ## CSS词汇
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-vocabulary-54709fcfe49b81165cc66c5cda5d78cc0c5b5eec7d8bbcf879b3b263fedf1145.png)
 
+
 -----
 
 ## 例如
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/css-syntax-example-19d14b8f80d0d2d7af3a579fab48716f0da8a148f9eee5dd2b3c45ac38085f09.png)
+
 
 -----
 
@@ -391,11 +425,13 @@ body {
 
 ## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-vs-bg-5f4f366955757d5bf06d93b83402c842a3abbff025950aa96670442da1d1ad98.png)
 
+
 -----
 
 ## 背景图片
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/bg-image-c2a76d897059d5224827ef1f1941aab90e4c1b1fc405ef893e4b7bd693ed751d.png)
+
 
 -----
 
@@ -404,17 +440,21 @@ body {
 
 ## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/font-family-ca0758530f7c9d5a357b16e7402ce0511bbcf1f3a81d894f1d9e73334a5b0fdc.png)
 
+
 -----
 
 ## 字体大小，字体字距
 
 ## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-spaces-ad13823a0e1ec70a2c6a4cfc6093f5c143842ba642ee06c013262a62fcf57ed9.png)
 
+
 -----
 
 ## 字体装饰
 
 ## ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/text-decoration-71fb6097fb8f9b1c821a15dd246e082163bfbef13010c03dd5277439cec07a21.png)
+
+
 
 -----
 
@@ -437,6 +477,7 @@ body {
 - **Open-Sans** 👉 `<body>`
 - **Raleway, Montserrat, Varela Round, etc...** 👉 `<h1>`, `<h2>`, `<h3>`
 
+
 -----
 
 ## Font Awesome
@@ -448,6 +489,7 @@ body {
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 ```
 
+
 -----
 
 ## 提示
@@ -456,11 +498,15 @@ body {
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_inspector-bc6384e4ccd1257c10b9f57c7aa3009f9cf59055d9d515b64f6816776ab82ba8.png)
 
+
+
 -----
 
 ## Live-code
 
 接下来，我们将使用[Google字体](https://fonts.google.com/)来设计字体和颜色
+
+
 
 -----
 
@@ -470,15 +516,20 @@ body {
 
 ## Div及盒子模型（box model）
 
-## Real life...
-
-![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
 
 -----
 
-## ...是由`<div>`来组成的
+### Real life...
+
+![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-02cbe138eb3e2d0f05ad8f7a05c11cce4d8f2f7d8d30128d02322939af13e992.png)
+
+
+-----
+
+### ...是由`<div>`来组成的
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/airbnb-with-div-20b4ad563c8066f7035bd1bf408960003a7937d8842f3a00f093450d29336a84.png)
+
 
 -----
 
@@ -550,6 +601,7 @@ p {
 }
 ```
 
+
 -----
 
 ## Div设计技巧
@@ -560,6 +612,8 @@ padding: 30px;                             /* 内部空间 */
 border-radius: 4px;                        /* 小的圆角边框 */
 box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* 淡色阴影 */
 ```
+
+
 -----
 
 ## Div居中技巧
@@ -571,15 +625,18 @@ margin: 0 auto;      /* Set automatic margins on right/left
  */
 ```
 
+
 -----
 
 ## Live-code
 
 接下来，我们将**添加一些div**到我们的HTML body区域里并使用Chrome开发者工具进行测试盒子模型
 
+
 ------
 
 ## id和class选择器
+
 
 -----
 
@@ -640,8 +697,8 @@ margin: 0 auto;      /* Set automatic margins on right/left
 - `.img-user` 或者 `.img-circle`?
 
 
-
 改变你的思维 => **以图形方式思考**
+
 
 -----
 
@@ -661,9 +718,11 @@ margin: 0 auto;      /* Set automatic margins on right/left
 .img-circle
 ```
 
+
 ------
 
 ## CSS选择器总结
+
 
 -----
 
@@ -679,6 +738,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 
 加上`css/* style.css */h1 {color: red;font-weight: bold;}`
 使`h1`元素变成红色和粗体
+
 
 -----
 
@@ -704,6 +764,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 ```
 
 只会使第二和第三段两端都对齐
+
 
 -----
 
@@ -731,6 +792,7 @@ margin: 0 auto;      /* Set automatic margins on right/left
 ```
 
 `id="banner"将向**unique** div添加一个背景图片
+
 
 -----
 
@@ -828,6 +890,7 @@ a:hover {
 
 其它[伪类](https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes)
 
+
 -----
 
 ## Quiz #1
@@ -852,6 +915,7 @@ p {
   color: red;
 }
 ```
+
 
 -----
 
@@ -878,6 +942,7 @@ p {
 }
 ```
 
+
 -----
 
 ## 选择器Specificity特性
@@ -896,6 +961,7 @@ p {                 /* least specific */
 
 试试该[specificity计算器](http://specificity.keegan.st/)
 
+
 -----
 
 ## Live-code
@@ -904,6 +970,8 @@ p {                 /* least specific */
 
 ![img](https://github.com/dounan1/china-product/raw/master/01-design/slides/html-css/profile_final-dfb46508b6af87d012cadf82451e6ba0d19b00ade3a9649df360611efde3a9e1.png)
 
+
 -----
 
-## 开始建立你的profile吧！
+## 现在开始建立你的profile吧！
+
