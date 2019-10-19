@@ -22,6 +22,22 @@ Let's install the `hub` to create a Github repo from your terminal without openi
 
 You can find and install from its [repo](https://github.com/github/hub/releases)
 
+Follow the instructions for installation. 
+
+For example, on Mac, in the **terminal**, `cd` to the downloaded hub folder (usually in `~/Downloads/hub-NUMBER_WITH_RELEASE_DATES` ), and type in this command:
+
+```bash
+sudo sh install
+```
+
+On Windows, in the terminal, find the downloaded hub folder (usually `~/Downloads/hub-NUMBER_WITH_RELEASE_DATES` ). Then copy `hub.exe` from `bin` folder to `c:/Program Files`
+
+Finally open and edit your `~/.bashrc` file.  Add in this line and save.
+
+```bash
+alias hub = '"/c/Program Files/hub.exe"'
+```
+
 Now you can **init**(ialize) a git repository, commit your changes, and create the associated Github repo:
 
 ```bash
