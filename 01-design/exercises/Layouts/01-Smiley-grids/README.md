@@ -2,7 +2,8 @@
 
 Practice the Bootstrap grid. Learn how to build various grids with different responsive behaviors.
 
-For ALL exercises today, start with the template that you can [download](https://github.com/dounan1/china-product/blob/master/layout.zip)!
+For ALL exercises today, start with the template that you can [download](https://github.com/dounan1/china-product/raw/master/01-design/exercises/Layouts.zip)!
+
 
 ## Specs
 
