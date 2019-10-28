@@ -2,9 +2,13 @@
 
 ### 客户端编程语言
 
+-------
+
 ### 名称
 
 JavaScript != Java
+
+-------
 
 ## 今天的目标
 
@@ -14,7 +18,7 @@ JavaScript != Java
 
 今天我们将在浏览器里操作
 
-
+-------
 
 ### JavaScript版本
 
@@ -24,7 +28,11 @@ JavaScript != Java
 - 2015年发布的（ECMAScript 2015 Language）
 - [~90%浏览器](httpscaniuse.com#search=ES6)支持
 
+-------
+
 ## 在浏览器上如何编写JavaScript
+
+-------
 
 
 ### 文件中
@@ -54,6 +62,8 @@ Hello Le Wagon             字符串（String）
 true                         布尔型（Boolean）
 ```
 
+-------
+
 ### 检查数据类型（Data Type）
 
 JavaScript
@@ -65,6 +75,8 @@ typeof(Boris);
 typeof(42);
  = 'number'
 ```
+
+-------
 
 ### 转换数据类型
 
@@ -78,6 +90,8 @@ Number.parseInt('42', 10);
  = '42'
 ```
 
+-------
+
 ### 数据结构（Data Structure）
 
 JavaScript
@@ -88,6 +102,8 @@ JavaScript
 { name 'bob', age 42 }           对象（Object）
 { 'name' 'bob', 'age' 42 }       对象（Object）
 ```
+
+-------
 
 ### Null和Undefined
 
@@ -100,11 +116,15 @@ let name = null;
 
 ## 变量（Variables）
 
+-------
+
 ### JavaScript
 
 之前JS使用的`var`.
 
 ES6用`let`和`const`来替代`var`
+
+-------
 
 ### `let`
 
@@ -118,10 +138,11 @@ counter = counter + 1;
 console.log(counter);
 ```
 
+-------
+
 ### `const`
 
 定义的变量都不可变
-
 
 
 ```
@@ -130,6 +151,8 @@ console.log(firstName);
 
 firstName = Paul;  TypeError Assignment to constant variable.
 ```
+
+-------
 
 ### 命名规则
 
@@ -148,6 +171,8 @@ const firstName = Ringo;
 
 参考[String on MDN web docs](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceGlobal_ObjectsString)
 
+-------
+
 ### Length属性
 
 ```
@@ -155,6 +180,8 @@ const firstName = Paul;
 firstName.length;
  = 4
 ```
+
+-------
 
 ### 字符提取
 
@@ -167,6 +194,8 @@ firstName[0];
 firstName.substring(1);
 ```
 
+-------
+
 ### 字母大小写转换
 
 ```
@@ -178,6 +207,8 @@ firstName.toLowerCase();
  = paul
 ```
 
+-------
+
 ### Split方法
 
 ```
@@ -188,6 +219,8 @@ const months = monthString.split(,);
 months.length;
  = 12
 ```
+
+-------
 
 ### 字符串内插（Interpolation）
 
@@ -209,6 +242,8 @@ const message = `${firstName} ${lastName} is a drummer`;
 
 参考[数组](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceGlobal_ObjectsArray)
 
+-------
+
 ### CRUD
 
 JavaScript
@@ -220,6 +255,8 @@ fruits[0];             查询 Read
 fruits[0] = Banana;  修改 Update
 fruits.splice(0, 1);   删除(0 index的一个项) Delete
 ```
+
+-------
 
 ### `forEach`
 
@@ -238,6 +275,8 @@ beatles.forEach((beatle) = {
 
 ## 流程控制（Control Flow）
 
+-------
+
 ### `if`  `else`
 
 JavaScript
@@ -252,6 +291,8 @@ if (age = 18) {
 }
 ```
 
+-------
+
 ### 错误值（Falsy Values）
 
 JavaScript
@@ -264,6 +305,8 @@ null
 NaN
 
 ```
+
+-------
 
 ### 三元运算符（Ternary Operator）
 
@@ -289,11 +332,13 @@ if (digit === 0) {
 
 理解JS中的[等值比较规则](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptEquality_comparisons_and_sameness)及`==`和`===`的区别。
 
-------
+-------
 
 ## 对象（Objects）
 
 [JS对象指南](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptGuideWorking_with_Objects)
+
+-------
 
 ### 简单对象（Simple Object）
 
@@ -308,6 +353,8 @@ console.log(typeof student);
 
 console.log(student);
 ```
+
+-------
 
 ### 读取和设置属性
 
@@ -329,6 +376,8 @@ console.log(student.firstName);
 
 阅读[函数指南](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptGuideFunctions)
 
+-------
+
 ### 定义函数（Define）
 
 JavaScript（老方式）
@@ -341,6 +390,8 @@ function square(x) {
 
 Note the explicit `return`
 
+-------
+
 ### 调用函数（Calling）
 
 JavaScript
@@ -349,6 +400,8 @@ JavaScript
 square(10);
  = 100
 ```
+
+-------
 
 ### 箭头函数（Arrow Function）
 
@@ -362,6 +415,8 @@ const square = x = x  x;
 用函数，与前面提到的一样
 square(10);
 ```
+
+-------
 
 ### 应该用什么？
 
