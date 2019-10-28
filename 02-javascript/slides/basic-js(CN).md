@@ -365,11 +365,13 @@ square(10);
 
 ### 应该用什么？
 
-[箭头函数](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceFunctionsArrow_functions) 更短的语法，完全相同的函数可以被表示为只有一行代码的箭头函数。 课程中，请使用箭头函数。
+完全相同的函数可以被表示为只有一行代码的[箭头函数](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceFunctionsArrow_functions)。练习中，请使用箭头函数。
 
-### Capitalize example
+------
 
-Let's livecode an arrow function and store it into `capitalize`.
+### 字母大小事例
+
+如何应用箭头函数（arrow function）并将其存储为`capitalize`
 
 ```
 touch libcapitalize.js
@@ -382,9 +384,11 @@ const capitalize = (word) = {
 
 ------
 
-## Debugging
+## 调试（Debug）
 
-### Poor man's debugger `console.log()`
+------
+
+### `console.log()`
 
 ```
 const capitalize = (word) = {
@@ -396,29 +400,32 @@ const capitalize = (word) = {
 
 capitalize(wagon);
 ```
+------
 
-### Attaching to Chrome (1)
+### Chrome调试工具（1）
 
-Open up a webpage in chrome
-
-Go to [`chrome://inspect`](chrome://inspect/)
-- Click on "Inspect" for the file you are debugging
-
-![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png)
-
-### Attaching to Chrome (3)
-
-- Underneath the **Sources / Filesystem** tabs, click on **+ Add folder to workspace**
-- Find and select your project in your filesystem
-- Click on the "Allow" blue button to give Chrome access to your filesystem
-
-### Attaching to Chrome (4)
-
-You are **ready**! You can now **click in the gutter** to add **breakpoints** to your code.
-
-![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png)
+在chrome中打开页面，并输入`chrome://inspect`
 
 
+- 单击"Inspect"查看需要调试的文件
+
+![img](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/basic-js/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png?token=AK2POYCORML7AGDIZCAQNN25YAGMW)
+
+------
+
+### Chrome调试工具（2）
+
+- 在**Sources / Filesystem**面板上点击 **+ Add folder to workspace**
+- 在文件系统中选择文件
+- 点击"Allow"!
+
+------
+
+### Chrome调试工具（3）
+
+可以开始**调试**了！在代码中添加一些**breakpoints** 
+
+![img](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/basic-js/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png?token=AK2POYCLVWSW2KT5WEPF5Y25YAGXO)
 
 ------
 
