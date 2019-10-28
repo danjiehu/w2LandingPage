@@ -24,6 +24,8 @@ JavaScript != Java
 - 2015年发布的（ECMAScript 2015 Language）
 - [~90%浏览器](httpscaniuse.com#search=ES6)支持
 
+![bg](background.png)
+
 ------
 
 ## 在浏览器上如何编写JavaScript
