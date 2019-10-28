@@ -1,6 +1,6 @@
 ## 介绍
 
-### The Client-side Programming Language
+### 客户端编程语言
 
 ### 名称
 
