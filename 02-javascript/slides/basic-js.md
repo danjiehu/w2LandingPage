@@ -32,9 +32,9 @@ We are going to use **ES6**:
 JavaScript
 
 ```
-// hello.js
+// in browser dev tools
 console.log("Hello Le Wagon");
-➜ ~ node hello.js
+➜ 
 Hello Le Wagon
 ```
 

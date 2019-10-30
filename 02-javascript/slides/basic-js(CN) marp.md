@@ -2,13 +2,17 @@
 
 ### 客户端编程语言
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 名称
 
 JavaScript != Java
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ## 今天的目标
 
@@ -18,7 +22,9 @@ JavaScript != Java
 
 今天我们将在浏览器里操作
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### JavaScript版本
 
@@ -28,11 +34,15 @@ JavaScript != Java
 - 2015年发布的（ECMAScript 2015 Language）
 - [~90%浏览器](httpscaniuse.com#search=ES6)支持
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ## 在浏览器上如何编写JavaScript
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 
 ### 文件中
@@ -43,9 +53,11 @@ JavaScript
 ```js
 // in browser dev tools
 console.log("Hello Le Wagon");
-➜ 
+➜
 Hello Le Wagon
 ```
+
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -62,7 +74,9 @@ JavaScript
 true                         布尔型（Boolean）
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 检查数据类型（Data Type）
 
@@ -76,7 +90,9 @@ typeof(42);
  = 'number'
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 转换数据类型
 
@@ -90,7 +106,9 @@ Number.parseInt('42', 10);
  = '42'
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 数据结构（Data Structure）
 
@@ -103,7 +121,9 @@ JavaScript
 { 'name': 'bob', 'age': 42 }       对象（Object）
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### Null和Undefined
 
@@ -112,11 +132,15 @@ let age;  //undefined
 let name = null;
 ```
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 变量（Variables）
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### JavaScript
 
@@ -124,7 +148,9 @@ let name = null;
 
 ES6用`let`和`const`来替代`var`
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### `let`
 
@@ -138,7 +164,9 @@ counter = counter + 1;
 console.log(counter);
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### `const`
 
@@ -152,7 +180,9 @@ console.log(firstName);
 firstName = "Paul";  //TypeError Assignment to constant variable.
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 命名规则
 
@@ -163,6 +193,8 @@ const firstName = "Ringo";
 // lowerCamelCase
 ```
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 字符串
@@ -171,7 +203,9 @@ const firstName = "Ringo";
 
 参考[String on MDN web docs](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceGlobal_ObjectsString)
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### Length属性
 
@@ -181,7 +215,9 @@ firstName.length;
 // => 4
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 字符提取
 
@@ -194,7 +230,9 @@ firstName[0];
 firstName.substring(1);
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 字母大小写转换
 
@@ -207,7 +245,9 @@ firstName.toLowerCase();
 // => "paul"
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### Split方法
 
@@ -220,7 +260,9 @@ months.length;
 // => 12
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 字符串内插（Interpolation）
 
@@ -236,13 +278,17 @@ const message = `${firstName} ${lastName} is a drummer`;
 
 [样板字面值](httpsdeveloper.mozilla.orgendocsWebJavaScriptReferenceTemplate_literals)
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 数组（Array）
 
 参考[数组](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceGlobal_ObjectsArray)
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### CRUD
 
@@ -256,7 +302,9 @@ fruits[0] = "Banana";  //修改 Update
 fruits.splice(0, 1); //删除(0 index的一个项) Delete
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### `forEach`
 
@@ -271,11 +319,15 @@ beatles.forEach((beatle) => {
 
 [Array.forEach](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceGlobal_ObjectsArrayforEach)
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 流程控制（Control Flow）
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### `if`  `else`
 
@@ -291,7 +343,9 @@ if (age = 18) {
 }
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 错误值（Falsy Values）
 
@@ -306,7 +360,9 @@ NaN
 
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 三元运算符（Ternary Operator）
 
@@ -332,13 +388,17 @@ if (digit === 0) {
 
 理解JS中的[等值比较规则](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptEquality_comparisons_and_sameness)及`==`和`===`的区别。
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ## 对象（Objects）
 
 [JS对象指南](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptGuideWorking_with_Objects)
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 简单对象（Simple Object）
 
@@ -354,7 +414,9 @@ console.log(typeof student);
 console.log(student);
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 读取和设置属性
 
@@ -370,13 +432,17 @@ console.log(student.firstName);
 // => "Romain"
 ```
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 函数（Functions）
 
 阅读[函数指南](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptGuideFunctions)
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 定义函数（Define）
 
@@ -390,7 +456,9 @@ function square(x) {
 
 Note the explicit `return`
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 调用函数（Calling）
 
@@ -401,7 +469,9 @@ square(10);
 // => 100
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 箭头函数（Arrow Function）
 
@@ -416,11 +486,15 @@ const square = x => x * x;
 square(10);
 ```
 
--------
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
+------
 
 ### 应该用什么？
 
 完全相同的函数可以被表示为只有一行代码的[箭头函数](httpsdeveloper.mozilla.orgen-USdocsWebJavaScriptReferenceFunctionsArrow_functions)。练习中，请使用箭头函数。
+
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -437,16 +511,20 @@ const capitalize = (word) => {
 };
 ```
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ## 调试（Debug）
+
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
 ### `console.log()`
 
 ```
-pconst capitalize = (word) => {
+const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
   console.log(firstLetter);
   const restOfTheWord = word.substring(1).toLowerCase();
@@ -455,6 +533,8 @@ pconst capitalize = (word) => {
 
 capitalize("wagon");
 ```
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ### Chrome调试工具（1）
@@ -466,6 +546,8 @@ capitalize("wagon");
 
 ![img](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/basic-js/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png?token=AK2POYCORML7AGDIZCAQNN25YAGMW)
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ### Chrome调试工具（2）
@@ -474,13 +556,17 @@ capitalize("wagon");
 - 在文件系统中选择文件
 - 点击"Allow"!
 
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
+
 ------
 
 ### Chrome调试工具（3）
 
-可以开始**调试**了！在代码中添加一些**breakpoints** 
+可以开始**调试**了！在代码中添加一些**breakpoints**
 
 ![img](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/basic-js/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png?token=AK2POYCLVWSW2KT5WEPF5Y25YAGXO)
+
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
