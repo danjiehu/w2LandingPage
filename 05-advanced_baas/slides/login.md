@@ -27,6 +27,10 @@ Remember an account has to be verified with a real WeChat entity (personal or bu
 
 
 
+
+
+
+
 ## Step 2 - in your Mini Program
 
 **1. Setup**
@@ -74,6 +78,12 @@ success: (res) => {
   this.globalData.userId = res.data.userId
 }
 ```
+
+
+
+
+
+
 
 ## Step 3 - Test it
 

@@ -2,7 +2,7 @@
 
 带有数据的微信小程序的API
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -10,7 +10,7 @@
 
 ![image-20191004002033273](https://raw.githubusercontent.com/dounan1/china-product/master/03-miniprogram/slides/backend/image-20191004002033273.png?token=AALUKUDEWGFKOOATP6B3R325ZE36Y)
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -18,7 +18,7 @@
 
 ![image-20191004002045936](https://raw.githubusercontent.com/dounan1/china-product/master/03-miniprogram/slides/backend/image-20191004002045936.png?token=AALUKUAQY7LKLJO2XTOBH725ZE3XE)
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -27,7 +27,7 @@
 - 存储数据在客户端本地（e.g. app: web, 本机应用程序native, 微信小程序）
 - 为客户提供服务的方法（e.g. 短信，付款）
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -35,7 +35,7 @@
 
 只不过是一组为单元格内容返回**JSON**数据格式形式的新**端点（endpoints）**...
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -43,14 +43,14 @@
 
 小程序发起**API请求（requests）**本地的**JSON**数据而不是静态数据（e.g app.js文件中的全球对象globalData）
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
 ## JSON复习
 ![Image result for json example](https://blog.supertext.ch/wp-content/uploads/2016/07/json_file_example_01.png)
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -67,7 +67,7 @@ delete story  DELETE    /stories/:id                 stories#destroy
 
 请求方式：GET, POST, PUT, DELETE
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -79,7 +79,7 @@ delete story  DELETE    /stories/:id                 stories#destroy
 5. 从响应获取数据
 6. 处理数据
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -87,7 +87,7 @@ delete story  DELETE    /stories/:id                 stories#destroy
 
 显示所有stories
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -99,7 +99,7 @@ API_KEY: xxxxxxxxxxxxxxxxxxxxxxxx
 TOKEN: xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -117,7 +117,7 @@ data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
 
 今天的challenges不需要API token
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -129,7 +129,7 @@ Restful：请求方式（request）及路径（path）
 GET /api/v1/stories
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -137,7 +137,7 @@ GET /api/v1/stories
 
 获取端点： `https://fml.shanghaiwogeng.com/api/v1/stories`
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -159,7 +159,7 @@ Page({
   //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -171,7 +171,7 @@ Page({
 不需要index页面（我们将获取所有数据）
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -195,7 +195,7 @@ Page({
 index中没有任何数据
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -204,7 +204,7 @@ index中没有任何数据
 ![image-20190605133710289](https://raw.githubusercontent.com/dounan1/china-product/master/03-miniprogram/slides/backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png?token=AALUKUDVZOKF65DBA5UPMQC5ZE56G)
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -214,7 +214,7 @@ index中没有任何数据
 浏览器： `https://fml.shanghaiwogeng.com/api/v1/stories`
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -241,7 +241,7 @@ Page({
   //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -251,7 +251,7 @@ Wechat IDE Menu: Settings -> Project Settings:
 
 ![image-20191004182608872](https://raw.githubusercontent.com/dounan1/china-product/master/03-miniprogram/slides/backend/image-20191004182608872.png?token=AALUKUH3GBUVZQKI53N4WC25ZE6AQ)
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -260,7 +260,7 @@ Wechat IDE Menu: Settings -> Project Settings:
 在index页面中添加一个新函数：`getRequestData`
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -277,7 +277,7 @@ Page({
 
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -305,7 +305,7 @@ Page({
   //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -314,7 +314,7 @@ Page({
 将响应中的数据传递给处理程序
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -334,7 +334,7 @@ Page({
 
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -359,14 +359,14 @@ Page({
 
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
 ## 第二个端点：`CREATE`
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -374,7 +374,7 @@ Page({
 不需要开放API（e.g. anyone can create, 无须login）
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -386,7 +386,7 @@ Restful：请求方式（request）及路径（path）
 POST /api/v1/stories
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -395,7 +395,7 @@ POST /api/v1/stories
 `https://fml.shanghaiwogeng.com/api/v1/stories`
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -417,7 +417,7 @@ Page({
   //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -444,7 +444,7 @@ Page({
   //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -467,13 +467,13 @@ Page({
     }
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
 ### 4. 发送请求并等待响应
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -481,7 +481,7 @@ Page({
 
 如上，为api允许微信权限或跳过权限检查
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -511,7 +511,7 @@ Page({
 ```
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -519,7 +519,7 @@ Page({
 
 不需要响应数据，而是将重定向回index
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -530,7 +530,7 @@ Page({
 
 提示：JSON allows you to define functions inside to save you time
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -555,7 +555,7 @@ Page({
     //...
 ```
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -565,7 +565,7 @@ Page({
 
 - [Wechat Doc on Network Requests (English)](http://open.wechat.com/cgi-bin/newreadtemplate?t=overseas_open/docs/mini-programs/development/api/network-request)
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -579,7 +579,7 @@ programmableweb.com
 apihound.com
 apiforthat.com
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -588,7 +588,7 @@ apistore.baidu.com
 shenjian.io
 juhe.cn
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -600,7 +600,7 @@ Revenue through api’s
 60% => eBay.com
 90% => Expedia.com
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -608,7 +608,7 @@ Revenue through api’s
 
 900万私有api开发者
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -616,7 +616,7 @@ Explosion of APIs growth
 ![image-20191004180349425](https://raw.githubusercontent.com/dounan1/china-product/master/03-miniprogram/slides/backend/image-20191004180349425.png?token=AALUKUH66YDEFPSR72XB6FC5ZE432)
 
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 
@@ -633,7 +633,7 @@ api对数字转型至关重要
 
 Use infrastructure so you don't build from scratch or reinvent the wheel
 
-
+![bg](https://raw.githubusercontent.com/dounan1/china-product/master/02-javascript/slides/background.png?token=AK2POYHILYGQILLSNHFK4O25YFWFA)
 
 ------
 

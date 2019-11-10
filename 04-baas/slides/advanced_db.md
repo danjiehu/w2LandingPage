@@ -755,7 +755,7 @@ review.set(data).save().then(() => {
 
 Changing the `comments` to `reviews`  from the previous app will display reviews on restaurant show page.
 
-However, reviews are missing user info. For that, we need to [extend](https://doc.minapp.com/js-sdk/schema/query.html#pointer-查询) the user table so we can include the user's name and photo in the review!
+However, reviews are missing user info. For that, we need to [expand](https://doc.minapp.com/js-sdk/schema/query.html#pointer-查询) the `user` table so we can include the user's name and photo in the review!
 
 ```js
 //show.js in onLoad function:

@@ -1,6 +1,6 @@
 ## Mini Programs 小程序 with API
 
-API WITH DATA FOR WECHAT MPS  
+API WITH DATA FOR WECHAT MPS
 
 ## OUR FRONTEND SO FAR
 
@@ -53,7 +53,7 @@ delete story  DELETE    /stories/:id                 stories#destroy
 
 ## 6 STEPS OF USING API
 1. Use API key
-2. Specify endpoint 
+2. Specify endpoint
 3. Attach request data
 4. Send request and **wait** for response
 5. Receive data from response
@@ -88,7 +88,7 @@ data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
 
 For today's exercise - no API token needed
 
-### 2. Specify endpoint 
+### 2. Specify endpoint
 
 Restful:  Verb and Path
 
@@ -129,7 +129,7 @@ Possible for filtering in the future:
 
 ```js
 // /pages/index/index.js
-// in onLoad 
+// in onLoad
    ...
     let filter = {
       include: 'My name',
@@ -137,7 +137,7 @@ Possible for filtering in the future:
 
     const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'GET', 
+      method: 'GET',
       data: filter // Not today, but later in course
   	}
 ```
@@ -163,7 +163,7 @@ Page({
     // Save reference to page
     let page = this;
     ...
-    
+
 	const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
       method: 'GET', // If no method, default is GET
@@ -213,7 +213,7 @@ Page({
     // Save reference to page
     let page = this;
     ...
-    
+
 	const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
       method: 'GET', // If no method, default is GET
@@ -237,7 +237,7 @@ Page({
   //...
   getRequestData: function (res) {
 	console.log(res)
-	
+
 	const data = res.data;
     page.setStories(data);
   },
@@ -251,7 +251,7 @@ Add a new function in your index page called `setStories` to handle data
 ```js
 Page({
   //...
-  setStories: function (data) {  
+  setStories: function (data) {
     // Save reference to page
     let page = this;
 
@@ -274,12 +274,12 @@ Page({
 ### 1. Use API token (or key)
 Not needed for open API  (e.g. anyone can create, no login)
 
-### 2. Specify endpoint 
+### 2. Specify endpoint
 
 Restful:  Verb and Path
 
 ```
-POST /api/v1/stories 
+POST /api/v1/stories
 ```
 
 Combine with host => Same endpoint, but POST verb:
@@ -330,7 +330,7 @@ Then make form story data into request data
 
 ```js
 // /pages/post/post.js
-// in bindSubmit 
+// in bindSubmit
 
    ...
     let story = {
@@ -340,7 +340,7 @@ Then make form story data into request data
 
     const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST', 
+      method: 'POST',
       data: story
   	}
 ```
@@ -350,12 +350,7 @@ Then make form story data into request data
 ### MINI PROGRAM: New Story
 
 ```js
-// pages/post/post.js
-
-Page({
-  //...
-
-  // New Story Submission
+// in Page() pages/post/post.js, New Story Submission
   bindSubmit: function (event) {
     console.log(event.detail.value.name)
     console.log(event.detail.value.content)
@@ -367,17 +362,16 @@ Page({
       name: name,
       text: text
     }
-    
+
     const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST', 
+      method: 'POST',
       data: story
   	}
 
     // Post data to API
     wx.request(request); // Then wait for response!
   }
-  //...
 ```
 
 As before, allow WeChat permission for this api or skip the permission check.
@@ -389,20 +383,20 @@ No response data is needed, instead we'll redirect back to index
 
 ### 6. Handle the data
 
-Redirect is called in a function called `success` in the request. 
+Redirect is called in a function called `success` in the request.
 We don't need a separate page function as in `index.js`
 
 TIP: JSON allows you to define functions inside to save you time
 
 ```js
 // /pages/post/post.js
-// in bindSubmit 
+// in bindSubmit
 
     //...
 
     const request = {
       url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST', 
+      method: 'POST',
       data: story,
       success() {
         // redirect to index page when done
@@ -411,7 +405,7 @@ TIP: JSON allows you to define functions inside to save you time
         });
       }
     }
-  	
+
   	//...
 ```
 
@@ -427,7 +421,7 @@ Read more about how Mini Programs can work with APIs
 
 ## API resources
 
-What APIs can I use? Where to find them? 
+What APIs can I use? Where to find them?
 
 ### Global
 rapidapi.com

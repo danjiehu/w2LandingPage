@@ -111,7 +111,13 @@ Then you're ready to enable payment on the Minapp.com platform. Go to Dev -> Pay
 
 Then fill out the form with merchant info you gathered above:
 
-![image-20191007193525891](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191007193525891.png)
+![image-20191007193525891](https://raw.githubusercontent.com/dounan1/china-product/master/05-advanced_baas/slides/images/image-20191007193525891.png?token=AALUKUAI6SNYJUMX7QUN4725ZFNIG)
+
+Look for your account info under "Pay" in the menu. Under "Associate WeChat business account," click `authorize verfication` and wait for `Status` to say "Authorization successful" as in below.
+
+
+
+![image-20191104205750735](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/slides/images/image-20191104205750735.png)
 
 
 

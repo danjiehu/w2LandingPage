@@ -4,6 +4,8 @@ Toutiao-SDK:[Navigate to this folder](solutions/toutiao-sdk/)
 
 Dianping:[Navigate to this folder](solutions/dianping/)
 
+Meituan Waimai:[Navigate to this folder](solutions/waimai/)
+
 Before your import it on the WeChat IDE, here's some quick set up to do:
 
 ### 1. Add your WeChat app ID
