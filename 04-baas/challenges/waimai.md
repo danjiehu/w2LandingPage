@@ -2,33 +2,27 @@
 
 ## Core User Journey
 
-### Restaurant Index
+![elema](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/elema.png)
+
+As seen above, food delivery apps have:
+
+1. Restaurant Index (center)
+
+2. Meals Index (right)
+
+3. Orders (left)
 
 
 
-![7271570232709_.pic](https://raw.githubusercontent.com/dounan1/china-product/master/04-baas/challenges/images/7271570232709.png?token=AALUKUFFNTF3O5F72Z5UDUS5ZJQ6O)
+💪 Time to build our own!  🍚🛵
 
 
 
-### Meals Index
+The software is designed for **one store only **(have you heard of 三只松鼠?). No need to cater (no pun intended 😉) for a multi-restaurant one (e.g. you don't need a `restaurant` table).
 
+So just for this challenge, we'll skip restaurants and use meals as the landing page. You can add multiple restaurants later anytime by following the previous Dianping exercise. 
 
-
- ![7261570232707_.pic](https://raw.githubusercontent.com/dounan1/china-product/master/04-baas/challenges/images/7261570232707.png?token=AALUKUCENT6UXO3IWF2UKA25ZJQ7G)
-
-
-
-### Orders
-
-![7061570232704_.pic](https://raw.githubusercontent.com/dounan1/china-product/master/04-baas/challenges/images/7061570232704.png?token=AALUKUEBLSU6LNW7EF2VJIK5ZJRAK)
-
-Time to build a Food Delivery App.
-
-The software is designed for **one restaurant only **(have you heard of 三只松鼠?). No need to cater (no pun intended 😉) for a multi-restaurant one (e.g. you don't need a `restaurant` table).
-
-So just for this challenge, we'll skip restaurants index and use meals as the landing page. You can add multiple restaurants functions yourself by following the previous Dianping exercise. 
-
-We'll also focus on the **core pages and user interactions**, and dive into the **orders and order management system**. In later courses, you learn to make a full ecommerce store with store layouts, shopping carts, and discounts.
+We'll also focus on the **core pages and user interactions**, and dive into the **orders and order management system**. In later courses, you learn to make a full eCommerce store with store layouts, shopping carts, and discounts.
 
 
 
@@ -39,9 +33,16 @@ We'll also focus on the **core pages and user interactions**, and dive into the 
 
 
 
-Deliverers and managers share the order index view. An order is **opened** by the customer.  The manager marks it **ready** for pickup. Customer waits as the deliverer is **delivering,** then marks it **delivered**. So the order states are "Opened," "Ready," "Delivering," and "Delivered."
+Deliverers and managers share the order index view. An order is **opened** by the customer.  The manager marks it **ready** for pickup. Customer waits as the deliverer is **delivering,** then marks it **delivered**. 
 
-Other states like "Cancelled" and "Paid" can be added too this way but for our exercise, we'll keep it simple to just three states mentioned above.
+So the order states are:
+
+- Opened
+- Ready
+- Delivering
+- Delivered
+
+Other states like "Cancelled" and "Paid" can be added too this way. We'll keep it simple to just those states mentioned above.
 
 
 
@@ -52,6 +53,8 @@ The main components are:
 - **Meals** that can be ordered
 - **Orders** made by customers, and assigned to a given delivery guy.
 
+
+
 ## 1 - We need Backend (as a Service) !
 
 Before diving into our app code . We first need a set of API endpoints made by our BaaS.  Review Restful APIs principles from the first DB lecture for inspiration.
@@ -61,7 +64,6 @@ Based on the user journey above, we design the schema to model the data and the 
 ### Data schema:
 
 ![image-20191009054417496](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191009054417496.png)
-
 
 
 The key to the design is that a `user` can have many `meals` through `orders`, and that a `meal` can be ordered by many `users`. This many-to-many relationship is like the `review` joint table from the previous exercise (Dianping).
@@ -159,7 +161,7 @@ We already have a `user` table in the BaaS ( stored as `_userprofile` and access
 
 The restaurant has two types of employees, **managers** and **delivery guys**. They're both still `User` objects. We don't use the app to create them. The BaaS can add these directly through the JS SDK. Employees are then managed in the built-in CRM on the BaaS dashboard:
 
-![image-20191109170529070](images/image-20191109170529070.png)
+![image-20191109170529070](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109170529070.png)
 
 
 
@@ -180,13 +182,13 @@ wx.BaaS.auth.register({ username: username, password: password }).then(user => {
 
 
 
-![image-20191109171547248](images/image-20191109171547248.png)
+![image-20191109171547248](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109171547248.png)
 
 
 
 Add the `role` (string) column to the  `_userprofile` table:
 
-![image-20191109193419873](images/image-20191109193419873.png)
+![image-20191109193419873](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109193419873.png)
 
 
 
@@ -196,13 +198,13 @@ Then the roles can be set by editing the table rows (or through the SDK - like h
 
 
 
-![image-20191109193928890](images/image-20191109193928890.png)
+![image-20191109193928890](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109193928890.png)
 
 For now, check that we can sign up, log in, and log out of the app using the `user` page from the previous app!
 
 
 
-## 5 - (`Order`) Time to link all the tables!
+## 5 - Order: Time to link all the tables!
 
 An order is taken for a **customer**, containing a **meal** (to simplify things, let's say that an order can only contain **one meal**) and is then assigned to a given **delivery guy**. Finally, the `order` table needs to record whether or not the meal has been delivered.
 
@@ -377,28 +379,15 @@ When you run the food delivery app, you can see all the meals. But to order a me
 
 
 
-The dashboard that you then see should be **dependent on your role**.
+The dashboard that you then see should be **dependent on your role:**
 
+- Customer (right)
 
-Customer dashboard:
+- Manager (center)
 
-![image-20191101121908913](images/image-20191101121908913.png)
+- Deliverer (left)
 
-
-
-
-
-Manager dashboard:
-
-![image-20191110000814749](images/image-20191110000814749.png)
-
-
-
-
-
-Deliverer dashboard:
-
-![image-20191110213329982](images/image-20191110213329982.png)
+![image-20191101121908913](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/waimai.png)
 
 
 
@@ -461,7 +450,7 @@ Now load data from the order table and show on its index page.
 
 Each order should show image of the *meal* and *price** *delivery address* with *receiver name*, and the *order state*:
 
-![image-20191106172506751](images/image-20191106172506751.png)
+![image-20191106172506751](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191106172506751.png)
 
 
 Use the `expand` function to include meal info with the order query, like we did for a previous exercise:
@@ -568,7 +557,7 @@ For this, we modify the ACL for the `order` table by clicking the "..." on the t
 
 
 
-![image-20191109164755592](images/image-20191109164755592.png)
+![image-20191109164755592](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109164755592.png)
 
 
 
@@ -611,9 +600,10 @@ wx.BaaS.auth.getCurrentUser().then(user => {
 
 
 
-It doesn't make sense to just show nothing, so add a redirect to user login page in the `error` handling function:
+It doesn't make sense to show nothing to user who hasn't logged in, redirect to the login page in the `getCurrentUser` `error` function:
 
 ```js
+// in error => {
 wx.switchTab({
   url: '/pages/user/user' // logged in
 });
@@ -650,7 +640,7 @@ First three meal stories are already implemented. We start with either the order
 
 
 
-#### Orders
+#### Manager orders
 
 The manager is an employee who sees *all orders*, with meal (image, name, and price), delivery address, and receiver 
 
@@ -660,13 +650,13 @@ Let's make Paul (and John) an employee in the Baas. in the "User" left menu, cli
 
 
 
-![image-20191110180232018](images/image-20191110180232018.png)
+![image-20191110180232018](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110180232018.png)
 
 
 
 
 
-![image-20191110181146578](images/image-20191110181146578.png)
+![image-20191110181146578](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110181146578.png)
 
 
 
@@ -674,7 +664,7 @@ Then back to "User list" tab bar, and click "Set groups" under "Operation" colum
 
 Select the `employee` group created in the previous step, and save.
 
-![image-20191110181000836](images/image-20191110181000836.png)
+![image-20191110181000836](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110181000836.png)
 
 
 
@@ -682,7 +672,7 @@ Now log out the previous user, and **log in as Paul** to look at all the orders 
 
 Hmm, nothing is showing on the orders page? Remember ACL? Now we need to add manager group permissions by editing the order table:
 
-![image-20191110181356940](images/image-20191110181356940.png)
+![image-20191110181356940](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110181356940.png)
 
  
 
@@ -704,7 +694,7 @@ We need to know the role of the user! Remember we set the the page data to the `
 
 
 
-![image-20191109215318807](images/image-20191109215318807.png)
+![image-20191109215318807](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191109215318807.png)
 
 You can see the fields of the user provided by the `auth.getCurrentUser` SDK call, right before the orders objects (provided by the query to the orders table). The `role` field is there too. 
 
@@ -768,7 +758,7 @@ order.set("state", "open").update().then(res => {
 })
 ```
 
-Here we relaunch at the same page to reload orders after the change. Works but can be faster! As a challenge, see if you can reload without relaunching. Hint: how can you use the data inside the update response? 
+Here we relaunch to reload orders after the change. As a challenge, see if you can reload without relaunching and make the experience smoother!. Hint: how can you use the data inside the `update()` response? 
 
 
 
@@ -780,11 +770,15 @@ Solution:
 wx:if="{{currentUser.role == 'manager' && order.state == 'opened'}}"
 ```
 
-This shows the state for others orders:
+This shows the state again for other orders:
 
-![image-20191110000814749](images/image-20191110000814749.png)
+![image-20191110000814749](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110000814749.png)
 
 
+
+
+
+#### Deliverer orders
 
 
 
@@ -820,7 +814,7 @@ query.in('state',  ['ready', 'delivering'])
 
 
 
-How do query order?
+How to query order?
 
 ```js
 var query = new wx.BaaS.Query()
@@ -833,7 +827,7 @@ Order.setQuery(query);
 
 
 
-Only for deliverers?
+Only filter for deliverers?
 
 ```js
 var query = new wx.BaaS.Query()
@@ -849,7 +843,7 @@ if (isDeliverer) {
 
 
 
-So combining into existing order query, and make it a new function called `loadOrder`
+So combining into existing order query, and make it a new function called `loadOrder`:
 
 ```js
 //orders.js in Page() after onLoad()
@@ -898,7 +892,7 @@ onLoad: function () {
 
 Now we see only the actionable orders for the deliverer:
 
-![image-20191110210815530](images/image-20191110210815530.png)
+![image-20191110210815530](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110210815530.png)
 
 
 
@@ -911,7 +905,7 @@ Hint: `wxml` also has `if`, `else if`, `else` - called `view conditionals`:
 
 <view wx:if="{{currentUser.role == 'manager' && order.state == 'opened'}}" data-id="{{order.id}}" class="button" bindtap="readyOrder">Ready</view>
 <view wx:elif="{{currentUser.role == 'deliverer' && order.state == 'ready'}}" data-id="{{order.id}}" class="button" bindtap="deliverOrder">Deliver</view>
-<view wx:else class="status"> {{order.state}} </view>
+<view wx:else class="state"> {{order.state}} </view>
 ```
 
 
@@ -943,17 +937,113 @@ deliverOrder(event) {
 
 
 
-The deliverer now mark his order on the way.  
+The deliverer now mark his order on the way.  That should also add him as a `deliverer` to the `order` record.
+
+Add the field to `order` table with  "Add column" (similar to adding the `customer` field on the record). What should the "Column type" be? Hint: it's "pointing" to users in another table.
+
+![image-20191111182744124](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191111182744124.png)
 
 
 
-![image-20191110213329982](images/image-20191110213329982.png)
+Now can mark Paul (or whomever is logged in) as the deliverer to the order. We do this when he clicks the "deliver" button. How do you write this function and where? 
+
+Hint: follow the example in `index.js` creating the order. There the customer is set to the `currentUser`. Here set the `deliverer`:
+
+Solution:
+
+```js
+//orders.js
+deliverOrder(event) {
+  const page = this;
+  const data = event.currentTarget.dataset;
+  const id = data.id;
+  const currentUser = page.data.currentUser;
+
+  console.log(id);
+
+  let tableName = 'order'
+
+  let Order = new wx.BaaS.TableObject(tableName);
+  let order = Order.getWithoutData(id);
+
+  order.set("state", "delivering");
+  order.set("deliverer", currentUser.id.toString());
+  order.update().then(res => {
+    wx.reLaunch({
+      url: '/pages/orders/orders',
+    })
+  })
+}
+//...
+```
+
+
+
+Now when we load orders, include fields for its `deliverer`. Remember the `order table` doesn't contain the deliverer data, just a *pointer* to the user table that has them. 
+
+Tip: use the same way for including `meal` data earlier in the exercise.
+
+Solution:
+
+```js
+//orders.js in loadOrder()
+Order.expand(["meal", "deliverer"]).find().then(page.getRequestData)
+```
+
+
+
+Now we add the deliverer name to the order card. Use the field name  `_username`. The underscore is there because it's not a customized field we added like `role`. The name goes under the order `state`. How do you do this vertical layout? 
+
+Hint: Make a container (with a class `action`). Then use flexbox.
+
+
+
+![image-20191112005632963](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191112005632963.png)
+
+
+
+Solution:
+
+```xml
+<!--pages/orders/orders.wxml in "card-product" -->
+<view class="action">
+  <view wx:if="{{currentUser.role == 'manager' && order.state == 'opened'}}" data-id="{{order.id}}" class="button" bindtap="readyOrder">Ready</view>
+  <view wx:elif="{{currentUser.role == 'deliverer' && order.state == 'ready'}}" data-id="{{order.id}}" class="button" bindtap="deliverOrder">Deliver</view>
+  <view wx:else class="state"> {{order.state}} </view>
+  <view class="p">{{order.deliverer._username}}</view>
+</view>
+```
+
+```css
+.action {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+```
+
+Note that if the `deliverer` doesn't exist, its container `<view class="p">`  is still there but doesn't take up space. A better way is to conditionally show this view only if `deliverer`  exists. How do you do that?
+
+Solution:
+
+```xml
+<view wx:if="{{order.deliverer}}" class="p">{{order.deliverer._username}}</view>
+```
+
+Pro Tip: Even if the users don't see a difference, clean code means fewer bugs down the road, and less confusion for programmers! 
+
+Good developers follow the **boyscout rule** - *always leave code you see touch better than you found it*. Try to do that even if you didn't write the code originally. That allows *sustainable* development of tech. 
+
+
+
+![image-20191112010353474](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191112031249582.png)
 
 
 
 
 
-
+#### Customer orders (complete cycle)
 
 Finally, the customer can mark an order `delivered` when it's received:
 
@@ -967,7 +1057,8 @@ Solution:
 <view wx:if="{{currentUser.role == 'manager' && order.state == 'opened'}}" data-id="{{order.id}}" class="button" bindtap="readyOrder">Ready</view>
 <view wx:elif="{{currentUser.role == 'deliverer' && order.state == 'ready'}}" data-id="{{order.id}}" class="button" bindtap="deliverOrder">Deliver</view>
 <view wx:elif="{{currentUser.role != 'deliverer' && order.state == 'delivering'}}" data-id="{{order.id}}" class="button" bindtap="deliveredOrder">Delivered</view>
-<view wx:else class="status"> {{order.state}} </view>
+<view wx:else class="state"> {{order.state}} </view>
+<view wx:if="{{order.deliverer}}" class="p">{{order.deliverer._username}}</view>
 ```
 
 
@@ -1000,11 +1091,11 @@ deliveredOrder(event) {
 
 
 
-By now you might've realized that this function can be refactored to be used for all the order state buttons! You can explore how to do that on your own.
+You might've realized that this function can be refactored. Then it works for all the order state buttons! You can try to do that as an additional challenge if you have time.
 
 
 
-![image-20191110235155864](images/image-20191110235155864.png)
+![image-20191112014657626](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191112014657626.png)
 
 
 
@@ -1018,13 +1109,13 @@ Only managers should be able to add or change a meal. How do we do that?
 
 When thinking "permissions," ACL come to mind. We edit the meal table and allow new meal entry for only the `employee` User group. For editing meals, we set write the same permission:
 
-![image-20191110235932305](images/image-20191110235932305.png)
+![image-20191110235932305](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191110235932305.png)
 
 
 
-Next, remove the 'New' tab bar item (in `app.json`), and show its icon on the meals page ONLY for the manager. To do this we need to add view logic  (in  `index.wxml` )  to show buttons depending on the user role. 
+Next, remove the 'New' tab bar item (in `app.json`), and show the "new" icon on the meals page ONLY for the manager. To do this we need to add view logic  (in  `index.wxml` )  to show buttons depending on the user role.  How to make the button go to the new meals form?
 
-Following similar steps for showing order state buttons, add the logic and bind to a function `addMeal` that navigates to the new page when clicked.
+Tip: Following similar steps for showing order state buttons, add the view logic and bind to a function `addMeal` that navigates to the "new" page when clicked.
 
 
 
@@ -1056,13 +1147,15 @@ Don't forget the `wxss` for `add` that will fix the button to the bottom right:
 }
 ```
 
+Now you see the new icon hover over the page:
+
+![image-20191111023850991](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191111023850991.png)
 
 
-![image-20191111023850991](images/image-20191111023850991.png)
 
+To edit a meal, we add an new "edit" icon to each meal card (download from iconfront.cn to your images folder as before).  Show it conditionally for role of `manager`. 
 
-
-To edit a meal, we add an new "edit" icon to each meal card (download from iconfront.cn to your images folder as before).  Show it conditionally for role of `manager`. Can you write the view code following the same pattern as for adding meal?
+Can you write the view code following the same pattern as for adding meal?
 
 Solution:
 
@@ -1083,7 +1176,7 @@ Solution:
 
 
 
-Fix the icon to the top right of each card. Hint: how many position values are there?
+Fix the icon to the top right of each card. Hint: what are the different position values in css? 
 
 Solution:
 
@@ -1099,9 +1192,9 @@ Solution:
 
 
 
-Where does the editMeal click go? The same form for adding a meal can be used for editing! 
+Where does the `editMeal` go? To the same form for adding a meal! 
 
-The value is already set in each form input:
+The "new" form already sets the meal fields' values in input boxes:
 
 ```xml
 <input name="name" value="{{meal.name}}" placeholder="please write your meal name" >
@@ -1109,7 +1202,9 @@ The value is already set in each form input:
 
 
 
-The form just need to get data from the existing meal when loading. Follow the same steps as for showing a restaurant from the previous exercise (in `show.wxml`).
+The page just need to get the data from the existing meal when loading. How do you get data for a record?
+
+TIp: Follow the same steps as for getting data to show a restaurant from the previous exercise (in `show.wxml`).
 
 Solution:
 
@@ -1129,7 +1224,9 @@ onLoad: function(options) {
 },
 ```
 
-`onLoad` needs an `id` passed to it as  `options`. If you remember from the show page, this is done through params in the navigation url. Create the `editMeal` function in `index.js` that navigates to the form with the `id` that from the data of the edit button click event.
+`onLoad` needs an `id` passed to it in  `options`. If you remember from the show page, this is done through params in the navigation url. 
+
+Create the `editMeal` function in `index.js` that navigates to the form with the `id` from the event data of the  click.
 
 Solution:
 
@@ -1150,13 +1247,17 @@ editMeal(event) {
 <image wx:if="{{currentUser.role == 'manager'}}" data-id="{{meal.id}}" class="edit" bindtap="editMeal" src="/images/edit.png"/>
 ```
 
-Now clicking on the edit button for a meal preloads its data into the form for you to edit! Sharing a form for both edit and new actions are ok for any table and is a standard practice.
+Now clicking on the "edit" button for a meal preloads data into the form! 
+
+Pro tip: Sharing a form for both editing and creating records is a standard practice.
 
 
 
 Congratulations! You're done. A whole app to build in one day but you did it. No big deal, just many any small addition on what you've built and learned before. You have the knowledge and experience now to make more apps quickly and efficiently!
 
 
+
+If you like extra practice, and learn beyond the app core functionalities, try these optional challenges that will give you more tools and skills for your own projects.
 
 
 
@@ -1200,21 +1301,17 @@ You might've seen how the hardest work isn't always the most time-consuming. Muc
 
 There are UI kits can save much time. The frontend libraries you learned to use during design courses also works on WeChat Mini Programs, like [ColorUI](https://github.com/weilanwl/ColorUI):
 
-![image-20191106005516704](images/image-20191106005516704.png)
+![image-20191106005516704](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/image-20191106005516704.png)
 
 Try these in your app to improve function and style!
 
 
 
-![image-20191111031431603](images/image-20191111031431603.png)
+![image-20191111031431603](https://github.com/dounan1/china-product/raw/master/04-baas/challenges/images/colorui.png)
 
 
 
-We can start by making the order list look nicer. Here are some lists with sliding actions to replace buttons:
-
-
-
-![image-20191111031441674](images/image-20191111031441674.png)
+We can start by making the order list look nicer. Here are some lists with sliding actions to replace buttons.
 
 
 
