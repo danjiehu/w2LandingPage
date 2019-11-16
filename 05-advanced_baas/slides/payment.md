@@ -2,75 +2,154 @@
 
 
 
+# Wechat Payment
+
+Your goal is to add payment and shopping cart to the eCommerce app built for last weekend's challenge (Waimai app)
+
+
+
+For payment, you'll need:
+
 ## WeChat Merchant Account
 
-https://pay.weixin.qq.com/
+### Opening a [WeChat merchant account](https://pay.weixin.qq.com/) requires
 
-### WeChat pay requires
-
-- A verified official account
+- A verified WeChat official account
 - A company business license
 - A corporate bank account
 
-### WECHAT PAYMENT
+and takes 2-3 days for WeChat to approve.
 
-Allow payment at root URL.
 
-![payment_setting](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/payment_setting-63ccd06644ad01f637d219f6c27ef74d5886a7deda29cbb4278be42b42b8532b.png)
 
-### Payment Merchants
+Once approved, setup as follows:
 
-Certification file must be installed on your computer before any further important action.
+In "My Products" select "JSAPI." 
 
-Needed for moving money out of account (Not for development)
+![image-20191013005917501](images/image-20191013005917501.png)
 
-![payment_certificate](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/payment_certificate-bfb5855758a7f0f2a0ba9121cdd5d4b0cc189354fb719b9c6e2c827f01477ab6.png)
 
-### Merchants ID and Key
 
-API secret (`wechat_pay_api_key`)  (required by Minapp Baas)
+Then in "Developer Settings," add your WeChat MP `AppID` 
 
-![merchants_api](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/merchants_api-9d74a6c47e0c4018b2b0502e637ab5039b85b306f0a83667da6c6b53be806bf7.png)
 
-### Merchants API certificate
 
-Needed for refunds - (required by Minapp Baas)
+![image-20191013005931025](images/image-20191013005931025.png)
 
-![download_api_certificate](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/download_api_certificate-d66eb70b34a8b257e4fd31f76d80d202d7590a4d7b5f46618f68247bb38ffcf8.png)
+
+
+
+
+
+### WeChat Payment: API Key and certificates
+
+For taking money from user - the API  secret and the `pem` certificate files are required by Minapp Baas. 
+
+
+
+To get the API certificate:
+
+进入「账户中心」->「 API 安全」，申请 API 证书(不是 APIv3)。
+
+
+
+![image-20191013005853841](images/image-20191013005853841.png)
+
+
+
+Then under Account Settings -> "API安全" -> "API证书", click on "下载证书"
+
+
+
+![merchants_api](images/merchants_api-9d74a6c47e0c4018b2b0502e637ab5039b85b306f0a83667da6c6b53be806bf7.png)
+
+
+
+![download_api_certificate](images/download_api_certificate-d66eb70b34a8b257e4fd31f76d80d202d7590a4d7b5f46618f68247bb38ffcf8.png)
+
+Follow the steps to download the certificate. 
+
+
+
+Also under "API密钥" click "设置密钥". WeChat calls this Merchant or API secret. It is 32 digits with number and letters (32位组合密码). 
+
+
 
 ### Merchants ID
 
-`wechat_pay_mch_id` is the last thing you need.
+Merchant Id (微信支付商业号) is the last thing you need. It's a ten digit number that will identify your WeChat payment account.
 
-![merchants_info](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/merchants_info-1828b571a922ee64b9a2271f9c9ed2322426a718a7a9099006a29f4aa68216f0.png)
-
-### Payment Flow Diagram
-
-3 party dance
+![merchants_info](images/merchants_info-1828b571a922ee64b9a2271f9c9ed2322426a718a7a9099006a29f4aa68216f0.png)
 
 
 
-![小程序支付模式图-来自微信官方](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/wxa-7-2.png)
+
+
+## Optional: Additional settings (and check if payment not working)
+
+
+### Developer settings  
+
+All backend endpoints are whitelisted in developer settings:
+
+![image-20191116145007595](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/slides/images/image-20191116145007595.png)
+
+Check that minapp.com or myminapp.com are listed in the "request合法域名." This is ordinarily done automatically by the Minapp configuration. 
 
 
 
-## Implementing WeChat Payment
+### WeChat Development Platform
 
-Your goal is to add payment to eCommerce Frontend built last weekend challenge (Waimai app)
+For taking payments in WeChat Official Accounts, and other WeChat payment channels.
 
-
-
-### Payment function on BaaS
-
-[Setup Documentation](https://pay.weixin.qq.com/static/pay_setting/appid_protocol.shtml)
-
-[SKD Documentation](https://doc.minapp.com/js-sdk/payment/wechat-pay.html)
+Verification process needed (2-3 days).  An Official Account backend payment endpoint is needed.
 
 
 
-Setup needs these merchant info, in addition to your current WeChat AppID
+![payment_setting](images/payment_setting-63ccd06644ad01f637d219f6c27ef74d5886a7deda29cbb4278be42b42b8532b.png)
 
-1. WeChat Merchant number
+
+
+
+### Merchant Certificate  
+
+Not the API certificte, this merchant certification file must be installed on **the operator's** computer before moving money out of the WeChat Pay account (e.g. to your bank). This is for accounting, not always required for development. 
+
+
+
+![payment_certificate](images/payment_certificate-bfb5855758a7f0f2a0ba9121cdd5d4b0cc189354fb719b9c6e2c827f01477ab6.png)
+
+
+
+### 
+
+
+
+## How does WeChat Pay work? 
+
+### Payment Flow:
+
+The three-party dance: User, BaaS (backend server), Tencent.
+
+
+
+![小程序支付模式图-来自微信官方](images/wxa-7-2.png)
+
+
+
+Looks complicated? No worries, the **BaaS SDK** will take care of both the BaaS and Tencent part, so you just need to set it up and use its payment functions for the user's frontend. 
+
+
+
+## Setup WeChat Payment on BaaS
+
+
+
+### Payment with BaaS
+
+In addition to your WeChat AppID, the [BaaS setup](https://pay.weixin.qq.com/static/pay_setting/appid_protocol.shtml) needs these payment merchant info:
+
+1. WeChat Merchant number (`MCHID`)
 
 2. WeChat Merchant key
 
@@ -78,42 +157,29 @@ Setup needs these merchant info, in addition to your current WeChat AppID
 
 
 
-### Certificates
+Enable "Pay" from the left menu bar: Dev > Settings, then 功能配置:
+
+![image-20191114002320183](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/slides/images/image-20191114002320183.png)
 
 
 
-To get the API certificate:
-
-使用超级管理员账号登录[微信支付商户平台](https://pay.weixin.qq.com/index.php/apply/applyment_home/guide_normal)，进入「账户中心」->「 API 安全」，获取商户密钥及 API 证书(不是 APIv3)。
+Now You're ready to setup payment. 
 
 
 
-![image-20191013005853841](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191013005853841.png)
+Go to Dev -> Pay on the side menu, and then "Certificate" on the top tab. 
 
+On the "Associate WeChat business account" top right, click on "Add an account":
 
-https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191013005853841.png
-
-
-![image-20191013005917501](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191013005917501.png)
-
-
-
-![image-20191013005931025](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191013005931025.png)
+![image-20191007193443651](images/image-20191007193443651.png)
 
 
 
+Fill out the merchant id, api secret, and certificates that you gathered following steps in the section above:
 
-Then you're ready to enable payment on the Minapp.com platform. Go to Dev -> Pay on the side menu, and then "Certificate" on the top tab. On the top right, click on Add an account.
+![image-20191007193525891](images/image-20191007193525891.png?token=AALUKUAI6SNYJUMX7QUN4725ZFNIG)
 
-![image-20191007193443651](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191007193443651.png)
-
-
-
-Then fill out the form with merchant info you gathered above:
-
-![image-20191007193525891](https://raw.githubusercontent.com/dounan1/china-product/master/05-advanced_baas/slides/images/image-20191007193525891.png?token=AALUKUAI6SNYJUMX7QUN4725ZFNIG)
-
-Look for your account info under "Pay" in the menu. Under "Associate WeChat business account," click `authorize verfication` and wait for `Status` to say "Authorization successful" as in below.
+Under "Associate WeChat business account," you should see your new account.  Click `authorize verfication` and wait for `Status` to say "Authorization successful" as in below.
 
 
 
@@ -121,15 +187,11 @@ Look for your account info under "Pay" in the menu. Under "Associate WeChat busi
 
 
 
-### Payment data
+Now you're ready to take payment in your Mini Program with Minapp SDK!
 
+### Pay with Minapp SDK 
 
-
-Note the payment is a table on order
-
-### Pay with WeChat SDK 
-
-
+Type the following into your console:
 
 ```js
 // 支付示例代码
@@ -146,7 +208,19 @@ wx.BaaS.pay(params).then(res => {
 })
 ```
 
-**支付成功返回示例**
+
+
+Be careful to log in first with WeChat, or you'll see an error:
+
+![image-20191008151611379](images/image-20191008151611379.png)
+
+
+
+You should see a payment QR when successful:
+
+![image-20191114035014673](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/slides/images/image-20191114035014673.png)
+
+and the following data returned from the request (**支付成功返回示例**)
 
 ```json
 {
@@ -158,14 +232,32 @@ wx.BaaS.pay(params).then(res => {
 
 
 
-Be careful to log in first, or you'll see an error:
+### Payment data
 
-![image-20191008151611379](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191008151611379.png)
+In the BaaS dashboard, under "Pay" in the Dev menu, you can find all the payments in the "Payment record" tab:
+
+![image-20191116161354313](/Users/dounanhu/Code/wg/china-product/05-advanced_baas/slides/images/image-20191116161354313.png)
+
+You can also issue refunds on this table!
+
+
+
+Note the data can also be queried by the SDK with the `order()` function:
+
+```js
+let transactionID = "MDUhtNmacdYBKokJbCXhvYuoJnHXzpeN"
+let params = { transactionID }
+
+wx.BaaS.order(params).then(res => console.log(res)) // shows all the payment data
+```
+
+
+
 
 
 ## Your turn! Dior Gift Cards
 
-Build a new eCommerce app but adapt existing code to save time
+Build a new eCommerce app. Adapt existing code from previous ecommerce app to save time:
 
 
 
@@ -173,17 +265,8 @@ Build a new eCommerce app but adapt existing code to save time
 
 
 
-![image-20190327204251870](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20190327204251870.jpg)
+![image-20190327204251870](images/dior-gift-journey.png)
 
 
 
-
-
-
-
-
-
-
-
-![7491570472103_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/7491570472103.png)
 

@@ -11,9 +11,9 @@ Luckin Coffee, founded in 2017, in less than **two years**, has become the **sec
 
 It’s now gunning for the number one spot, pushing aggressively with offers like delivering coffee in under 30 minutes, deep-discounting and an **order-online-pick-up-at-store** service.
 
-![image-20191008041023722](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/image-20191008041023722.png)
+![image-20191008041023722](images/image-20191008041023722.png)
 
-![image-20191008040900287](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/image-20191008040900287.png)
+![image-20191008040900287](images/image-20191008040900287.png)
 
 
 
@@ -21,7 +21,7 @@ It’s now gunning for the number one spot, pushing aggressively with offers lik
 
 **Luckin  Coffee** users can  **register  directly**  via their Mini Program,  which offers a near frictionless  experience.  
 
-![7631570472246_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7631570472246.png)
+![7631570472246_.pic](images/qr-luckin.jpg)
 
 
 
@@ -29,7 +29,7 @@ It’s now gunning for the number one spot, pushing aggressively with offers lik
 
 
 
-![image-20191008042053194](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/image-20191008042053194.png)
+![image-20191008042053194](images/image-20191008042053194.png)
 
 
 
@@ -45,7 +45,7 @@ It’s now gunning for the number one spot, pushing aggressively with offers lik
 
 
 
-![7501570472105_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7501570472105.png)
+![7501570472105_.pic](images/7501570472105.png)
 
 
 
@@ -53,7 +53,7 @@ Coffee Store! New products to catch your eye, awards, deals to make a simple cof
 
 
 
-![7511570472106_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7511570472106.png)
+![7511570472106_.pic](images/7511570472106.png)
 
 Shopping cart to keep track of your order, (and chance to recommend more products you!)
 
@@ -61,20 +61,20 @@ Coupon can be applied.
 
 
 
-![7521570472107_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7521570472107.png)
+![7521570472107_.pic](images/7521570472107.png)
 
 Address and order confirmation (and take the chance to upsell you!)
 
 
 
 
-![7541570472109_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7541570472109.png)
+![7541570472109_.pic](images/7541570472109.png)
 
 
 
 Order made! Showing status with inventived sharing for free coffee, and getting coupons after order.
 
-![7551570472109_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7551570472109.png)
+![7551570472109_.pic](images/7551570472109.png)
 
 
 
@@ -82,13 +82,13 @@ Order has started! Gives estimated time to pickup.
 
 
 
-![7561570472110_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7561570472110.png)
+![7561570472110_.pic](images/7561570472110.png)
 
 QR code to pickup your coffee (and make sure you're actually getting the coffee!)
 
 
 
-![7571570472111_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7571570472111.png)
+![7571570472111_.pic](images/7571570472111.png)
 
 
 
@@ -96,51 +96,51 @@ Checking orders. Conspicuous coffee cup to inventive sharing and giving free cof
 
 
 
-![7581570472241_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7581570472241.png)
+![7581570472241_.pic](images/7581570472241.png)
 
 Checking membership center - incentived give one, get one free banner!
 
-![7591570472242_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7591570472242.png)
+![7591570472242_.pic](images/7591570472242.png)
 
 Sharing card invites a friend to sign up and get free drink, while you get a free one
 
-![7601570472243_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7601570472243.png)
+![7601570472243_.pic](images/7601570472243.png)
 
 Scan and pickup! And get the coupon you just earned.
 
 
 
-![7611570472244_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7611570472244.png)
+![7611570472244_.pic](images/7611570472244.png)
 
 Order status shown after scanning QR! Now you can claim your coupon, and give your friend a free coffee.
 
 
 
-![7621570472245_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7621570472245.png)
+![7621570472245_.pic](images/7621570472245.png)
 
 Enjoying the fruits of your labor.
 
 
 
-![7681570472390_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7681570472390.png)
+![7681570472390_.pic](images/7681570472390.png)
 
 If you ever want to check your order history - also encourages you to give free coffee!
 
 
 
-![7701570472391_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7701570472391.png)
+![7701570472391_.pic](images/7701570472391.png)
 
 Gift cards store. Sharing is caring - gifting to friends is quick and easy, and classier than just coffee.
 
 
-![7711570472392_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7711570472392.png)
+![7711570472392_.pic](images/7711570472392.png)
 
 Gift cards wallet.
 
 
 
 
-![7721570472392_.pic](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/challenges/images/7721570472392.png)
+![7721570472392_.pic](images/7721570472392.png)
 
 Coupons come from purchases, or just visiting the app!
 
