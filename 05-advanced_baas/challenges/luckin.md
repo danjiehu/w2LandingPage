@@ -19,13 +19,13 @@ It’s now gunning for the number one spot, pushing aggressively with offers lik
 
 
 
-**Luckin  Coffee** users can  **register  directly**  via their Mini Program,  which offers a near frictionless  experience.  
+**Luckin Coffee** users can **register directly** via their Mini Program, which offers a near frictionless  experience.  
 
 ![7631570472246_.pic](images/qr-luckin.jpg)
 
 
 
-**Most of its traffic comes from  users referring friends** to  benefit from invitation coupons. 
+**Most of its traffic comes from users referring friends** to benefit from invitation coupons. 
 
 
 
