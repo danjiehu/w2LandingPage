@@ -144,8 +144,8 @@ We start again with the data:
 
 ## Schema
 
-![image-20191116172347795](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191116172347795.png)
 
+![image-20191116172347795](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191116172347795.png)
 
 
 The new field to add is  `points`. We'll add that as a new column to the three tables from the previous app (User, Order, and Meal). Use the BaaS dashboard to add.
@@ -183,6 +183,10 @@ Why doesn't it let you do that? Remember the "Order" table still has a pointer c
 ![image-20191116235619623](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191116235619623.png)
 
 Now you can change "meal" to "product" table. Check that the read and write permissions (ACL) are what you expect. Who should be able to create and write to this? (Hint:  how did you set meal permissions?)
+
+Now your table schema should look at like this:
+
+![image-20191118233654031](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191118233654031.png)
 
 Don't forget to add a pointer column back in the "order" table to the "product table." (Should it be required? Hint: can you create an order without products?)
 
@@ -522,3 +526,6 @@ This and other ways to combine logins from other mini program ecosystems and web
 
 [ColorUI](https://github.com/weilanwl/ColorUI) has a user dashboard that looks nice and easy to adapt for our membership center. Follow this [template](https://github.com/weilanwl/ColorUI/blob/master/demo/pages/about/home/home.wxml) to get elements you prefer to show user data. The style sheets can also be imported directly into the MiniApp!
 
+
+
+![image-20191119173013084](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191119173013084.png)
