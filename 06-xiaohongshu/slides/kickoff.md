@@ -52,7 +52,7 @@ Your goals:
 ## Day 3
 
 1. **Submit** to Wechat: index, ecommerce, and membership center
-2. Demo at end of day
+2. Demo products at end of day
 
 ## Demos
 
