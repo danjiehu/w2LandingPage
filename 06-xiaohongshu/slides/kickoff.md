@@ -1,5 +1,11 @@
 # Xiaohongshu challenge
 
+Xiaohongshu - power of social ecommerce:
+
+
+
+
+
 ## Objectives
 
 Build these products over a week:
