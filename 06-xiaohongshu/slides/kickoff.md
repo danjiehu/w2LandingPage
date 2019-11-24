@@ -1,20 +1,24 @@
 # Xiaohongshu challenge
 
-Xiaohongshu - power of social ecommerce:
+Xiaohongshu shows the power of **social e-Commerce** and leads into **new retail**:
+
+![image-20191124211242164](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/xiaohongshu.png)
 
 
+
+How do you convert millions of fans into 几万 users and sell 几百万RMB?
+
+You'll learn that this week!
 
 
 
 ## Objectives
 
-Build these products over a week:
+Build a WeChat Mini Program (MP) similar to Xiaohongshu, using social and ecommerce functions. Use your *own idea* based on something you're passionate about!
 
-1) A Landing Page hosted on your own domain
+When classes are not going on, you are welcome to *keep working together*, and bring your questions in with you to class or ask on group chat.
 
-2) WeChat Mini Program (MP) similar to Xiaohongshu, using social and ecommerce functions
 
-When classes are not going on, you are welcome to work together, and bring your questions in with you to class or ask on group chat.
 
 ## WeChat Licenses
 
@@ -29,22 +33,24 @@ So we recommend you take care of that business entity registration before the st
 
 ## Day 1
 
-Your goals:
-1. **Submit** to Wechat: index page of cards on MP for approval
-2. **Create** a Landing page for web (using mobile landing from challenge of week 1)
-3. **Write**
+Your goals *everyday*
+1. **Submit** to Wechat: index of cards and show page for approval
+
+   After approval: create cards and social functions
+
+2. **Write**
 
 - User stories
 - Mockups
-- API endpoints (and tables)
+- Tables Schema
 
 *Pro Tip: By submitting index page first, without any posting features for user generated content, you have a higher chance of getting approved by Tencent!*
 
 ### Splitting responsibilities by role:
 
-- One person (Web Developer) in charge of landing page
+- One person (Designer) in charge of mockups and wxml
 
-- One person (Backend) in charge of Backend as a Service (Baas)
+- One person (Backend) in charge of Backend as a Service (BaaS)
 
 - One person (Frontend) in charge of Mini Program (MP)
 
@@ -58,22 +64,20 @@ Your goals:
 ## Day 3
 
 1. **Submit** to Wechat: index, ecommerce, and membership center
-2. Demo products at end of day
+2. Demo products at end of day (7pm)
 
 ## Demos
 
 - 5 minutes per team
-- story telling format
+- story-telling format
 
-  - one/two speakers, one operator
-  - speakers show mini app user journey (customer)
-  - operator assists with above, and also shows landing page or user dashboard (manager / business journey)
+  - one or two speakers, one computer operator
+  - speakers show user journey as customers
+  - operator assists with above, and also shows any web interfaces like landing page & admin dashboards 
 
-**Notes**
-- You can present your MP without official release on WeChat (but on trial mode, not dev)
-- However if you have an ICP, you can use it for your BaaS to make it permanent (optional).
-- Landing pages are linked to your own domain (but can be hosted on github pages).
-- Remember the API philosophy: don't reinvent the wheel - but use what's already built! You've actually been building all parts of this app since the first week. Now it's time to put it all together and see how fast and efficient your teamwork can be!
+You should present your MP as **official release** on WeChat.
+
+Tip: *Don't reinvent the wheel* -  use what's already built! You've actually been building all parts of this app since the first week. Now it's time to **put it all together** and see how **fast and efficient** your **teamwork** can be!
 
 Good luck and enjoy this exciting process.
 
