@@ -2,11 +2,11 @@
 
 ## Take a picture or choose one from an album
 
-[📚 wx.chooseImage() [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/media-picture.html#wxchooseimageobject)
+Use [WeChat Image Upload](https://developers.weixin.qq.com/miniprogram/dev/api/media-picture.html#wxchooseimageobject) with the following settings:
 
-- Count: max 9 images
-- SizeType:  'original' or 'compressed'
-- SourceType:  'album' , 'camera'
+- `count`: max 9 images 
+- `sizeType`:  `original` or `compressed`
+- `sourceType`:  `album` or `camera`
 
 ```javascript
 // index.js
@@ -23,21 +23,27 @@
   }
 ```
 
-Get the result from `fileTempPaths`
+
+
+Then get the image from the successful upload, find `fileTempPaths` from the result `res`
 
 ```javascript
 // console.log(tempFilePaths)
 ["http://tmp/wx6545a117799ef0b5.o6zAJs-Qx9fK6n67eUMn….fDk8Xlh5QYnOa097c96f52f8ed30f0970bc0d5bd4774.jpg"]
 ```
 
+
+
+How do you see this image?
+
 ## Preview images
 
-![](https://github.com/pitipon/MP-Lecture-Image/blob/master/previewimage.png?raw=true)
+![img](images/previewimage.png)
 
-[📚 wx.previewImage() [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/media-picture.html#wxpreviewimageobject)
+Use the [Image Preview](https://developers.weixin.qq.com/miniprogram/dev/api/media-picture.html#wxpreviewimageobject) with these settings:
 
-- Current: defines which image should show first
-- Urls: an array of image paths
+- `current`: defines which image should show first
+- `urls`: an array of image paths
 
 ```javascript
 // index.js
@@ -50,97 +56,124 @@ Get the result from `fileTempPaths`
 ```
 
 
-## Store your images on [LeanCloud](https://leancloud.cn/)
 
-1. **Register a [new account on LeanCloud](https://leancloud.cn/dashboard/login.html#/signup)** (it's free)
+## Store your images on Minapp BaaS
 
-2. **Create a new project on LeanCloud and get an and `AppID`,` AppKEY`**
+### Configure SDK  (optionally hide app secret)
 
-3. **Grab the LeanCloud SDK `av-weapp.min.js` and add it to your `utils` folder**
+Remember you need the Minapp SDK. That's imported in `app.json`:
 
-[av-weapp-min.js is available in this repo](https://github.com/pitipon/Thanos-MP/blob/master/utils/av-weapp-min.js)
+```js
+//app.json
+"plugins": {
+  "sdkPlugin": {
+    "version": "2.7.0",
+      "provider": "wxc6b86e382a1e3294"
+  }
+},
+```
 
-4. **Initialize LeanCloud with your `AppID` and `AppKEY`**
+Then the SDK is setup in `app.js`
 
-(save your `AppID` and `AppKEY` to a separate js file, and add it to your `.gitignore` file so that it will not be uploaded to github)
+```js
+//app.js
+App({
+  onLaunch: function () {
+    //...
+    wx.BaaS = requirePlugin('sdkPlugin')
+    wx.BaaS.init('CXBycRIiDtxxxxxxxxx')
+    //...
+```
+
+Here the value in `init()` is an app "secret."  It's the key to your backend. We don't always want to commit that to Git where **everyone can see it**. 
+
+For added security (optional):
+
+Save your app secret as a `AppKEY` to a separate js file, and add its name to your `.gitignore` file. Any file listed there will not be uploaded to github.
 
 ```javascript
 // app.js
-  const AV = require('./utils/av-weapp-min.js')
-  const config = require('./key')
-  // Initialization of the app
+const AV = require('./utils/av-weapp-min.js')
+const config = require('./key')
 
-  AV.init({
-    appId: config.appId,
-    appKey: config.appKey,
-  });
+App({
+  onLaunch: function () {
+    //...
+    wx.BaaS = requirePlugin('sdkPlugin')
+    wx.BaaS.init(config.appKey)
+    //...
 ```
 
 ```javascript
 // key.js
-  module.exports = {
-    appId : '3kqKsQYB4gVrjYxxxxxxx',
-    appKey : 'CXBycRIiDtxxxxxxxxx'
-  }
+module.exports = {
+  appKey : 'CXBycRIiDtxxxxxxxxx'
+}
 ```
 
-
-
-Security tip: use Gitignore to hide your keys!
-
-**Do not expose your `AppID` or `AppSecret` on GitHub**
-
-Any sensitive information such as your `AppID`, `AppSecret`, and LeanCloud `AppKEY`, should be stored in your `project.config.json` file and ignored by git using a `.gitignore` file
-
-```bash
+in `.gitignore` (create it if you don't have it in your project root folder)
+```
 # .gitignore
-project.config.json
+key.js
 ```
 
-5. **Implement LeanCloud Upload from Camera**
 
-```javascript
-//index.js
-const app = getApp()
-const AV = require('../../utils/av-weapp-min.js');
 
-Page({
-  data: {
-    items: []
-  },
-  onLoad: function () {
-  },
-  takePhoto: function() {
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
-      success: function(res) {
-        let tempFilePath = res.tempFilePaths[0];
-        new AV.File('file-name', {
-          blob: {
-            uri: tempFilePath,
-          },
-        }).save().then(
-          file => console.log(file.url())
-        ).catch(console.error);
-      }
-    });
+### Upload files with SDK
+
+To [upload to the SDK](https://doc.minapp.com/js-sdk/file/file.html#文件上传):
+
+```js
+wx.chooseImage({
+  success: function(res) {
+    let MyFile = new wx.BaaS.File()
+    let fileParams = {filePath: res.tempFilePaths[0]}
+    let metaData = {categoryName: 'SDK'}
+
+    MyFile.upload(fileParams, metaData).then(res => {
+      // 上传成功
+      let data = res.data  // res.data 为 Object 类型
+    }, err => {
+      // HError 对象
+    })
   }
 })
 ```
 
-![](https://github.com/pitipon/MP-Lecture-Image/blob/master/leancloud.png?raw=true)
+`fileParams` contains the `path` to your image as explained in the first section. `metaData` contains any labels you want for file on the SDK. 
+
+The saved file url is in `res.data`. Use this in your app and save it to your data!
 
 
+
+To debug,  you can find a request to the BaaS at `upload/`  "Network" console, and a response in the call after.  
+
+![image-20191126152638302](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191126152638302.png)
+
+
+
+You can manage your file on the the BaaS dashboard under "File":
+
+![image-20191126153108043](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191126153108043.png)
+
+
+
+To have the file work in the real world (e.g. not just dev but production mode), you'll need to add the file server to the WeChat MP configuration!
 
 ## Whitelist the LeanCloud domain for your MP
 
-1. **[Go to your MP dashboard](https://leancloud.cn/docs/weapp-domains.html)**
+1. **[Find the servers on the BaaS dashboard](https://cloud.minapp.com/dashboard/#/app/30749/settings/domain/)**: (Yours might be different than example below)
 
-2. **Add LeanCloud to the whitelist as shown below**
+![image-20191126153438960](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191126153438960.png)
 
-   ![](https://github.com/JakeTompkins/files/raw/master/images/whiteListLeanCloud.png)
+2. **Add `uploadFile` and `downloadFile` to the whitelist in WeChat Admin Dashboard:**
+
+Under "开发" > "开发设置" and scroll to "服务器域名". 
+
+![image-20191126153926309](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191126153926309.png)
+
+Tip: all backend servers (where you or Minapp SDK makes requests) need to be configured in this panel. You can many servers configured and change them up to 5 times a month.
+
 
 
 

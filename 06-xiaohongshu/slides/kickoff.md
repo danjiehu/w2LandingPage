@@ -20,14 +20,30 @@ When classes are not going on, you are welcome to *keep working together*, and b
 
 
 
+## Teams
+
+You'll be working in your project team from this week onwards. Everyone has a role and area of responsibility. But all can **work in any part** of the app.
+
+### Splitting responsibilities by role:
+
+- Designer: Mockups and wxml
+
+- Backend: Backend as a Service (BaaS)
+
+- Frontend: Mini Program (MP)
+
+- Project Manager(PM): User stories and deliverables (WeChat submissions)
+
+  
+
 ## WeChat Licenses
 
 Special business licenses are required for WeChat app approval and release:
 
-- Ecommerce
+- E-Commerce
 - Social platform
 
-We can try to let you create an app under our license, but it's temporary of course.
+If you can't get registered in time, may be able to use our license, but it'll only be valid during camp.
 
 So we recommend you take care of that business entity registration before the start as mentioned in the first weeks!
 
@@ -45,16 +61,6 @@ Your goals *everyday*
 - Tables Schema
 
 *Pro Tip: By submitting index page first, without any posting features for user generated content, you have a higher chance of getting approved by Tencent!*
-
-### Splitting responsibilities by role:
-
-- One person (Designer) in charge of mockups and wxml
-
-- One person (Backend) in charge of Backend as a Service (BaaS)
-
-- One person (Frontend) in charge of Mini Program (MP)
-
-- One person (PM) creating repository, register domain, prepare for WeChat submission
 
 ## Day 2
 
