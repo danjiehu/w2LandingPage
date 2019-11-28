@@ -1,0 +1,115 @@
+/* pages/show/show.wxss */
+
+.card {
+  margin: 21px;
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 5px solid green;
+}
+
+.card-name {
+  font-size: 57px;
+  font-weight: bold;
+  margin-left: 135px;
+}
+
+.description {
+  font-size: 17px;
+  margin-left: 30px;
+  margin-bottom: 13px;
+  margin-top: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 18px;
+}
+
+.card-product {
+  flex-basis: 45%;
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product-infos {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plus {
+  bottom: 20px;
+  right: 45px;
+  position: absolute;
+  font-size: 25px;
+}
+
+.minus {
+  bottom: 20px;
+  left: 45px;
+  position: absolute;
+  font-size: 25px;
+}
+
+.amount {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 42px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer button {
+  position: absolute;
+  right: 41px;
+}
+
+.footer text {
+  font-size: 30px;
+  font-weight: bold;
+}

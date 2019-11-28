@@ -1,0 +1,23 @@
+<view class="card" style="background-image: url('/images/gift.jpg'); background-size: 136%; background-position: -38px -39px;">
+  <view class="card-name">{{name}}</view>
+</view>
+
+<view class="description">选择礼物</view>
+
+<view class="cards">
+  <block wx:for="{{products}}" wx:for-item="product">
+    <view class="card-product" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.9)), url('{{product.photo}}'); background-size: cover;">
+      <view class="card-product-infos">
+        <view class="h2">{{product.name}}</view>
+        <view class="p">{{ product.price / 100.0 }} Kuai</view>
+      </view>
+      <view data-id="{{product.id}}" data-add="{{1}}" class="plus" bindtap="updateAmount"> + </view>
+      <view data-id="{{product.id}}" data-add="{{-1}}" class="minus" bindtap="updateAmount"> - </view>
+      <view wx:if="{{product.amount > 0}}" class="amount">{{product.amount}}</view>
+    </view>
+  </block>
+</view>
+<view class="footer">
+  <text>¥ {{price/100}}</text>
+  <button type='primary' bindtap="createOrder">Order</button>
+</view>

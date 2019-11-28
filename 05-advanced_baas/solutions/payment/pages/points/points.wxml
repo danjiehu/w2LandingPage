@@ -1,0 +1,16 @@
+<!--pages/points/points.wxml-->
+<block wx:for="{{orders}}" wx:for-item="order">
+  <view class="card-product">
+    <view class="card-product-infos" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.9)), url('{{order.product.photo}}'); background-size: cover;">
+      <view class="h2">{{order.product.name}}</view>
+      <view wx:if="{{order.product.price > 0}}" class="p">{{order.product.price / 100}} Kuai</view>
+    </view>
+    <view class="address">
+      {{order.address}}
+    </view>
+    <view class="action">
+      <view class="p">{{order.product.points}} Points</view>
+    </view>
+
+  </view>
+</block>

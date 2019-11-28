@@ -1,0 +1,83 @@
+<!--pages/user/user.wxml-->
+<view class="wrapper">
+  <view class="profile">
+    <view class="h2"> Member </view>
+
+    <!-- <image class="avatar" src="{{currentUser.photo || currentUser.avatar}}" /> -->
+    <view class="p"> {{currentUser._username}} </view>
+  </view>
+  <view class="points">
+    <view>{{currentUser.points}} </view>
+    <view>points</view>
+  </view>
+
+  <block wx:if="{{currentUser}}">
+    <form bindsubmit="bindEditProfile">
+
+      <!-- <view class="section">
+        <view class="section__title">Photo</view>
+        <input name="photo" value="{{currentUser.photo}}" placeholder="please add your photo url"></input>
+      </view> -->
+
+      <!-- <view class="btn-area">
+        <button formType="submit">Submit</button>
+      </view> -->
+    </form>
+
+    <view class="btn-area" id="logout">
+      <button bindtap="bindLogout">Log Out</button>
+    </view>
+  </block>
+
+  <block wx:else>
+    <form bindsubmit="bindLogin">
+      <!-- <view class="section">
+        <view class="section__title">Username</view>
+        <input name="username" placeholder="please use yours or create one"></input>
+      </view>
+
+      <view class="section">
+        <view class="section__title">Password</view>
+        <input name="password" placeholder="please use yours or create one"></input>
+      </view>
+
+      <view class="btn-area">
+        <button formType="submit">Submit</button>
+      </view> -->
+
+      <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信 Login </button>
+
+    </form>
+  </block>
+
+</view>
+<view class="banner"/>
+<view id="history" bindtap="showHistory">History ></view>
+<!-- <scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="{{currentUser.photo || currentUser.avatar}}" class="png" mode="widthFix"></image>
+    <view class="text-xl">{{currentUser._username}}
+      <text class="text-df">🌟🌟</text>
+    </view>
+    <view class="margin-top-sm">
+      <text>Basic Member</text>
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> Orders</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> Points</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="margin-top-sm">
+        <text class="cuIcon-fork"></text> History</view>
+    </view>
+  </view>
+</scroll-view> -->
