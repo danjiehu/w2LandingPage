@@ -89,7 +89,7 @@ Now quit the Terminal (`⌘` + `Q`), and restart it.
 
 You should see something like this:
 
-![img](/Users/dounanhu/Code/wg/china-product/00-kickoff/exercises/images/on-my-zsh.png)
+![img](https://github.com/lewagon/china-product/raw/master/00-kickoff/exercises/images/on-my-zsh.png)
 
 
 ## GitHub
