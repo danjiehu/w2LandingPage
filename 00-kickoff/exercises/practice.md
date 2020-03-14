@@ -1,5 +1,3 @@
-## Practicing Command Lines
-
 We'll first work on the command lines you've just learnt.
 
 NOTE: **You're not allowed to use Finder (or your file browser)!**
@@ -45,8 +43,8 @@ It's time to act like a real developer! Use google to find out how to complete t
 ### Final words
 
 * Go back to your home (`~`) directory
-* Destroy the tmp folder
-* Clear the terminal window
+* **Do not** destroy the temp folder - we'll be using it in the next exercise
+* Clear the terminal window: use the [guide](https://github.com/lewagon/china-product/blob/master/00-kickoff/exercises/gitcheat.md) if you need to
 
 When you're done you can look at the links below
 
