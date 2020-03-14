@@ -2,7 +2,9 @@
 
 In this first challenge, we are going to select an element from the DOM! 
 
-Download the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/dom-events.zip). Then open `index.html` in your favorite web browser. You can right click the file in Sublime editor and select "open in browser"
+## Specs
+
+Download the [template](https://github.com/lewagon/china-product/raw/master/02-javascript/exercises/dom-events.zip). Then open `index.html` in your favorite web browser. You can right click the file in Sublime editor and select "open in browser"
 
 You should see the countries that won the most FIFA World Cups in an ordered list.
 
