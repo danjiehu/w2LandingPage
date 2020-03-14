@@ -4,7 +4,7 @@ Work on three different button designs (two given by us, one of your choice). He
 
 ## Setup
 
-For ALL exercises for today, use the [boilerplate](https://github.com/dounan1/china-product/blob/master/01-design/exercises/Components.zip?raw=true) to get started!
+For ALL exercises for today, use the [boilerplate](https://github.com/lewagon/china-product/blob/master/01-design/exercises/Components.zip?raw=true) to get started!
 
 > Tip: Remember you can open up a folder in Sublime! Open up the template above after downloading and unzipping.
 
