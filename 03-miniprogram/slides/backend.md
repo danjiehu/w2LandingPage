@@ -94,13 +94,13 @@ TOKEN: xxxxxxxxxxxxxxxxxxxxxxxx
 
 Use like:
 
-```json
+```
 header: {'Authorization':'Bearer xxxxxxxxxxxxxxxxxxxxxxxx'}
 ```
 
 or as params or form data
 
-```json
+```
 data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
 ```
 
