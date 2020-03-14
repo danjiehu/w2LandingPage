@@ -4,10 +4,10 @@ Let's create a JavaScript game: the Wagon Race 🏎. It's a simple game where yo
 
 The goal here is to learn more about JavaScript, the DOM, and asynchronous event handling.
 
-![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/wagon_race.gif)
+![](https://github.com/lewagon/china-product/raw/master/02-javascript/exercises/dom-events/03-Wagon-Race/images/wagon_race.png)
 
 ## Specs
-In the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/dom-events.zip) downloaded in previous exercise. Launch your app by opening `index.html` in your browser
+In the [template](https://github.com/lewagon/china-product/raw/master/02-javascript/exercises/dom-events.zip) downloaded in previous exercise. Launch your app by opening `index.html` in your browser
 
 #### HTML
 
@@ -57,13 +57,14 @@ You will update a player's position by moving the `active` class from one `td` t
 
 It's always a good idea to do as much work as possible using smart HTML markup and CSS classes before jumping into JavaScript. Bad front-end developers spend time writing long javascript code that changes CSS values, instead of short scripts that play nicely with existing CSS classes.
 
-#### Javascript
+#### JavaScript
 
 Write all your code in `lib/wagon_race.js`. We need a way for JavaScript to update the board state. Create simple JavaScript functions that update a player's position. Again, there are several ways to do the same thing. One example below:
 
 - Remove the `active` class on the current player's `td` and add that class to the next `td`.
 - Keep track of the "index" of each player in the table and increase it.
 
+> Hint: JavaScript not rending? Check your `<script />` tag!
 
 #### Binding to Keyboard
 
