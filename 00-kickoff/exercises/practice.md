@@ -1,3 +1,5 @@
+## Practicing Command Lines
+
 We'll first work on the command lines you've just learnt.
 
 NOTE: **You're not allowed to use Finder (or your file browser)!**
