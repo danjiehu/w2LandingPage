@@ -1,6 +1,4 @@
-## Challenge 1: Create a Landing Page to greet users
-
-## Background & objectives
+## Background & Objectives
 
 The goal of this first challenge is to understand the basic structure of an app, and in particular the view layer written in WXML/WXSS.
 
@@ -28,12 +26,12 @@ This window will greet your users and explain the concept behind FMC app. You wa
 
 Save time by transforming the [Banner Component from Le Wagon UI](https://uikit.lewagon.com/documentation#banner) into a quick landing page.
 
-**Tip**: WeChat Mini Programs CAN’T load a CSS `background-image` with a `local file` (inside your directory)...
+> **Tip**: WeChat Mini Programs CAN’T load a CSS `background-image` with a `local file` (inside your directory)...
 It’s a restriction of the framework, to *keep your app lightweight.* Instead, you must load a `remote file` 🌏, and it must come through HTTPs!
 
 Let's use some `inline CSS` through the style="" attribute:
 
-```
+```html
 <view class="banner" style="height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
 </view>
 ```
