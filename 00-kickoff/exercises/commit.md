@@ -51,4 +51,3 @@ hub browse
 ```
 
 After you've created the repo, you can push up the code with git! Then refresh the github page to see if the files are there!
-
