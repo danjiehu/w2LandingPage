@@ -2,7 +2,7 @@
 
 Practice the Bootstrap grid. Learn how to build various grids with different responsive behaviors.
 
-For ALL exercises today, start with the template that you can [download](https://github.com/dounan1/china-product/raw/master/01-design/exercises/Layouts.zip)!
+For ALL exercises today, start with the template that you can [download](https://github.com/lewagon/china-product/raw/master/01-design/exercises/Layouts.zip)!
 
 
 ## Specs
@@ -35,7 +35,6 @@ Do NOT add boostrap grid classes on the same level as other CSS.
 ```
 
 Instead build a grid around the content, and insert it inside like this:
-
 
 ```html
 <div class="container">
