@@ -2,9 +2,9 @@
 
 Let's copy our profile to its own location and version it with `git` as a separate project.
 
-```bash
-cp -r profile ~/code/<user.github_nickname>
-cd ~/code/<user.github_nickname>/profile
+```shell
+cp -r profile ~/code/$GITHUB_USERNAME
+cd ~/code/$GITHUB_USERNAME/profile
 ```
 
 ## Create the Github repo
