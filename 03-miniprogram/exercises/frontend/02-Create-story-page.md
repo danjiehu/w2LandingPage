@@ -4,7 +4,6 @@ The goal of this challenge is to practice with more WeChat's template language.
 
 ## Specs
 
-
 ### 1. Setup one more page in your app
 
 Use the setup file `app.json` to add again a new route inside the array `pages:[]`:
@@ -15,7 +14,7 @@ Use the setup file `app.json` to add again a new route inside the array `pages:[
 
 ### 2. Create a small header to begin
 
-Let's re-use the same [Banner Component](https://uikit.lewagon.com/documentation#banners) than on our landing page, and turn it into a nice header! We can use the `inline CSS` again to customize its size... e.g 100px height.
+Let's re-use the same [Banner Component](https://uikit.lewagon.com/documentation#banner) than on our landing page, and turn it into a nice header! We can use the `inline CSS` again to customize its size... e.g 100px height.
 
 ### 3. Then a card for our stories...
 
@@ -27,14 +26,13 @@ Just one story is enough, we're just templating here.
 
 ### 4. Data binding introduction
 
-WXML is much more than HTML: it's a **templating language** allowing us to [inject javascript variables and even loop through our local data](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/data.html)! The magic happens when you use this syntax: `{{variable or operation}}`. 
+WXML is much more than HTML: it's a **templating language** allowing us to [inject javascript variables and even loop through our local data](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/)! The magic happens when you use this syntax: `{{variable or operation}}`.
 
 We call it the **mustache syntax** 👨‍🦰 and it connects JS and HTML both ways...
 
 **From JS to WXML ➡️**
 
 - Store ‘Who is here?’ inside a `text` variable in the `stories.js` page data
-
 
 ```js
 //stories.js
@@ -47,9 +45,8 @@ Page({
 
 - Display the text inside your `stories.wxml` page
 
-
 ```html
-<!— stories.wxml -->
+<!-- stories.wxml -->
 <view>{{text}}</view>
 ```
 
@@ -58,9 +55,9 @@ Any string stored inside `text` will dynamically show in your view 🤓
 **From WXML to JS ⬅️**
 
 - Create a button with the "bindtap" attribute and a function name as a value
- 
+
 ```html
-<!— stories.wxml -->
+<!-- stories.wxml -->
 <button bindtap="clickMe">{{text}}</button>
 ```
 
@@ -75,7 +72,7 @@ Page({
 })
 ```
 
-Well done! Now you have a button firing a a "bindtap" event to the logical layer (the javascript file), and a function that re-sets the local data to another string... immediately rendered in the view. 
+Well done! Now you have a button firing a a "bindtap" event to the logical layer (the javascript file), and a function that re-sets the local data to another string... immediately rendered in the view.
 
 ⚠️ Do not break the Page object! **Each key-value pair is chained with a comma.** Notice how the Page object contains different keys provided by the framework: `onReady`, `onShow` etc. We call them [lifestyle functions](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html).
 
