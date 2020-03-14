@@ -97,4 +97,3 @@ Now you can play this technique to add a cool overlay avatar on your `.card-trip
 <div class="text-center">
   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/card-position.png" alt="" width="400">
 </div>
-
