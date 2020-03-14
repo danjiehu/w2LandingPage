@@ -2,9 +2,13 @@
 
 ### The Client-side Programming Language
 
+---
+
 ### What's with the name?
 
 JavaScript != Java
+
+---
 
 ## Today's Goals
 
@@ -14,7 +18,7 @@ JavaScript != Java
 
 Today we'll work in the **browser**
 
-
+---
 
 ### JavaScript Version
 
@@ -24,27 +28,27 @@ We are going to use **ES6**:
 - Released in 2015 (ECMAScript 2015 Language)
 - Supported by [~90% browsers](https://caniuse.com/#search=ES6)
 
-------
+
+---
 
 ## Run code on your browser
 
 
-JavaScript
-
-```
-// in browser dev tools
+```js
+// in-browser dev tools
 console.log("Hello Le Wagon");
 ➜ 
 Hello Le Wagon
 ```
 
-------
+
+---
 
 ## Basic Types
 
-JavaScript
+---
 
-```
+```js
 "Hello Le Wagon"            // string
 
 42                          // number
@@ -53,11 +57,11 @@ JavaScript
 true                        // boolean
 ```
 
+---
+
 ### Checking types
 
-JavaScript
-
-```
+```js
 typeof("Boris");
 // => 'string'
 
@@ -65,11 +69,11 @@ typeof(42);
 // => 'number'
 ```
 
+---
+
 ### Casting types
 
-JavaScript
-
-```
+```js
 Number.parseInt('42', 10);
 // => 42
 
@@ -77,9 +81,9 @@ Number.parseInt('42', 10);
 // => '42'
 ```
 
-### Data structures
+---
 
-JavaScript
+### Data structures
 
 ```
 [ 'Hello', 'Le', 'Wagon', 42 ]    // Array
@@ -88,28 +92,32 @@ JavaScript
 { 'name': 'bob', 'age': 42 }      // Object (the exact same)
 ```
 
+---
+
 ### Null & Undefined
 
-```
+```js
 let age; // undefined
 let name = null;
 ```
 
-------
+---
 
 ## Variables
 
-### JavaScript
+---
 
 Old JS uses `var`.
 
 ES6 uses two new keywords in replacement.
 
+---
+
 ### `let`
 
 For a variable you **will re-assign**
 
-```
+```js
 let counter = 1;
 console.log(counter);
 
@@ -117,29 +125,30 @@ counter = counter + 1;
 console.log(counter);
 ```
 
+---
+
 ### `const`
 
 For a variable you **won't** re-assign
 
-
-
-```
+```js
 const firstName = "John";
 console.log(firstName);
 
 firstName = "Paul"; // TypeError: Assignment to constant variable.
 ```
 
+---
+
 ### Naming convention
 
-JavaScript
-
-```
+```js
 const firstName = "Ringo";
 // lowerCamelCase
 ```
 
-------
+
+---
 
 ## Strings
 
@@ -147,17 +156,21 @@ Let's dive deeper into this type.
 
 Reference: [String on MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
+---
+
 ### Length
 
-```
+```js
 const firstName = "Paul";
 firstName.length;
 // => 4
 ```
 
+---
+
 ### Character access
 
-```
+```js
 const firstName = "John";
 firstName[0];
 // => "J"
@@ -166,9 +179,11 @@ firstName[0];
 firstName.substring(1);
 ```
 
+---
+
 ### Case manipulation
 
-```
+```js
 const firstName = "Paul";
 firstName.toUpperCase();
 // => "PAUL"
@@ -177,9 +192,11 @@ firstName.toLowerCase();
 // => "paul"
 ```
 
+---
+
 ### Split
 
-```
+```js
 const monthString = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec";
 
 const months = monthString.split(",");
@@ -188,12 +205,11 @@ months.length;
 // => 12
 ```
 
+---
+
 ### Interpolation
 
-
-JavaScript
-
-```
+```js
 const firstName = "Ringo";
 const lastName = "Starr";
 
@@ -203,17 +219,17 @@ const message = `${firstName} ${lastName} is a drummer`;
 
 [**Template literals** on MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals)
 
-------
+---
 
 ## Arrays
 
 Reference: [Array on MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+---
+
 ### CRUD
 
-JavaScript
-
-```
+```js
 const fruits = [];
 fruits.push("Apple"); // Create
 fruits[0];            // Read
@@ -221,11 +237,11 @@ fruits[0] = "Banana"; // Update
 fruits.splice(0, 1);  // Delete (1 item at index 0)
 ```
 
+---
+
 ### `forEach`
 
-JavaScript
-
-```
+```js
 const beatles = ["paul", "john", "ringo", "george"];
 beatles.forEach((beatle) => {
   console.log(beatle.toUpperCase());
@@ -234,15 +250,16 @@ beatles.forEach((beatle) => {
 
 [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-------
+
+---
 
 ## Control Flow
 
+---
+
 ### `if` / `else`
 
-JavaScript
-
-```
+```js
 const age = 14;
 
 if (age >= 18) {
@@ -252,11 +269,11 @@ if (age >= 18) {
 }
 ```
 
+---
+
 ### Falsy values
 
-JavaScript
-
-```
+```js
 false
 undefined
 null
@@ -265,19 +282,19 @@ NaN
 ""
 ```
 
+---
+
 ### Ternary Operator
 
-JavaScript
-
-```
+```js
 const raining = true;
 const accessory = (raining ? "umbrella" : "sunglasses");
 // => "umbrella"
 ```
 
-JavaScript
+---
 
-```
+```js
 if (digit === 0) {
   console.log('Zero');
 } else if (digit === 1) {
@@ -289,15 +306,17 @@ if (digit === 0) {
 
 Read more about [sameness in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) and the difference between `==` and `===`.
 
-------
+---
 
 ## Objects
 
 Guide: [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) on MDN
 
+---
+
 ### Simple Object
 
-```
+```js
 const student = {
   firstName: "Boris",
   lastName: "Paillard"
@@ -309,11 +328,13 @@ console.log(typeof student);
 console.log(student);
 ```
 
+---
+
 ### Reading/Setting a property
 
-You can use the dot-notation.
+You can use dot-notation.
 
-```
+```js
 console.log(student.firstName);
 // => "Boris"
 console.log(student['firstName']); // Another way
@@ -323,17 +344,19 @@ console.log(student.firstName);
 // => "Romain"
 ```
 
-------
+---
 
 ## Functions
 
 Read the [Function Guide on MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
+---
+
 ### Defining
 
 JavaScript (**old way**)
 
-```
+```js
 function square(x) {
   return x * x;
 }
@@ -341,18 +364,21 @@ function square(x) {
 
 Note the **explicit `return`**
 
+---
+
 ### Calling
 
-JavaScript
 
-```
+```js
 square(10);
 // => 100
 ```
 
+---
+
 ### Arrow Function
 
-```
+```js
 const square = (x) => {
   return x * x;
 };
@@ -363,16 +389,22 @@ const square = x => x * x;
 square(10);
 ```
 
+---
+
 ### What should I use?
 
 [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) are a new way to write functions since ES6 and they are our preferred way of writing functions. During your batch, always use arrow functions instead of ES5 `function` statements.
+
+---
 
 ### Capitalize example
 
 Let's livecode an arrow function and store it into `capitalize`.
 
-```
+```zsh 
 touch lib/capitalize.js
+```
+```js
 const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
   const restOfTheWord = word.substring(1).toLowerCase();
@@ -380,13 +412,16 @@ const capitalize = (word) => {
 };
 ```
 
-------
+
+---
 
 ## Debugging
 
+---
+
 ### Poor man's debugger: `console.log()`
 
-```
+```js
 const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
   console.log(firstLetter);
@@ -397,29 +432,32 @@ const capitalize = (word) => {
 capitalize("wagon");
 ```
 
+---
+
 ### Attaching to Chrome (1)
 
-Open up a webpage in chrome
-
-Go to [`chrome://inspect`](chrome://inspect/)
+- Open up a web page in chrome
+- Go to [`chrome://inspect`](chrome://inspect/)
 - Click on "Inspect" for the file you are debugging
 
-![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png)
+![img](https://github.com/lewagon/china-product/raw/master/02-javascript/slides/basic-js/chrome-inspect-d6880823534458f14153fd088a24f365f321eebf0a0466792a29d3595b8f2860.png)
 
-### Attaching to Chrome (3)
+---
+
+### Attaching to Chrome (2)
 
 - Underneath the **Sources / Filesystem** tabs, click on **+ Add folder to workspace**
 - Find and select your project in your filesystem
 - Click on the "Allow" blue button to give Chrome access to your filesystem
 
-### Attaching to Chrome (4)
+---
+
+### Attaching to Chrome (3)
 
 You are **ready**! You can now **click in the gutter** to add **breakpoints** to your code.
 
-![img](https://kitt.lewagon.com/karr/assets/javascript/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png)
+![img](https://github.com/lewagon/china-product/raw/master/02-javascript/slides/basic-js/chrome-inspect-debug-640b7e725d69a48127b6ae4e46e36ec75e8e1cb08e231440fa79c1c84dff2641.png)
 
-
-
-------
+---
 
 ## Happy (Back-end) JavaScripting!
