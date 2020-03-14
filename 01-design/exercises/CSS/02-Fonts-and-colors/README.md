@@ -60,7 +60,7 @@ body {
 
 ## Finished?
 
-Once you've finished you can push this exercise:
+Once you've finished you can push this exercise and copy the content to the next exercise folder with this command:
 
 ```bash
 # Push to github
