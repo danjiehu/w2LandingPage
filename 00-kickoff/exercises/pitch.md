@@ -6,5 +6,4 @@ Remember, you only have **3 minutes** to present. Some key points:
 - What's the pain your product tackles?
 - What's the solution?
 
-
-Feel free to ask any questions now about your ideas. After the vote, the teams are final! So make sure you pitch your best to win your teammates over.
+After the vote, the teams are final! So make sure you pitch your best to win your teammates over.
