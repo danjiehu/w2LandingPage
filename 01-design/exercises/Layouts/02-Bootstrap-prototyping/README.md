@@ -1,8 +1,8 @@
 ## Background & Objectives
 
-Practice using the Bootstrap classes. Prototype the [restaurant page](http://lewagon.github.io/bootstrap-challenges/02-Bootstrap-prototyping) of Deliveroo using only bootstrap! (You're not allowed to write any CSS)
-
 For ALL exercises today, start with the template that you can download from the first exercise!
+
+Practice using the Bootstrap classes. Prototype the [restaurant page](http://lewagon.github.io/bootstrap-challenges/02-Bootstrap-prototyping) of Deliveroo using only bootstrap! (You're not allowed to write any CSS)
 
 ## Specs
 
