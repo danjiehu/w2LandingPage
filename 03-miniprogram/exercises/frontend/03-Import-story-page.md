@@ -1,4 +1,4 @@
-## Background & objectives
+## Background & Objectives
 
 The goal of this challenge is to practice advanced WXML attributes to make dynamic views.
 
@@ -20,7 +20,7 @@ data: {
 - Each story will be a **new object** stored inside the `stories` array.
 - Each story will have a **content** and **name**.
 
-```js
+```json
 { content: "Building a mini program is fun!!! FMC.", name: "Yinghui" },
 ```
 
@@ -28,7 +28,7 @@ You want to create 2-5 stories. After saving this local data succesfully, you ca
 
 ### 2. Render a list
 
-We can now render our list of stories using the [`WX:FOR`](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/list.html) control attribute.
+We can now render our list of stories using the [`WX:FOR`](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/#List-Rendering) control attribute.
 
 In your **stories.wxml** page:
 
@@ -41,10 +41,9 @@ In your **stories.wxml** page:
 
 What if we had **no stories to show**? An empty page wouldn't be so nice! 😱
 
-We can use the [`WX:IF`](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/conditional.html) control attribute to anticipate this case.
+We can use the [`WX:IF`](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/#Condition-Rendering) control attribute to anticipate this case.
 
 - Make a card with a welcome message: "*There's nothing here yet!*"
-- Render this card IF if the ``stories`` array is empty!
+- Render this card IF if the `stories` array is empty!
 
-👉 Tip: an empty array has a length equal to 0
-
+> Tip: an empty array has a length equal to 0
