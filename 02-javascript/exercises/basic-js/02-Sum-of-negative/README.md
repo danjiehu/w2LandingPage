@@ -5,8 +5,7 @@ In this challenge, you'll need to write **loops**, **conditions** and play with 
 Let's familiarise with JavaScript's syntax.
 
 ## Specs
-
-Use the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/basic-js.zip) downloaded in previous exercise. Open the `lib/sum_of_negative.js`. Implement the `sumOfNegative` function which takes one `numbers` parameter (of type `Array`) and returns a `Number`: the sum of negative numbers in the array. For example:
+Use the [template](https://github.com/lewagon/china-product/raw/master/02-javascript/exercises/basic-js.zip) downloaded in previous exercise. Open the `lib/sum_of_negative.js`. Implement the `sumOfNegative` function which takes one `numbers` parameter (of type `Array`) and returns a `Number`: the sum of negative numbers in the array. For example:
 
 - `sumOfNegative([-1, 4, -2, 9, 18])` should return `-3`
 - `sumOfNegative([15, 16, 17, 1000])` should return `0`
@@ -20,4 +19,3 @@ sumOfNegative([-4, 5, -2, 9]);
 ```
 
 If your code works, you should see `-6`. If you want to see results in between steps, add `console.log` statements in the `sumOfNegative` function to debug your code.
-
