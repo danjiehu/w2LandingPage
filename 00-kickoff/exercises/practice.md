@@ -57,5 +57,3 @@ If you are done with your computer set up and the excercises, have a look at the
 - [git cheat sheet](http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
 - [interactive cheat sheet](http://www.ndpsoftware.com/git-cheatsheet.html)
 - Read and practise all of this tutorial: [Learn Enough Command Line to Be Dangerous](http://www.learnenough.com/command-line/)
-
-
