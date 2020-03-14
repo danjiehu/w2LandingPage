@@ -1,8 +1,6 @@
 It's **Pitch day**, which means after today, you will have a team and a project idea for the rest of camp. 
 
-For all the information you need about what makes a good pitch, follow the tips in the pitch lecture.
-
-Remember the key points:
+Remember, you only have **3 minutes** to present. Some key points:
 
 - Who is the target? Define your customer segment accurately.
 - What's the pain your product tackles?
