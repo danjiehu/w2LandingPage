@@ -2,7 +2,7 @@
 
 ## Let’s talk about commitment! (with Git).
 
-In the `tmp` folder from your previous exercise. Let's make it permanent on the web!
+In the `tmp` directory from your previous exercise. Let's make it permanent on the web!
 
 ### Create a git repo with the folder:
 
