@@ -60,10 +60,10 @@ body {
 
 ## Finished?
 
-Once you've finished you can push this exercise and copy the content to the next exercise folder with this command:
+Once you've finished you can push this exercise:
 
 ```bash
-# Push to gihtub
+# Push to github
 git add .
 git commit -m "Added fonts & colors to my profile page"
 git push origin master
