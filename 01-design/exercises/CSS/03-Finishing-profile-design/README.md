@@ -122,4 +122,3 @@ git push origin master
 # Copy folder into next exercise folder
 cp -r profile ../04-Responsive-profile
 ```
-
