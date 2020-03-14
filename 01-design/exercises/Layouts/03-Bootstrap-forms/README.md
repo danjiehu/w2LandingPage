@@ -134,3 +134,4 @@ You can also inject a row inside a form using the `.form-row` class. Here is an 
 - Try to customize your design a bit in `components/form.css`
 
 NB: don't forget to **hard refresh** your browser (`cmd + shift + r`) to clear your browser's cache if your page doesn't seem to display your current code!
+
