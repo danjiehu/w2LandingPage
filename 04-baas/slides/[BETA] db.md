@@ -1,7 +1,3 @@
----
-marp: true
----
-
 ## Serverless Backend as a Service (BaaS)
 
 ---
