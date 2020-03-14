@@ -1,12 +1,11 @@
-## Practicing Command Line
-
 We'll first work on the command lines you've just learnt.
 
 NOTE: **You're not allowed to use Finder (or your file browser)!**
+But if you're stuck, here's a [cheatsheet](https://github.com/lewagon/china-product/blob/master/00-kickoff/exercises/gitcheat.md)
 
 ### tmp directory
 
-First step, we'll create all our files in a directory named `tmp`.
+First step, we'll create all our files in a directory named `tmp`
 
 * Go to your home directory (`~`)
 * Create a directory `tmp` in this home directory
@@ -19,7 +18,7 @@ First step, we'll create all our files in a directory named `tmp`.
 
 ### Level-1 directory
 
-* Create a `level-1` directory in the `tmp` directory.
+* Create a `level-1` directory in the `tmp` directory
 * Go to this directory and create a file named `README-level1`
 * Display the path where you are
 
@@ -47,7 +46,7 @@ It's time to act like a real developer! Use google to find out how to complete t
 * Destroy the tmp folder
 * Clear the terminal window
 
-When you're done you can look at the links below.
+When you're done you can look at the links below
 
 ## Going futher
 
