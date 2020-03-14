@@ -20,7 +20,7 @@ data: {
 - Each story will be a **new object** stored inside the `stories` array.
 - Each story will have a **content** and **name**.
 
-```json
+```
 { content: "Building a mini program is fun!!! FMC.", name: "Yinghui" },
 ```
 
