@@ -2,13 +2,13 @@
 
 Build a [results page with a sticky map](https://lewagon.github.io/layouts-demo/flexbox-grid-layout.html) like in the lecture. For this exercise, notice we have not imported Bootstrap anywhere in the `index.html`! You will need to implement this layout in the `pages/map.css` file without using Bootstrap:
 
-![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/map-example.png)
+![img](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/map-example.png)
 
 For ALL exercises today, start with the template that you can download from the first exercise!
 
 ## Starting the challenge
 
-1. Make sure you understand the code in `index.html`, and the design we give you for navbar and cards in `components/navbar.css` and `components/card.css`. If you don't understand it fully, raise a ticket and someone will explain it!
+1. Make sure you understand the code in `index.html`, and the design we give you for navbar and cards in `components/navbar.css` and `components/card.css`. If you don't understand it fully, ask your buddy!
 2. Go back to the lecture to rehearse how you can build a layout using `flexbox` and `position: sticky`.
 3. **Don't cheat by inspecting the code! 🔎** The goal of this challenge is to teach you how to build a layout by yourself. Take your time to think, ask teachers if you're stuck, but don't cheat 😉!
 
@@ -25,7 +25,7 @@ As you can see we already coded the `card` component for you, so all you have to
 - Build a grid of `.cards` around the `.card`s.
 - Build a horizontal layout to have the `.cards` on the left and the `#map` on the right.
 
-**[Tip]** Draw the HTML structure before you get started!
+> Tip: Draw the HTML structure before you get started!
 
 NB: don't forget to **hard refresh** your browser (`cmd + shift + r`) to clear your browser's cache if your page doesn't seem to display your current code!
 
@@ -37,4 +37,3 @@ Notice that we now have **two folders** in our CSS:
 - `pages` to code the layouts of the different pages on our website.
 
 As usual, `style.css` is importing all the other stylesheets and is then linked in the HTML.
-
