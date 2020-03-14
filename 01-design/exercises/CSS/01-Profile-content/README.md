@@ -4,10 +4,9 @@ A simple challenge to manipulate basic HTML tags and create a profile card with 
 
 ## Setup
 
-For ALL exercises for today, download this [boilerplate](https://github.com/dounan1/china-product/raw/master/01-design/exercises/CSS.zip) to get started!
+For ALL exercises for today, download this [boilerplate](https://github.com/lewagon/china-product/raw/master/01-design/exercises/CSS.zip) to get started!
 
 Navigate inside `CSS/` and create a new repo on Github:
-
 
 ```bash
 hub create # this creates the associated repo on Github!
@@ -25,7 +24,7 @@ stt
 ## Local server
 
 - Your file system can function as a server! Just open up the file in your web browser.
-- ⚠️ Modern browsers cache the **file** returned by a given **url**. It keeps in memory a version of your HTML , CSS and even of your images! Sometimes, the older version remains and your newest code is not taken into consideration. To fix this, use `cmd(or ctrl) + shift + r` to **hard refresh** your page (this clears the cache in the process) . You can also hold down `shift` and click the refresh button.👌
+- ⚠️ Modern browsers cache the **file** returned by a given **url**. It keeps in memory a version of your HTML, CSS and even of your images! Sometimes, the older version remains and your newest code is not taken into consideration. To fix this, use `cmd(or ctrl) + shift + r` to **hard refresh** your page (this clears the cache in the process). You can also hold down `shift` and click the refresh button.👌
 
 ## Specs
 
@@ -43,13 +42,13 @@ A picture is worth a thousand words, [so here is what you should build in this c
 
 ### Find **good** pictures
 
-Prepare your profile image file before starting to code. For this exercise You can use your **profile picture from Facebook**, and save it in the `images` folder.
+Prepare your profile image file before starting to code. For this exercise, you can use your **profile picture from Facebook**, and save it in the `images` folder.
 
 ### HTML tips
 
 - Don't forget the basic skeleton tags `<html>`, `<body>`, `<head>`.
 - Don't forget the page `<title>` in the `<head>` section, and other important metatags like `<meta charset="utf-8">`.
-- You can use [Font Awesome](https://fontawesome.com/icons) to find cool icons (e.g. for social networks). It's a super useful library because all of the icons are **fonts**, making it really easy to resize them, change their color, and even add animations to them!. To import Font Awesome, simply add this link into your `<head>`:
+- You can use [Font Awesome](https://fontawesome.com/icons) to find cool icons (e.g. for social networks). It's a super useful library because all of the icons are **fonts**, making it really easy to resize them, change their color, and even add animations to them! To import Font Awesome, simply add this link into your `<head>`:
 
 ```html
 <!-- Fontawesome Stylesheet -->
@@ -60,7 +59,7 @@ Prepare your profile image file before starting to code. For this exercise You c
 
 ## Indent or die
 
-**Take your time to indent your HTML carefully**. HTML code has a lot of nesting - way more than ruby. If you don't indent, it's game over for your code!
+**Take your time to indent your HTML carefully**. HTML code has a lot of nesting. If you don't indent, it's game over for your code!
 
 Which code is easier to understand?
 
@@ -116,6 +115,3 @@ git add .
 git commit -m "Added content to my profile page"
 git push origin master
 ```
-
-
-
