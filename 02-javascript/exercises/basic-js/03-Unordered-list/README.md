@@ -1,8 +1,8 @@
 ## Background & Objectives
 
-In this challenge, we want you to generate the HTML of an **unordered list** from raw data.
+In this exercise, we want you to generate the HTML of an **unordered list** from raw data.
 
-Use the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/exercises/basic-js.zip) downloaded in previous exercise.
+Use the [template](https://github.com/lewagon/china-product/raw/master/02-javascript/exercises/basic-js.zip) downloaded in previous exercise.
 
 ## Specs
 
@@ -19,7 +19,7 @@ Make sure you use [ES6 Template literals](https://developer.mozilla.org/en-US/do
 
 ### Unordered list generator
 
-When the `listItem` function is working, go on and code the `unorderedList` function which takes one `items` parameter (`Array`) and returns the whole `<ul>`'s HTML:
+When the `listItem` function is working, go on and code the `unorderedList` function which takes one `items` parameter (of type `Array`) and returns the whole `<ul>`'s HTML:
 
 ```js
 > console.log(unorderedList([ 'milk', 'butter', 'bread' ]));
