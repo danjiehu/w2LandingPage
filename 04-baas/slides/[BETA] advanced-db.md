@@ -1,7 +1,3 @@
----
-marp: true
----
-
 ## Advanced Backend as a Service (BaaS)
 
 ---
@@ -88,7 +84,7 @@ A patient **has many** doctors and a doctor **has many** patients.
 
 ---
 
-You can download this example: [consultations.xslx](assets/patients-doctors-56eaccffe9a741fbebec5b9c09922abdfd39055dcd1880eb5e0bbdc547e558b6.xlsx)
+You can download this example: [consultations.xslx](https://github.com/lewagon/china-product/raw/master/04-baas/slides/assets/patients-doctors-56eaccffe9a741fbebec5b9c09922abdfd39055dcd1880eb5e0bbdc547e558b6.xlsx)
 
 ---
 
