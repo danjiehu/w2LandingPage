@@ -8,7 +8,7 @@ Before you start:
 
 <hr>
 
-For the rest of the week, you will be working in your **project teams** to design your product!
+For the rest of the week, you will be working in your **project team** to design your product!
 
 ### Thursday
 
