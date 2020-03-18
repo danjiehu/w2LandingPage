@@ -1,5 +1,3 @@
-## Guidelines
-
 ### Setup
 Before you start:
 
@@ -13,15 +11,16 @@ For the rest of the week, you will be working in your **project team** to design
 ### Thursday
 
 1. **7:00pm - 8:30pm**: Lecture
-2. **8:30pm - 10:00pm (or until done)**:  👉 use your product pitch to define your **primary persona** (45 min) and 👉 write down your **core user journey** and translate it into a user flow with [Whimsical](https://whimsical.co) (45 min).
+2. **8:30pm - 10:00pm (or until done)**:  👉 use your product pitch to define your **primary persona** (45 min) and 👉 write down your **core user journey** and translate it into a **user flow** with [Whimsical](https://whimsical.co) (45 min).
 
-- For your product's persona and user journey, download our [UX Research spreadsheet](https://github.com/dounan1/china-product/blob/master/01-design/exercises/UXResearch.xlsx?raw=true) and complete the different templates. 
+- For your product's persona and user journey, download our [UX Research spreadsheet](https://github.com/lewagon/china-product/raw/master/01-design/exercises/UXResearch.xlsx?raw=true) and complete the different templates. 
 
 ### Saturday
 
-3. **9:00am - 10:00am** (60 min) 👉 build your UI kit and start working on your wireframe
-4. **10:00am - 10:30am**: learn to integrate a visual identity to your wireframe (see video tutorial below 👇)
-5. **10:30am - 5:00pm**: finish your prototype and start adding the visual identity. Work from the inside out, do rough outlines before adding details and media. It's more strategic to have a kickass prototype in black and white rather than a poor mockup with lots of pictures and colors but that no one understands 😬.
+2. **9:00am - 10:00am**: Lecture
+3. **10:00am - 11:00am** (60 min) 👉 build your UI kit and start working on your wireframe
+4. **11:00am - 11:30am**: learn to integrate a visual identity to your wireframe (see video tutorial below 👇)
+5. **11:30am - 5:00pm**: finish your prototype and start adding the visual identity. Work from the inside out, do rough outlines before adding details and media. It's more strategic to have a kickass prototype in black and white rather than a poor mockup with lots of pictures and colors but that no one understands 😬.
 6. **5:00pm**: **pitch your product** by showcasing your prototype! 🎉
 
 <hr>
