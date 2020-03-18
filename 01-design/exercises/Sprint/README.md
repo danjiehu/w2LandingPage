@@ -4,8 +4,6 @@ Before you start:
 - Sign up to [Whimsical](https://whimsical.co)
 - Sign up to [Figma](https://www.figma.com/) and install the desktop app from [this page](https://www.figma.com/downloads/)
 
-<hr>
-
 For the rest of the week, you will be working in your **project team** to design your product!
 
 ### Thursday
@@ -32,10 +30,12 @@ For the rest of the week, you will be working in your **project team** to design
 - **Pictures**: you can use [unsplash](https://unsplash.com/)
 - **Icons**: download and use [Nucleo app](https://nucleoapp.com/) for utility icons
 
-### Demo
-When you are done, copy / paste your prototype URL on your product's page in Kitt. To get the prototype URL, first play your prototype and then click on the `Share  Prototype` button like below:
+<hr>
 
-<figure style="width: 100%">
+### Demo
+- When you are done, submit your prototype below 👇 by copy and pasting your prototype URL. To get the prototype URL, first play your prototype and then click on the `Share Prototype` button like below:
+
+<figure style="width: 90%">
   <img alt="Screen Shot 2018-10-28 at 13.36.39.png" src="https://wagon-rc3.s3.eu-west-1.amazonaws.com/p23uzJ9h6DUHZzG1E1dNyAWA">
 </figure>
 
