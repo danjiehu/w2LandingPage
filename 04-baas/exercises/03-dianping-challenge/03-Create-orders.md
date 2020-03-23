@@ -86,14 +86,14 @@ Order.setQuery(query).expand(['meal_id']).find().then(dosomething)
 Remember: We only create the order if the` currentUser` request comes back **successfully**. This is again because **async** processes like requesting for currentUser needs waiting
 
 ### Bonus or Homework: Delete Order
-A user should be able to remove an order they don't want anymore. 
+A user should be able to remove an order they do not want anymore. 
 - Create a 🗑 button that allows users to delete an order in `user.wxml`.
 - To delete, simply implement the `delete` function of the [SDK](https://doc.minapp.com/js-sdk/schema/delete-record.html) like so:
 
 ```js
 // user.js in deleteOrder()
 let Order = new wx.BaaS.TableObject('orders')
-let orderID = event. currentTarget.dataset.id
+let orderID = event.currentTarget.dataset.id
 // remember to pass the order id from your wxml
 Order.delete(recordID).then(function(res) {
   wx.reLaunch({
