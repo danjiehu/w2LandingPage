@@ -23,7 +23,7 @@ By now, you should already have the BaaS set up and connected to your Dianping m
 
 ### List All Restaurants (Index)
 Request all restaurants' data from your BaaS the same way as for Toutiao stories index
-- In your `index` directory, implement the  `find` function of the (SDK)[https://doc.minapp.com/js-sdk/schema/query.html],  displaying each restaurant's `photo`, `name` and `description`
+- In your `index` directory, implement the  `find` function of the [SDK](https://doc.minapp.com/js-sdk/schema/query.html),  displaying each restaurant's `photo`, `name` and `description`
 
 ```js
   Restaurant.find().then(dosomething)
