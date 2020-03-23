@@ -115,7 +115,10 @@ Register an [account](https://cloud.minapp.com) now
 
 ---
 
-## Setting Up BaaS
+##  Live Code 1: Setting Up BaaS 👩‍💻
+- Install the SDK
+- Create tables
+- Add data
 
 ---
 
@@ -137,7 +140,7 @@ To access the plugin SDK
 
 ---
 
-## Installing the SDK
+### Installing the SDK 
 
 As simple as following a set of instructions
 
@@ -192,7 +195,7 @@ App({
 
 ---
 
-## Creating Tables
+### Creating Tables
 
 ---
 
@@ -215,8 +218,7 @@ Adding a  **foreign key** field to the **child table**
 
 ---
 
-
-## Adding Data
+### Adding Data
 
 ---
 
@@ -232,41 +234,23 @@ Adding data to a **child row**
 
 ---
 
+Your turn!
+
 ### EXERCISE 1: CREATE THE BACKEND 💪
 
 ---
 
-## Let's refresh your backend knowledge
+## Applying the backend
 
-Your code from Saturday:
-```js
-let url = 'https://cloud.minapp.com/oserve/v1/table/84988/record/'
-
-wx.request({
-  url: url,
-  method: 'GET',
-  success: function(res) {
-    console.log(res.data);
-  }
-})
-```
----
-
-
-## Applying the backend!
+Let's implement the **Read** action of CRUD with the BaaS **SDK** instead of an API
 
 ---
 
-
-## Reading Data
-Implementing the **Read** feature of CRUD with the BaaS **SDK** instead of an API
-
-
+## Live Code 2: Read (all) 👩‍💻
 
 ---
-### Read (all)
+
 With the `find` function in the [SDK](https://doc.minapp.com/js-sdk/schema/query.html), fetching data is just these few lines:
-
 
 ```js
 // index.js, in onLoad function
@@ -281,12 +265,15 @@ Story.find().then(dosomething)
 
 ---
 
-
-## EXERCISE 2: READ ALL STORIES 💪
+Your turn!
+### EXERCISE 2: READ ALL STORIES 💪
 
 ---
 
-### Read (one)
+## Live Code 3: Read (one) 👩‍💻
+
+---
+
 Use the `get` function in the [SDK](https://doc.minapp.com/js-sdk/schema/query.html)
 
 ```js
@@ -305,7 +292,8 @@ onLoad: function (options) {
 
 ---
 
-## EXERCISE 3: READ ONE STORY 💪
+Your turn!
+### EXERCISE 3: READ ONE STORY 💪
 
 ---
 
@@ -313,7 +301,7 @@ Not challenging enough?
 
 ---
 
-### Read (all for one)
+## Live Code 4: Read (all for one) 👩‍💻
 
 ---
 
@@ -340,7 +328,6 @@ Chances are you've been using that without knowing. Anytime you use a search bar
 ---
 
 Define a `query`
-
 
 ```js
 //... Define Comment in onLoad function as above
@@ -371,12 +358,12 @@ query.contains('name', 'jack')
 Comment.setQuery(query).find().then(dosomething)
 ```
 
-
 Lots of queries are possible, including [chaining](https://doc.minapp.com/js-sdk/schema/query.html) them!
 
 ---
 
-## EXERCISE 4: READ COMMENTS FOR ONE STORY 💪
+Your turn!
+### EXERCISE 4: READ COMMENTS FOR ONE STORY 💪
 
 ---
 
