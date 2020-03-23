@@ -124,7 +124,8 @@ You can download this example: [consultations.xslx](https://github.com/lewagon/c
 
 ---
 
-##  Core User Journey 
+## Core User Journey
+
 Notice how service products - like Eleme, Tmall, Airbnb - have the same basic types of functionality
 
 ---
@@ -135,7 +136,7 @@ Notice how service products - like Eleme, Tmall, Airbnb - have the same basic ty
 
 ### User Login
 
-As a user, I can sign up and log in 
+As a user, I can sign up and log in
 
 ![drop-shadow bg right:40% width:300](https://github.com/lewagon/china-product/raw/master/04-baas/slides/images/user-journey-01.jpg)
 
@@ -143,11 +144,9 @@ As a user, I can sign up and log in
 
 ### Restaurant Index
 
-
 As a user, I can view all restaurants
 
 ![drop-shadow bg right:40% width:300](https://github.com/lewagon/china-product/raw/master/04-baas/slides/images/7301570232715.png)
-
 
 ---
 
@@ -193,15 +192,16 @@ Schema
 
 ---
 
-## Let's setup a unified front- and back-end!
+## Live Code 1: Set up a unified front- and back-end 👩‍💻
 
 ---
 
-## EXERCISE 1: SETUP OUR FRONT AND BACKEND 💪
+Your turn!
+### EXERCISE 1: SET UP YOUR FRONT AND BACKEND 💪
 
 ---
 
-## All set? Let's build our database
+## Live Code 2: All set? Let's build our database 👩‍💻
 
 ---
 
@@ -211,7 +211,8 @@ We only want users who have signed up and logged in to execute certain functions
 
 ---
 
-## EXERCISE 2: CREATE OUR DATABASE 💪
+Your turn!
+### EXERCISE 2: CREATE YOUR DATABASE 💪
 
 ---
 
@@ -227,6 +228,9 @@ How does the **login** work?
 
 2. If the user already has an account (with matching user name), will try to **log in** using those same credentials
 
+---
+
+## Live Code 3: Sign-up and Login 👩‍💻
 
 ---
 
@@ -249,7 +253,7 @@ Sign-up form
 
 ---
 
-### User registration
+### User Registration
 
 ---
 
@@ -274,6 +278,7 @@ Page({
   //...
 })
 ```
+
 ---
 
 Store user to the database
@@ -305,6 +310,7 @@ User in the BaaS
 ---
 
 ## User Profile Page
+
 Once user has signed up or logged in, navigate to his/her profile page
 
 ---
@@ -333,6 +339,7 @@ Page({
   //...
 })
 ```
+
 ---
 
 Bind data to display user's profile
@@ -345,15 +352,16 @@ Bind data to display user's profile
 
 <view wx:else>
   <!-- sign up -->
-</view> 
+</view>
 ```
+
 *Note: the code placement of user profile and sign-up form. Both blocks of code are written in `user.wxml`. Therefore, we need to set specific **conditions** for different actions* 
 
 ---
 
 **Save and refresh!**
 
-Did you notice a problem? Users now have to register again. If users try to register with the same username, there's an error! Terrible UX 😤 
+Did you notice a problem? Users now have to register again. If users try to register with the same username, there's an error! Terrible UX 😤
 
 ---
 
@@ -374,6 +382,7 @@ wx.BaaS.auth.getCurrentUser().then(dosomething).catch(function(err) {
   })
 })
 ```
+
 ---
 
 Login, similar to sign-up
@@ -391,6 +400,7 @@ wx.BaaS.auth.login({
 ```
 
 ---
+
 Now users can view both sign-up and login forms! Poor UX 😤
 
 ---
@@ -400,6 +410,7 @@ We need a data property to determine and change the state of the user - register
 ---
 
 `user.js`
+
 ```js
 Page({
   data: {
@@ -409,7 +420,9 @@ Page({
   //...
 })
 ```
+
 `user.wxml`
+
 ```xml
 <!-- profile page -->
 <view wx:else>
@@ -420,11 +433,13 @@ Page({
   <view wx:if="{{state == 'login"}}>
     <!-- log in -->
   </view>
-</view> 
+</view>
 ```
+
 ---
 
 `user.wxml`
+
 ```xml
 <!-- in signup -->
 <view bindtap="changeState">Already have an account? Log in</view>
@@ -432,7 +447,9 @@ Page({
 <!-- in login -->
 <view bindtap="changeState">Need an account? Sign up</view>
 ```
+
 `user.js`
+
 ```js
 changeState: function () {
   if (this.data.state == 'register') {
@@ -450,19 +467,22 @@ changeState: function () {
 ---
 
 ## Log Out
- 
+
 ---
 
 Users can only log out after they've logged in. Simple enough!
 
 `user.wxml`
+
 ```xml
 <view wx:if="{{currentUser}}">
   <text>{{currentUser._username}}</text>
   <button bindtap="onLogout">Log Out</button>
 </view>
 ```
+
 `user.js`
+
 ```js
 onLogout: function() {
   wx.BaaS.auth.logout()
@@ -471,10 +491,12 @@ onLogout: function() {
   })
 },
 ```
+
 Once user logs out, return to sign-up or login form
 
 ---
 
+Your turn!
 ### EXERCISE 3: USER SIGN-UP & LOGIN 💪
 
 ---
