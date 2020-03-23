@@ -6,6 +6,8 @@ You will spend the morning:
 - As a user, I can view all restaurants
 - As a user, I can view one restaurant
 - As a user, I can view a restaurant's reviews
+3. Applying the UPDATE action to your Dianping mini-program:
+- As a logged-in user, I can upload my profile picture
 
 You will need to complete the above user actions by **1:00 PM**! Do not spend too much time on WXSS, design can be a never-ending task 😋
 
@@ -21,7 +23,7 @@ By now, you should already have the BaaS set up and connected to your Dianping m
 
 ### List All Restaurants (Index)
 Request all restaurants' data from your BaaS the same way as for Toutiao stories index
-- In your `index` directory, implement the  `find` function of the [SDK](https://doc.minapp.com/js-sdk/schema/query.html),  displaying each restaurant's `photo`, `name` and `description`
+- In your `index` directory, implement the  `find` function of the (SDK)[https://doc.minapp.com/js-sdk/schema/query.html],  displaying each restaurant's `photo`, `name` and `description`
 
 ```js
   Restaurant.find().then(dosomething)
@@ -100,6 +102,24 @@ The query for comparing restaurant_id:
 
 ```js
  query.compare('restaurant_id', '=', id)
+```
+
+### Bonus or Homework: Upload Profile Picture
+- Create a simple form in your `user.wxml` allowing logged-in users to input a **photo url** to upload their profile picture. You will learn to upload images and files from an album in the next couple of weeks!
+
+- Simply implement the `update` function of the [SDK](https://doc.minapp.com/js-sdk/schema/update-record.html), like so:
+
+```js
+// user.js in bindEditProfile()
+let page = this
+let photo = event.detail.value.photo
+let user = page.data.currentUser
+
+user.set("photo", photo).update().then(function(res) {
+  wx.reLaunch({
+    url: '/pages/user/user',
+  })
+})
 ```
 
 #### Once complete, you can continue beautifying your mini-program 🌈
