@@ -30,7 +30,7 @@ Then in "Developer Settings," add your WeChat MP `AppID`
 
 ### WeChat Payment: API Key and certificates
 
-For taking money from the user - the API  secret and the `pem` certificate files are required by Minapp Baas. 
+For taking money from the user - the API secret and the `pem` certificate files are required by the BaaS. 
 
 To get the API certificate:
 
@@ -136,7 +136,7 @@ On the "Associate WeChat business account" top right, click on "Add an account":
 Fill out the merchant id, API secret, and certificates that you gathered following steps in the section above:
 
 <p align="center">
-<img alt="#" src="https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/image-20191007193525891.png" style="border: 1px solid rgb(240, 240, 240)" width="600"/>
+<img alt="#" src="https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/image-20191007193525891.png?token=AALUKUAI6SNYJUMX7QUN4725ZFNIG" style="border: 1px solid rgb(240, 240, 240)" width="600"/>
 </p>
 Under "Associate WeChat business account," you should see your new account.  Click `authorize verification` and wait for `Status` to say "Authorization successful" as in below.
 
