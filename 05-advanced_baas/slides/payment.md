@@ -62,10 +62,11 @@ Merchant Id (微信支付商业号) is the last thing you need. It's a ten-digit
 <img alt="#" src="https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/merchants_info-1828b571a922ee64b9a2271f9c9ed2322426a718a7a9099006a29f4aa68216f0.png" style="border: 1px solid rgb(240, 240, 240)" width="700"/>
 </p>
 
-## Optional: Additional settings (and check if payment not working)
+-----
 
+### Optional: Additional settings (and check if payment not working)
 
-### Developer settings  
+#### Developer settings  
 
 All backend endpoints are whitelisted in developer settings:
 
@@ -75,7 +76,7 @@ All backend endpoints are whitelisted in developer settings:
 
 Check that minapp.com or myminapp.com are listed in the "request合法域名." This is ordinarily done automatically by the BaaS configuration. 
 
-### WeChat Development Platform
+#### WeChat Development Platform
 
 For taking payments in WeChat Official Accounts, and other WeChat payment channels.
 
@@ -85,13 +86,15 @@ Verification process needed (2-3 days).  An Official Account backend payment end
 <img alt="#" src="https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/payment_setting-63ccd06644ad01f637d219f6c27ef74d5886a7deda29cbb4278be42b42b8532b.png" style="border: 1px solid rgb(240, 240, 240)" width="700"/>
 </p>
 
-### Merchant Certificate  
+#### Merchant Certificate  
 
 Not the API certificate, this merchant certification file must be installed on **the operator's** computer before moving money out of the WeChat Pay account (e.g. to your bank). This is for accounting, not always required for development. 
 
 <p align="center">
 <img alt="#" src="https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/payment_certificate-bfb5855758a7f0f2a0ba9121cdd5d4b0cc189354fb719b9c6e2c827f01477ab6.png" style="border: 1px solid rgb(240, 240, 240)" width="700"/>
 </p>
+
+-----
 
 ## How does WeChat Pay work? 
 
@@ -208,10 +211,10 @@ This is all we need to get going on our eCommerce App!
 
 -----
 
-## Optional: Payment
+### Optional: Payment
 
 If you have the payment account set up, you can add WeChat payment to the App!
 
 Then following the demo and instructions, you can ask the user to use WeChat Pay to pay the amount for the order before creating it!
 
-> Tip: Test it on a small purchase (edit the price in the BaaS if you need). 
+> Tip: Test it on a small purchase (edit the price in the BaaS if you need).
