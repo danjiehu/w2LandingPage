@@ -184,7 +184,7 @@ wx.BaaS.auth.getCurrentUser().then(user => {
   query.compare('points', ">=", -currentPoints);
 
   Products.setQuery(query);
-  Products.find().then(page.getRequestData);
+  Products.find().then(dosomething);
 
 }, error => {
   console.log(error)
@@ -192,7 +192,7 @@ wx.BaaS.auth.getCurrentUser().then(user => {
     currentUser: null
   })
 
-  Products.find().then(page.getRequestData);
+  Products.find().then(dosomething);
 })
 ```
 
