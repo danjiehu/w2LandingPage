@@ -34,7 +34,7 @@ project.config.json # often developers choose to add keys here
 
 WeChat MP framework now allows you to add and customize user permissions
 
-Detailed documentation can be found [here](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html) and this is how it looks like in action:
+Detailed documentation can be found [here](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html) and this is how it looks like in action:
 
 ![add_permissions_in_wxmp](https://github.com/The-Pavel/images/blob/master/Screenshot%202019-06-13%20at%205.35.41%20PM.png?raw=true)
 
@@ -160,7 +160,7 @@ What is the success callback of this POST request? A circular QR code like this:
 }
 ```
 
-The user's location is only one of the many kinds of information you can ask permission for. Check out the [documentation](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html) for a complete list!
+The user's location is only one of the many kinds of information you can ask permission for. Check out the [documentation](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html) for a complete list!
 
 ### 2. Get current user location (latitude, longitude...)
 
@@ -168,7 +168,7 @@ The user's location is only one of the many kinds of information you can ask per
 
 This built-in API can be used in a lifecycle function (e.g onLoad) or anywhere in your code when you need to find the GPS coordinates of your user: **latitude**, **longitude**,  **altitude** & **velocity**!
 
-[📚 Official documentation [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/location.html#wxgetlocationobject)
+[📚 Official documentation](https://developers.weixin.qq.com/miniprogram/en/dev/api/location/wx.getLocation.html)
 
 ```javascript
 // yourPage.js
@@ -246,7 +246,7 @@ onLoad: function (options) {
 
 This function will trigger a full-page Tencent map according to the parameters you define (location, scale etc).
 
-[📚 Official documentation [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/location.html#wxopenlocationobject)
+[📚 Official documentation](https://developers.weixin.qq.com/miniprogram/en/dev/api/location/wx.openLocation.html)
 
 ```javascript
 // yourPage.js
@@ -274,7 +274,7 @@ onLoad: function (options) {
 
 There's a very handy WXML component named **&#60;map&#x3e;** to help create anything from a store locator to a list of nearest bikes...
 
-[📚 Official documentation [中文]](https://developers.weixin.qq.com/miniprogram/dev/component/map.html#map)
+[📚 Official documentation](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html)
 
 As you can see in the official doc, the map can be configured with dynamic parameters via `{{data binding}}`. E.g
 
@@ -345,7 +345,6 @@ markertap(e) {
 > \*\*1: The *iconPath* should start with a slash /
 
 It loads your marker icon.
-[Iconfont](http://www.iconfont.cn/search/index?q=marker
-) has nice marker options for your project!
+[Iconfont](http://www.iconfont.cn/search/index?q=marker) has nice marker options for your project!
 
 ### Happy hacking! 💻
