@@ -43,7 +43,7 @@ Then we can all go home.
 
 Try an [Online Tool](https://wireframe.cc/AWGmuu) or just on paper! There's also [Modao](https://modao.cc/) and [Balsamiq](https://balsamiq.com).
 
-![image-20191124233129074](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191124233129074.png)
+![image-20191124233129074](https://github.com/lewagon/china-product/raw/master/06-xiaohongshu/slides/images/image-20191124233129074.png)
 
 Think napkin drawings. Do a page in just a few minutes! Not for designing (for Figma and other tools!)  just getting an idea down.
 
@@ -51,7 +51,7 @@ Need inspiration? Research [examples](https://freefrontend.com/css-cards/)!
 
 ## Schema
 
-![image-20191119200340455](https://github.com/dounan1/china-product/raw/master/05-advanced_baas/slides/images/image-20191119200340455.png)
+![image-20191119200340455](https://github.com/lewagon/china-product/raw/master/05-advanced_baas/slides/images/image-20191119200340455.png)
 
 ## User stories
 
@@ -71,7 +71,7 @@ So that I can learn and interact with them
 
 Stories go from left to right (TODO > In Progress > Done) as they're being completed.  
 
-![image-20191124224222087](https://github.com/dounan1/china-product/raw/master/06-xiaohongshu/slides/images/image-20191124224222087.png) 
+![image-20191124224222087](https://github.com/lewagon/china-product/raw/master/06-xiaohongshu/slides/images/image-20191124224222087.png) 
 
 > Note the *development stories* the tasks people mentioned in the standup! They can be added as well and tracked.
 
