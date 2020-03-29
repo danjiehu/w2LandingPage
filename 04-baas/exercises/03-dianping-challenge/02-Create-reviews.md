@@ -10,7 +10,7 @@ Do we still need the username input? We can use the `currentUser`
 Remember, only users who have logged-in can post reviews, therefore **conditions** need to be set
 
 ### Ratings
-- To add a `rating` field to the reviews form, try using the `picker` element instead of input. You can read more in the [documentation](developers.weixin.qq.com/miniprogram/dev/component/picker.html)
+- To add a `rating` field to the reviews form, try using the `picker` element instead of input. You can read more in the [documentation](https://developers.weixin.qq.com/miniprogram/en/dev/component/picker.html)
 Attributes include `mode` (with default value: `selector`) and `range` which accepts an **array** of items for users to select from. In this case, a rating from 1 to 5
 
 - Use the `bindchange` event handler to store user's rating **locally**. Again, this requires a few steps:
