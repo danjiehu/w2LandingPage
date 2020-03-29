@@ -1,4 +1,4 @@
-## Real-time debugging
+## 🐞 Real-time debugging
 
 Click the small bug 🐞 icon at the top of your WeChat IDE. This will give you a QR code to scan.
 
@@ -6,31 +6,31 @@ Scan that in WeChat - you can now preview your mini program on your **phone** wh
 
 ![real-time-debugging](https://github.com/The-Pavel/images/blob/master/real-time-debugging.png?raw=true)
 
-## Protect your AppID and AppSecret
+## 🔒 Protect your AppID and AppSecret
 
-se `.gitignore` to hide your AppID and AppSecret from your public git repositories (and even private if you are paranoid) - you don't want those to be public!
+`.gitignore` to hide your AppID and AppSecret from your public git repositories (and even private if you are paranoid) - you don't want those to be public!
 
 Here is a quick walkthrough:
 
-1. Create a gitignore file
+1) Create a gitignore file
 
 ```bash
 touch .gitignore
 ```
 
-2. Open the .gitignore file in your code editor
-3. Add a file you want to ignore on a new line and save
+2) Open the .gitignore file in your code editor
+3) Add a file you want to ignore on a new line and save
 
-```ruby
+```
 keys.js
 keys.yml
 project.config.json # often developers choose to add keys here
 #...
 ```
 
-4. Add files, commit and push to remote like you normally would 😎
+4) Add files, commit and push to remote like you normally would 😎
 
-## Adding permissions to your Mini Program
+## 🔑 Adding permissions to your Mini Program
 
 WeChat MP framework now allows you to add and customize user permissions
 
@@ -38,13 +38,13 @@ Detailed documentation can be found [here](https://developers.weixin.qq.com/mini
 
 ![add_permissions_in_wxmp](https://github.com/The-Pavel/images/blob/master/Screenshot%202019-06-13%20at%205.35.41%20PM.png?raw=true)
 
-## What if a user denies permission?
+### What if a user denies permission?
 
 When using `wx.authorize`, if a user denies permission once, it will permanently save that setting and will not ask for authorization again! 😱
 
 To go around that, you can use `open-type="openSetting"` on your authorization button to check the current settings for different permission scopes and then call `wx.authorize` on specific scope from there:
 
-```html
+```xml
 <!-- yourpage.wxml -->
 <button open-type="openSetting" bindtap="openSetting"> Check Authorize Setting </button>
 ```
@@ -67,7 +67,7 @@ The result logged will look something like this:
 
 For any scope authorizations you are missing, you can call `wx.authorize` and ask for user permission. You can see some examples of how that can be used with geolocation [here](https://github.com/pitipon/MP-openLocation), and [here](https://github.com/pitipon/MP-chooseAddress).
 
-## QR Code Generation
+## 📲 QR Code Generation
 
 To generate a dynamic QRCode for your Mini-Program, you will need to have:
 
@@ -97,7 +97,7 @@ You will get a square QRCode, which you can generate up to 100,000 times. This p
 
 **The params you send**
 
-```json
+```text
 {
   path:"page/index/index",
   width:430
@@ -115,7 +115,7 @@ POST https://api.weixin.qq.com/wxa/getwxacodeunlimit ?access_token={{YOUR_ACCE
 
 **The params you send**
 
-```json
+```text
 {
   scene: 'parameter_on_load',
   path: 'pages/index/index',
@@ -144,13 +144,11 @@ What is the success callback of this POST request? A circular QR code like this:
 
 ![circular_mp_qr_code](https://cdn-images-1.medium.com/max/1600/1*2ZIgmthwqm68J-Gcyeay5w.png)
 
-
-
-## Mapping
+## 📍 Mapping
 
 ### 1. Get the user's permission
 
-```json
+```js
 //app.json
 
 {
@@ -164,8 +162,6 @@ What is the success callback of this POST request? A circular QR code like this:
 
 The user's location is only one of the many kinds of information you can ask permission for. Check out the [documentation](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html) for a complete list!
 
-
-
 ### 2. Get current user location (latitude, longitude...)
 
 #### wx.getLocation()
@@ -173,8 +169,6 @@ The user's location is only one of the many kinds of information you can ask per
 This built-in API can be used in a lifecycle function (e.g onLoad) or anywhere in your code when you need to find the GPS coordinates of your user: **latitude**, **longitude**,  **altitude** & **velocity**!
 
 [📚 Official documentation [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/location.html#wxgetlocationobject)
-
-
 
 ```javascript
 // yourPage.js
@@ -193,7 +187,7 @@ onLoad: function (options) {
 }
 ```
 
-```html
+```xml
 <!-- yourPage.wxml -->
 <view>Get current location</view>
 <view>--------------------</view>
@@ -203,9 +197,9 @@ onLoad: function (options) {
 <view>Accuracy : {{Accuracy}}</view>
 ```
 
-\*\*1: Notice the parameter `type`. You want to use the [World Geodetic System (WGS84)](https://gisgeography.com/wgs84-world-geodetic-system/) to get the real location and make your calculations.
+\*\*1: Notice the parameter `type`. You want to use the [World Geodetic System (WGS84)](https://gisgeography.com/wgs84-world-geodetic-system/) to get the reallocation and make your calculations.
 
-If you plan to open a **Tencent map** centered on your user with `wx.openLocation()`, you want to use the type *[GCJ-02](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China#GCJ-02)* instead. For national security the GPS coordinates were offset on China maps!
+If you plan to open a **Tencent map** centered on your user with `wx.openLocation()`, you want to use the type *[GCJ-02](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China#GCJ-02)* instead. For national security, the GPS coordinates were offset on China maps!
 
 ### 2. Select a location on a map
 
@@ -213,11 +207,9 @@ If you plan to open a **Tencent map** centered on your user with `wx.openLocatio
 
 This function is a convenient way for your visitors to pick a spot on a map.
 
-They can search major landmarks in Chinese or move around a marker. After confirmation, the success callback will contain the GPS coordinates of the selected spot.
+They can search for major landmarks in Chinese or move around a marker. After confirmation, the success callback will contain the GPS coordinates of the selected spot.
 
 Because of WeChat's new authorization scheme, the user must first give their permission using `wx.authorize()`
-
-
 
 ```javascript
 // yourPage.js
@@ -256,8 +248,6 @@ This function will trigger a full-page Tencent map according to the parameters y
 
 [📚 Official documentation [中文]](https://developers.weixin.qq.com/miniprogram/dev/api/location.html#wxopenlocationobject)
 
-
-
 ```javascript
 // yourPage.js
 onLoad: function (options) {
@@ -288,14 +278,10 @@ There's a very handy WXML component named **&#60;map&#x3e;** to help create anyt
 
 As you can see in the official doc, the map can be configured with dynamic parameters via `{{data binding}}`. E.g
 
-
-
-```html
+```xml
 <!-- yourPage.wxml -->
 <map longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map>
 ```
-
-
 
 ```javascript
 // yourPage.js
@@ -344,7 +330,7 @@ mk: [
 ]
 ```
 
-```html
+```xml
 <!-- yourPage.wxml -->
 <map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map>
 ```
@@ -356,15 +342,10 @@ markertap(e) {
  }
 ```
 
-\*\*1: The *iconPath* should start with a slash /
+> \*\*1: The *iconPath* should start with a slash /
 
 It loads your marker icon.
 [Iconfont](http://www.iconfont.cn/search/index?q=marker
-) has nice options of markers for your project!
+) has nice marker options for your project!
 
-Happy Mapping! 🌏
-
-
-
-#### Happy hacking! 💻
-
+### Happy hacking! 💻
