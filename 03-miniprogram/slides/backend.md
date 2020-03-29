@@ -489,13 +489,12 @@ What APIs can I use? Where to find them?
 ### Global
 rapidapi.com
 programmableweb.com
-apihound.com
 apiforthat.com
 
 ---
 
 ### China
-apistore.baidu.com
+ai.baidu.com/ai-doc
 shenjian.io
 juhe.cn
 
