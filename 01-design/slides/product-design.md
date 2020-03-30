@@ -1,7 +1,3 @@
----
-marp: true
----
-
 ## Product Design Sprint
 Let's prototype your app
 
