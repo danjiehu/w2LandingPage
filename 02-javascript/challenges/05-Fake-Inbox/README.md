@@ -6,9 +6,9 @@ Think about the Gmail inbox interface. Do you need to refresh the page for new m
 
 ## Specs
 
-We haven't seen APIs yet, so we'll simulate email fetching for now. We have given you a skeleton in `lib/inbox.js` to get you started. Download the [template](https://github.com/dounan1/china-product/blob/master/02-javascript/challenges/05-Fake-Inbox.zip) and open this file in Sublime.
+We haven't seen APIs yet, so we'll simulate email fetching for now. We have given you a skeleton in `lib/inbox.js` to get you started. Download the [template](https://github.com/lewagon/china-product/raw/master/02-javascript/challenges/05-Fake-Inbox.zip) and open this file in Sublime.
 
-- Implement the method `hasNewMessage()` that has a 20% probability of returning `true` (the rest of the time, it returns `false`).
+- Implement the method `hasNewMessage()` that has a 20% probability of returning `true` (the rest of the time, it returns `false`). Don't fixate too much on the why 😉
 - Implement the method `newMessage()` which should return a random object (i.e. a new email) with `subject` and `sender` keys. For instance:
 
 ```js
@@ -48,7 +48,7 @@ Update the [web page document title](https://developer.mozilla.org/en-US/docs/We
 
 ### Get real server data
 
-In the `newMessage()` function, instead of returning dummy data, we want to show data from a service on the internet. These are call **servers**. They are computers that you can connect to on the web.
+In the `newMessage()` function, instead of returning dummy data, we want to show data from a service on the internet. These are called **servers**. They are computers that you can connect to on the web.
 
 How does this work? Open this address in your browser: `fml.shanghaiwogeng.com/api/v1/stories`
 
@@ -56,7 +56,7 @@ How does this work? Open this address in your browser: `fml.shanghaiwogeng.com/a
 
 
 
-![image-20191011021144672](https://github.com/dounan1/china-product/tree/master/02-javascript/challenges/05-Fake-Inbox/images/image-20191011021144672.png)
+
 
 Can you see the data? It looks just like a Javascript object that you've been using to store data like the dummy messages. The object is called a  **JSON**. It's meant for machines to read. That's why it's not like a web page with style and UI. Turns out your browser can access these **"web pages" for machines** too!
 
@@ -95,20 +95,65 @@ fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
   });
 ```
 
-Now you can return this data in `newMessage()`:
+Now you **cannot** return this data in `newMessage()`:
 
 ```js
 const newMessage = () => {
-  fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
-  .then(response => response.json())
-  .then((data) => {
-    console.log(data);
-    // Add your code to get `name` and `text` values from data and put into the `sender` and `subject` message object.
+   fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
+       .then(response => response.json())
+      .then((data) => {
+         console.log(data);
+         // Add your code to get `name` and `text` values from data and put into the `sender` and `subject` message object.
 
-    return message; //give message object to next function
+    return message; //This is wrong!! 
   });
 };
+const myMsgs = newMessage() // myMsgs will be undefined.
 ```
+There are 2 different ways to solve this issue:
+
+**1.**  You can pass a callback function into it:
+
+```js
+const newMessage = (callback) => {
+  fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
+  .then(response => response.json())
+  .then((data)=>{
+      console.log(data)
+      callback(data)
+  })
+}
+const refresh =  () => {
+if(hasNewMessage){
+		  newMessage(appendMessageToDom)  // the input parameter of appendMessageToDom should be all the data fetched from API
+	}
+};
+```
+
+**2.** Use Promise, await, async
+
+```js
+const newMessage = async () => {
+	let data =  await fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
+	return await data.json()   // This will return a **Promise** object
+};
+```
+
+You can call `newMessage()` to get the data like this:
+```js
+const refresh = async () => {
+  const msgs = await newMessage() //msgs should contain 4 data now
+  // use msgs here...
+
+}
+```
+or you can code in [Promise](https://javascript.info/promise-basics) style:
+```js
+  newMessage().then((msgs)=>{
+      console.log(msgs);
+  })
+```
+
 
 Before you run this, you might want to allow local files to call APIs. The browser blocks this for security reasons, but we can disable that by running the browser with this command in the terminal:
 
@@ -125,6 +170,3 @@ open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args
 ```
 
 In an upcoming challenge, you and your classmates will be posting your own content to this API backend! Open up this email app again then and see live messages come up!
-
-
-
