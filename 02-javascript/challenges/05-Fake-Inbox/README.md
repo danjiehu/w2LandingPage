@@ -11,7 +11,7 @@ We haven't seen APIs yet, so we'll simulate email fetching for now. We have give
 - Implement the method `hasNewMessage()` that has a 20% probability of returning `true` (the rest of the time, it returns `false`). Don't fixate too much on the why 😉
 - Implement the method `newMessage()` which should return a random object (i.e. a new email) with `subject` and `sender` keys. For instance:
 
-```js
+```text
 {
   sender: 'GitHub Team',
   subject: 'Welcome to GitHub'
@@ -20,23 +20,18 @@ We haven't seen APIs yet, so we'll simulate email fetching for now. We have give
 
 or
 
-```js
+```text
 {
   sender: 'Arnold Schwarzenegger',
   subject: "I'm Back"
 }
 ```
 
-
 Now, we'll work by opening the `index.html` file and testing the code in the browser.
-
-
 
 ### Build a mailbox
 
 Implement the method `appendMessageToDom(message)` which takes an object with `subject` and `sender` keys as parameters, and appends a new line for this message to the HTML markup. Inspect the `index.html` file to find examples for `unread` and `read` rows
-
-
 
 ### Check the mail
 
@@ -44,7 +39,9 @@ Then, let's glue everything together. As you can see at the bottom of the file, 
 
 Update the [web page document title](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) so that the unread message counter appears in your tab title like a real inbox!
 
+<hr>
 
+## Optional
 
 ### Get real server data
 
@@ -52,21 +49,11 @@ In the `newMessage()` function, instead of returning dummy data, we want to show
 
 How does this work? Open this address in your browser: `fml.shanghaiwogeng.com/api/v1/stories`
 
-
-
-
-
-
-
 Can you see the data? It looks just like a Javascript object that you've been using to store data like the dummy messages. The object is called a  **JSON**. It's meant for machines to read. That's why it's not like a web page with style and UI. Turns out your browser can access these **"web pages" for machines** too!
-
-
 
 So applications (or apps) can pass data to each other over the web with JSON. The app that stores the data is called a **Backend**. The app that uses the data and interfaces with users is called a **Frontend**.
 
 In particular, a backend app that sends (and receives) JSON is commonly called an **API**. Its web address is called an **API endpoint**. It looks just like a website address.
-
-
 
 So we can use this API data as our emails!
 
@@ -101,11 +88,11 @@ Now you **cannot** return this data in `newMessage()`:
 const newMessage = () => {
    fetch("https://fml.shanghaiwogeng.com/api/v1/stories")
        .then(response => response.json())
-      .then((data) => {
+       .then((data) => {
          console.log(data);
          // Add your code to get `name` and `text` values from data and put into the `sender` and `subject` message object.
 
-    return message; //This is wrong!! 
+    return message; // This is wrong!! 
   });
 };
 const myMsgs = newMessage() // myMsgs will be undefined.
