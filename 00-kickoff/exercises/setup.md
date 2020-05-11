@@ -5,8 +5,8 @@ Let's set up your workstation:
 3. **1:00pm - 1:15pm**: Second 15 min lecture on command line basics (navigating through the filesystem, creating directories & files, launching Sublime Text from terminal, etc.)
 4. **1:15pm - 2:00pm**: Third 45 min lecture on git commands (`git add`/`git commit`/`git push`).
 5. **2:00pm - 2:15pm**: At the end of the git lecture, your teacher will show you the learning platform (lectures, exercises, challenges) 
-6. **2:15pm - 4:00pm**: Time to push your attempt to the first challenge of the bootcamp. This challenge is just a safety check to ensure you have correctly forked the exercise repo. 
-7. **4:00pm - finish**: Project pitch and votes! 
+6. **2:15pm - 4:00pm**: Time to push your attempt to the first exercises of the bootcamp. This exercise is just a safety check to ensure you have correctly forked the exercise repo. 
+7. **4:00pm - finish**: Project pitch introduction
 
 You now have all the tools you need to successfully work your way through the bootcamp during these 9 weeks. Remember, your new best friends on your computer are:
 
@@ -20,7 +20,7 @@ Glad you are here! Let's rock it 🚀🚀🚀!
 
 ### 1. Log on [github.com](http://github.com) 
 
-- Give the teacher your **github name** so you can be added to [repository for exercises](https://www.github.com/lewagon/china-product)
+- Give the teacher your **github name** so you can be added to [repository for exercises](https://www.github.com/lewagon/china-product). ⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 - Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
 - When you have been granted access, you can move on to the next step!
 
