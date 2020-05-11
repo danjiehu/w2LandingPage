@@ -12,6 +12,12 @@ Users often go on Xiaohongshu to investigate products and look for in-depth revi
 
 Xiaohongshu is a social media. You can save posts you like, interact with content and other users, create your own content, connect with brand pages, etc. But with Xiaohongshu, you get the **added bonus of in-app purchasing**, a stronger sense of community, and more lengthy, detailed blog-post type content. 
 
+<hr>
+
+#### 🎯 Remember at 5:00 pm, you will be pitching your idea to the class!
+
+<hr>
+
 ## Objectives
 
 Today's exercise will be to create **your own** social ecommerce landing page based on Xiaohongshu 😉 It will be responsive and mobile friendly!
