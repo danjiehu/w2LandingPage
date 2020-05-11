@@ -20,7 +20,7 @@ Glad you are here! Let's rock it 🚀🚀🚀!
 
 ### 1. Log on [github.com](http://github.com) 
 
-- Give the teacher your **github name** so you can be added to [repository for exercises](https://www.github.com/lewagon/china-product). ⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+- Give the teacher your **github name** so you can be added to [repository for exercises](https://www.github.com/lewagon/china-product).
 - Your name is the part after `/` e.g. `dounan1` for `www.github.com/dounan1`
 - When you have been granted access, you can move on to the next step!
 
