@@ -26,7 +26,6 @@ We will use Git Bash once you've installed Git for Windows. For this course, we 
 
 However if you have command line background and want a challenge, you can try [Console](http://sourceforge.net/projects/console/). 
 
-
 Once you're all set with a git bash command line for Windows, we can find or create the file where we will store git shortcuts.
 
 Go to your root directory `~/` (you know, the one with your profile name as the folder name). I'm **not** talking about your `C:\` drive. 
@@ -42,7 +41,7 @@ Download this git [configuration](https://raw.githubusercontent.com/lewagon/dotf
 
 We can also find or create a file where we will store command line shortcuts, which are called aliases. This will come in handy as you follow the next section: your text editor.
 
-
+***From now on, we will always use GIT BASH.***
 
 ## Sublime Text 3 - Your text editor
 
