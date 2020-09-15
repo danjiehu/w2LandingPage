@@ -4,8 +4,11 @@ WeChat’s easier-to-use alternative to stand-alone apps, which allows you to av
 ---
 
 ### Notable Stats
+![img](https://github.com/lewagon/china-product/blob/master/03-miniprogram/slides/frontend/notable%20stats.png)
 
+---
 
+###
 
 ---
 
