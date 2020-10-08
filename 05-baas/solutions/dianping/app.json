@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/show/show",
+    "pages/new/new",
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大众点评",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "sdkPlugin": {
+      "version": "2.7.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Places",
+        "iconPath": "/images/list.png",
+        "selectedIconPath": "/images/list.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "Post",
+        "iconPath": "/images/add.png",
+        "selectedIconPath": "/images/add.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "User",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user.png"
+      }
+    ]
+  }
+}

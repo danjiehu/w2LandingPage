@@ -1,0 +1,11 @@
+<block wx:for="{{restaurants}}" wx:for-item="restaurant">
+  <view class="card-product">
+    <view class="card-product-img">
+      <image src="{{restaurant.photo}}"></image>
+    </view>
+    <view class="card-product-info" data-id="{{restaurant.id}}" bindtap="showRestaurant">
+      <view class="h2">{{restaurant.name}}</view>
+      <view class="p">{{restaurant.description}}</view>
+    </view>
+  </view>
+</block>

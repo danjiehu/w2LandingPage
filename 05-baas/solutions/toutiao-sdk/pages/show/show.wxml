@@ -1,0 +1,30 @@
+<view>
+
+  <view class="card-product">
+    <view class="card-product-infos" data-id="{{story.id}}" bindtap="showStory">
+      <view class="h2">{{story.content}}</view>
+      <view class="p">{{story.name}}</view>
+    </view>
+  </view>
+
+
+  <view class="header-comments" wx:if="{{comments.length>0}}">Comments: </view>
+
+
+  <block wx:for="{{comments}}" wx:for-item="comment">
+    <view class="card-comment">
+        <view class="h3">{{comment.content}}</view>
+        <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" class="p">
+        <span>{{comment.name}}</span> 
+        <span>Votes: {{comment.votes}}</span>
+        </view>
+        <view data-id="{{comment.id}}" bindtap="deleteComment" class="del"> x </view>
+    </view>
+  </block>
+
+</view>
+
+<form bindsubmit="bindSubmit">
+  <input name="content" placeholder="put down your thoughts"/>
+  <button formType="submit">Send</button>
+</form>

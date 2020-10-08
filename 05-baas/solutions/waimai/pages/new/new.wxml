@@ -1,0 +1,22 @@
+<!--pages/new/new.wxml-->
+
+<form bindsubmit="bindSubmit">
+  <view class="section">
+    <view class="section__title">Meal</view>
+    <input name="name" value="{{meal.name}}" placeholder="please write your meal name" ></input> 
+  </view>
+
+  <view class="section">
+    <view class="section__title">Price</view>
+    <textarea name="price" value="{{meal.price}}" placeholder="please write your meal price" ></textarea> 
+  </view>
+
+  <view class="section">
+    <view class="section__title">Photo</view>
+    <input name="photo" value="{{meal.photo}}" placeholder="please add your meal photo" ></input> 
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+  </view>
+</form>
