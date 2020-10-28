@@ -9,7 +9,7 @@
     background-size: 100%;
     background-image: url("images/player_1.png");
 }
-#player_race td#finish {
+#player_race td.finish {
     background-image: url("images/finish.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
