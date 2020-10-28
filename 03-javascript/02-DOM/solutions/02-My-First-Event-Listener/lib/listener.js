@@ -1,9 +1,17 @@
 // TODO: React to a click on the button!
-const button = document.querySelector('#clickme');
-const audio = new Audio('sound.mp3');
+// Reminder: when clicked, the button should
+// 1. Become disabled
+// 2. Change text from "Click Me!" to "Bingo!"
+// 3. (Optional) Play the 'sound.mp3' that you can find in this exercise's folder
 
-button.addEventListener('click', (e) => {
-  e.target.classList.add('disabled');
-  e.target.innerText = 'Bingo!';
+const clickButton = (element) => {
+  // 1. Become disabled
+  element.disabled = true
+
+  // 2. Change text from "Click Me!" to "Bingo!"
+  element.innerText = "Bingo!"
+
+  // 3. (Optional) Play the 'sound.mp3' that you can find in this exercise's folder
+  const audio = new Audio('sound.mp3');
   audio.play();
-});
+}
