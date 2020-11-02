@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="banner">
-      <h1 class="text-center">Wagon Race</h1>
-    </div>
+  <body onkeyup="driveWagon(event)">
+    <h1 class="text-center">Wagon Race</h1>
     <hr>
-    <!-- You race HTML code here -->
-    <table id="playground">
-      <tr id="player1_race">
+    <!-- You race track HTML code here -->
+    <table class="racer_table">
+      <tr id="player_race">
         <td class="active"></td>
         <td></td>
         <td></td>
@@ -27,13 +25,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="finish"></td>
-      </tr>
-      <tr id="player2_race">
-        <td class="active"></td>
         <td></td>
         <td></td>
         <td></td>
@@ -48,9 +39,6 @@
       </tr>
     </table>
     <hr>
-    <div class="text-center">
-      <a href="/" class="btn btn-primary">Restart!</a>
-    </div>
-    <script src="main.js"></script>
+    <script src="lib/wagon_race.js"></script>
   </body>
 </html>
