@@ -10,7 +10,7 @@ You will also discover new components such as a **form** and a **tab bar** for n
 
 Each Page (e.g `stories.js`) has its own separate *local* data to render in its view.
 
-Fortunately, the whole App (`app.js`) shares a *global* data storage we can access everywhere. That's where you want to save anything to re-use. Example: your user information!
+Fortunately, the whole App shares a *global* data storage we can access everywhere. That's where you want to save anything to re-use. Example: your user information!
 
 Although the [documentation here](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/app.html) says very little about it, note that WXML can't directly access the *global* data storage. You'll have to go through the *local* data first!
 
