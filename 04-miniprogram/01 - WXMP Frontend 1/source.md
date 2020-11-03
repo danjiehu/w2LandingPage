@@ -538,9 +538,9 @@ This bindtap takes the value of the function we're trying to call. Only function
 
 ---
 
-### Step 3: Building our Post Page
+### Step 3: Building our Stories Page
 
-Next step is to build our `Post` page. 
+Next step is to build our `Stories` page.
 
 We'll start by hard coding a card in the `wxml` and styling it in the `wxss`.
 

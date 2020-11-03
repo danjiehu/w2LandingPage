@@ -25,7 +25,7 @@ You'll notice that a new folder has now been created in your `pages` directory!
 
 ## Step 2: Setup Navigation from Landing to Stories
 
-Our `button` on index.wxml currently doesn't do much. Let's fix that. 
+Our `button` on index.wxml currently doesn't do much. Let's fix that.
 
 ### Step 2a: Add a navigation function to index.js
 

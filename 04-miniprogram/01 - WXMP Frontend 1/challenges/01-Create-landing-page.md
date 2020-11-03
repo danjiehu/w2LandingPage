@@ -8,7 +8,7 @@ The goal of this first challenge is to understand the basic structure of an app,
 
 ### 1. Setup your app
 
-Create a new WeChat Mini Program and name it FMC. Using its setup file `app.json`.
+Create a new WeChat Mini Program and name it FMC.
 
 ### 2. Remove unecessary code
 
