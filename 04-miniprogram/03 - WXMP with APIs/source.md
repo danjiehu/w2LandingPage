@@ -1,18 +1,16 @@
-## Mini Programs 小程序 with API
+---
+marp: true
+---
+
+# Mini Programs 小程序 with API
 
 API WITH DATA FOR WECHAT MPS
 
 ---
 
-## OUR FRONTEND SO FAR
+## What's an API
 
-![image-20191004002033273](https://github.com/lewagon/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002033273.png)
-
----
-
-## OUR FRONTEND WITH API TODAY
-
-![image-20191004002045936](https://github.com/lewagon/china-product/raw/master/03-miniprogram/slides/backend/image-20191004002045936.png)
+![img](images/wechat-3.jpg)
 
 ---
 
@@ -20,7 +18,6 @@ API WITH DATA FOR WECHAT MPS
 
 - Provide data for client (e.g. an app: web, native, Wechat Mini Program)
 - Provide service to customers (e.g. sms, payment): later course
-
 
 ---
 
@@ -45,430 +42,217 @@ Mini Program makes **API Requests**...
 ---
 
 ## JSON
+
 ![Image result for json example](https://blog.supertext.ch/wp-content/uploads/2016/07/json_file_example_01.png)
 
 ---
 
-## REST-FUL API
+## Our API for Today
+
+[https://fml.shanghaiwogeng.com/api/v1/stories](https://fml.shanghaiwogeng.com/api/v1/stories)
+
+Let's look at it in the browser...
+
+---
+
+## How to Interact with an API
 
 ```text
-Purpose       Verb      URI Pattern                  Table#Action
-all stories   GET       /stories                     stories#index
-create story  POST      /stories                     stories#create
-one story     GET       /stories/:id                 stories#show
-edit story    PUT       /stories/:id                 stories#update
-delete story  DELETE    /stories/:id                 stories#destroy
-```
+Purpose       Verb      URI Pattern
 
-4 Verbs: GET, POST, PUT, DELETE
+all stories   GET       /stories
+
+create story  POST      /stories
+
+one story     GET       /stories/:id
+
+edit story    PUT       /stories/:id
+
+delete story  DELETE    /stories/:id
+
+```
 
 ---
 
-## 6 STEPS OF USING API
-1. Use API key
-2. Specify endpoint
-3. Attach request data
-4. Send request and **wait** for response
-5. Receive data from response
-6. Handle the data
+## 5 STEPS OF USING API
+
+1. Define the APIs URL
+
+2. Attach request data (if necessary)
+
+3. Send request and **wait** for response
+
+4. Receive data from response
+
+5. Handle the data
 
 ---
 
-## `INDEX`: 1ST ENDPOINT
-
-For showing all the stories
+## Let's Get All Stories From Our API
 
 ---
 
-### 1. Use API token (or key)
-From API provider (when creating account)
-
----
-
-Something like:
-
-```
-API_KEY: xxxxxxxxxxxxxxxxxxxxxxxx
-TOKEN: xxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-Use like:
-
-```
-header: {'Authorization':'Bearer xxxxxxxxxxxxxxxxxxxxxxxx'}
-```
-
-or as params or form data
-
-```
-data: {'api_key': 'xxxxxxxxxxxxxxxxxxxxxxxx'}
-```
-
-For today's exercise - no API token needed
-
----
-
-### 2. Specify endpoint
-
-Restful:  Verb and Path
-
-```
-GET /api/v1/stories
-```
----
-
-Combine with host: `https://fml.shanghaiwogeng.com`
-Get endpoint: `https://fml.shanghaiwogeng.com/api/v1/stories`
-
+### 1. Define the API URL
 
 ```js
-// /pages/index/index.js
 
-Page({
-  //...
-  onLoad: function (options) {
-    // Save reference to page
-    let page = this;
-    //...
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'GET' // If no method, default is GET
-    }
+let url = https://fml.shanghaiwogeng.com/api/v1/stories
+
+```
+
+---
+
+### 2. Attach request data (if necessary)
+
+Data can be sent with request as a JSON object
+
+In general, for GET requests, we won't need to attach any data.
+
+---
+
+### 3. Send request and **wait** for response
+
+---
+
+```js
+let url = "https://fml.shanghaiwogeng.com/api/v1/stories"
+
+wx.request({
+  url: url,
+  success: (res) => {
+    console.log(res)
   }
-  //...
+})
 ```
 
----
-
-### 3. Attach request data
-
-Data can be sent with request as a json object
-
-No need for our index page (we want everything).
+Our `success` function will automatically run once our request has returned successfully.
 
 ---
 
-Possible for filtering in the future:
+#### The Arrow Function
 
-```js
-// /pages/index/index.js
-// in onLoad
-// ...
-    let filter = {
-      include: 'My name',
-    }
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'GET',
-      data: filter // Not today, but later in the course
-    }
-```
-
-For index, we don't have any data
-
----
-
-### 4. Send request and **wait** for response
-
----
-
-![image-20190605133710289](https://github.com/lewagon/china-product/raw/master/03-miniprogram/slides/backend/insomnia-16362aaee683e89c76923b803287a793f7855f13f22d5497fd4ac52f09990be0.png)
-
-Tools: You can use [Postman](https://www.getpostman.com/downloads/) or [Insomnia](https://insomnia.rest/download/)
-
----
-
-In browser: `https://fml.shanghaiwogeng.com/api/v1/stories`
-
-In WeChat MP:
-
-```js
-// /pages/index/index.js
-
-Page({
-  //...
-  onLoad: function (options) {
-    // Save reference to page
-    let page = this;
-    // ...
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'GET' // If no method, default is GET
-    }
-    // Get api data
-
-    wx.request(request); // Then wait for response!
-    // Rest of code will KEEP RUNNING while request waits!
-  }
-  //...
-```
+You'll notice we're using an `arrow function` for our `success` function. This is so we can continue using the original `this` keyword to reference our Page object.
 
 ---
 
 Not Working? -> Need WeChat permission
 
-
 Wechat IDE Menu: Settings -> Project Settings:
 
-![image-20191004182608872](https://github.com/lewagon/china-product/raw/master/03-miniprogram/slides/backend/image-20191004182608872.png)
+![img](images/wechat-2.png)
 
 ---
 
-### 5. Receive data from response
+### 5. Hanlde the Response Data
 
----
-
-Add a new function in your index page called `getRequestData`
-
-```js
-// /pages/index/index.js
-
-Page({
-  //...
-  getRequestData: function (res) {
-	console.log(res)
-  },
-  
-  onLoad: function (options) {
-  //...
-```
-
----
-
-Call the function when request responds `success`
-
-```js
-// /pages/index/index.js
-
-Page({
-  //...
-  onLoad: function (options) {
-    // Save reference to page
-    let page = this;
-    //...
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'GET', // If no method, default is GET
-      success: page.getRequestData
-    }
-    // Get api data
-
-    wx.request(request);
-  }
-  //...
-```
+Use `console.log()` to check your response data. Dig through this to understand how your JSON response is structured and how to get the data you want.
 
 ---
 
 ### 6. Handle the data
 
+```js
+
+onShow: function () {
+  let url = "https://fml.shanghaiwogeng.com/api/v1/stories"
+
+  wx.request({
+    url: url,
+    success: (res) => {
+      let apiStories = res.data
+      this.setData({stories: apiStories})
+    }
+  })
+}
+```
+
 ---
 
-Pass the data in the response to the handler
+#### Why put this in onShow
+
+Remember that onLoad is only triggered when the page loads. Because our page is a Tabbar page, it is always loaded for ease of navigation.
+
+But putting this in onShow, it allows us to trigger this request whenever the user navigates to this tabbar page.
+
+---
+
+## Let's POST data to our API
+
+---
+
+### 1. Define the APIs URL
 
 ```js
-// /pages/index/index.js
+
+let url = https://fml.shanghaiwogeng.com/api/v1/stories
+
+```
+
+It's the same URL! But, we'll use a different `method` this time.
+
+---
+
+```js
+let url = "https://fml.shanghaiwogeng.com/api/v1/stories"
+
+wx.request({
+  url: url,
+  method: 'POST',
+  success: (res) => {
+    console.log(res)
+  }
+})
+```
+
+---
+
+### 2. Attach request data
+
+We need to send the API *something*. Let's provide it the story our user just wrote.
+
+---
+
+```js
+// post.js
 
 Page({
-  //...
-  getRequestData: function (res) {
-    console.log(res)
+  
+  formSubmit: function (event) {
 
-    const data = res.data;
-    page.setStories(data);
+    let name = event.detail.value.name;
+    let text = event.detail.value.text;
+    let story = {name: name, text: text};
+
+    this.sendData(story);
   },
 
-  onLoad: function (options) {
-  //...
+  sendData: function (story) {
 
-```
+    let url = "https://fml.shanghaiwogeng.com/api/v1/stories"
 
----
-
-
-Add a new function in your index page called `setStories` to handle data
-
-```js
-Page({
-  //...
-  setStories: function (data) {
-    // Save reference to page
-    let page = this;
-
-	// Take the stories from data passed in
-    const stories = data.stories;
-
-    // Update local stories data
-    page.setData({
-      stories: stories
+    wx.request({
+      url: url,
+      method: 'POST',
+      data: story,
+      success: (res) => {
+        console.log(res)
+      }
     });
+
   }
-```
-
----
-
-## 2TH ENDPOINT: `CREATE`
-
----
-
-### 1. Use API token (or key)
-Not needed for open API  (e.g. anyone can create, no login)
-
----
-
-### 2. Specify endpoint
-
-Restful:  Verb and Path
-
-```
-POST /api/v1/stories
-```
-
----
-
-Combine with host => Same endpoint, but POST verb: `https://fml.shanghaiwogeng.com/api/v1/stories`
-
-```js
-// /pages/index/index.js
-
-Page({
-  //...
-  onLoad: function (options) {
-    // Save reference to page
-    let page = this;
-    //...
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST'
-    }
-  }
-  //...
-```
-
----
-
-### 3. Attach request data
-
-As in a GET shown above, data is sent as a json object
-
---- 
-
-For create,  data comes from form submission on `post` page:
-
-```js
-// pages/post/post.js
-
-Page({
-  //...
-
-  // New Story Submission
-  bindSubmit: function (event) {
-    console.log(event.detail.value.name)
-    console.log(event.detail.value.content)
-
-    let name = event.detail.value.name
-    let text = event.detail.value.text
-  }
-  //...
-```
-
----
-
-Then make form story data into request data
-
-```js
-// /pages/post/post.js
-// in bindSubmit
-
-   //...
-   let story = {
-     name: name,
-     text: text
-   }
-
-   const request = {
-     url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-     method: 'POST',
-     data: story
-   }
 ```
 
 ---
 
 ### 4. Send request and **wait** for response
 
----
-
-### MINI PROGRAM: New Story
-
-```js
-// in Page() pages/post/post.js, New Story Submission
-  bindSubmit: function (event) {
-    console.log(event.detail.value.name)
-    console.log(event.detail.value.content)
-
-    let name = event.detail.value.name
-    let text = event.detail.value.text
-
-    let story = {
-      name: name,
-      text: text
-    }
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST',
-      data: story
-    }
-    // Post data to API
-
-    wx.request(request); // Then wait for response!
-  }
-```
-
-As before, allow WeChat permission for this api or skip the permission check.
+Just as we did before...
 
 ---
 
 ### 5. Receive data from response
 
-No response data is needed, instead we'll redirect back to index
-
----
-
-### 6. Handle the data
-
-Redirect is called in a function called `success` in the request.
-We don't need a separate page function as in `index.js`
-
----
-
-TIP: JSON allows you to define functions inside to save you time
-
-```js
-// /pages/post/post.js
-// in bindSubmit
-
-    //...
-
-    const request = {
-      url: `https://fml.shanghaiwogeng.com/api/v1/stories`,
-      method: 'POST',
-      data: story,
-      success() {
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
-      }
-    }
-
-    //...
-```
+Check the `res` to make sure the request was successful. Once received, re-route the user back to the stories page to resend a request to the API and see your updated stories page.
 
 ---
 
@@ -487,16 +271,22 @@ What APIs can I use? Where to find them?
 ---
 
 ### Global
-rapidapi.com
-programmableweb.com
-apiforthat.com
+
+- rapidapi.com
+
+- programmableweb.com
+
+- apiforthat.com
 
 ---
 
 ### China
-ai.baidu.com/ai-doc
-shenjian.io
-juhe.cn
+
+- ai.baidu.com/ai-doc
+
+- shenjian.io
+
+- juhe.cn
 
 ---
 
@@ -510,22 +300,12 @@ Revenue through api’s
 
 ---
 
-### There are 17,000 APIs
-
-9 million private api developers
-Explosion of APIs growth
-![image-20191004180349425](https://github.com/lewagon/china-product/raw/master/03-miniprogram/slides/backend/image-20191004180349425.png)
-
----
-
 ## API Strategy
-
 
 - APIs are key to prototyping - great for entrepreneurs
 
 - Focus on unique functionalities for business
 delivering initial product quickly & less expensively
-
 
 - APIs are vital to digital transformation
 
@@ -533,4 +313,4 @@ delivering initial product quickly & less expensively
 
 ---
 
-## HAPPY API-ING!
+## HAPPY API-ING
