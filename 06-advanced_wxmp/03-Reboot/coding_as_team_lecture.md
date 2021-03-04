@@ -47,7 +47,7 @@ cd YOUR_PROJECT_FOLDER
 You can then create your Github repo with:
 
 ```bash
-hub create
+gh repo create
 ```
 
 Which creates the repo on Github and adds the `origin` remote to your local repo.

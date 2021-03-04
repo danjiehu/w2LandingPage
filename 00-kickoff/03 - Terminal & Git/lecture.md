@@ -359,8 +359,8 @@ git log # check commits history
 Now push it up
 
 ```zsh
-hub create
-hub browse # can you see your new repo on Github?
+gh repo create
+gh repo view -w # can you see your new repo on Github?
 git status # check again - anything to be pushed?
 git push origin master
 ```
