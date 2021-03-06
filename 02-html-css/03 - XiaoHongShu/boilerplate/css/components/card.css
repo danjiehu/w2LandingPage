@@ -1,0 +1,38 @@
+.card {
+ background-color: #ffffff;
+ margin-bottom:16px;
+}
+
+.card img {
+ width: 100%;
+}
+
+.user-info,
+.user-info-left,
+.user-info-right {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: top;
+
+}
+
+.user-info {
+  padding:  8px 8px;
+  padding-bottom: 10px;
+}
+
+.user-info p {
+  margin: 0px;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.user-info img {
+  height: 24px;
+  width: 24px;
+}
+
+.card h3 {
+  margin: 0 8px;
+}

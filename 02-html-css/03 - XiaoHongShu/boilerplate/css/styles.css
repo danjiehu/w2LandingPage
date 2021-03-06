@@ -3,7 +3,9 @@
 
 /* --- Component imports --- */
 @import url("components/container.css");
-
+@import url("components/card.css");
+@import url("components/avatar.css");
+@import url("components/masonry.css");
 
 /* --- Fonts & colors --- */
 body {
